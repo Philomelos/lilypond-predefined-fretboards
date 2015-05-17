@@ -15,7 +15,7 @@
 %%%% You should have received a copy of the GNU General Public License
 %%%% along with LilyPond.  If not, see <http://www.gnu.org/licenses/>.
 
-\version "2.19.11"
+\version "2.19.15"
 
 #(define alt-shape-fretboard-table (make-fretboard-table))
 
@@ -24,17 +24,39 @@ altShape = {
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%% ALTERNATIVE CHORD SHAPES %%%%%%%%%%%%
+%%%%%%%%%% ALTERNATIVE CHORD SHAPES %%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%% Octaves %%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% * Monads (1 pitch name)
+% ** perfect octaves
+% *** (root position)
+% ***** two notes
+% ****** octave on the top
+
+% add alternative octave shape definitions (root pos., 2 notes, oct. on top)
+% \addChordShape #'b:1.8
+%                #guitar-tuning
+%                #"x;x;x;x;o;7-1;"
+
+% b octave; root bass; 2 notes; oct. on top
+\storePredefinedDiagram #alt-shape-fretboard-table
+                        \chordmode { b:1.8 }
+                        #guitar-tuning
+                        #"x;x;x;x;o;7-1;"
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%% MAJOR TRIADS %%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%%%% major triads
-%%%%% root position
-%%%% chords of three notes
-%%% fifth position
+% * Triads (3 different pitch names)
+% ** major triads
+% *** root position
+% **** chords of three notes
+% ***** fifth position
 %% add c-shape-alt major triad definitions (root pos., 3 notes, fifth soprano)
 \addChordShape #'cis
                #guitar-tuning
@@ -216,12 +238,3 @@ altShape = {
                           guitar-tuning))
 
 
-%{
-convert-ly (GNU LilyPond) 2.19.15  convert-ly: Processing `'...
-Applying conversion: 2.13.44, 2.13.46, 2.13.48, 2.13.51, 2.14.0,
-2.15.7, 2.15.9, 2.15.10, 2.15.16, 2.15.17, 2.15.18, 2.15.19, 2.15.20,
-2.15.25, 2.15.32, 2.15.39, 2.15.40, 2.15.42, 2.15.43, 2.16.0, 2.17.0,
-2.17.4, 2.17.5, 2.17.6, 2.17.11, 2.17.14, 2.17.15, 2.17.18, 2.17.19,
-2.17.20, 2.17.25, 2.17.27, 2.17.29, 2.17.97, 2.18.0, 2.19.2, 2.19.7,
-2.19.11
-%}

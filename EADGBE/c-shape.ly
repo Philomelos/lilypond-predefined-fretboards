@@ -27,25 +27,182 @@ cShape = {
 %%%%%%%%%%% C SHAPE CHORDS %%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%%%%% intervals
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%% Monads (1 pitch names) %%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%% Perfect octaves %%%%%%%%%%%%%%%%%
+
+%%%%%%% Monads (1 pitch name)
+%%%%%% octaves (C-Shape)
+%%%%% (root position)
+%%%% (two notes)
+%%% (octave on the top)
+
+%% add c-shape octave definitions
+\addChordShape #'c:1.8
+               #guitar-tuning 
+               #"x;3-3;x;x;1-1;x;"
+
+%% store predefined c-shape octaves diagrams
+% c octaves, root pos. 2 notes, (8th on the top)
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { c:1.8 }
+                        #guitar-tuning
+                        #(chord-shape 'c:1.8
+                          guitar-tuning)
+
+% cis octaves, root pos. 2 notes, (8th on the top)
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { cis:1.8 }
+                        #guitar-tuning
+                        #(offset-fret 1 (
+                          chord-shape 'c:1.8
+                          guitar-tuning))
+
+% des octaves, root pos. 2 notes, (8th on the top)
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { des:1.8 }
+                        #guitar-tuning
+                        #(offset-fret 1 (
+                          chord-shape 'c:1.8
+                          guitar-tuning))
+
+% d octaves, root pos. 2 notes, (8th on the top)
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { d:1.8 }
+                        #guitar-tuning
+                        #(offset-fret 2 (
+                          chord-shape 'c:1.8
+                          guitar-tuning))
+
+% dis octaves, root pos. 2 notes, (8th on the top)
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { dis:1.8 }
+                        #guitar-tuning
+                        #(offset-fret 3 (
+                          chord-shape 'c:1.8
+                          guitar-tuning))
+
+% es octaves, root pos. 2 notes, (8th on the top)
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { es:1.8 }
+                        #guitar-tuning
+                        #(offset-fret 3 (
+                          chord-shape 'c:1.8
+                          guitar-tuning))
+
+% e octaves, root pos. 2 notes, (8th on the top)
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { e:1.8 }
+                        #guitar-tuning
+                        #(offset-fret 4 (
+                          chord-shape 'c:1.8
+                          guitar-tuning))
+
+% f octaves, root pos. 2 notes, (8th on the top)
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { f:1.8 }
+                        #guitar-tuning
+                        #(offset-fret 5 (
+                          chord-shape 'c:1.8
+                          guitar-tuning))
+
+% fis octaves, root pos. 2 notes, (8th on the top)
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { fis:1.8 }
+                        #guitar-tuning
+                        #(offset-fret 6 (
+                          chord-shape 'c:1.8
+                          guitar-tuning))
+
+% ges octaves, root pos. 2 notes, (8th on the top)
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { ges:1.8 }
+                        #guitar-tuning
+                        #(offset-fret 6 (
+                          chord-shape 'c:1.8
+                          guitar-tuning))
+
+% g octaves, root pos. 2 notes, (8th on the top)
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { g:1.8 }
+                        #guitar-tuning
+                        #(offset-fret 7 (
+                          chord-shape 'c:1.8
+                          guitar-tuning))
+
+% gis octaves, root pos. 2 notes, (8th on the top)
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { gis:1.8 }
+                        #guitar-tuning
+                        #(offset-fret 8 (
+                          chord-shape 'c:1.8
+                          guitar-tuning))
+
+% as octaves, root pos. 2 notes, (8th on the top)
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { as:1.8 }
+                        #guitar-tuning
+                        #(offset-fret 8 (
+                          chord-shape 'c:1.8
+                          guitar-tuning))
+
+% a octaves, root pos. 2 notes, (8th on the top)
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { a:1.8 }
+                        #guitar-tuning
+                        #(offset-fret 9 (
+                          chord-shape 'c:1.8
+                          guitar-tuning))
+
+% ais octaves, root pos. 2 notes, (8th on the top)
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { ais,,:1.8 }
+                        #guitar-tuning
+                        #(offset-fret 10 (
+                          chord-shape 'c:1.8
+                          guitar-tuning))
+
+% bes octaves, root pos. 2 notes, (8th on the top)
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { bes:1.8 }
+                        #guitar-tuning
+                        #(offset-fret 10 (
+                          chord-shape 'c:1.8
+                          guitar-tuning))
+
+% b octaves, root pos. 2 notes, (8th on the top)
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { b,:1.8 }
+                        #guitar-tuning
+                        #"x;2-2;x;x;o;x;"
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%% Dyads (2 different pitch names) %%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%% FIFTHS %%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%% Dyads (2 different pitch names)
 %%%%%% fifths (power chords)
 %%%%% root position
 %%%% two notes
-%%% fifth position
+%%% fifth on the top
 
 %% add c-shape power chord definitions
 \addChordShape #'c:1.5
                #guitar-tuning #"x;x;x;x;1-1;3-3;"
 
 %% store predefined c-shape power chord diagrams
-% c power chords, root pos. 2 notes, (fifth soprano)
+% c power chords, root pos. 2 notes, (fifth on the top)
 \storePredefinedDiagram #c-shape-fretboard-table
                         <c' g'>
                         #guitar-tuning
                         #(chord-shape 'c:1.5
                           guitar-tuning)
 
-% cis power chords, root pos. 2 notes, (fifth soprano)
+% cis power chords, root pos. 2 notes, (fifth on the top)
 \storePredefinedDiagram #c-shape-fretboard-table
                         <cis' gis'>
                         #guitar-tuning
@@ -53,7 +210,7 @@ cShape = {
                           chord-shape 'c:1.5
                           guitar-tuning))
 
-% des power chords, root pos. 2 notes, (fifth soprano)
+% des power chords, root pos. 2 notes, (fifth on the top)
 \storePredefinedDiagram #c-shape-fretboard-table
                         <des' as'>
                         #guitar-tuning
@@ -61,7 +218,7 @@ cShape = {
                           chord-shape 'c:1.5
                           guitar-tuning))
 
-% d power chords, root pos. 2 notes, (fifth soprano)
+% d power chords, root pos. 2 notes, (fifth on the top)
 \storePredefinedDiagram #c-shape-fretboard-table
                         <d' a'>
                         #guitar-tuning
@@ -69,7 +226,7 @@ cShape = {
                           chord-shape 'c:1.5
                           guitar-tuning))
 
-% dis power chords, root pos. 2 notes, (fifth soprano)
+% dis power chords, root pos. 2 notes, (fifth on the top)
 \storePredefinedDiagram #c-shape-fretboard-table
                         <dis' ais'>
                         #guitar-tuning
@@ -77,7 +234,7 @@ cShape = {
                           chord-shape 'c:1.5
                           guitar-tuning))
 
-% es power chords, root pos. 2 notes, (fifth soprano)
+% es power chords, root pos. 2 notes, (fifth on the top)
 \storePredefinedDiagram #c-shape-fretboard-table
                         <es' bes'>
                         #guitar-tuning
@@ -85,7 +242,7 @@ cShape = {
                           chord-shape 'c:1.5
                           guitar-tuning))
 
-% e power chords, root pos. 2 notes, (fifth soprano)
+% e power chords, root pos. 2 notes, (fifth on the top)
 \storePredefinedDiagram #c-shape-fretboard-table
                         <e' b'>
                         #guitar-tuning
@@ -93,7 +250,7 @@ cShape = {
                           chord-shape 'c:1.5
                           guitar-tuning))
 
-% f power chords, root pos. 2 notes, (fifth soprano)
+% f power chords, root pos. 2 notes, (fifth on the top)
 \storePredefinedDiagram #c-shape-fretboard-table
                         <f' c''>
                         #guitar-tuning
@@ -101,7 +258,7 @@ cShape = {
                           chord-shape 'c:1.5
                           guitar-tuning))
 
-% fis power chords, root pos. 2 notes, (fifth soprano)
+% fis power chords, root pos. 2 notes, (fifth on the top)
 \storePredefinedDiagram #c-shape-fretboard-table
                         <fis' cis''>
                         #guitar-tuning
@@ -109,7 +266,7 @@ cShape = {
                           chord-shape 'c:1.5
                           guitar-tuning))
 
-% ges power chords, root pos. 2 notes, (fifth soprano)
+% ges power chords, root pos. 2 notes, (fifth on the top)
 \storePredefinedDiagram #c-shape-fretboard-table
                         <ges' des''>
                         #guitar-tuning
@@ -117,7 +274,7 @@ cShape = {
                           chord-shape 'c:1.5
                           guitar-tuning))
 
-% g power chords, root pos. 2 notes, (fifth soprano)
+% g power chords, root pos. 2 notes, (fifth on the top)
 \storePredefinedDiagram #c-shape-fretboard-table
                         <g' d''>
                         #guitar-tuning
@@ -125,7 +282,7 @@ cShape = {
                           chord-shape 'c:1.5
                           guitar-tuning))
 
-% gis power chords, root pos. 2 notes, (fifth soprano)
+% gis power chords, root pos. 2 notes, (fifth on the top)
 \storePredefinedDiagram #c-shape-fretboard-table
                         <gis' dis''>
                         #guitar-tuning
@@ -133,7 +290,7 @@ cShape = {
                           chord-shape 'c:1.5
                           guitar-tuning))
 
-% as power chords, root pos. 2 notes, (fifth soprano)
+% as power chords, root pos. 2 notes, (fifth on the top)
 \storePredefinedDiagram #c-shape-fretboard-table
                         <as' es''>
                         #guitar-tuning
@@ -141,7 +298,7 @@ cShape = {
                           chord-shape 'c:1.5
                           guitar-tuning))
 
-% a power chords, root pos. 2 notes, (fifth soprano)
+% a power chords, root pos. 2 notes, (fifth on the top)
 \storePredefinedDiagram #c-shape-fretboard-table
                         <a' e''>
                         #guitar-tuning
@@ -149,7 +306,7 @@ cShape = {
                           chord-shape 'c:1.5
                           guitar-tuning))
 
-% ais power chords, root pos. 2 notes, (fifth soprano)
+% ais power chords, root pos. 2 notes, (fifth on the top)
 \storePredefinedDiagram #c-shape-fretboard-table
                         <ais' eis''>
                         #guitar-tuning
@@ -157,7 +314,7 @@ cShape = {
                           chord-shape 'c:1.5
                           guitar-tuning))
 
-% bes power chords, root pos. 2 notes, (fifth soprano)
+% bes power chords, root pos. 2 notes, (fifth on the top)
 \storePredefinedDiagram #c-shape-fretboard-table
                         <bes' f''>
                         #guitar-tuning
@@ -165,7 +322,7 @@ cShape = {
                           chord-shape 'c:1.5
                           guitar-tuning))
 
-% b power chords, root pos. 2 notes, (fifth soprano)
+% b power chords, root pos. 2 notes, (fifth on the top)
 \storePredefinedDiagram #c-shape-fretboard-table
                         <b fis'>
                         #guitar-tuning
@@ -178,154 +335,7 @@ cShape = {
                           guitar-tuning))
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%% OCTAVES %%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%%%%% intervals
-%%%%%% octaves (C-Shape)
-%%%%% (root position)
-%%%% (two notes)
-%%% (octave position)
-
-%% add c-shape power chord definitions
-\addChordShape #'c:1.8
-               #guitar-tuning 
-               #"x;3-3;x;x;1-1;x;"
-
-%% store predefined c-shape octaves diagrams
-% c octaves, root pos. 2 notes, (8th soprano)
-\storePredefinedDiagram #c-shape-fretboard-table
-                        \chordmode { c,:1.8 }
-                        #guitar-tuning
-                        #(chord-shape 'c:1.8
-                          guitar-tuning)
-
-% cis octaves, root pos. 2 notes, (8th soprano)
-\storePredefinedDiagram #c-shape-fretboard-table
-                        \chordmode { cis,:1.8 }
-                        #guitar-tuning
-                        #(offset-fret 1 (
-                          chord-shape 'c:1.8
-                          guitar-tuning))
-
-% des octaves, root pos. 2 notes, (8th soprano)
-\storePredefinedDiagram #c-shape-fretboard-table
-                        \chordmode { des,:1.8 }
-                        #guitar-tuning
-                        #(offset-fret 1 (
-                          chord-shape 'c:1.8
-                          guitar-tuning))
-
-% d octaves, root pos. 2 notes, (8th soprano)
-\storePredefinedDiagram #c-shape-fretboard-table
-                        \chordmode { d,:1.8 }
-                        #guitar-tuning
-                        #(offset-fret 2 (
-                          chord-shape 'c:1.8
-                          guitar-tuning))
-
-% dis octaves, root pos. 2 notes, (8th soprano)
-\storePredefinedDiagram #c-shape-fretboard-table
-                        \chordmode { dis,:1.8 }
-                        #guitar-tuning
-                        #(offset-fret 3 (
-                          chord-shape 'c:1.8
-                          guitar-tuning))
-
-% es octaves, root pos. 2 notes, (8th soprano)
-\storePredefinedDiagram #c-shape-fretboard-table
-                        \chordmode { es,:1.8 }
-                        #guitar-tuning
-                        #(offset-fret 3 (
-                          chord-shape 'c:1.8
-                          guitar-tuning))
-
-% e octaves, root pos. 2 notes, (8th soprano)
-\storePredefinedDiagram #c-shape-fretboard-table
-                        \chordmode { e,:1.8 }
-                        #guitar-tuning
-                        #(offset-fret 4 (
-                          chord-shape 'c:1.8
-                          guitar-tuning))
-
-% f octaves, root pos. 2 notes, (8th soprano)
-\storePredefinedDiagram #c-shape-fretboard-table
-                        \chordmode { f,:1.8 }
-                        #guitar-tuning
-                        #(offset-fret 5 (
-                          chord-shape 'c:1.8
-                          guitar-tuning))
-
-% fis octaves, root pos. 2 notes, (8th soprano)
-\storePredefinedDiagram #c-shape-fretboard-table
-                        \chordmode { fis,:1.8 }
-                        #guitar-tuning
-                        #(offset-fret 6 (
-                          chord-shape 'c:1.8
-                          guitar-tuning))
-
-% ges octaves, root pos. 2 notes, (8th soprano)
-\storePredefinedDiagram #c-shape-fretboard-table
-                        \chordmode { ges,:1.8 }
-                        #guitar-tuning
-                        #(offset-fret 6 (
-                          chord-shape 'c:1.8
-                          guitar-tuning))
-
-% g octaves, root pos. 2 notes, (8th soprano)
-\storePredefinedDiagram #c-shape-fretboard-table
-                        \chordmode { g,:1.8 }
-                        #guitar-tuning
-                        #(offset-fret 7 (
-                          chord-shape 'c:1.8
-                          guitar-tuning))
-
-% gis octaves, root pos. 2 notes, (8th soprano)
-\storePredefinedDiagram #c-shape-fretboard-table
-                        \chordmode { gis,:1.8 }
-                        #guitar-tuning
-                        #(offset-fret 8 (
-                          chord-shape 'c:1.8
-                          guitar-tuning))
-
-% as octaves, root pos. 2 notes, (8th soprano)
-\storePredefinedDiagram #c-shape-fretboard-table
-                        \chordmode { as,:1.8 }
-                        #guitar-tuning
-                        #(offset-fret 8 (
-                          chord-shape 'c:1.8
-                          guitar-tuning))
-
-% a octaves, root pos. 2 notes, (8th soprano)
-\storePredefinedDiagram #c-shape-fretboard-table
-                        \chordmode { a,,:1.8 }
-                        #guitar-tuning
-                        #(offset-fret 9 (
-                          chord-shape 'c:1.8
-                          guitar-tuning))
-
-% ais octaves, root pos. 2 notes, (8th soprano)
-\storePredefinedDiagram #c-shape-fretboard-table
-                        \chordmode { ais,,:1.8 }
-                        #guitar-tuning
-                        #(offset-fret 10 (
-                          chord-shape 'c:1.8
-                          guitar-tuning))
-
-% bes octaves, root pos. 2 notes, (8th soprano)
-\storePredefinedDiagram #c-shape-fretboard-table
-                        \chordmode { bes,,:1.8 }
-                        #guitar-tuning
-                        #(offset-fret 10 (
-                          chord-shape 'c:1.8
-                          guitar-tuning))
-
-% b octaves, root pos. 2 notes, (8th soprano)
-\storePredefinedDiagram #c-shape-fretboard-table
-                        \chordmode { b,:1.8 }
-                        #guitar-tuning
-                        #"x;2-2;x;x;o;x;"
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%% MAJOR TRIADS %%%%%%%%%%%%%%%%%%% 
