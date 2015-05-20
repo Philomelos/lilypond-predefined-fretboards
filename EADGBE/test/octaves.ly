@@ -145,11 +145,11 @@ octavesThreeNotes = {
       \new FretBoards {
         \octavesMixedShapesInC
       }
-      \new Voice = "staff" {
+      \new Voice = "octaves" {
         \clef "treble_8"
         \octavesMixedShapesInC
       }
-      \new Lyrics \lyricsto staff {
+      \new Lyrics \lyricsto octaves {
         \octavesMixedShapesInCDescription
       }
       \new TabStaff {

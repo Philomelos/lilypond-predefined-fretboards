@@ -27,303 +27,17 @@ aShape = {
 %%%%%%%%%%% A SHAPE CHORDS %%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%%%%% Dyads (A-Shape)
-%%%%%% fifths (power chords)
-%%%%% root position
-%%%% two notes
-%%% fifth on the top
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%% Unisons %%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%% add a-shape power chord definitions
-\addChordShape #'bes:1.5
-               #guitar-tuning
-               #"x;1-1;3-3;x;x;x;"
+%%%%%%%%%%%%%% OCTAVES %%%%%%%%%%%%%%%
 
-%% store predefined a-shape power chord diagrams
-% c power chords, root pos. 2 notes, (fifth soprano)
-\storePredefinedDiagram #a-shape-fretboard-table
-                        \chordmode { c:1.5 }
-                        #guitar-tuning
-                        #(offset-fret 2 (
-                          chord-shape 'bes:1.5
-                          guitar-tuning))
-
-% cis power chords, root pos. 2 notes, (fifth soprano)
-\storePredefinedDiagram #a-shape-fretboard-table
-                        \chordmode { cis:1.5 }
-                        #guitar-tuning
-                        #(offset-fret 3 (
-                          chord-shape 'bes:1.5
-                          guitar-tuning))
-
-% des power chords, root pos. 2 notes, (fifth soprano)
-\storePredefinedDiagram #a-shape-fretboard-table
-                        \chordmode { des:1.5 }
-                        #guitar-tuning
-                        #(offset-fret 3 (
-                          chord-shape 'bes:1.5
-                          guitar-tuning))
-
-% d power chords, root pos. 2 notes, (fifth soprano)
-\storePredefinedDiagram #a-shape-fretboard-table
-                        \chordmode { d:1.5 }
-                        #guitar-tuning
-                        #(offset-fret 4 (
-                          chord-shape 'bes:1.5
-                          guitar-tuning))
-
-% dis power chords, root pos. 2 notes, (fifth soprano)
-\storePredefinedDiagram #a-shape-fretboard-table
-                        \chordmode { dis:1.5 }
-                        #guitar-tuning
-                        #(offset-fret 5 (
-                          chord-shape 'bes:1.5
-                          guitar-tuning))
-
-% es power chords, root pos. 2 notes, (fifth soprano)
-\storePredefinedDiagram #a-shape-fretboard-table
-                        \chordmode { es:1.5 }
-                        #guitar-tuning
-                        #(offset-fret 5 (
-                          chord-shape 'bes:1.5
-                          guitar-tuning))
-
-% e power chords, root pos. 2 notes, (fifth soprano)
-\storePredefinedDiagram #a-shape-fretboard-table
-                        \chordmode { e:1.5 }
-                        #guitar-tuning
-                        #(offset-fret 6 (
-                          chord-shape 'bes:1.5
-                          guitar-tuning))
-
-% f power chords, root pos. 2 notes, (fifth soprano)
-\storePredefinedDiagram #a-shape-fretboard-table
-                        \chordmode { f:1.5 }
-                        #guitar-tuning
-                        #(offset-fret 7 (
-                          chord-shape 'bes:1.5
-                          guitar-tuning))
-
-% fis power chords, root pos. 2 notes, (fifth soprano)
-\storePredefinedDiagram #a-shape-fretboard-table
-                        \chordmode { fis:1.5 }
-                        #guitar-tuning
-                        #(offset-fret 8 (
-                          chord-shape 'bes:1.5
-                          guitar-tuning))
-
-% ges power chords, root pos. 2 notes, (fifth soprano)
-\storePredefinedDiagram #a-shape-fretboard-table
-                        \chordmode { ges:1.5 }
-                        #guitar-tuning
-                        #(offset-fret 8 (
-                          chord-shape 'bes:1.5
-                          guitar-tuning))
-
-% g power chords, root pos. 2 notes, (fifth soprano)
-\storePredefinedDiagram #a-shape-fretboard-table
-                        \chordmode { g:1.5 }
-                        #guitar-tuning
-                        #(offset-fret 9 (
-                          chord-shape 'bes:1.5
-                          guitar-tuning))
-
-% gis power chords, root pos. 2 notes, (fifth soprano)
-\storePredefinedDiagram #a-shape-fretboard-table
-                        \chordmode { gis:1.5 }
-                        #guitar-tuning
-                        #(offset-fret 10 (
-                          chord-shape 'bes:1.5
-                          guitar-tuning))
-
-% as power chords, root pos. 2 notes, (fifth soprano)
-\storePredefinedDiagram #a-shape-fretboard-table
-                        \chordmode { as:1.5 }
-                        #guitar-tuning
-                        #(offset-fret 10 (
-                          chord-shape 'bes:1.5
-                          guitar-tuning))
-
-% a power chords, root pos. 2 notes, (fifth soprano)
-\storePredefinedDiagram #a-shape-fretboard-table
-                        \chordmode { a,:1.5 }
-                        #guitar-tuning
-                        #"x;o;2-2;x;x;x;"
-
-% ais power chords, root pos. 2 notes, (fifth soprano)
-\storePredefinedDiagram #a-shape-fretboard-table
-                        \chordmode { ais,:1.5 }
-                        #guitar-tuning
-                        #(chord-shape 'bes:1.5
-                          guitar-tuning)
-
-% bes power chords, root pos. 2 notes, (fifth soprano)
-\storePredefinedDiagram #a-shape-fretboard-table
-                        \chordmode { bes,:1.5 }
-                        #guitar-tuning
-                        #(chord-shape 'bes:1.5
-                          guitar-tuning)
-
-% b power chords, root pos. 2 notes, (fifth soprano)
-\storePredefinedDiagram #a-shape-fretboard-table
-                        \chordmode { b,:1.5 }
-                        #guitar-tuning
-                        #(offset-fret 1 (
-                          chord-shape 'bes:1.5
-                          guitar-tuning))
-
-%%%%%%% Dyads (A-Shape)
-%%%%%% fifths (power chords)
-%%%%% root position
-%%%% three notes
-%%% octave on the top
-
-%% add a-shape power chord definitions
-\addChordShape #'bes:1.5.8
-               #guitar-tuning
-               #"x;1-1;3-3;3-4;x;x;"
-
-%% store predefined a-shape power chord diagrams
-% c power chords, root pos. 3 notes, (oct. on top)
-\storePredefinedDiagram #a-shape-fretboard-table
-                        \chordmode { c:1.5.8 }
-                        #guitar-tuning
-                        #(offset-fret 2 (
-                          chord-shape 'bes:1.5.8
-                          guitar-tuning))
-
-% cis power chords, root pos. 3 notes, (oct. on top)
-\storePredefinedDiagram #a-shape-fretboard-table
-                        \chordmode { cis:1.5.8 }
-                        #guitar-tuning
-                        #(offset-fret 3 (
-                          chord-shape 'bes:1.5.8
-                          guitar-tuning))
-
-% des power chords, root pos. 3 notes, (oct. on top)
-\storePredefinedDiagram #a-shape-fretboard-table
-                        \chordmode { des:1.5.8 }
-                        #guitar-tuning
-                        #(offset-fret 3 (
-                          chord-shape 'bes:1.5.8
-                          guitar-tuning))
-
-% d power chords, root pos. 3 notes, (oct. on top)
-\storePredefinedDiagram #a-shape-fretboard-table
-                        \chordmode { d:1.5.8 }
-                        #guitar-tuning
-                        #(offset-fret 4 (
-                          chord-shape 'bes:1.5.8
-                          guitar-tuning))
-
-% dis power chords, root pos. 3 notes, (oct. on top)
-\storePredefinedDiagram #a-shape-fretboard-table
-                        \chordmode { dis:1.5.8 }
-                        #guitar-tuning
-                        #(offset-fret 5 (
-                          chord-shape 'bes:1.5.8
-                          guitar-tuning))
-
-% es power chords, root pos. 3 notes, (oct. on top)
-\storePredefinedDiagram #a-shape-fretboard-table
-                        \chordmode { es:1.5.8 }
-                        #guitar-tuning
-                        #(offset-fret 5 (
-                          chord-shape 'bes:1.5.8
-                          guitar-tuning))
-
-% e power chords, root pos. 3 notes, (oct. on top)
-\storePredefinedDiagram #a-shape-fretboard-table
-                        \chordmode { e:1.5.8 }
-                        #guitar-tuning
-                        #(offset-fret 6 (
-                          chord-shape 'bes:1.5.8
-                          guitar-tuning))
-
-% f power chords, root pos. 3 notes, (oct. on top)
-\storePredefinedDiagram #a-shape-fretboard-table
-                        \chordmode { f:1.5.8 }
-                        #guitar-tuning
-                        #(offset-fret 7 (
-                          chord-shape 'bes:1.5.8
-                          guitar-tuning))
-
-% fis power chords, root pos. 3 notes, (oct. on top)
-\storePredefinedDiagram #a-shape-fretboard-table
-                        \chordmode { fis:1.5.8 }
-                        #guitar-tuning
-                        #(offset-fret 8 (
-                          chord-shape 'bes:1.5.8
-                          guitar-tuning))
-
-% ges power chords, root pos. 3 notes, (oct. on top)
-\storePredefinedDiagram #a-shape-fretboard-table
-                        \chordmode { ges:1.5.8 }
-                        #guitar-tuning
-                        #(offset-fret 8 (
-                          chord-shape 'bes:1.5.8
-                          guitar-tuning))
-
-% g power chords, root pos. 3 notes, (oct. on top)
-\storePredefinedDiagram #a-shape-fretboard-table
-                        \chordmode { g:1.5.8 }
-                        #guitar-tuning
-                        #(offset-fret 9 (
-                          chord-shape 'bes:1.5.8
-                          guitar-tuning))
-
-% gis power chords, root pos. 3 notes, (oct. on top)
-\storePredefinedDiagram #a-shape-fretboard-table
-                        \chordmode { gis:1.5.8 }
-                        #guitar-tuning
-                        #(offset-fret 10 (
-                          chord-shape 'bes:1.5.8
-                          guitar-tuning))
-
-% as power chords, root pos. 3 notes, (oct. on top)
-\storePredefinedDiagram #a-shape-fretboard-table
-                        \chordmode { as:1.5.8 }
-                        #guitar-tuning
-                        #(offset-fret 10 (
-                          chord-shape 'bes:1.5.8
-                          guitar-tuning))
-
-% a power chords, root pos. 3 notes, (oct. on top)
-\storePredefinedDiagram #a-shape-fretboard-table
-                        \chordmode { a,:1.5.8 }
-                        #guitar-tuning
-                        #"x;o;2-1-(;2-1-);x;x;"
-
-% ais power chords, root pos. 3 notes, (oct. on top)
-\storePredefinedDiagram #a-shape-fretboard-table
-                        \chordmode { ais,:1.5.8 }
-                        #guitar-tuning
-                        #(chord-shape 'bes:1.5.8
-                          guitar-tuning)
-
-% bes power chords, root pos. 3 notes, (oct. on top)
-\storePredefinedDiagram #a-shape-fretboard-table
-                        \chordmode { bes,:1.5.8 }
-                        #guitar-tuning
-                        #(chord-shape 'bes:1.5.8
-                          guitar-tuning)
-
-% b power chords, root pos. 3 notes, (oct. on top)
-\storePredefinedDiagram #a-shape-fretboard-table
-                        \chordmode { b,:1.5.8 }
-                        #guitar-tuning
-                        #(offset-fret 1 (
-                          chord-shape 'bes:1.5.8
-                          guitar-tuning))
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%% OCTAVES %%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%%%%%% Monads (1 pitch name) A-Shape
-%%%%%% octaves
-%%%%% (root position)
-%%%% (two notes)
-%%% (octave on the top)
+% * Unisons (1 pitch name) A-Shape
+% ** perfect octaves
+% *** (root position)
+% **** (two notes)
+% ***** (octave on the top)
 
 %% add a-shape octave definitions
 \addChordShape #'bes,:1.8
@@ -469,6 +183,300 @@ aShape = {
                         #guitar-tuning
                         #(offset-fret 1 (
                           chord-shape 'bes,:1.8
+                          guitar-tuning))
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%% Dyads %%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%% Fifths %%%%%%%%%%%%%%%
+
+% * Dyads (A-Shape)
+% ** fifths (power chords)
+% *** root position
+% **** two notes
+% ***** fifth on the top
+
+%% add a-shape power chord definitions
+\addChordShape #'bes,:1.5
+               #guitar-tuning
+               #"x;1-1;3-3;x;x;x;"
+
+%% store predefined a-shape power chord diagrams
+% c power chords, root pos. 2 notes, (fifth on top)
+\storePredefinedDiagram #a-shape-fretboard-table
+                        \chordmode { c,:1.5 }
+                        #guitar-tuning
+                        #(offset-fret 2 (
+                          chord-shape 'bes,:1.5
+                          guitar-tuning))
+
+% cis power chords, root pos. 2 notes, (fifth on top)
+\storePredefinedDiagram #a-shape-fretboard-table
+                        \chordmode { cis,:1.5 }
+                        #guitar-tuning
+                        #(offset-fret 3 (
+                          chord-shape 'bes,:1.5
+                          guitar-tuning))
+
+% des power chords, root pos. 2 notes, (fifth on top)
+\storePredefinedDiagram #a-shape-fretboard-table
+                        \chordmode { des,:1.5 }
+                        #guitar-tuning
+                        #(offset-fret 3 (
+                          chord-shape 'bes,:1.5
+                          guitar-tuning))
+
+% d power chords, root pos. 2 notes, (fifth on top)
+\storePredefinedDiagram #a-shape-fretboard-table
+                        \chordmode { d,:1.5 }
+                        #guitar-tuning
+                        #(offset-fret 4 (
+                          chord-shape 'bes,:1.5
+                          guitar-tuning))
+
+% dis power chords, root pos. 2 notes, (fifth on top)
+\storePredefinedDiagram #a-shape-fretboard-table
+                        \chordmode { dis,:1.5 }
+                        #guitar-tuning
+                        #(offset-fret 5 (
+                          chord-shape 'bes,:1.5
+                          guitar-tuning))
+
+% es power chords, root pos. 2 notes, (fifth on top)
+\storePredefinedDiagram #a-shape-fretboard-table
+                        \chordmode { es,:1.5 }
+                        #guitar-tuning
+                        #(offset-fret 5 (
+                          chord-shape 'bes,:1.5
+                          guitar-tuning))
+
+% e power chords, root pos. 2 notes, (fifth on top)
+\storePredefinedDiagram #a-shape-fretboard-table
+                        \chordmode { e,:1.5 }
+                        #guitar-tuning
+                        #(offset-fret 6 (
+                          chord-shape 'bes,:1.5
+                          guitar-tuning))
+
+% f power chords, root pos. 2 notes, (fifth on top)
+\storePredefinedDiagram #a-shape-fretboard-table
+                        \chordmode { f,:1.5 }
+                        #guitar-tuning
+                        #(offset-fret 7 (
+                          chord-shape 'bes,:1.5
+                          guitar-tuning))
+
+% fis power chords, root pos. 2 notes, (fifth on top)
+\storePredefinedDiagram #a-shape-fretboard-table
+                        \chordmode { fis,:1.5 }
+                        #guitar-tuning
+                        #(offset-fret 8 (
+                          chord-shape 'bes,:1.5
+                          guitar-tuning))
+
+% ges power chords, root pos. 2 notes, (fifth on top)
+\storePredefinedDiagram #a-shape-fretboard-table
+                        \chordmode { ges,:1.5 }
+                        #guitar-tuning
+                        #(offset-fret 8 (
+                          chord-shape 'bes,:1.5
+                          guitar-tuning))
+
+% g power chords, root pos. 2 notes, (fifth on top)
+\storePredefinedDiagram #a-shape-fretboard-table
+                        \chordmode { g,:1.5 }
+                        #guitar-tuning
+                        #(offset-fret 9 (
+                          chord-shape 'bes,:1.5
+                          guitar-tuning))
+
+% gis power chords, root pos. 2 notes, (fifth on top)
+\storePredefinedDiagram #a-shape-fretboard-table
+                        \chordmode { gis,:1.5 }
+                        #guitar-tuning
+                        #(offset-fret 10 (
+                          chord-shape 'bes,:1.5
+                          guitar-tuning))
+
+% as power chords, root pos. 2 notes, (fifth on top)
+\storePredefinedDiagram #a-shape-fretboard-table
+                        \chordmode { as,:1.5 }
+                        #guitar-tuning
+                        #(offset-fret 10 (
+                          chord-shape 'bes,:1.5
+                          guitar-tuning))
+
+% a power chords, root pos. 2 notes, (fifth on top)
+\storePredefinedDiagram #a-shape-fretboard-table
+                        \chordmode { a,,:1.5 }
+                        #guitar-tuning
+                        #"x;o;2-2;x;x;x;"
+
+% ais power chords, root pos. 2 notes, (fifth on top)
+\storePredefinedDiagram #a-shape-fretboard-table
+                        \chordmode { ais,,:1.5 }
+                        #guitar-tuning
+                        #(chord-shape 'bes,:1.5
+                          guitar-tuning)
+
+% bes power chords, root pos. 2 notes, (fifth soprano)
+\storePredefinedDiagram #a-shape-fretboard-table
+                        \chordmode { bes,,:1.5 }
+                        #guitar-tuning
+                        #(chord-shape 'bes,:1.5
+                          guitar-tuning)
+
+% b power chords, root pos. 2 notes, (fifth on top)
+\storePredefinedDiagram #a-shape-fretboard-table
+                        \chordmode { b,,:1.5 }
+                        #guitar-tuning
+                        #(offset-fret 1 (
+                          chord-shape 'bes,:1.5
+                          guitar-tuning))
+
+% * Dyads (A-Shape)
+% ** fifths (power chords)
+% *** root position
+% **** three notes
+% ***** octave on the top
+
+%% add a-shape power chord definitions
+\addChordShape #'bes,:1.5.8
+               #guitar-tuning
+               #"x;1-1;3-3;3-4;x;x;"
+
+%% store predefined a-shape power chord diagrams
+% c power chords, root pos. 3 notes, (oct. on top)
+\storePredefinedDiagram #a-shape-fretboard-table
+                        \chordmode { c,:1.5.8 }
+                        #guitar-tuning
+                        #(offset-fret 2 (
+                          chord-shape 'bes,:1.5.8
+                          guitar-tuning))
+
+% cis power chords, root pos. 3 notes, (oct. on top)
+\storePredefinedDiagram #a-shape-fretboard-table
+                        \chordmode { cis,:1.5.8 }
+                        #guitar-tuning
+                        #(offset-fret 3 (
+                          chord-shape 'bes,:1.5.8
+                          guitar-tuning))
+
+% des power chords, root pos. 3 notes, (oct. on top)
+\storePredefinedDiagram #a-shape-fretboard-table
+                        \chordmode { des,:1.5.8 }
+                        #guitar-tuning
+                        #(offset-fret 3 (
+                          chord-shape 'bes,:1.5.8
+                          guitar-tuning))
+
+% d power chords, root pos. 3 notes, (oct. on top)
+\storePredefinedDiagram #a-shape-fretboard-table
+                        \chordmode { d,:1.5.8 }
+                        #guitar-tuning
+                        #(offset-fret 4 (
+                          chord-shape 'bes,:1.5.8
+                          guitar-tuning))
+
+% dis power chords, root pos. 3 notes, (oct. on top)
+\storePredefinedDiagram #a-shape-fretboard-table
+                        \chordmode { dis,:1.5.8 }
+                        #guitar-tuning
+                        #(offset-fret 5 (
+                          chord-shape 'bes,:1.5.8
+                          guitar-tuning))
+
+% es power chords, root pos. 3 notes, (oct. on top)
+\storePredefinedDiagram #a-shape-fretboard-table
+                        \chordmode { es,:1.5.8 }
+                        #guitar-tuning
+                        #(offset-fret 5 (
+                          chord-shape 'bes,:1.5.8
+                          guitar-tuning))
+
+% e power chords, root pos. 3 notes, (oct. on top)
+\storePredefinedDiagram #a-shape-fretboard-table
+                        \chordmode { e,:1.5.8 }
+                        #guitar-tuning
+                        #(offset-fret 6 (
+                          chord-shape 'bes,:1.5.8
+                          guitar-tuning))
+
+% f power chords, root pos. 3 notes, (oct. on top)
+\storePredefinedDiagram #a-shape-fretboard-table
+                        \chordmode { f,:1.5.8 }
+                        #guitar-tuning
+                        #(offset-fret 7 (
+                          chord-shape 'bes,:1.5.8
+                          guitar-tuning))
+
+% fis power chords, root pos. 3 notes, (oct. on top)
+\storePredefinedDiagram #a-shape-fretboard-table
+                        \chordmode { fis,:1.5.8 }
+                        #guitar-tuning
+                        #(offset-fret 8 (
+                          chord-shape 'bes,:1.5.8
+                          guitar-tuning))
+
+% ges power chords, root pos. 3 notes, (oct. on top)
+\storePredefinedDiagram #a-shape-fretboard-table
+                        \chordmode { ges,:1.5.8 }
+                        #guitar-tuning
+                        #(offset-fret 8 (
+                          chord-shape 'bes,:1.5.8
+                          guitar-tuning))
+
+% g power chords, root pos. 3 notes, (oct. on top)
+\storePredefinedDiagram #a-shape-fretboard-table
+                        \chordmode { g,:1.5.8 }
+                        #guitar-tuning
+                        #(offset-fret 9 (
+                          chord-shape 'bes,:1.5.8
+                          guitar-tuning))
+
+% gis power chords, root pos. 3 notes, (oct. on top)
+\storePredefinedDiagram #a-shape-fretboard-table
+                        \chordmode { gis,:1.5.8 }
+                        #guitar-tuning
+                        #(offset-fret 10 (
+                          chord-shape 'bes,:1.5.8
+                          guitar-tuning))
+
+% as power chords, root pos. 3 notes, (oct. on top)
+\storePredefinedDiagram #a-shape-fretboard-table
+                        \chordmode { as,:1.5.8 }
+                        #guitar-tuning
+                        #(offset-fret 10 (
+                          chord-shape 'bes,:1.5.8
+                          guitar-tuning))
+
+% a power chords, root pos. 3 notes, (oct. on top)
+\storePredefinedDiagram #a-shape-fretboard-table
+                        \chordmode { a,,:1.5.8 }
+                        #guitar-tuning
+                        #"x;o;2-1-(;2-1-);x;x;"
+
+% ais power chords, root pos. 3 notes, (oct. on top)
+\storePredefinedDiagram #a-shape-fretboard-table
+                        \chordmode { ais,,:1.5.8 }
+                        #guitar-tuning
+                        #(chord-shape 'bes,:1.5.8
+                          guitar-tuning)
+
+% bes power chords, root pos. 3 notes, (oct. on top)
+\storePredefinedDiagram #a-shape-fretboard-table
+                        \chordmode { bes,,:1.5.8 }
+                        #guitar-tuning
+                        #(chord-shape 'bes,:1.5.8
+                          guitar-tuning)
+
+% b power chords, root pos. 3 notes, (oct. on top)
+\storePredefinedDiagram #a-shape-fretboard-table
+                        \chordmode { b,,:1.5.8 }
+                        #guitar-tuning
+                        #(offset-fret 1 (
+                          chord-shape 'bes,:1.5.8
                           guitar-tuning))
 
 

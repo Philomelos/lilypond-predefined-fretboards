@@ -28,10 +28,12 @@ altShape = {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%% Octaves %%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%% Unisons %%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% * Monads (1 pitch name)
+%%%%%%%%%%%%%%%%%% Octaves %%%%%%%%%%%%%%%%%%%%
+
+% * Unisons (1 pitch name)
 % ** perfect octaves
 % *** (root position)
 % ***** two notes
@@ -47,6 +49,22 @@ altShape = {
                         \chordmode { b:1.8 }
                         #guitar-tuning
                         #"x;x;x;x;o;7-1;"
+
+%%%%%%%%%%%%%%%% FIFTHS %%%%%%%%%%%%%%%%%
+% add e-shape power chord definitions
+% this shape is also defined in e-shape.ly
+% it is needed here to provide for e shaped
+% power chords >= 12th fret
+\addChordShape #'f,:1.5.8
+               #guitar-tuning
+               #"1-1;3-3;3-4;x;x;x;"
+% e power chords (E-shape), root pos. 3 notes, (oct. on top)
+\storePredefinedDiagram #alt-shape-fretboard-table
+                        \chordmode { e,:1.5.8 }
+                        #guitar-tuning
+                        #(offset-fret 11 (
+                           chord-shape 'f,:1.5.8
+                           guitar-tuning))
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%% MAJOR TRIADS %%%%%%%%%%%%%%%%%
