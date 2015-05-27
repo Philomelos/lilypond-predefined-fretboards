@@ -1,2 +1,15 @@
 .DS_Store
 *.ly~
+*.svg
+*.pdf
+*.eps
+*.png
+*.tex
+*.texi
+*.count
+.gitignore~
+EADGBE/test/.DS_Store
+EADGBE/test/*.ly~
+EADGBE/test/*.svg
+EADGBE/test/*.pdf
+
