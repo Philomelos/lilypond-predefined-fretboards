@@ -25,6 +25,7 @@
 
 octavesMixedShapesInC = {
   \cShape
+%  \chordmode { c:1.8 }
   <c c'>1
   \aShape
   <c c'>1
@@ -52,7 +53,7 @@ octavesMixedShapesInCDescription = \lyricmode {
 }
 
 octavesTwoNotes = {
-% * Monads (1 pitch name)
+% * Unisons (1 pitch name)
 % **  perfect octaves
 % *** (root position)
 % **** (two notes)

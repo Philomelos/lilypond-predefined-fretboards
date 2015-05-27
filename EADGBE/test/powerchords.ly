@@ -29,6 +29,7 @@
 powerChordsMixedInC = {
   \powerChords
   \cShape
+%  \chordmode { c1:1.1 }
   <c' g'>1
 %  \chordmode {c1:1.5}
   \aShape
