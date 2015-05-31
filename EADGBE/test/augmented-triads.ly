@@ -1,11 +1,11 @@
 \version "2.19.15"
 %\include "predefined-guitar-fretboards.ly"
 \include "../c-shape.ly"
-%\include "../a-shape.ly"
-%\include "../g-shape.ly"
-%\include "../e-shape.ly"
-%\include "../d-shape.ly"
-%\include "../alt-shape.ly"
+\include "../a-shape.ly"
+\include "../g-shape.ly"
+\include "../e-shape.ly"
+\include "../d-shape.ly"
+\include "../alt-shape.ly"
 
 \layout {
    \context { %\Score
@@ -339,6 +339,68 @@ augmentedTriadsFirstInversionThreeNotesFifthOnTop = \chordmode {
   \bar "|."
 }
 
+augmentedTriadsFirstInversionFourNotesEighthOnTopChordSymbols = \chordmode {
+% * triads
+% ** augmented triads
+% *** 1st inversion
+% **** four notes
+% ***** 1st/8th on the top
+  %\cShape
+  c1:aug/e 
+  cis1:aug/eis 
+  des1:aug/f 
+  d1:aug/fis 
+  dis1:aug/fisis 
+  es1:aug/g 
+  e1:aug/gis 
+  f1:aug/a 
+  fis1:aug/ais 
+  ges1:aug/bes 
+  g1:aug/b 
+  gis1:aug/bis 
+  as1:aug/c 
+  a1:aug/cis 
+  ais1:aug/cisis 
+  bes1:aug/d 
+  b1:aug/dis
+}
+
+augmentedTriadsFirstInversionFourNotesEighthOnTopShapes = \lyricmode {
+% * triads
+% ** augmented triads
+% *** 1st inversion
+% **** four notes
+% ***** 1st/8th on the top
+  C-Shape \repeat unfold 16 { \skip1 }
+}
+
+augmentedTriadsFirstInversionFourNotesEighthOnTop = \chordmode {
+% * triads
+% ** augmented triads
+% *** 1st inversion
+% **** four notes
+% ***** 1st/8th on the top
+  \cShape
+  c,,1:3.10.12+.15^1
+  cis,,1:3.10.12+.15^1
+  des,,1:3.10.12+.15^1
+  d,,1:3.10.12+.15^1
+  dis,,1:3.10.12+.15^1
+  es,,1:3.10.12+.15^1
+  e,,1:3.10.12+.15^1
+  f,,1:3.10.12+.15^1
+  fis,,1:3.10.12+.15^1
+  ges,,1:3.10.12+.15^1
+  g,,1:3.10.12+.15^1
+  gis,,1:3.10.12+.15^1
+  as,,1:3.10.12+.15^1
+  a,,1:3.10.12+.15^1
+  ais,,1:3.10.12+.15^1
+  bes,,1:3.10.12+.15^1
+  b,,1:3.10.12+.15^1
+  \bar "|."
+}
+
 augmentedTriadsFirstInversionFourNotesThirdOnTopChordSymbols = \chordmode {
 % * triads
 % ** augmented triads
@@ -400,6 +462,7 @@ augmentedTriadsFirstInversionFourNotesThirdOnTop = \chordmode {
   b,,1:3.5+.8.10^1
   \bar "|."
 }
+
 augmentedTriadsFirstInversionFourNotesFifthOnTopChordSymbols = \chordmode {
 % * triads
 % ** augmented triads
@@ -499,6 +562,212 @@ augmentedTriadsFirstInversionFourNotesFifthOnTop = \chordmode {
   \bar "|."
 }
 
+augmentedTriadsFirstInversionFiveNotesThirdOnTopChordSymbols = \chordmode {
+% * triads
+% ** augmented triads
+% *** 1st inversion
+% **** five notes
+% ***** 3rd on the top
+  %\cShape
+  c1:aug/e 
+  cis1:aug/eis 
+  des1:aug/f 
+  d1:aug/fis 
+  dis1:aug/fisis 
+  es1:aug/g 
+  e1:aug/gis 
+  f1:aug/a 
+  fis1:aug/ais 
+  ges1:aug/bes 
+  g1:aug/b 
+  gis1:aug/bis 
+  as1:aug/c 
+  a1:aug/cis 
+  ais1:aug/cisis 
+  bes1:aug/d 
+  b1:aug/dis
+}
+
+augmentedTriadsFirstInversionFiveNotesThirdOnTopShapes = \lyricmode {
+% * triads
+% ** augmented triads
+% *** 1st inversion
+% **** five notes
+% ***** 3rd on the top
+  C-Shape \repeat unfold 16 { \skip1 }
+}
+
+augmentedTriadsFirstInversionFiveNotesThirdOnTop = \chordmode {
+% * triads
+% ** augmented triads
+% *** 1st inversion
+% **** five notes
+% ***** 3rd on the top
+  \cShape
+  c,,1:3.8.10.12+.17^1
+  cis,,1:3.8.10.12+.17^1
+  des,,1:3.8.10.12+.17^1
+  d,,1:3.8.10.12+.17^1
+  dis,,1:3.8.10.12+.17^1
+  es,,1:3.8.10.12+.17^1
+  e,,1:3.8.10.12+.17^1
+  f,,1:3.8.10.12+.17^1
+  fis,,1:3.8.10.12+.17^1
+  ges,,1:3.8.10.12+.17^1
+  g,,1:3.8.10.12+.17^1
+  gis,,1:3.8.10.12+.17^1
+  as,,1:3.8.10.12+.17^1
+  a,,1:3.8.10.12+.17^1
+  ais,,1:3.8.10.12+.17^1
+  bes,,1:3.8.10.12+.17^1
+  b,,1:3.8.10.12+.17^1
+  \bar "|."
+}
+
+augmentedTriadsSecondInversionThreeNotesRootOnTopChordSymbols = \chordmode {
+% * triads
+% ** augmented triads
+% *** 2nd inversion
+% **** three notes
+% ***** root on the top
+  %\cShape
+  c1:aug/gis
+  cis1:aug/gisis 
+  des1:aug/a 
+  d1:aug/ais 
+  dis1:aug/aisis 
+  es1:aug/b
+  e1:aug/bis 
+  f1:aug/cis
+  fis1:aug/cisis 
+  ges1:aug/d 
+  g1:aug/dis 
+  gis1:aug/disis 
+  as1:aug/e 
+  a1:aug/eis 
+  ais1:aug/eisis 
+  bes1:aug/fis
+  b1:aug/fisis
+}
+
+augmentedTriadsSecondInversionThreeNotesRootOnTopShapes = \lyricmode {
+% * triads
+% ** augmented triads
+% *** 2nd inversion
+% **** three notes
+% ***** root on the top
+  C-Shape \repeat unfold 16 { \skip1 }
+}
+
+augmentedTriadsSecondInversionThreeNotesRootOnTop = \chordmode {
+% * triads
+% ** augmented triads
+% *** 2nd inversion
+% **** three notes
+% ***** root on the top
+  \cShape
+  c,,1:5+.10.15^1.3
+  cis,,1:5+.10.15^1.3
+  des,,1:5+.10.15^1.3
+  d,,1:5+.10.15^1.3
+  dis,,1:5+.10.15^1.3
+  es,,1:5+.10.15^1.3
+  e,,1:5+.10.15^1.3
+  f,,1:5+.10.15^1.3
+  fis,,1:5+.10.15^1.3
+  ges,,1:5+.10.15^1.3
+  g,,1:5+.10.15^1.3
+  gis,,1:5+.10.15^1.3
+  as,,1:5+.10.15^1.3
+  a,,1:5+.10.15^1.3
+  ais,,1:5+.10.15^1.3
+  bes,,1:5+.10.15^1.3
+  b,,,1:5+.10.15^1.3
+  \bar "|."
+}
+
+augmentedTriadsSecondInversionThreeNotesThirdOnTopChordSymbols = \chordmode {
+% * triads
+% ** augmented triads
+% *** 2nd inversion
+% **** three notes
+% ***** 3rd on the top
+  %\cShape
+  \repeat unfold 2 {
+    c1:aug/gis
+    cis1:aug/gisis 
+    des1:aug/a 
+    d1:aug/ais 
+    dis1:aug/aisis 
+    es1:aug/b
+    e1:aug/bis 
+    f1:aug/cis
+    fis1:aug/cisis 
+    ges1:aug/d 
+    g1:aug/dis 
+    gis1:aug/disis 
+    as1:aug/e 
+    a1:aug/eis 
+    ais1:aug/eisis 
+    bes1:aug/fis
+    b1:aug/fisis
+  }
+}
+
+augmentedTriadsSecondInversionThreeNotesThirdOnTopShapes = \lyricmode {
+% * triads
+% ** augmented triads
+% *** 2nd inversion
+% **** three notes
+% ***** 3rd on the top
+  C-Shape \repeat unfold 33 { \skip1 }
+}
+
+augmentedTriadsSecondInversionThreeNotesThirdOnTop = \chordmode {
+% * triads
+% ** augmented triads
+% *** 2nd inversion
+% **** three notes
+% ***** 3rd on the top
+  \cShape
+  c,1:5+.8.10^1.3
+  cis,1:5+.8.10^1.3
+  des,1:5+.8.10^1.3
+  d,1:5+.8.10^1.3
+  dis,1:5+.8.10^1.3
+  es,1:5+.8.10^1.3
+  e,1:5+.8.10^1.3
+  f,1:5+.8.10^1.3
+  fis,1:5+.8.10^1.3
+  ges,1:5+.8.10^1.3
+  g,1:5+.8.10^1.3
+  gis,1:5+.8.10^1.3
+  as,1:5+.8.10^1.3
+  a,1:5+.8.10^1.3
+  ais,1:5+.8.10^1.3
+  bes,1:5+.8.10^1.3
+  b,,1:5+.8.10^1.3
+  \bar "||"
+  c,,1:5+.8.10^1.3
+  cis,,1:5+.8.10^1.3
+  des,,1:5+.8.10^1.3
+  d,,1:5+.8.10^1.3
+  dis,,1:5+.8.10^1.3
+  es,,1:5+.8.10^1.3
+  e,,1:5+.8.10^1.3
+  f,,1:5+.8.10^1.3
+  fis,,1:5+.8.10^1.3
+  ges,,1:5+.8.10^1.3
+  g,,1:5+.8.10^1.3
+  gis,,1:5+.8.10^1.3
+  as,,1:5+.8.10^1.3
+  a,,1:5+.8.10^1.3
+  ais,,,1:5+.8.10^1.3
+  bes,,,1:5+.8.10^1.3
+  b,,,1:5+.8.10^1.3
+  \bar "|."
+}
+
 augmentedTriadsSecondInversionThreeNotesFifthOnTopChordSymbols = \chordmode {
 % * triads
 % ** augmented triads
@@ -561,7 +830,7 @@ augmentedTriadsSecondInversionThreeNotesFifthOnTop = \chordmode {
   \bar "|."
 }
 
-augmentedTriadsSecondInversionFourNotesEighthOnTopChordSymbols = \chordmode {
+augmentedTriadsSecondInversionFourNotesRootOnTopChordSymbols = \chordmode {
 % * triads
 % ** augmented triads
 % *** 2nd inversion
@@ -587,7 +856,7 @@ augmentedTriadsSecondInversionFourNotesEighthOnTopChordSymbols = \chordmode {
   b1:aug/fisis
 }
 
-augmentedTriadsSecondInversionFourNotesEighthOnTopShapes = \lyricmode {
+augmentedTriadsSecondInversionFourNotesRootOnTopShapes = \lyricmode {
 % * triads
 % ** augmented triads
 % *** 2nd inversion
@@ -596,12 +865,12 @@ augmentedTriadsSecondInversionFourNotesEighthOnTopShapes = \lyricmode {
   C-Shape \repeat unfold 16 { \skip1 }
 }
 
-augmentedTriadsSecondInversionFourNotesEighthOnTop = \chordmode {
+augmentedTriadsSecondInversionFourNotesRootOnTop = \chordmode {
 % * triads
 % ** augmented triads
 % *** 2nd inversion
 % **** four notes
-% ***** 8th on the top
+% ***** root on the top
   \cShape
   c,,1:5+.10.12+.15^1.3
   cis,,1:5+.10.12+.15^1.3
@@ -685,12 +954,12 @@ augmentedTriadsSecondInversionFourNotesFifthOnTop = \chordmode {
   \bar "|."
 }
 
-augmentedTriadsSecondInversionFiveNotesEighthOnTopChordSymbols = \chordmode {
+augmentedTriadsSecondInversionFiveNotesRootOnTopChordSymbols = \chordmode {
 % * triads
 % ** augmented triads
 % *** 2nd inversion
 % **** five notes
-% ***** 8th on the top
+% ***** root on the top
   %\cShape
   c1:aug/gis
   cis1:aug/gisis 
@@ -711,16 +980,16 @@ augmentedTriadsSecondInversionFiveNotesEighthOnTopChordSymbols = \chordmode {
   b1:aug/fisis
 }
 
-augmentedTriadsSecondInversionFiveNotesEighthOnTopShapes = \lyricmode {
+augmentedTriadsSecondInversionFiveNotesRootOnTopShapes = \lyricmode {
 % * triads
 % ** augmented triads
 % *** 2nd inversion
 % **** five notes
-% ***** 8th on the top
+% ***** root on the top
   C-Shape \repeat unfold 16 { \skip1 }
 }
 
-augmentedTriadsSecondInversionFiveNotesEighthOnTop = \chordmode {
+augmentedTriadsSecondInversionFiveNotesRootOnTop = \chordmode {
 % * triads
 % ** augmented triads
 % *** 2nd inversion
@@ -924,6 +1193,34 @@ augmentedTriadsSecondInversionFiveNotesEighthOnTop = \chordmode {
   \score {
     <<
       \new ChordNames {
+        \augmentedTriadsFirstInversionFourNotesEighthOnTopChordSymbols
+      }
+      \new FretBoards {
+        \augmentedTriadsFirstInversionFourNotesEighthOnTop
+      }
+      \new Voice = "augmentedtriads" {
+        \clef "treble_8"
+        \augmentedTriadsFirstInversionFourNotesEighthOnTop
+      }
+      \new Lyrics \lyricsto augmentedtriads {
+        \augmentedTriadsFirstInversionFourNotesEighthOnTopShapes
+      }
+      \new TabStaff {
+        \augmentedTriadsFirstInversionFourNotesEighthOnTop
+      }
+    >>
+    \header {
+      title = "Augmented Triads (Mixed Shapes)"
+      subtitle = "1st inversion"
+      subsubtitle = "four notes"
+      piece = "1st/8th on the top"
+    }
+  }
+%}
+%{
+  \score {
+    <<
+      \new ChordNames {
         \augmentedTriadsFirstInversionFourNotesThirdOnTopChordSymbols
       }
       \new FretBoards {
@@ -980,6 +1277,91 @@ augmentedTriadsSecondInversionFiveNotesEighthOnTop = \chordmode {
   \score {
     <<
       \new ChordNames {
+        \augmentedTriadsFirstInversionFiveNotesThirdOnTopChordSymbols
+      }
+      \new FretBoards {
+        \augmentedTriadsFirstInversionFiveNotesThirdOnTop
+      }
+      \new Voice = "augmentedtriads" {
+        \clef "treble_8"
+        \augmentedTriadsFirstInversionFiveNotesThirdOnTop
+      }
+      \new Lyrics \lyricsto augmentedtriads {
+        \augmentedTriadsFirstInversionFiveNotesThirdOnTopShapes
+      }
+      \new TabStaff {
+        \augmentedTriadsFirstInversionFiveNotesThirdOnTop
+      }
+    >>
+    \header {
+      title = "Augmented Triads (Mixed Shapes)"
+      subtitle = "1st inversion"
+      subsubtitle = "five notes"
+      piece = "3rd on the top"
+    }
+  }
+%}
+%{
+  \score {
+    <<
+      \new ChordNames {
+        \augmentedTriadsSecondInversionThreeNotesRootOnTopChordSymbols
+      }
+      \new FretBoards {
+        \augmentedTriadsSecondInversionThreeNotesRootOnTop
+      }
+      \new Voice = "augmentedtriads" {
+        \clef "treble_8"
+        \augmentedTriadsSecondInversionThreeNotesRootOnTop
+      }
+      \new Lyrics \lyricsto augmentedtriads {
+        \augmentedTriadsSecondInversionThreeNotesRootOnTopShapes
+      }
+      \new TabStaff {
+        \augmentedTriadsSecondInversionThreeNotesRootOnTop
+      }
+    >>
+    \header {
+      title = "Augmented Triads (Mixed Shapes)"
+      subtitle = "2nd inversion"
+      subsubtitle = "three notes"
+      piece = "root on the top"
+    }
+  }
+%}
+%%{
+  \score {
+    <<
+      \new ChordNames {
+        \augmentedTriadsSecondInversionThreeNotesThirdOnTopChordSymbols
+      }
+      \new FretBoards {
+        \augmentedTriadsSecondInversionThreeNotesThirdOnTop
+      }
+      \new Voice = "augmentedtriads" {
+        \clef "treble_8"
+        \augmentedTriadsSecondInversionThreeNotesThirdOnTop
+      }
+      \new Lyrics \lyricsto augmentedtriads {
+        \augmentedTriadsSecondInversionThreeNotesThirdOnTopShapes
+      }
+      \new TabStaff {
+        \augmentedTriadsSecondInversionThreeNotesThirdOnTop
+      }
+    >>
+    \header {
+      title = "Augmented Triads (Mixed Shapes)"
+      subtitle = "2nd inversion"
+      subsubtitle = "three notes"
+      piece = "3rd on the top"
+    }
+  }
+%}
+
+%{
+  \score {
+    <<
+      \new ChordNames {
         \augmentedTriadsSecondInversionThreeNotesFifthOnTopChordSymbols
       }
       \new FretBoards {
@@ -1008,27 +1390,27 @@ augmentedTriadsSecondInversionFiveNotesEighthOnTop = \chordmode {
   \score {
     <<
       \new ChordNames {
-        \augmentedTriadsSecondInversionFourNotesEighthOnTopChordSymbols
+        \augmentedTriadsSecondInversionFourNotesRootOnTopChordSymbols
       }
       \new FretBoards {
-        \augmentedTriadsSecondInversionFourNotesEighthOnTop
+        \augmentedTriadsSecondInversionFourNotesRootOnTop
       }
       \new Voice = "augmentedtriads" {
         \clef "treble_8"
-        \augmentedTriadsSecondInversionFourNotesEighthOnTop
+        \augmentedTriadsSecondInversionFourNotesRootOnTop
       }
       \new Lyrics \lyricsto augmentedtriads {
-        \augmentedTriadsSecondInversionFourNotesEighthOnTopShapes
+        \augmentedTriadsSecondInversionFourNotesRootOnTopShapes
       }
       \new TabStaff {
-        \augmentedTriadsSecondInversionFourNotesEighthOnTop
+        \augmentedTriadsSecondInversionFourNotesRootOnTop
       }
     >>
     \header {
       title = "Augmented Triads (Mixed Shapes)"
       subtitle = "2nd inversion"
       subsubtitle = "four notes"
-      piece = "8th on the top"
+      piece = "root on the top"
     }
   }
 %}
@@ -1064,27 +1446,27 @@ augmentedTriadsSecondInversionFiveNotesEighthOnTop = \chordmode {
   \score {
     <<
       \new ChordNames {
-        \augmentedTriadsSecondInversionFiveNotesEighthOnTopChordSymbols
+        \augmentedTriadsSecondInversionFiveNotesRootOnTopChordSymbols
       }
       \new FretBoards {
-        \augmentedTriadsSecondInversionFiveNotesEighthOnTop
+        \augmentedTriadsSecondInversionFiveNotesRootOnTop
       }
       \new Voice = "augmentedtriads" {
         \clef "treble_8"
-        \augmentedTriadsSecondInversionFiveNotesEighthOnTop
+        \augmentedTriadsSecondInversionFiveNotesRootOnTop
       }
       \new Lyrics \lyricsto augmentedtriads {
-        \augmentedTriadsSecondInversionFiveNotesEighthOnTopShapes
+        \augmentedTriadsSecondInversionFiveNotesRootOnTopShapes
       }
       \new TabStaff {
-        \augmentedTriadsSecondInversionFiveNotesEighthOnTop
+        \augmentedTriadsSecondInversionFiveNotesRootOnTop
       }
     >>
     \header {
       title = "Augmented Triads (Mixed Shapes)"
       subtitle = "2nd inversion"
       subsubtitle = "five notes"
-      piece = "8th on the top"
+      piece = "root on the top"
     }
   }
 %}
