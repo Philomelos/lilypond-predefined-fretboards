@@ -1755,6 +1755,68 @@ majorTriadsFirstInversionSixNotesThirdOnTop = {
   \transpose c d { <e,\6 g,\5 c\4 g\3 c'\2 e'\1>1 }
 }
 
+majorTriadsSecondInversionThreeNotesRootOnTopChordSymbols = \chordmode {
+% * triads
+% ** major triads
+% *** 2nd inversion
+% **** three notes
+% ***** root on the top
+  %\cShape
+  c1:/gis
+  cis1:/gisis 
+  des1:/a 
+  d1:/ais 
+  dis1:/aisis 
+  es1:/b
+  e1:/bis 
+  f1:/cis
+  fis1:/cisis 
+  ges1:/d 
+  g1:/dis 
+  gis1:/disis 
+  as1:/e 
+  a1:/eis 
+  ais1:/eisis 
+  bes1:/fis
+  b1:/fisis
+}
+
+majorTriadsSecondInversionThreeNotesRootOnTopShapes = \lyricmode {
+% * triads
+% ** major triads
+% *** 2nd inversion
+% **** three notes
+% ***** root on the top
+  E-Shape \repeat unfold 16 { \skip1 }
+}
+
+majorTriadsSecondInversionThreeNotesRootOnTop = \chordmode {
+% * triads
+% ** major triads
+% *** 2nd inversion
+% **** three notes
+% ***** root on the top
+  \cShape
+  c,,1:5.10.15^1.3
+  cis,,1:5.10.15^1.3
+  des,,1:5.10.15^1.3
+  d,,1:5.10.15^1.3
+  dis,,1:5.10.15^1.3
+  es,,1:5.10.15^1.3
+  e,,1:5.10.15^1.3
+  f,,1:5.10.15^1.3
+  fis,,1:5.10.15^1.3
+  ges,,1:5.10.15^1.3
+  g,,1:5.10.15^1.3
+  gis,,1:5.10.15^1.3
+  as,,1:5.10.15^1.3
+  a,,1:5.10.15^1.3
+  ais,,1:5.10.15^1.3
+  bes,,1:5.10.15^1.3
+  b,,,1:5.10.15^1.3
+  \bar "|."
+}
+
 majorTriadsSecondInversionThreeNotesThirdOnTopChordSymbols = \chordmode {
   %\cShape
   c1/g
@@ -2879,6 +2941,34 @@ majorTriadsSecondInversionSixNotesFifthOnTop = {
 }
 
 \bookpart {
+%%{
+  \score {
+    <<
+      \new ChordNames {
+        \majorTriadsSecondInversionThreeNotesRootOnTopChordSymbols
+      }
+      \new FretBoards {
+        \majorTriadsSecondInversionThreeNotesRootOnTop
+      }
+      \new Voice = "augmentedtriads" {
+        \clef "treble_8"
+        \majorTriadsSecondInversionThreeNotesRootOnTop
+      }
+      \new Lyrics \lyricsto augmentedtriads {
+        \majorTriadsSecondInversionThreeNotesRootOnTopShapes
+      }
+      \new TabStaff {
+        \majorTriadsSecondInversionThreeNotesRootOnTop
+      }
+    >>
+    \header {
+      title = "Major Triads (Mixed Shapes)"
+      subtitle = "2nd inversion"
+      subsubtitle = "three notes"
+      piece = "root on the top"
+    }
+  }
+%}
 %{  
   \score {
     <<    
