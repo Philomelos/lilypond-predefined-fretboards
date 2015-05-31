@@ -3942,146 +3942,130 @@ eShape = {
                           chord-shape 'e:5+.8.10^1.3 
                           guitar-tuning))
 
-%%%%%% augmented triads
-%%%%% 2nd inversion
-%%%% chords of four notes
-%%% fifth position
-%% add e-shape augmented triad definitions (2nd inversion, 4 nts, 5th sop.)
-\addChordShape #'e:5+.8.10.12+^1.3 
+% * triads
+% ** augmented triads
+% *** 2nd inversion
+% **** four notes
+% ***** 5th on top
+% ****** add e-shape augm. triad definitions (2nd inv., 4 nts, 5th on top)
+\addChordShape #'e,:5+.8.10.12+^1.3 
                #guitar-tuning 
-               #"x;3-3;2-2;1-1-(;1-1-);x;"
+               #"x;3-3;2-2;1-1-(;1-1-);x;" %same shape as c-shape aug. tr. root pos., 4 n., 8th on top)
 
 
-%% store predefined e-shape augmented triad diagrams (2nd inv., 4 n., 5th pos.)
-% c augmented triads, 2nd inversion 4 notes, fifth position
-\storePredefinedDiagram #e-shape-fretboard-table
-                        \chordmode { c,:5+.8.10.12+^1.3  }
+% ****** store predefined e-shape aug. triad diagrams (2nd inv., 4 n., 5th on top)
+% ******* c augmented triads, 2nd inversion, 4 notes, 5th on top
+\storePredefinedDiagram #e-shape-fretboard-table \chordmode { c,:5+.8.10.12+^1.3 }
                         #guitar-tuning
                         #(offset-fret 8 (
-                          chord-shape 'c:5+.8.10.12+^1.3
+                          chord-shape 'e,:5+.8.10.12+^1.3
                           guitar-tuning))
 
-% cis augmented triads, 2nd inversion 4 notes, fifth position
-\storePredefinedDiagram #e-shape-fretboard-table
-                        \chordmode { cis,:5+.8.10.12+^1.3  }
+% ******* cis augmented triads, 2nd inversion, 4 notes, 5th on top
+\storePredefinedDiagram #e-shape-fretboard-table \chordmode { cis,:5+.8.10.12+^1.3 }
                         #guitar-tuning
                         #(offset-fret 9 (
-                          chord-shape 'c:5+.8.10.12+^1.3
+                          chord-shape 'e,:5+.8.10.12+^1.3
                           guitar-tuning))
 
-% des augmented triads, 2nd inversion 4 notes, fifth position
-\storePredefinedDiagram #e-shape-fretboard-table
-                        \chordmode { des,:5+.8.10.12+^1.3  }
+% ******* des augmented triads, 2nd inversion, 4 notes, 5th on top
+\storePredefinedDiagram #e-shape-fretboard-table \chordmode { des,:5+.8.10.12+^1.3 }
                         #guitar-tuning
                         #(offset-fret 9 (
-                          chord-shape 'c:5+.8.10.12+^1.3
+                          chord-shape 'e,:5+.8.10.12+^1.3
                           guitar-tuning))
 
-% d augmented triads, 2nd inversion 4 notes, fifth position
-\storePredefinedDiagram #e-shape-fretboard-table
-                        \chordmode { d,:5+.8.10.12+^1.3  }
+% ******* d augmented triads, 2nd inversion, 4 notes, 5th on top
+\storePredefinedDiagram #e-shape-fretboard-table \chordmode { d,:5+.8.10.12+^1.3 }
                         #guitar-tuning
                         #(offset-fret 10 (
-                          chord-shape 'c:5+.8.10.12+^1.3
+                          chord-shape 'e,:5+.8.10.12+^1.3
                           guitar-tuning))
 
-% dis augmented triads, 2nd inversion 4 notes, fifth position
-\storePredefinedDiagram #e-shape-fretboard-table
-                        \chordmode { dis,:5+.8.10.12+^1.3  }
+% ******* dis augmented triads, 2nd inversion, 4 notes, 5th on top
+\storePredefinedDiagram #e-shape-fretboard-table \chordmode { dis,:5+.8.10.12+^1.3 }
                         #guitar-tuning
                         #"x;2-2;1-1;o;o;x;"
 
-% es augmented triads, 2nd inversion 4 notes, fifth position
-\storePredefinedDiagram #e-shape-fretboard-table
-                        \chordmode { es,:5+.8.10.12+^1.3  }
+% ******* es augmented triads, 2nd inversion, 4 notes, 5th on top
+\storePredefinedDiagram #e-shape-fretboard-table \chordmode { es,:5+.8.10.12+^1.3 }
                         #guitar-tuning
                         #"x;2-2;1-1;o;o;x;"
 
-% e augmented triads, 2nd inversion 4 notes, fifth position
-\storePredefinedDiagram #e-shape-fretboard-table
-                        \chordmode { e,:5+.8.10.12+^1.3  }
+% ******* e augmented triads, 2nd inversion, 4 notes, 5th on top
+\storePredefinedDiagram #e-shape-fretboard-table \chordmode { e,:5+.8.10.12+^1.3 }
                         #guitar-tuning
-                        #(chord-shape 'c:5+.8.10.12+^1.3
+                        #(chord-shape 'e,:5+.8.10.12+^1.3
                           guitar-tuning)
 
-% f augmented triads, 2nd inversion 4 notes, fifth position
-\storePredefinedDiagram #e-shape-fretboard-table
-                        \chordmode { f,:5+.8.10.12+^1.3  }
+% ******* f augmented triads, 2nd inversion, 4 notes, 5th on top
+\storePredefinedDiagram #e-shape-fretboard-table \chordmode { f,:5+.8.10.12+^1.3 }
                         #guitar-tuning
                         #(offset-fret 1 (
-                          chord-shape 'c:5+.8.10.12+^1.3
+                          chord-shape 'e,:5+.8.10.12+^1.3
                           guitar-tuning))
 
-% fis augmented triads, 2nd inversion 4 notes, fifth position
-\storePredefinedDiagram #e-shape-fretboard-table
-                        \chordmode { fis,:5+.8.10.12+^1.3  }
+% ******* fis augmented triads, 2nd inversion, 4 notes, 5th on top
+\storePredefinedDiagram #e-shape-fretboard-table \chordmode { fis,:5+.8.10.12+^1.3 }
                         #guitar-tuning
                         #(offset-fret 2 (
-                          chord-shape 'c:5+.8.10.12+^1.3
+                          chord-shape 'e,:5+.8.10.12+^1.3
                           guitar-tuning))
 
-% ges augmented triads, 2nd inversion 4 notes, fifth position
-\storePredefinedDiagram #e-shape-fretboard-table
-                        \chordmode { ges,:5+.8.10.12+^1.3  }
+% ******* ges augmented triads, 2nd inversion, 4 notes, 5th on top
+\storePredefinedDiagram #e-shape-fretboard-table \chordmode { ges,:5+.8.10.12+^1.3 }
                         #guitar-tuning
                         #(offset-fret 2 (
-                          chord-shape 'c:5+.8.10.12+^1.3
+                          chord-shape 'e,:5+.8.10.12+^1.3
                           guitar-tuning))
 
-% g augmented triads, 2nd inversion 4 notes, fifth position
-\storePredefinedDiagram #e-shape-fretboard-table
-                        \chordmode { g,:5+.8.10.12+^1.3  }
+% ******* g augmented triads, 2nd inversion, 4 notes, 5th on top
+\storePredefinedDiagram #e-shape-fretboard-table \chordmode { g,:5+.8.10.12+^1.3 }
                         #guitar-tuning
                         #(offset-fret 3 (
-                          chord-shape 'c:5+.8.10.12+^1.3
+                          chord-shape 'e,:5+.8.10.12+^1.3
                           guitar-tuning))
 
-% gis augmented triads, 2nd inversion 4 notes, fifth position
-\storePredefinedDiagram #e-shape-fretboard-table
-                        \chordmode { gis,:5+.8.10.12+^1.3  }
+% ******* gis augmented triads, 2nd inversion, 4 notes, 5th on top
+\storePredefinedDiagram #e-shape-fretboard-table \chordmode { gis,:5+.8.10.12+^1.3 }
                         #guitar-tuning
                         #(offset-fret 4 (
-                          chord-shape 'c:5+.8.10.12+^1.3
+                          chord-shape 'e,:5+.8.10.12+^1.3
                           guitar-tuning))
 
-% as augmented triads, 2nd inversion 4 notes, fifth position
-\storePredefinedDiagram #e-shape-fretboard-table
-                        \chordmode { as,:5+.8.10.12+^1.3  }
+% ******* as augmented triads, 2nd inversion, 4 notes, 5th on top
+\storePredefinedDiagram #e-shape-fretboard-table \chordmode { as,:5+.8.10.12+^1.3 }
                         #guitar-tuning
                         #(offset-fret 4 (
-                          chord-shape 'c:5+.8.10.12+^1.3
+                          chord-shape 'e,:5+.8.10.12+^1.3
                           guitar-tuning))
 
-% a augmented triads, 2nd inversion 4 notes, fifth position
-\storePredefinedDiagram #e-shape-fretboard-table
-                        \chordmode { a,:5+.8.10.12+^1.3  }
+% ******* a augmented triads, 2nd inversion, 4 notes, 5th on top
+\storePredefinedDiagram #e-shape-fretboard-table \chordmode { a,:5+.8.10.12+^1.3 }
                         #guitar-tuning
                         #(offset-fret 5 (
-                          chord-shape 'c:5+.8.10.12+^1.3
+                          chord-shape 'e,:5+.8.10.12+^1.3
                           guitar-tuning))
 
-% ais augmented triads, 2nd inversion 4 notes, fifth position
-\storePredefinedDiagram #e-shape-fretboard-table
-                        \chordmode { ais,:5+.8.10.12+^1.3  }
+% ******* ais augmented triads, 2nd inversion, 4 notes, 5th on top
+\storePredefinedDiagram #e-shape-fretboard-table \chordmode { ais,:5+.8.10.12+^1.3 }
                         #guitar-tuning
                         #(offset-fret 6 (
-                          chord-shape 'c:5+.8.10.12+^1.3
+                          chord-shape 'e,:5+.8.10.12+^1.3
                           guitar-tuning))
 
-% bes augmented triads, 2nd inversion 4 notes, fifth position
-\storePredefinedDiagram #e-shape-fretboard-table
-                        \chordmode { bes,:5+.8.10.12+^1.3  }
+% ******* bes augmented triads, 2nd inversion, 4 notes, 5th on top
+\storePredefinedDiagram #e-shape-fretboard-table \chordmode { bes,:5+.8.10.12+^1.3 }
                         #guitar-tuning
                         #(offset-fret 6 (
-                          chord-shape 'c:5+.8.10.12+^1.3
+                          chord-shape 'e,:5+.8.10.12+^1.3
                           guitar-tuning))
 
-% b augmented triads, 2nd inversion 4 notes, fifth position
-\storePredefinedDiagram #e-shape-fretboard-table
-                        \chordmode { b,:5+.8.10.12+^1.3  }
+% ******* b augmented triads, 2nd inversion, 4 notes, 5th on top
+\storePredefinedDiagram #e-shape-fretboard-table \chordmode { b,:5+.8.10.12+^1.3 }
                         #guitar-tuning
                         #(offset-fret 7 (
-                          chord-shape 'c:5+.8.10.12+^1.3
+                          chord-shape 'e,:5+.8.10.12+^1.3
                           guitar-tuning))
 
 %%%%%% augmented triads
