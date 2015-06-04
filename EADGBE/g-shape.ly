@@ -1,21 +1,20 @@
-%%%% This file is part of LilyPond, the GNU music typesetter.
-%%%%
-%%%% Copyright (C) 2015-- Patrick L. Schmidt <pls@philomelos.net>
-%%%%
-%%%% LilyPond is free software: you can redistribute it and/or modify
+%%%% A library for predefined fretboard diagrams to be used with LilyPond.
+%%%% Copyright (C) 2015  Patrick L. Schmidt <pls@philomelos.net>
+
+%%%% This library is free software: you can redistribute it and/or modify
 %%%% it under the terms of the GNU General Public License as published by
 %%%% the Free Software Foundation, either version 3 of the License, or
 %%%% (at your option) any later version.
-%%%%
-%%%% LilyPond is distributed in the hope that it will be useful,
+
+%%%% This library is distributed in the hope that it will be useful,
 %%%% but WITHOUT ANY WARRANTY; without even the implied warranty of
 %%%% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 %%%% GNU General Public License for more details.
-%%%%
-%%%% You should have received a copy of the GNU General Public License
-%%%% along with LilyPond.  If not, see <http://www.gnu.org/licenses/>.
 
-\version "2.19.11"
+%%%% You should have received a copy of the GNU General Public License
+%%%% along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+%\version "2.19.15"
 
 #(define g-shape-fretboard-table (make-fretboard-table))
 
@@ -1675,142 +1674,130 @@ gShape = {
                         #(offset-fret 3 (chord-shape 'as:1.3.5.8.12
                           guitar-tuning))
 
-%%%%%% major triads
-%%%%% root position
-%%%% chords of five notes
-%%% octave position (soprano)
-%% add g-shape major triad definitions (root pos., 6 notes, octave position)
-\addChordShape #'as:1.3.5.8.10.15
+% * triads
+% ** major triads
+% *** root position
+% **** six notes
+% ***** 8th on top
+% ****** add g-shape major triad definitions (root pos., 6 notes, 8th on top)
+\addChordShape #'as,:1.3.5.8.10.15
                #guitar-tuning
                #"4-4;3-2;1-1-(;1-1;1-1-);4-4;"
 
-%% store predefined g-shape major triad diagrams (root pos., 6 notes, 8th sop.)
-% c major triads, root pos. 6 notes, oct. position
-\storePredefinedDiagram #g-shape-fretboard-table
-                        \chordmode { c:1.3.5.8.10.15 }
+% ****** store predefined g-shape major triad diagrams (root pos., 6 n., 8th on top)
+% ******* c major triads, root pos. 6 notes, 8th on top
+\storePredefinedDiagram #g-shape-fretboard-table \chordmode { c,:1.3.5.8.10.15 }
                         #guitar-tuning
                         #(offset-fret 4 (
-                          chord-shape 'as:1.3.5.8.10.15
+                          chord-shape 'as,:1.3.5.8.10.15
                           guitar-tuning))
 
-% cis major triads, root pos. 6 notes, 8th sop.
-\storePredefinedDiagram #g-shape-fretboard-table
-                        \chordmode { cis:1.3.5.8.10.15 }
+% ******* cis major triads, root pos. 6 notes, 8th on top
+\storePredefinedDiagram #g-shape-fretboard-table \chordmode { cis,:1.3.5.8.10.15 }
                         #guitar-tuning
                         #(offset-fret 5 (
-                          chord-shape 'as:1.3.5.8.10.15
+                          chord-shape 'as,:1.3.5.8.10.15
                           guitar-tuning))
 
-% des major triads, root pos. 6 notes, 8th sop.
-\storePredefinedDiagram #g-shape-fretboard-table
-                        \chordmode { des:1.3.5.8.10.15 }
+% ******* des major triads, root pos. 6 notes, 8th on top
+\storePredefinedDiagram #g-shape-fretboard-table \chordmode { des,:1.3.5.8.10.15 }
                         #guitar-tuning
                         #(offset-fret 5 (
-                          chord-shape 'as:1.3.5.8.10.15
+                          chord-shape 'as,:1.3.5.8.10.15
                           guitar-tuning))
 
-% d major triads, root pos. 6 notes, 8th sop.
-\storePredefinedDiagram #g-shape-fretboard-table
-                        \chordmode { d:1.3.5.8.10.15 }
+% ******* d major triads, root pos. 6 notes, 8th on top
+\storePredefinedDiagram #g-shape-fretboard-table \chordmode { d,:1.3.5.8.10.15 }
                         #guitar-tuning
                         #(offset-fret 6 (
-                          chord-shape 'as:1.3.5.8.10.15
+                          chord-shape 'as,:1.3.5.8.10.15
                           guitar-tuning))
 
-% dis major triads, root pos. 6 notes, 8th sop.
-\storePredefinedDiagram #g-shape-fretboard-table
-                        \chordmode { dis:1.3.5.8.10.15 }
+% ******* dis major triads, root pos. 6 notes, 8th on top
+\storePredefinedDiagram #g-shape-fretboard-table \chordmode { dis,:1.3.5.8.10.15 }
                         #guitar-tuning
                         #(offset-fret 7 (
-                          chord-shape 'as:1.3.5.8.10.15
+                          chord-shape 'as,:1.3.5.8.10.15
                           guitar-tuning))
 
-% es major triads, root pos. 6 notes, 8th sop.
-\storePredefinedDiagram #g-shape-fretboard-table
-                        \chordmode { es:1.3.5.8.10.15 }
+% ******* es major triads, root pos. 6 notes, 8th on top
+\storePredefinedDiagram #g-shape-fretboard-table \chordmode { es,:1.3.5.8.10.15 }
                         #guitar-tuning
                         #(offset-fret 7 (
-                          chord-shape 'as:1.3.5.8.10.15
+                          chord-shape 'as,:1.3.5.8.10.15
                           guitar-tuning))
 
-% e major triads, root pos. 6 notes, 8th sop
-\storePredefinedDiagram #g-shape-fretboard-table
-                        \chordmode { e:1.3.5.8.10.15 }
+% ******* e major triads, root pos. 6 notes, 8th on top
+\storePredefinedDiagram #g-shape-fretboard-table \chordmode { e,:1.3.5.8.10.15 }
                         #guitar-tuning
                         #(offset-fret 8 (
-                          chord-shape 'as:1.3.5.8.10.15
+                          chord-shape 'as,:1.3.5.8.10.15
                           guitar-tuning))
 
-% f major triads, root pos. 6 notes, 8th sop.
-\storePredefinedDiagram #g-shape-fretboard-table
-                        \chordmode { f:1.3.5.8.10.15 }
+% ******* f major triads, root pos. 6 notes, 8th on top
+\storePredefinedDiagram #g-shape-fretboard-table \chordmode { f,:1.3.5.8.10.15 }
                         #guitar-tuning
                         #(offset-fret 9 (
-                          chord-shape 'as:1.3.5.8.10.15
+                          chord-shape 'as,:1.3.5.8.10.15
                           guitar-tuning))
 
-% fis major triads, root pos. 6 notes, 8th sop.
-\storePredefinedDiagram #g-shape-fretboard-table
-                        \chordmode { fis:1.3.5.8.10.15 }
+% ******* fis major triads, root pos. 6 notes, 8th on top
+\storePredefinedDiagram #g-shape-fretboard-table \chordmode { fis,:1.3.5.8.10.15 }
                         #guitar-tuning
                         #(offset-fret 10 (
-                          chord-shape 'as:1.3.5.8.10.15
+                          chord-shape 'as,:1.3.5.8.10.15
                           guitar-tuning))
 
-% ges major triads, root pos. 6 notes, 8th sop.
-\storePredefinedDiagram #g-shape-fretboard-table
-                        \chordmode { ges:1.3.5.8.10.15 }
+% ******* ges major triads, root pos. 6 notes, 8th on top
+\storePredefinedDiagram #g-shape-fretboard-table \chordmode { ges,:1.3.5.8.10.15 }
                         #guitar-tuning
                         #(offset-fret 10 (
-                          chord-shape 'as:1.3.5.8.10.15
+                          chord-shape 'as,:1.3.5.8.10.15
                           guitar-tuning))
 
-% g major triads, root pos. 6 notes, 8th sop.
-\storePredefinedDiagram #g-shape-fretboard-table
-                        \chordmode { g:1.3.5.8.10.15 }
+% ******* g major triads, root pos. 6 notes, 8th on top
+\storePredefinedDiagram #g-shape-fretboard-table \chordmode { g,,:1.3.5.8.10.15 }
                         #guitar-tuning
-                        #"3-3;2-2;o;o;3-4;x;"
+                        #"3-3;2-2;o;o;o;3-4;"
 
-% gis major triads, root pos. 6 notes, 8th sop.
-\storePredefinedDiagram #g-shape-fretboard-table
-                        \chordmode { gis:1.3.5.8.10.15 }
+% ******* gis major triads, root pos. 6 notes, 8th on top
+\storePredefinedDiagram #g-shape-fretboard-table \chordmode { gis,,:1.3.5.8.10.15 }
                         #guitar-tuning
-                        #(chord-shape 'as:1.3.5.8.10.15
+                        #(chord-shape 'as,:1.3.5.8.10.15
                           guitar-tuning)
 
-% as major triads, root pos. 6 notes, 8th sop.
-\storePredefinedDiagram #g-shape-fretboard-table
-                        \chordmode { as:1.3.5.8.10.15 }
+% ******* as major triads, root pos. 6 notes, 8th on top
+\storePredefinedDiagram #g-shape-fretboard-table \chordmode { as,,:1.3.5.8.10.15 }
                         #guitar-tuning
-                        #(chord-shape 'as:1.3.5.8.10.15
+                        #(chord-shape 'as,:1.3.5.8.10.15
                           guitar-tuning)
 
-% a major triads, root pos. 6 notes, 8th sop.
-\storePredefinedDiagram #g-shape-fretboard-table
-                        \chordmode { a:1.3.5.8.10.15 }
+% ******* a major triads, root pos. 6 notes, 8th on top
+\storePredefinedDiagram #g-shape-fretboard-table \chordmode { a,,:1.3.5.8.10.15 }
                         #guitar-tuning
-                        #(offset-fret 1 (chord-shape 'as:1.3.5.8.10.15
+                        #(offset-fret 1 (
+                          chord-shape 'as,:1.3.5.8.10.15
                           guitar-tuning))
 
-% ais major triads, root pos. 6 notes, 8th sop.
-\storePredefinedDiagram #g-shape-fretboard-table
-                        \chordmode { ais:1.3.5.8.10.15 }
+% ******* ais major triads, root pos. 6 notes, 8th on top
+\storePredefinedDiagram #g-shape-fretboard-table \chordmode { ais,,:1.3.5.8.10.15 }
                         #guitar-tuning
-                        #(offset-fret 2 (chord-shape 'as:1.3.5.8.10.15
+                        #(offset-fret 2 (
+                          chord-shape 'as,:1.3.5.8.10.15
                           guitar-tuning))
 
-% bes major triads, root pos. 6 notes, 8th sop.
-\storePredefinedDiagram #g-shape-fretboard-table
-                        \chordmode { bes:1.3.5.8.10.15 }
+% ******* bes major triads, root pos. 6 notes, 8th on top
+\storePredefinedDiagram #g-shape-fretboard-table \chordmode { bes,,:1.3.5.8.10.15 }
                         #guitar-tuning
-                        #(offset-fret 2 (chord-shape 'as:1.3.5.8.10.15
+                        #(offset-fret 2 (
+                          chord-shape 'as,:1.3.5.8.10.15
                           guitar-tuning))
 
-% b major triads, root pos. 6 notes, 8th sop.
-\storePredefinedDiagram #g-shape-fretboard-table
-                        \chordmode { b:1.3.5.8.10.15 }
+% ******* b major triads, root pos. 6 notes, 8th on top
+\storePredefinedDiagram #g-shape-fretboard-table \chordmode { b,,:1.3.5.8.10.15 }
                         #guitar-tuning
-                        #(offset-fret 3 (chord-shape 'as:1.3.5.8.10.15
+                        #(offset-fret 3 (
+                          chord-shape 'as,:1.3.5.8.10.15
                           guitar-tuning))
 
 

@@ -1,21 +1,20 @@
-%%%% This file is part of LilyPond, the GNU music typesetter.
-%%%%
-%%%% Copyright (C) 2015-- Patrick L. Schmidt <pls@philomelos.net>
-%%%%
-%%%% LilyPond is free software: you can redistribute it and/or modify
+%%%% A library for predefined fretboard diagrams to be used with LilyPond.
+%%%% Copyright (C) 2015  Patrick L. Schmidt <pls@philomelos.net>
+
+%%%% This library is free software: you can redistribute it and/or modify
 %%%% it under the terms of the GNU General Public License as published by
 %%%% the Free Software Foundation, either version 3 of the License, or
 %%%% (at your option) any later version.
-%%%%
-%%%% LilyPond is distributed in the hope that it will be useful,
+
+%%%% This library is distributed in the hope that it will be useful,
 %%%% but WITHOUT ANY WARRANTY; without even the implied warranty of
 %%%% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 %%%% GNU General Public License for more details.
-%%%%
-%%%% You should have received a copy of the GNU General Public License
-%%%% along with LilyPond.  If not, see <http://www.gnu.org/licenses/>.
 
-\version "2.19.15"
+%%%% You should have received a copy of the GNU General Public License
+%%%% along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+%\version "2.19.15"
 
 #(define d-shape-fretboard-table (make-fretboard-table))
 
@@ -2769,6 +2768,379 @@ dShape = {
                         #(offset-fret 8 (
                           chord-shape 'es:1.5.8.10- 
                           guitar-tuning))
+
+% * triads
+% ** diminished triads
+% *** first inversion
+% **** three notes
+% ***** 8th on top
+% ****** add d-shape diminished triad definitions (1st inv., 3 notes, 8th on top)
+\addChordShape #'d:3-.5-.8^1
+               #guitar-tuning 
+               #"x;x;3-3;1-1;3-4;x;"
+
+% ****** store predefined d-shape diminished triad diagrams (1st inv., 3 notes, 8th on top)
+% ******* c diminished triads, 1st inv., 3 notes, 8th on top
+\storePredefinedDiagram #d-shape-fretboard-table \chordmode { c:3-.5-.8^1 }
+                        #guitar-tuning
+                        #(offset-fret 10 (
+                          chord-shape 'd:3-.5-.8^1
+                          guitar-tuning))
+
+% ******* cis diminished triads, 1st inv., 3 notes, 8th on top
+\storePredefinedDiagram #d-shape-fretboard-table \chordmode { cis,:3-.5-.8^1 }
+                        #guitar-tuning
+                        #"x;x;2-3;o;2-4;x;"
+
+% ******* des diminished triads, 1st inv., 3 notes, 8th on top
+\storePredefinedDiagram #d-shape-fretboard-table \chordmode { des,:3-.5-.8^1 }
+                        #guitar-tuning
+                        #"x;x;2-3;o;2-4;x;"
+
+% ******* d diminished triads, 1st inv., 3 notes, 8th on top
+\storePredefinedDiagram #d-shape-fretboard-table \chordmode { d,:3-.5-.8^1 }
+                        #guitar-tuning
+                        #(chord-shape 'd:3-.5-.8^1
+                          guitar-tuning)
+
+% ******* dis diminished triads, 1st inv., 3 notes, 8th on top
+\storePredefinedDiagram #d-shape-fretboard-table \chordmode { dis,:3-.5-.8^1 }
+                        #guitar-tuning
+                        #(offset-fret 1 (
+                          chord-shape 'd:3-.5-.8^1
+                          guitar-tuning))
+
+% ******* es diminished triads, 1st inv., 3 notes, 8th on top
+\storePredefinedDiagram #d-shape-fretboard-table \chordmode { es,:3-.5-.8^1 }
+                        #guitar-tuning
+                        #(offset-fret 1 (
+                          chord-shape 'd:3-.5-.8^1
+                          guitar-tuning))
+
+% ******* e diminished triads, 1st inv., 3 notes, 8th on top
+\storePredefinedDiagram #d-shape-fretboard-table \chordmode { e,:3-.5-.8^1 }
+                        #guitar-tuning
+                        #(offset-fret 2 (
+                          chord-shape 'd:3-.5-.8^1
+                          guitar-tuning))
+
+% ******* f diminished triads, 1st inv., 3 notes, 8th on top
+\storePredefinedDiagram #d-shape-fretboard-table \chordmode { f,:3-.5-.8^1 }
+                        #guitar-tuning
+                        #(offset-fret 3 (
+                          chord-shape 'd:3-.5-.8^1
+                          guitar-tuning))
+
+% ******* fis diminished triads, 1st inv., 3 notes, 8th on top
+\storePredefinedDiagram #d-shape-fretboard-table \chordmode { fis,:3-.5-.8^1 }
+                        #guitar-tuning
+                        #(offset-fret 4 (
+                          chord-shape 'd:3-.5-.8^1
+                          guitar-tuning))
+
+% ******* g diminished triads, 1st inv., 3 notes, 8th on top
+\storePredefinedDiagram #d-shape-fretboard-table \chordmode { g,:3-.5-.8^1 }
+                        #guitar-tuning
+                        #(offset-fret 5 (
+                          chord-shape 'd:3-.5-.8^1
+                          guitar-tuning))
+
+% ******* gis diminished triads, 1st inv., 3 notes, 8th on top
+\storePredefinedDiagram #d-shape-fretboard-table \chordmode { gis,:3-.5-.8^1 }
+                        #guitar-tuning
+                        #(offset-fret 6 (
+                          chord-shape 'd:3-.5-.8^1
+                          guitar-tuning))
+
+% ******* as diminished triads, 1st inv., 3 notes, 8th on top
+\storePredefinedDiagram #d-shape-fretboard-table \chordmode { as,:3-.5-.8^1 }
+                        #guitar-tuning
+                        #(offset-fret 6 (
+                          chord-shape 'd:3-.5-.8^1
+                          guitar-tuning))
+
+% ******* a diminished triads, 1st inv., 3 notes, 8th on top
+\storePredefinedDiagram #d-shape-fretboard-table \chordmode { a,:3-.5-.8^1 }
+                        #guitar-tuning
+                        #(offset-fret 7 (
+                          chord-shape 'd:3-.5-.8^1
+                          guitar-tuning))
+
+% ******* ais diminished triads, 1st inv., 3 notes, 8th on top
+\storePredefinedDiagram #d-shape-fretboard-table \chordmode { ais,:3-.5-.8^1 }
+                        #guitar-tuning
+                        #(offset-fret 8 (
+                          chord-shape 'd:3-.5-.8^1
+                          guitar-tuning))
+
+% ******* bes diminished triads, 1st inv., 3 notes, 8th on top
+\storePredefinedDiagram #d-shape-fretboard-table \chordmode { bes,:3-.5-.8^1 }
+                        #guitar-tuning
+                        #(offset-fret 8 (
+                          chord-shape 'd:3-.5-.8^1
+                          guitar-tuning))
+
+% ******* b diminished triads, 1st inv., 3 notes, 8th on top
+\storePredefinedDiagram #d-shape-fretboard-table \chordmode { b,:3-.5-.8^1 }
+                        #guitar-tuning
+                        #(offset-fret 9 (
+                          chord-shape 'd:3-.5-.8^1
+                          guitar-tuning))
+
+% * triads
+% ** diminished triads
+% *** first inversion
+% **** four notes
+% ***** 3rd on top
+% ****** add d-shape dim. triad definitions (1st inv., 3 notes, 3rd on top)
+\addChordShape #'d:3-.5-.8.10-^1
+               #guitar-tuning 
+               #"x;x;3-3;1-1-(;3-4;1-1-);"
+
+% ****** store predefined d-shape dim. triad diagrams (1st inv., 4 nts, 3rd on top)
+% ******* c diminished triads, 1st inv., 4 notes, 3rd on top
+\storePredefinedDiagram #d-shape-fretboard-table \chordmode { c:3-.5-.8.10-^1 }
+                        #guitar-tuning
+                        #(offset-fret 10 (
+                          chord-shape 'd:3-.5-.8.10-^1
+                          guitar-tuning))
+
+% ******* cis diminished triads, 1st inv., 4 notes, 3rd on top
+\storePredefinedDiagram #d-shape-fretboard-table \chordmode { cis,:3-.5-.8.10-^1 }
+                        #guitar-tuning
+                        #"x;x;2-3;o;2-4;o;"
+
+% ******* des diminished triads, 1st inv., 4 notes, 3rd on top
+\storePredefinedDiagram #d-shape-fretboard-table \chordmode { des,:3-.5-.8.10-^1 }
+                        #guitar-tuning
+                        #"x;x;2-3;o;2-4;o;"
+
+% ******* d diminished triads, 1st inv., 4 notes, 3rd on top
+\storePredefinedDiagram #d-shape-fretboard-table \chordmode { d,:3-.5-.8.10-^1 }
+                        #guitar-tuning
+                        #(chord-shape 'd:3-.5-.8.10-^1
+                          guitar-tuning)
+
+% ******* dis diminished triads, 1st inv., 4 notes, 3rd on top
+\storePredefinedDiagram #d-shape-fretboard-table \chordmode { dis,:3-.5-.8.10-^1 }
+                        #guitar-tuning
+                        #(offset-fret 1 (
+                          chord-shape 'd:3-.5-.8.10-^1
+                          guitar-tuning))
+
+% ******* es diminished triads, 1st inv., 4 notes, 3rd on top
+\storePredefinedDiagram #d-shape-fretboard-table \chordmode { es,:3-.5-.8.10-^1 }
+                        #guitar-tuning
+                        #(offset-fret 1 (
+                          chord-shape 'd:3-.5-.8.10-^1
+                          guitar-tuning))
+
+% ******* e diminished triads, 1st inv., 4 notes, 3rd on top
+\storePredefinedDiagram #d-shape-fretboard-table \chordmode { e,:3-.5-.8.10-^1 }
+                        #guitar-tuning
+                        #(offset-fret 2 (
+                          chord-shape 'd:3-.5-.8.10-^1
+                          guitar-tuning))
+
+% ******* f diminished triads, 1st inv., 4 notes, 3rd on top
+\storePredefinedDiagram #d-shape-fretboard-table \chordmode { f,:3-.5-.8.10-^1 }
+                        #guitar-tuning
+                        #(offset-fret 3 (
+                          chord-shape 'd:3-.5-.8.10-^1
+                          guitar-tuning))
+
+% ******* fis diminished triads, 1st inv., 4 notes, 3rd on top
+\storePredefinedDiagram #d-shape-fretboard-table \chordmode { fis,:3-.5-.8.10-^1 }
+                        #guitar-tuning
+                        #(offset-fret 4 (
+                          chord-shape 'd:3-.5-.8.10-^1
+                          guitar-tuning))
+
+% ******* ges diminished triads, 1st inv., 4 notes, 3rd on top
+\storePredefinedDiagram #d-shape-fretboard-table \chordmode { ges,:3-.5-.8.10-^1 }
+                        #guitar-tuning
+                        #(offset-fret 4 (
+                          chord-shape 'd:3-.5-.8.10-^1
+                          guitar-tuning))
+
+% ******* g diminished triads, 1st inv., 4 notes, 3rd on top
+\storePredefinedDiagram #d-shape-fretboard-table \chordmode { g,:3-.5-.8.10-^1 }
+                        #guitar-tuning
+                        #(offset-fret 5 (
+                          chord-shape 'd:3-.5-.8.10-^1
+                          guitar-tuning))
+
+% ******* gis diminished triads, 1st inv., 4 notes, 3rd on top
+\storePredefinedDiagram #d-shape-fretboard-table \chordmode { gis,:3-.5-.8.10-^1 }
+                        #guitar-tuning
+                        #(offset-fret 6 (
+                          chord-shape 'd:3-.5-.8.10-^1
+                          guitar-tuning))
+
+% ******* as diminished triads, 1st inv., 4 notes, 3rd on top
+\storePredefinedDiagram #d-shape-fretboard-table \chordmode { as,:3-.5-.8.10-^1 }
+                        #guitar-tuning
+                        #(offset-fret 6 (
+                          chord-shape 'd:3-.5-.8.10-^1
+                          guitar-tuning))
+
+% ******* a diminished triads, 1st inv., 4 notes, 3rd on top
+\storePredefinedDiagram #d-shape-fretboard-table \chordmode { a,:3-.5-.8.10-^1 }
+                        #guitar-tuning
+                        #(offset-fret 7 (
+                          chord-shape 'd:3-.5-.8.10-^1
+                          guitar-tuning))
+
+% ******* ais diminished triads, 1st inv., 4 notes, 3rd on top
+\storePredefinedDiagram #d-shape-fretboard-table \chordmode { ais,:3-.5-.8.10-^1 }
+                        #guitar-tuning
+                        #(offset-fret 8 (
+                          chord-shape 'd:3-.5-.8.10-^1
+                          guitar-tuning))
+
+% ******* bes diminished triads, 1st inv., 4 notes, 3rd on top
+\storePredefinedDiagram #d-shape-fretboard-table
+                        \chordmode { bes,:3-.5-.8.10-^1 }
+                        #guitar-tuning
+                        #(offset-fret 8 (
+                          chord-shape 'd:3-.5-.8.10-^1
+                          guitar-tuning))
+
+% ******* b diminished triads, 1st inv., 4 notes, 3rd on top
+\storePredefinedDiagram #d-shape-fretboard-table \chordmode { b,:3-.5-.8.10-^1 }
+                        #guitar-tuning
+                        #(offset-fret 9 (
+                          chord-shape 'd:3-.5-.8.10-^1
+                          guitar-tuning))
+
+
+
+
+% * triads
+% ** diminished triads
+% *** 2nd inversion
+% **** three notes
+% ***** 3rd on top
+% ****** add d-shape dim. triad definitions (2nd inv., 3 notes, 3rd on top)
+\addChordShape #'d:5-.8.10-^1.3
+               #guitar-tuning 
+               #"x;x;x;1-1;3-4;1-2;"
+
+% ****** store predefined d-shape dim. triad diagrams (2nd inv., 3 nts, 3rd on top)
+% ******* c diminished triads, 2nd inv., 3 notes, 3rd on top
+\storePredefinedDiagram #d-shape-fretboard-table \chordmode { c:5-.8.10-^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 10 (
+                          chord-shape 'd:5-.8.10-^1.3
+                          guitar-tuning))
+
+% ******* cis diminished triads, 2nd inv., 3 notes, 3rd on top
+\storePredefinedDiagram #d-shape-fretboard-table \chordmode { cis,:5-.8.10-^1.3 }
+                        #guitar-tuning
+                        #"x;x;x;o;2-2;o;"
+
+% ******* des diminished triads, 2nd inv., 3 notes, 3rd on top
+\storePredefinedDiagram #d-shape-fretboard-table \chordmode { des,:5-.8.10-^1.3 }
+                        #guitar-tuning
+                        #"x;x;x;o;2-2;o;"
+
+% ******* d diminished triads, 2nd inv., 3 notes, 3rd on top
+\storePredefinedDiagram #d-shape-fretboard-table \chordmode { d,:5-.8.10-^1.3 }
+                        #guitar-tuning
+                        #(chord-shape 'd:5-.8.10-^1.3
+                          guitar-tuning)
+
+% ******* dis diminished triads, 2nd inv., 3 notes, 3rd on top
+\storePredefinedDiagram #d-shape-fretboard-table \chordmode { dis,:5-.8.10-^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 1 (
+                          chord-shape 'd:5-.8.10-^1.3
+                          guitar-tuning))
+
+% ******* es diminished triads, 2nd inv., 3 notes, 3rd on top
+\storePredefinedDiagram #d-shape-fretboard-table \chordmode { es,:5-.8.10-^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 1 (
+                          chord-shape 'd:5-.8.10-^1.3
+                          guitar-tuning))
+
+% ******* e diminished triads, 2nd inv., 3 notes, 3rd on top
+\storePredefinedDiagram #d-shape-fretboard-table \chordmode { e,:5-.8.10-^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 2 (
+                          chord-shape 'd:5-.8.10-^1.3
+                          guitar-tuning))
+
+% ******* f diminished triads, 2nd inv., 3 notes, 3rd on top
+\storePredefinedDiagram #d-shape-fretboard-table \chordmode { f,:5-.8.10-^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 3 (
+                          chord-shape 'd:5-.8.10-^1.3
+                          guitar-tuning))
+
+% ******* fis diminished triads, 2nd inv., 3 notes, 3rd on top
+\storePredefinedDiagram #d-shape-fretboard-table \chordmode { fis,:5-.8.10-^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 4 (
+                          chord-shape 'd:5-.8.10-^1.3
+                          guitar-tuning))
+
+% ******* ges diminished triads, 2nd inv., 3 notes, 3rd on top
+\storePredefinedDiagram #d-shape-fretboard-table \chordmode { ges,:5-.8.10-^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 4 (
+                          chord-shape 'd:5-.8.10-^1.3
+                          guitar-tuning))
+
+% ******* g diminished triads, 2nd inv., 3 notes, 3rd on top
+\storePredefinedDiagram #d-shape-fretboard-table \chordmode { g,:5-.8.10-^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 5 (
+                          chord-shape 'd:5-.8.10-^1.3
+                          guitar-tuning))
+
+% ******* gis diminished triads, 2nd inv., 3 notes, 3rd on top
+\storePredefinedDiagram #d-shape-fretboard-table \chordmode { gis,:5-.8.10-^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 6 (
+                          chord-shape 'd:5-.8.10-^1.3
+                          guitar-tuning))
+
+% ******* as diminished triads, 2nd inv., 3 notes, 3rd on top
+\storePredefinedDiagram #d-shape-fretboard-table \chordmode { as,:5-.8.10-^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 6 (
+                          chord-shape 'd:5-.8.10-^1.3
+                          guitar-tuning))
+
+% ******* a diminished triads, 2nd inv., 3 notes, 3rd on top
+\storePredefinedDiagram #d-shape-fretboard-table \chordmode { a,:5-.8.10-^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 7 (
+                          chord-shape 'd:5-.8.10-^1.3
+                          guitar-tuning))
+
+% ******* ais diminished triads, 2nd inv., 3 notes, 3rd on top
+\storePredefinedDiagram #d-shape-fretboard-table \chordmode { ais,:5-.8.10-^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 8 (
+                          chord-shape 'd:5-.8.10-^1.3
+                          guitar-tuning))
+
+% ******* bes diminished triads, 2nd inv., 3 notes, 3rd on top
+\storePredefinedDiagram #d-shape-fretboard-table \chordmode { bes,:5-.8.10-^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 8 (
+                          chord-shape 'd:5-.8.10-^1.3
+                          guitar-tuning))
+
+% ******* b diminished triads, 2nd inv., 3 notes, 3rd on top
+\storePredefinedDiagram #d-shape-fretboard-table \chordmode { b,:5-.8.10-^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 9 (
+                          chord-shape 'd:5-.8.10-^1.3
+                          guitar-tuning))
+
 
 
 %%%%%% diminished seventh chords
