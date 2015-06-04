@@ -8,8 +8,14 @@
 *.texi
 *.count
 .gitignore~
+*.tex~
+*.org~
+*.md~
+*.bak*
+*.py~
 EADGBE/test/.DS_Store
 EADGBE/test/*.ly~
 EADGBE/test/*.svg
 EADGBE/test/*.pdf
+EADGBE/test/*.py~
 
