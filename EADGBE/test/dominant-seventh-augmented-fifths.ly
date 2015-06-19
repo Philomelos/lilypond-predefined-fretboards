@@ -969,7 +969,7 @@ dominantSeventhAugmentedFifthsThirdInversionFourNotesFifthOnTop = \chordmode {
         \dominantSeventhAugmentedFifthsThirdInversionFourNotesRootOnTopShapes
       }
       \new TabStaff {
-        \dominantSeventhAugmentedFifthsThirdInversionFourNotesRootOnTop
+        \dominantSeventhAumentedFifthsThirdInversionFourNotesRootOnTop
       }
     >>
     \header {
