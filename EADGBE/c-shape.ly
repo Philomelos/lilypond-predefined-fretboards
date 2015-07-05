@@ -10434,6 +10434,659 @@ cShape = {
                           guitar-tuning))
 
 
+% * triads
+% ** suspended fourths
+% *** second inversion
+% **** three notes
+% ***** 4th on top
+% ****** add c-shape sus4 definitions (2nd inv., 3 n., 4th on top)
+\addChordShape #'bes,,:5.8.11^1.3
+               #guitar-tuning 
+               #"1-2;1-3;1-4;x;x;x;"
+
+% ****** store predefined c-shape sus4 dgrms. (2nd inv., 3 n., 4th on top)
+% ******* c sus4, 2nd inv., 3 notes, 4th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { c,,:5.8.11^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 2 (
+			  chord-shape 'bes,,:5.8.11^1.3
+                          guitar-tuning))
+
+% ******* cis sus4, 2nd inv., 3 notes, 4th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { cis,,:5.8.11^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 3 (
+			  chord-shape 'bes,,:5.8.11^1.3
+                          guitar-tuning))
+
+% ******* des sus4, 2nd inv., 3 notes, 4th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { des,,:5.8.11^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 3 (
+			  chord-shape 'bes,,:5.8.11^1.3
+                          guitar-tuning))
+
+% ******* d sus4, 2nd inv., 3 notes, 4th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { d,,:5.8.11^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 4 (
+			  chord-shape 'bes,,:5.8.11^1.3
+                          guitar-tuning))
+
+% ******* dis sus4, 2nd inv., 3 notes, 4th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { dis,,:5.8.11^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 5 (
+                          chord-shape 'bes,,:5.8.11^1.3
+                          guitar-tuning))
+
+% ******* es sus4, 2nd inv., 3 notes, 4th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { es,,:5.8.11^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 5 (
+                          chord-shape 'bes,,:5.8.11^1.3
+                          guitar-tuning))
+
+% ******* e sus4, 2nd inv., 3 notes, 4th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { e,,:5.8.11^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 6 (
+                          chord-shape 'bes,,:5.8.11^1.3
+                          guitar-tuning))
+
+% ******* f sus4, 2nd inv., 3 notes, 4th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { f,,:5.8.11^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 7 (
+                          chord-shape 'bes,,:5.8.11^1.3
+                          guitar-tuning))
+
+% ******* fis sus4, 2nd inv., 3 notes, 4th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { fis,,:5.8.11^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 8 (
+                          chord-shape 'bes,,:5.8.11^1.3
+                          guitar-tuning))
+
+% ******* ges sus4, 2nd inv., 3 notes, 4th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { ges,,:5.8.11^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 8 (
+                          chord-shape 'bes,,:5.8.11^1.3
+                          guitar-tuning))
+
+% ******* g sus4, 2nd inv., 3 notes, 4th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { g,,:5.8.11^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 9 (
+                          chord-shape 'bes,,:5.8.11^1.3
+                          guitar-tuning))
+
+% ******* gis sus4, 2nd inv., 3 notes, 4th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { gis,,:5.8.11^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 10 (
+                          chord-shape 'bes,,:5.8.11^1.3
+                          guitar-tuning))
+
+% ******* as sus4, 2nd inv., 3 notes, 4th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { as,,:5.8.11^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 10 (
+                          chord-shape 'bes,,:5.8.11^1.3
+                          guitar-tuning))
+
+% ******* a sus4, 2nd inv., 3 notes, 4th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { a,,,:5.8.11^1.3 }
+                        #guitar-tuning
+                        #"o;o;o;x;x;x;"
+
+% ******* ais sus4, 2nd inv., 3 notes, 4th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { ais,,,:5.8.11^1.3 }
+                        #guitar-tuning
+                        #(chord-shape 'bes,,:5.8.11^1.3
+                          guitar-tuning)
+
+% ******* bes sus4, 2nd inv., 3 notes, 4th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { bes,,,:5.8.11^1.3 }
+                        #guitar-tuning
+                        #(chord-shape 'bes,,:5.8.11^1.3
+                          guitar-tuning)
+
+% ******* b sus4, 2nd inv., 3 notes, 4th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { b,,,:5.8.11^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 1 (
+                          chord-shape 'bes,,:5.8.11^1.3
+                          guitar-tuning))
+
+
+% * triads
+% ** suspended fourths
+% *** second inversion
+% **** four notes
+% ***** 5th on top
+% ****** add c-shape sus4 definitions (2nd inv., 4 n., 5th on top)
+\addChordShape #'cis,:5.8.11.12^1.3
+               #guitar-tuning 
+               #"4-2;4-3;4-4;1-1;x;x;"
+
+% ****** store predefined c-shape sus4 dgrms. (2nd inv., 4 n., 5th on top)
+% ******* c sus4, 2nd inv., 4 notes, 5th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { c,,:5.8.11.12^1.3 }
+                        #guitar-tuning
+                        #"3-2;3-3;3-4;o;x;x;"
+
+% ******* cis sus4, 2nd inv., 4 notes, 5th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { cis,,:5.8.11.12^1.3 }
+                        #guitar-tuning
+                        #(chord-shape 'cis,:5.8.11.12^1.3
+                          guitar-tuning)
+
+% ******* des sus4, 2nd inv., 4 notes, 5th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { des,,:5.8.11.12^1.3 }
+                        #guitar-tuning
+                        #(chord-shape 'cis,:5.8.11.12^1.3
+                          guitar-tuning)
+
+% ******* d sus4, 2nd inv., 4 notes, 5th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { d,,:5.8.11.12^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 1 (
+			  chord-shape 'cis,:5.8.11.12^1.3
+                          guitar-tuning))
+
+% ******* dis sus4, 2nd inv., 4 notes, 5th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { dis,,:5.8.11.12^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 2 (
+                          chord-shape 'cis,:5.8.11.12^1.3
+                          guitar-tuning))
+
+% ******* es sus4, 2nd inv., 4 notes, 5th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { es,,:5.8.11.12^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 2 (
+                          chord-shape 'cis,:5.8.11.12^1.3
+                          guitar-tuning))
+
+% ******* e sus4, 2nd inv., 4 notes, 5th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { e,,:5.8.11.12^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 3 (
+                          chord-shape 'cis,:5.8.11.12^1.3
+                          guitar-tuning))
+
+% ******* f sus4, 2nd inv., 4 notes, 5th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { f,,:5.8.11.12^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 4 (
+                          chord-shape 'cis,:5.8.11.12^1.3
+                          guitar-tuning))
+
+% ******* fis sus4, 2nd inv., 4 notes, 5th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { fis,,:5.8.11.12^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 5 (
+                          chord-shape 'cis,:5.8.11.12^1.3
+                          guitar-tuning))
+
+% ******* ges sus4, 2nd inv., 4 notes, 5th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { ges,,:5.8.11.12^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 5 (
+                          chord-shape 'cis,:5.8.11.12^1.3
+                          guitar-tuning))
+
+% ******* g sus4, 2nd inv., 4 notes, 5th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { g,,:5.8.11.12^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 6 (
+                          chord-shape 'cis,:5.8.11.12^1.3
+                          guitar-tuning))
+
+% ******* gis sus4, 2nd inv., 4 notes, 5th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { gis,,:5.8.11.12^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 7 (
+                          chord-shape 'cis,:5.8.11.12^1.3
+                          guitar-tuning))
+
+% ******* as sus4, 2nd inv., 4 notes, 5th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { as,,:5.8.11.12^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 7 (
+                          chord-shape 'cis,:5.8.11.12^1.3
+                          guitar-tuning))
+
+% ******* a sus4, 2nd inv., 4 notes, 5th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { a,,,:5.8.11.12^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 8 (
+                          chord-shape 'cis,:5.8.11.12^1.3
+                          guitar-tuning))
+
+% ******* ais sus4, 2nd inv., 4 notes, 5th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { ais,,,:5.8.11.12^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 9 (
+                          chord-shape 'cis,:5.8.11.12^1.3
+                          guitar-tuning))
+
+% ******* bes sus4, 2nd inv., 4 notes, 5th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { bes,,,:5.8.11.12^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 9 (
+                          chord-shape 'cis,:5.8.11.12^1.3
+                          guitar-tuning))
+
+% ******* b sus4, 2nd inv., 4 notes, 5th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { b,,,:5.8.11.12^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 10 (
+                          chord-shape 'cis,:5.8.11.12^1.3
+                          guitar-tuning))
+
+
+% * triads
+% ** suspended fourths
+% *** second inversion
+% **** four notes
+% ***** 8th on top
+% ****** add c-shape sus4 definitions (2nd inv., 4 n., 8th on top)
+\addChordShape #'c,:5.8.11.15^1.3
+               #guitar-tuning 
+               #"3-2;3-3;3-4;x;1-1;x;"
+
+% ****** store predefined c-shape sus4 dgrms. (2nd inv., 4 n., 8th on top)
+% ******* c sus4, 2nd inv., 4 notes, 8th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { c,,:5.8.11.15^1.3 }
+                        #guitar-tuning
+                        #(chord-shape 'c,:5.8.11.15^1.3
+                          guitar-tuning)
+
+% ******* cis sus4, 2nd inv., 4 notes, 8th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { cis,,:5.8.11.15^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 1 (
+			  chord-shape 'c,:5.8.11.15^1.3
+                          guitar-tuning))
+
+% ******* des sus4, 2nd inv., 4 notes, 8th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { des,,:5.8.11.15^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 1 (
+			  chord-shape 'c,:5.8.11.15^1.3
+                          guitar-tuning))
+
+% ******* d sus4, 2nd inv., 4 notes, 8th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { d,,:5.8.11.15^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 2 (
+			  chord-shape 'c,:5.8.11.15^1.3
+                          guitar-tuning))
+
+% ******* dis sus4, 2nd inv., 4 notes, 8th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { dis,,:5.8.11.15^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 3 (
+                          chord-shape 'c,:5.8.11.15^1.3
+                          guitar-tuning))
+
+% ******* es sus4, 2nd inv., 4 notes, 8th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { es,,:5.8.11.15^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 3 (
+                          chord-shape 'c,:5.8.11.15^1.3
+                          guitar-tuning))
+
+% ******* e sus4, 2nd inv., 4 notes, 8th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { e,,:5.8.11.15^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 4 (
+                          chord-shape 'c,:5.8.11.15^1.3
+                          guitar-tuning))
+
+% ******* f sus4, 2nd inv., 4 notes, 8th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { f,,:5.8.11.15^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 5 (
+                          chord-shape 'c,:5.8.11.15^1.3
+                          guitar-tuning))
+
+% ******* fis sus4, 2nd inv., 4 notes, 8th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { fis,,:5.8.11.15^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 6 (
+                          chord-shape 'c,:5.8.11.15^1.3
+                          guitar-tuning))
+
+% ******* ges sus4, 2nd inv., 4 notes, 8th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { ges,,:5.8.11.15^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 6 (
+                          chord-shape 'c,:5.8.11.15^1.3
+                          guitar-tuning))
+
+% ******* g sus4, 2nd inv., 4 notes, 8th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { g,,:5.8.11.15^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 7 (
+                          chord-shape 'c,:5.8.11.15^1.3
+                          guitar-tuning))
+
+% ******* gis sus4, 2nd inv., 4 notes, 8th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { gis,,:5.8.11.15^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 8 (
+                          chord-shape 'c,:5.8.11.15^1.3
+                          guitar-tuning))
+
+% ******* as sus4, 2nd inv., 4 notes, 8th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { as,,:5.8.11.15^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 8 (
+                          chord-shape 'c,:5.8.11.15^1.3
+                          guitar-tuning))
+
+% ******* a sus4, 2nd inv., 4 notes, 8th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { a,,:5.8.11.15^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 9 (
+                          chord-shape 'c,:5.8.11.15^1.3
+                          guitar-tuning))
+
+% ******* ais sus4, 2nd inv., 4 notes, 8th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { ais,,:5.8.11.15^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 10 (
+                          chord-shape 'c,:5.8.11.15^1.3
+                          guitar-tuning))
+
+% ******* bes sus4, 2nd inv., 4 notes, 8th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { bes,,:5.8.11.15^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 10 (
+                          chord-shape 'c,:5.8.11.15^1.3
+                          guitar-tuning))
+
+% ******* b sus4, 2nd inv., 4 notes, 8th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { b,,,:5.8.11.15^1.3 }
+                        #guitar-tuning
+                        #"2-2;2-3;2-2;x;o;x;"
+
+
+
+% * triads
+% ** suspended fourths
+% *** 2nd inversion
+% **** 5 notes
+% ***** 8th on top
+% ****** add c-shape sus4 definitions (2nd inv., 5 n., 8th on top)
+\addChordShape #'c,:5.8.11.12.15^1.3
+               #guitar-tuning 
+               #"3-2;3-3;3-4;o;1-1;x;"
+
+% ****** store predefined c-shape sus4 dgrms. (2nd inv., 5 n., 8th on top)
+% ******* c sus4, 2nd inv., 5 notes, 8th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { c,,:5.8.11.12.15^1.3 }
+                        #guitar-tuning
+                        #(chord-shape 'c,:5.8.11.12.15^1.3
+                          guitar-tuning)
+
+% ******* d sus4, 2nd inv., 5 notes, 8th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        <a, d g g d'>
+                        %\chordmode { d,,:5.8.11.11.15^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 2 (
+                          chord-shape 'c,:5.8.11.12.15^1.3
+                          guitar-tuning))
+
+% ******* g sus4, 2nd inv., 5 notes, 8th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        <d g c' g g'>
+                        %\chordmode { g,,:5.8.11.8.15^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 7 (
+                          chord-shape 'c,:5.8.11.12.15^1.3
+                          guitar-tuning))
+
+
+
+% * triads
+% ** suspended fourths
+% *** 2nd inversion
+% **** 5 notes
+% ***** 11th on top
+% ****** add c-shape sus4 definitions (2nd inv., 5 n., 11th on top)
+\addChordShape #'c,:5.8.11.15.18^1.3
+               #guitar-tuning 
+               #"3-2;3-3;3-4;x;1-1-(;1-1-);"
+
+% ****** store predefined c-shape sus4 dgrms. (2nd inv., 5 n., 11th on top)
+% ******* c sus4, 2nd inv., 5 notes, 11th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { c,,:5.8.11.15.18^1.3 }
+                        #guitar-tuning
+                        #(chord-shape 'c,:5.8.11.15.18^1.3
+                          guitar-tuning)
+
+% ******* cis sus4, 2nd inv., 5 notes, 11th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { cis,,:5.8.11.15.18^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 1 (
+			  chord-shape 'c,:5.8.11.15.18^1.3
+                          guitar-tuning))
+
+% ******* des sus4, 2nd inv., 5 notes, 11th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { des,,:5.8.11.15.18^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 1 (
+			  chord-shape 'c,:5.8.11.15.18^1.3
+                          guitar-tuning))
+
+% ******* d sus4, 2nd inv., 5 notes, 11th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { d,,:5.8.11.15.18^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 2 (
+			  chord-shape 'c,:5.8.11.15.18^1.3
+                          guitar-tuning))
+
+% ******* dis sus4, 2nd inv., 5 notes, 11th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { dis,,:5.8.11.15.18^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 3 (
+                          chord-shape 'c,:5.8.11.15.18^1.3
+                          guitar-tuning))
+
+% ******* es sus4, 2nd inv., 5 notes, 11th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { es,,:5.8.11.15.18^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 3 (
+                          chord-shape 'c,:5.8.11.15.18^1.3
+                          guitar-tuning))
+
+% ******* e sus4, 2nd inv., 5 notes, 11th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { e,,:5.8.11.15.18^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 4 (
+                          chord-shape 'c,:5.8.11.15.18^1.3
+                          guitar-tuning))
+
+% ******* f sus4, 2nd inv., 5 notes, 11th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { f,,:5.8.11.15.18^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 5 (
+                          chord-shape 'c,:5.8.11.15.18^1.3
+                          guitar-tuning))
+
+% ******* fis sus4, 2nd inv., 5 notes, 11th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { fis,,:5.8.11.15.18^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 6 (
+                          chord-shape 'c,:5.8.11.15.18^1.3
+                          guitar-tuning))
+
+% ******* ges sus4, 2nd inv., 5 notes, 11th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { ges,,:5.8.11.15.18^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 6 (
+                          chord-shape 'c,:5.8.11.15.18^1.3
+                          guitar-tuning))
+
+% ******* g sus4, 2nd inv., 5 notes, 11th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { g,,:5.8.11.15.18^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 7 (
+                          chord-shape 'c,:5.8.11.15.18^1.3
+                          guitar-tuning))
+
+% ******* gis sus4, 2nd inv., 5 notes, 11th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { gis,,:5.8.11.15.18^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 8 (
+                          chord-shape 'c,:5.8.11.15.18^1.3
+                          guitar-tuning))
+
+% ******* as sus4, 2nd inv., 5 notes, 11th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { as,,:5.8.11.15.18^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 8 (
+                          chord-shape 'c,:5.8.11.15.18^1.3
+                          guitar-tuning))
+
+% ******* a sus4, 2nd inv., 5 notes, 11th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { a,,:5.8.11.15.18^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 9 (
+                          chord-shape 'c,:5.8.11.15.18^1.3
+                          guitar-tuning))
+
+% ******* ais sus4, 2nd inv., 5 notes, 11th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { ais,,:5.8.11.15.18^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 10 (
+                          chord-shape 'c,:5.8.11.15.18^1.3
+                          guitar-tuning))
+
+% ******* bes sus4, 2nd inv., 5 notes, 11th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { bes,,:5.8.11.15.18^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 10 (
+                          chord-shape 'c,:5.8.11.15.18^1.3
+                          guitar-tuning))
+
+% ******* b sus4, 2nd inv., 5 notes, 11th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { b,,,:5.8.11.15.18^1.3 }
+                        #guitar-tuning
+                        #"2-2;2-3;2-2;x;o;o;"
+
+
+% * triads
+% ** suspended fourths
+% *** 2nd inversion
+% **** 6 notes
+% ***** 11th on top
+% ****** add c-shape sus4 definitions (2nd inv., 6 n., 11th on top)
+\addChordShape #'c,:5.8.11.12.15.18^1.3
+               #guitar-tuning 
+               #"3-2;3-3;3-4;o;1-1-(;1-1-);"
+
+% ****** store predefined c-shape sus4 dgrms. (2nd inv., 6 n., 11th on top)
+% ******* c sus4, 2nd inv., 6 notes, 11th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { c,,:5.8.11.12.15.18^1.3 }
+                        #guitar-tuning
+                        #(chord-shape 'c,:5.8.11.12.15.18^1.3
+                          guitar-tuning)
+
+% ******* d sus4, 2nd inv., 6 notes, 11th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        <a, d g g d' g'>
+                        %\chordmode { d,,:5.8.11.11.15.18^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 2 (
+                          chord-shape 'c,:5.8.11.12.15.18^1.3
+                          guitar-tuning))
+
+% ******* g sus4, 2nd inv., 6 notes, 11th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        <d g c' g g' d''>
+                        %\chordmode { g,,:5.8.11.8.15.18^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 7 (
+                          chord-shape 'c,:5.8.11.12.15.18^1.3
+                          guitar-tuning))
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%% Tetrads (4 different pitch names) %%%%%%%
