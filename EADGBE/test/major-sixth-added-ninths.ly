@@ -23,7 +23,7 @@
 %%%%%%%%%%% MAJOR SIXTH ADDED NINTHS %%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 majorsixthaddedninthsRootPositionFiveNotesTwelfthOnTopChordSymbols = \chordmode {
-% * triads
+% * pentads
 % ** major sixth added ninths
 % *** root position
 % **** five notes
@@ -52,7 +52,7 @@ majorsixthaddedninthsRootPositionFiveNotesTwelfthOnTopChordSymbols = \chordmode 
 }
 
 majorsixthaddedninthsRootPositionFiveNotesTwelfthOnTopShapes = \lyricmode {
-% * triads
+% * pentads
 % ** major sixth added ninths
 % *** root position
 % **** five notes
@@ -63,7 +63,7 @@ majorsixthaddedninthsRootPositionFiveNotesTwelfthOnTopShapes = \lyricmode {
 }
 
 majorsixthaddedninthsRootPositionFiveNotesTwelfthOnTop = \chordmode {
-% * triads
+% * pentads
 % ** major sixth added ninths
 % *** root position
 % **** five notes
