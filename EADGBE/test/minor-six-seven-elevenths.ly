@@ -32,7 +32,7 @@ chExceptions = #( append
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 minorsixseveneleventhsRootPositionFiveNotesThirteenthOnTopChordSymbols = \chordmode {
 % * pentads
-% ** major sixth added ninths
+% ** minor six seven elevenths
 % *** root position
 % **** five notes
 % ***** thirteenth on the top
