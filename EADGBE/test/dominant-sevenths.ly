@@ -22,6 +22,118 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%% DOMINANT SEVENTHS %%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+dominantSeventhsRootPositionFourNotesThirdOnTopChordSymbols = \chordmode {
+% * tetrads
+% ** dominant sevenths
+% *** root position
+% **** four notes
+% ***** third on the top
+  %\aShape
+  %\eShape
+  %\dShape
+  \repeat unfold 3 {
+    c1:7
+    cis1:7 
+    des1:7
+    d1:7
+    dis1:7 
+    es1:7
+    e1:7
+    f1:7
+    fis1:7 
+    ges1:7
+    g1:7
+    gis1:7 
+    as1:7
+    a1:7
+    ais1:7 
+    bes1:7
+    b1:7
+  }
+}
+
+dominantSeventhsRootPositionFourNotesThirdOnTopShapes = \lyricmode {
+% * tetrads
+% ** dominant sevenths
+% *** root position
+% **** four notes
+% ***** third on the top
+  \repeat unfold 1 {
+    A-Shape \repeat unfold 16 { \skip1 }
+  }
+  \repeat unfold 1 {
+    E-Shape \repeat unfold 16 { \skip1 }
+  }
+  \repeat unfold 1 {
+    D-Shape \repeat unfold 16 { \skip1 }
+  }
+}
+
+dominantSeventhsRootPositionFourNotesThirdOnTop = \chordmode {
+% * tetrads
+% ** dominant sevenths
+% *** root position
+% **** four notes
+% ***** third on the top
+  \aShape
+  c,1:1.5.7.10
+  cis,1:1.5.7.10
+  des,1:1.5.7.10
+  d,1:1.5.7.10
+  dis,1:1.5.7.10
+  es,1:1.5.7.10
+  e,1:1.5.7.10
+  f,1:1.5.7.10
+  fis,1:1.5.7.10
+  ges,1:1.5.7.10
+  g,1:1.5.7.10
+  gis,1:1.5.7.10
+  as,1:1.5.7.10
+  a,,1:1.5.7.10
+  ais,,1:1.5.7.10
+  bes,,1:1.5.7.10
+  b,,1:1.5.7.10
+  \bar "||"
+  \eShape
+  c,1:1.5.7.10
+  cis,1:1.5.7.10
+  des,1:1.5.7.10
+  d,1:1.5.7.10
+  dis,1:1.5.7.10
+  es,1:1.5.7.10
+  e,,1:1.5.7.10
+  f,,1:1.5.7.10
+  fis,,1:1.5.7.10
+  ges,,1:1.5.7.10
+  g,,1:1.5.7.10
+  gis,,1:1.5.7.10
+  as,,1:1.5.7.10
+  a,,1:1.5.7.10
+  ais,,1:1.5.7.10
+  bes,,1:1.5.7.10
+  b,,1:1.5.7.10
+  \bar "||"
+  \dShape
+  c1:1.5.7.10
+  cis1:1.5.7.10
+  des1:1.5.7.10
+  d,1:1.5.7.10
+  dis,1:1.5.7.10
+  es,1:1.5.7.10
+  e,1:1.5.7.10
+  f,1:1.5.7.10
+  fis,1:1.5.7.10
+  ges,1:1.5.7.10
+  g,1:1.5.7.10
+  gis,1:1.5.7.10
+  as,1:1.5.7.10
+  a,1:1.5.7.10
+  ais,1:1.5.7.10
+  bes,1:1.5.7.10
+  b,1:1.5.7.10
+  \bar "|."
+}
+
 dominantSeventhsRootPositionFourNotesFifthOnTopChordSymbols = \chordmode {
 % * tetrads
 % ** dominant sevenths
@@ -591,7 +703,8 @@ dominantSeventhsThirdInversionFourNotesRootOnTopChordSymbols = \chordmode {
 % **** four notes
 % ***** root on the top
   %\cShape
-  \repeat unfold 1 {
+  %\eShape
+  \repeat unfold 2 {
     c1:7/bes
     cis1:7/b 
     des1:7/ces
@@ -621,6 +734,9 @@ dominantSeventhsThirdInversionFourNotesRootOnTopShapes = \lyricmode {
   \repeat unfold 1 {
     C-Shape \repeat unfold 16 { \skip1 }
   }
+  \repeat unfold 1 {
+    E-Shape \repeat unfold 16 { \skip1 }
+  }
 }
 
 dominantSeventhsThirdInversionFourNotesRootOnTop = \chordmode {
@@ -636,6 +752,25 @@ dominantSeventhsThirdInversionFourNotesRootOnTop = \chordmode {
   d,,1:7.10.12.15^1.3.5
   dis,,1:7.10.12.15^1.3.5
   es,,1:7.10.12.15^1.3.5
+  e,,1:7.10.12.15^1.3.5
+  f,,1:7.10.12.15^1.3.5
+  fis,,1:7.10.12.15^1.3.5
+  ges,,1:7.10.12.15^1.3.5
+  g,,1:7.10.12.15^1.3.5
+  gis,,1:7.10.12.15^1.3.5
+  as,,1:7.10.12.15^1.3.5
+  a,,1:7.10.12.15^1.3.5
+  ais,,1:7.10.12.15^1.3.5
+  bes,,1:7.10.12.15^1.3.5
+  b,,1:7.10.12.15^1.3.5
+  \bar "||"
+  \eShape
+  c,1:7.10.12.15^1.3.5
+  cis,1:7.10.12.15^1.3.5
+  des,1:7.10.12.15^1.3.5
+  d,1:7.10.12.15^1.3.5
+  dis,1:7.10.12.15^1.3.5
+  es,1:7.10.12.15^1.3.5
   e,,1:7.10.12.15^1.3.5
   f,,1:7.10.12.15^1.3.5
   fis,,1:7.10.12.15^1.3.5
@@ -759,6 +894,34 @@ dominantSeventhsThirdInversionFourNotesFifthOnTop = \chordmode {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%% SCORE DEFINITIONS %%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%{
+  \score {
+    <<
+      \new ChordNames {
+        \dominantSeventhsRootPositionFourNotesThirdOnTopChordSymbols
+      }
+      \new FretBoards {
+        \dominantSeventhsRootPositionFourNotesThirdOnTop
+      }
+      \new Voice = "dominantsevenths" {
+        \clef "treble_8"
+        \dominantSeventhsRootPositionFourNotesThirdOnTop
+      }
+      \new Lyrics \lyricsto "dominantsevenths" {
+        \dominantSeventhsRootPositionFourNotesThirdOnTopShapes
+      }
+      \new TabStaff {
+        \dominantSeventhsRootPositionFourNotesThirdOnTop
+      }
+    >>
+    \header {
+      title = "Dominant Sevenths (Mixed Shapes)"
+      subtitle = "Root position"
+      subsubtitle = "Four notes"
+      piece = "Third on the top"
+    }
+  }
+%}
 %{
   \score {
     <<
@@ -768,11 +931,11 @@ dominantSeventhsThirdInversionFourNotesFifthOnTop = \chordmode {
       \new FretBoards {
         \dominantSeventhsRootPositionFourNotesFifthOnTop
       }
-      \new Voice = "seventhdiminishedfifths" {
+      \new Voice = "dominantsevenths" {
         \clef "treble_8"
         \dominantSeventhsRootPositionFourNotesFifthOnTop
       }
-      \new Lyrics \lyricsto "seventhdiminishedfifths" {
+      \new Lyrics \lyricsto "dominantsevenths" {
         \dominantSeventhsRootPositionFourNotesFifthOnTopShapes
       }
       \new TabStaff {
@@ -796,11 +959,11 @@ dominantSeventhsThirdInversionFourNotesFifthOnTop = \chordmode {
       \new FretBoards {
         \dominantSeventhsRootPositionFourNotesSeventhOnTop
       }
-      \new Voice = "seventhdiminishedfifths" {
+      \new Voice = "dominantsevenths" {
         \clef "treble_8"
         \dominantSeventhsRootPositionFourNotesSeventhOnTop
       }
-      \new Lyrics \lyricsto "seventhdiminishedfifths" {
+      \new Lyrics \lyricsto "dominantsevenths" {
         \dominantSeventhsRootPositionFourNotesSeventhOnTopShapes
       }
       \new TabStaff {
@@ -824,11 +987,11 @@ dominantSeventhsThirdInversionFourNotesFifthOnTop = \chordmode {
       \new FretBoards {
         \dominantSeventhsFirstInversionFourNotesRootOnTop
       }
-      \new Voice = "seventhdiminishedfifths" {
+      \new Voice = "dominantsevenths" {
         \clef "treble_8"
         \dominantSeventhsFirstInversionFourNotesRootOnTop
       }
-      \new Lyrics \lyricsto "seventhdiminishedfifths" {
+      \new Lyrics \lyricsto "dominantsevenths" {
         \dominantSeventhsFirstInversionFourNotesRootOnTopShapes
       }
       \new TabStaff {
@@ -852,11 +1015,11 @@ dominantSeventhsThirdInversionFourNotesFifthOnTop = \chordmode {
       \new FretBoards {
         \dominantSeventhsFirstInversionFourNotesFifthOnTop
       }
-      \new Voice = "seventhdiminishedfifths" {
+      \new Voice = "dominantsevenths" {
         \clef "treble_8"
         \dominantSeventhsFirstInversionFourNotesFifthOnTop
       }
-      \new Lyrics \lyricsto "seventhdiminishedfifths" {
+      \new Lyrics \lyricsto "dominantsevenths" {
         \dominantSeventhsFirstInversionFourNotesFifthOnTopShapes
       }
       \new TabStaff {
@@ -871,7 +1034,7 @@ dominantSeventhsThirdInversionFourNotesFifthOnTop = \chordmode {
     }
   }
 %}
-%%{
+%{
   \score {
     <<
       \new ChordNames {
@@ -880,11 +1043,11 @@ dominantSeventhsThirdInversionFourNotesFifthOnTop = \chordmode {
       \new FretBoards {
         \dominantSeventhsSecondInversionFourNotesRootOnTop
       }
-      \new Voice = "seventhdiminishedfifths" {
+      \new Voice = "dominantsevenths" {
         \clef "treble_8"
         \dominantSeventhsSecondInversionFourNotesRootOnTop
       }
-      \new Lyrics \lyricsto "seventhdiminishedfifths" {
+      \new Lyrics \lyricsto "dominantsevenths" {
         \dominantSeventhsSecondInversionFourNotesRootOnTopShapes
       }
       \new TabStaff {
@@ -908,11 +1071,11 @@ dominantSeventhsThirdInversionFourNotesFifthOnTop = \chordmode {
       \new FretBoards {
         \dominantSeventhsSecondInversionFourNotesThirdOnTop
       }
-      \new Voice = "seventhdiminishedfifths" {
+      \new Voice = "dominantsevenths" {
         \clef "treble_8"
         \dominantSeventhsSecondInversionFourNotesThirdOnTop
       }
-      \new Lyrics \lyricsto "seventhdiminishedfifths" {
+      \new Lyrics \lyricsto "dominantsevenths" {
         \dominantSeventhsSecondInversionFourNotesThirdOnTopShapes
       }
       \new TabStaff {
@@ -936,11 +1099,11 @@ dominantSeventhsThirdInversionFourNotesFifthOnTop = \chordmode {
       \new FretBoards {
         \dominantSeventhsSecondInversionFourNotesSeventhOnTop
       }
-      \new Voice = "seventhdiminishedfifths" {
+      \new Voice = "dominantsevenths" {
         \clef "treble_8"
         \dominantSeventhsSecondInversionFourNotesSeventhOnTop
       }
-      \new Lyrics \lyricsto "seventhdiminishedfifths" {
+      \new Lyrics \lyricsto "dominantsevenths" {
         \dominantSeventhsSecondInversionFourNotesSeventhOnTopShapes
       }
       \new TabStaff {
@@ -964,11 +1127,11 @@ dominantSeventhsThirdInversionFourNotesFifthOnTop = \chordmode {
       \new FretBoards {
         \dominantSeventhsThirdInversionFourNotesRootOnTop
       }
-      \new Voice = "seventhdiminishedfifths" {
+      \new Voice = "dominantsevenths" {
         \clef "treble_8"
         \dominantSeventhsThirdInversionFourNotesRootOnTop
       }
-      \new Lyrics \lyricsto "seventhdiminishedfifths" {
+      \new Lyrics \lyricsto "dominantsevenths" {
         \dominantSeventhsThirdInversionFourNotesRootOnTopShapes
       }
       \new TabStaff {
@@ -992,11 +1155,11 @@ dominantSeventhsThirdInversionFourNotesFifthOnTop = \chordmode {
       \new FretBoards {
         \dominantSeventhsThirdInversionFourNotesFifthOnTop
       }
-      \new Voice = "seventhdiminishedfifths" {
+      \new Voice = "dominantsevenths" {
         \clef "treble_8"
         \dominantSeventhsThirdInversionFourNotesFifthOnTop
       }
-      \new Lyrics \lyricsto "seventhdiminishedfifths" {
+      \new Lyrics \lyricsto "dominantsevenths" {
         \dominantSeventhsThirdInversionFourNotesFifthOnTopShapes
       }
       \new TabStaff {
