@@ -3436,6 +3436,152 @@ dShape = {
 
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% DOMINANT SEVENTH DIMINISHED FIFTHS %%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% * tetrads
+% ** dominant sevenths diminished fifths
+% *** root position
+% **** four notes
+% ***** 3rd on top
+% ****** add d-shape dom. 7-5 defs (root pos., 4 n., 3rd on top)
+\addChordShape #'es:1.5-.7.10 
+               #guitar-tuning 
+               #"x;x;1-1;2-2;2-3;3-4;"
+
+% ****** store predef. d-shape dom. 7-5 dgr. (root pos., 4 n., 3rd on top)
+% ******* c dom. 7-5, root pos., 4 notes, 3rd on top 
+\storePredefinedDiagram #d-shape-fretboard-table
+                        \chordmode { c:1.5-.7.10 }
+                        #guitar-tuning
+                        #(offset-fret 9 (
+			  chord-shape 'es:1.5-.7.10 
+			  guitar-tuning))
+
+% ******* cis dom. 7-5, root pos., 4 notes, 3rd on top 
+\storePredefinedDiagram #d-shape-fretboard-table
+                        \chordmode { cis:1.5-.7.10 }
+                        #guitar-tuning
+                        #(offset-fret 10 (
+			  chord-shape 'es:1.5-.7.10 
+			  guitar-tuning))
+
+% ******* des dom. 7-5, root pos., 4 notes, 3rd on top 
+\storePredefinedDiagram #d-shape-fretboard-table
+                        \chordmode { des:1.5-.7.10 }
+                        #guitar-tuning
+                        #(offset-fret 10 (
+			  chord-shape 'es:1.5-.7.10 
+			  guitar-tuning))
+
+% ******* d dom. 7-5, root pos., 4 notes, 3rd on top 
+\storePredefinedDiagram #d-shape-fretboard-table
+                        \chordmode { d,:1.5-.7.10 }
+                        #guitar-tuning
+                        #"x;x;o;1-1;1-2;2-3;"
+
+% ******* dis dom. 7-5, root pos., 4 notes, 3rd on top 
+\storePredefinedDiagram #d-shape-fretboard-table
+                        \chordmode { dis,:1.5-.7.10 }
+                        #guitar-tuning
+                        #(chord-shape 'es:1.5-.7.10 
+			  guitar-tuning)
+
+% ******* es dom. 7-5, root pos., 4 notes, 3rd on top 
+\storePredefinedDiagram #d-shape-fretboard-table
+                        \chordmode { es,:1.5-.7.10 }
+                        #guitar-tuning
+                        #(chord-shape 'es:1.5-.7.10 
+			  guitar-tuning)
+
+% ******* e dom. 7-5, root pos., 4 notes, 3rd on top 
+\storePredefinedDiagram #d-shape-fretboard-table
+                        \chordmode { e,:1.5-.7.10 }
+                        #guitar-tuning
+                        #(offset-fret 1 (
+			  chord-shape 'es:1.5-.7.10 
+			  guitar-tuning))
+
+% ******* f dom. 7-5, root pos., 4 notes, 3rd on top 
+\storePredefinedDiagram #d-shape-fretboard-table
+                        \chordmode { f,:1.5-.7.10 }
+                        #guitar-tuning
+                        #(offset-fret 2 (
+			  chord-shape 'es:1.5-.7.10 
+			  guitar-tuning))
+
+% ******* fis dom. 7-5, root pos., 4 notes, 3rd on top 
+\storePredefinedDiagram #d-shape-fretboard-table
+                        \chordmode { fis,:1.5-.7.10 }
+                        #guitar-tuning
+                        #(offset-fret 3 (
+			  chord-shape 'es:1.5-.7.10 
+			  guitar-tuning))
+
+% ******* ges dom. 7-5, root pos., 4 notes, 3rd on top 
+\storePredefinedDiagram #d-shape-fretboard-table
+                        \chordmode { ges,:1.5-.7.10 }
+                        #guitar-tuning
+                        #(offset-fret 3 (
+			  chord-shape 'es:1.5-.7.10 
+			  guitar-tuning))
+
+% ******* g dom. 7-5, root pos., 4 notes, 3rd on top 
+\storePredefinedDiagram #d-shape-fretboard-table
+                        \chordmode { g,:1.5-.7.10 }
+                        #guitar-tuning
+                        #(offset-fret 4 (
+			  chord-shape 'es:1.5-.7.10 
+			  guitar-tuning))
+
+% ******* gis dom. 7-5, root pos., 4 notes, 3rd on top 
+\storePredefinedDiagram #d-shape-fretboard-table
+                        \chordmode { gis,:1.5-.7.10 }
+                        #guitar-tuning
+                        #(offset-fret 5 (
+			  chord-shape 'es:1.5-.7.10 
+			  guitar-tuning))
+
+% ******* as dom. 7-5, root pos., 4 notes, 3rd on top 
+\storePredefinedDiagram #d-shape-fretboard-table
+                        \chordmode { as,:1.5-.7.10 }
+                        #guitar-tuning
+                        #(offset-fret 5 (
+			  chord-shape 'es:1.5-.7.10 
+			  guitar-tuning))
+
+% ******* a dom. 7-5, root pos., 4 notes, 3rd on top 
+\storePredefinedDiagram #d-shape-fretboard-table
+                        \chordmode { a,:1.5-.7.10 }
+                        #guitar-tuning
+                        #(offset-fret 6 (
+			  chord-shape 'es:1.5-.7.10 
+			  guitar-tuning))
+
+% ******* ais dom. 7-5, root pos., 4 notes, 3rd on top 
+\storePredefinedDiagram #d-shape-fretboard-table
+                        \chordmode { ais,:1.5-.7.10 }
+                        #guitar-tuning
+                        #(offset-fret 7 (
+			  chord-shape 'es:1.5-.7.10 
+			  guitar-tuning))
+
+% ******* bes dom. 7-5, root pos., 4 notes, 3rd on top 
+\storePredefinedDiagram #d-shape-fretboard-table
+                        \chordmode { bes,:1.5-.7.10 }
+                        #guitar-tuning
+                        #(offset-fret 7 (
+			  chord-shape 'es:1.5-.7.10 
+			  guitar-tuning))
+
+% ******* b dom. 7-5, root pos., 4 notes, 3rd on top 
+\storePredefinedDiagram #d-shape-fretboard-table
+                        \chordmode { b,:1.5-.7.10 }
+                        #guitar-tuning
+                        #(offset-fret 8 (
+			  chord-shape 'es:1.5-.7.10 
+			  guitar-tuning))
+
 
 
 
