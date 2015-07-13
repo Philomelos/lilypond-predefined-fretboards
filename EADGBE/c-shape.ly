@@ -25249,7 +25249,7 @@ cShape = {
 % ****** add c-shape dom. 7+5 defs (3rd inv., 4 n., root on top)
 \addChordShape #'c,:7.10.12+.15^1.3.5+
                #guitar-tuning
-               #"x;1-1;2-4;1-2;1-3;x;"
+               #"x;1-1-(;2-2;1-1;1-1-);x;"
 
 % ****** store prdfnd c-shape dom. 7+5 dgrms (3rd inv., 4 n., root on top)
 % ******* c dom. 7+5, 3rd inv., 4 notes, root on top
