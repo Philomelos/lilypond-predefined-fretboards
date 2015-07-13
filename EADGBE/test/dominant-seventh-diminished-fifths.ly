@@ -20,8 +20,93 @@
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%% SEVENTH DIMINISHED FIFTHS %%%%%%%%%%%
+%%%%%% DOMINANT SEVENTH DIMINISHED FIFTHS %%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+seventhDiminishedFifthsRootPositionFourNotesThirdOnTopChordSymbols = \chordmode {
+% * tetrads
+% ** seventh diminished fifths
+% *** root position
+% **** four notes
+% ***** third on the top
+  %\aShape
+  %\dShape
+  \repeat unfold 2 {
+    c1:7.5-
+    cis1:7.5- 
+    des1:7.5-
+    d1:7.5-
+    dis1:7.5- 
+    es1:7.5-
+    e1:7.5-
+    f1:7.5-
+    fis1:7.5- 
+    ges1:7.5-
+    g1:7.5-
+    gis1:7.5- 
+    as1:7.5-
+    a1:7.5-
+    ais1:7.5- 
+    bes1:7.5-
+    b1:7.5-
+  }
+}
+
+seventhDiminishedFifthsRootPositionFourNotesThirdOnTopShapes = \lyricmode {
+% * tetrads
+% ** seventh diminished fifths
+% *** root position
+% **** four notes
+% ***** third on the top
+  A-Shape \repeat unfold 16 { \skip1 }
+  D-Shape \repeat unfold 16 { \skip1 }
+}
+
+seventhDiminishedFifthsRootPositionFourNotesThirdOnTop = \chordmode {
+% * tetrads
+% ** seventh diminished fifths
+% *** root position
+% **** four notes
+% ***** third on the top
+  \aShape
+  c,1:1.5-.7.10
+  cis,1:1.5-.7.10
+  des,1:1.5-.7.10
+  d,1:1.5-.7.10
+  dis,1:1.5-.7.10
+  es,1:1.5-.7.10
+  e,1:1.5-.7.10
+  f,1:1.5-.7.10
+  fis,1:1.5-.7.10
+  ges,1:1.5-.7.10
+  g,1:1.5-.7.10
+  gis,1:1.5-.7.10
+  as,1:1.5-.7.10
+  a,,1:1.5-.7.10
+  ais,,1:1.5-.7.10
+  bes,,1:1.5-.7.10
+  b,,1:1.5-.7.10
+  \bar "||"
+  \dShape
+  c,1:1.5-.7.10
+  cis,1:1.5-.7.10
+  des,1:1.5-.7.10
+  d,1:1.5-.7.10
+  dis,1:1.5-.7.10
+  es,1:1.5-.7.10
+  e,1:1.5-.7.10
+  f,1:1.5-.7.10
+  fis,1:1.5-.7.10
+  ges,1:1.5-.7.10
+  g,1:1.5-.7.10
+  gis,1:1.5-.7.10
+  as,1:1.5-.7.10
+  a,,1:1.5-.7.10
+  ais,,1:1.5-.7.10
+  bes,,1:1.5-.7.10
+  b,,1:1.5-.7.10
+  \bar "|."
+}
+
 seventhDiminishedFifthsRootPositionFourNotesFifthOnTopChordSymbols = \chordmode {
 % * tetrads
 % ** seventh diminished fifths
@@ -807,6 +892,34 @@ seventhDiminishedFifthsThirdInversionFourNotesFifthOnTop = \chordmode {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%% SCORE DEFINITIONS %%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%{
+  \score {
+    <<
+      \new ChordNames {
+        \seventhDiminishedFifthsRootPositionFourNotesThirdOnTopChordSymbols
+      }
+      \new FretBoards {
+        \seventhDiminishedFifthsRootPositionFourNotesThirdOnTop
+      }
+      \new Voice = "seventhdiminishedfifths" {
+        \clef "treble_8"
+        \seventhDiminishedFifthsRootPositionFourNotesThirdOnTop
+      }
+      \new Lyrics \lyricsto "seventhdiminishedfifths" {
+        \seventhDiminishedFifthsRootPositionFourNotesThirdOnTopShapes
+      }
+      \new TabStaff {
+        \seventhDiminishedFifthsRootPositionFourNotesThirdOnTop
+      }
+    >>
+    \header {
+      title = "Seventh Diminished Fifths (Mixed Shapes)"
+      subtitle = "Root position"
+      subsubtitle = "Four notes"
+      piece = "Third on the top"
+    }
+  }
+%}
 %{
   \score {
     <<
@@ -947,7 +1060,7 @@ seventhDiminishedFifthsThirdInversionFourNotesFifthOnTop = \chordmode {
     }
   }
 %}
-%%{
+%{
   \score {
     <<
       \new ChordNames {
