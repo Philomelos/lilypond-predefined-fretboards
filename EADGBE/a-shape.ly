@@ -4659,6 +4659,31 @@ aShape = {
 			  chord-shape 'bes,:1.5-.7+.10 
 			  guitar-tuning))
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%% (MAJOR) ADDED NINTHS %%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% * tetrads
+% ** (major) added ninths
+% *** root position
+% **** 5 notes
+% ***** root on top
+% ****** add a-shape add9 defs (root pos., 5 nts, root on top)
+\addChordShape #'a,:1.3.5.9.10.15
+               #guitar-tuning
+               #"x;o;2-1-(;4-3;2-1-);5-4;"
+%{
+  Shape shifting not possible without altering the chord structure.
+%}
+
+% ****** store predef. a-shape add9 dgrms. (root pos., 5 n., root on top)
+% ******* a add9, root pos., 5 notes, root on top
+\storePredefinedDiagram #a-shape-fretboard-table
+                        \chordmode { a,,:1.3.5.9.10.15 }
+                        #guitar-tuning
+                        #(chord-shape 'a,:1.3.5.9.10.15
+                          guitar-tuning)
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%% Pentads (5 different pitch names) %%%%%%%
