@@ -22,6 +22,82 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%% (MAJOR) ADDED NINTHS %%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+addedninthsRootPositionFourNotesThirdOnTopChordSymbols = \chordmode {
+% * tetrads
+% ** (major) added ninths
+% *** root position
+% **** four notes
+% ***** third on the top
+  %\eShape
+  \repeat unfold 1 {
+    \set additionalPitchPrefix = #"add"
+    e1:5.9
+  }
+}
+
+addedninthsRootPositionFourNotesThirdOnTopShapes = \lyricmode {
+% * tetrads
+% ** (major) added ninths
+% *** root position
+% **** four notes
+% ***** third on the top
+  \repeat unfold 1 {
+    E-Shape %\repeat unfold 16 { \skip1 }
+  }
+}
+
+addedninthsRootPositionFourNotesThirdOnTop = \chordmode {
+% * tetrads
+% ** (major) added ninths
+% *** root position
+% **** four notes
+% ***** third on the top
+  \eShape
+%{
+  Shape shifting not possible without altering the chord structure.
+%}
+  e,,:1.5.9.10
+  \bar "|."
+}
+
+addedninthsRootPositionFiveNotesRootOnTopChordSymbols = \chordmode {
+% * tetrads
+% ** (major) added ninths
+% *** root position
+% **** five notes
+% ***** root on the top
+  %\aShape
+  \repeat unfold 1 {
+    \set additionalPitchPrefix = #"add"
+    a1:5.9
+  }
+}
+
+addedninthsRootPositionFiveNotesRootOnTopShapes = \lyricmode {
+% * tetrads
+% ** (major) added ninths
+% *** root position
+% **** five notes
+% ***** root on the top
+  \repeat unfold 1 {
+    A-Shape \repeat unfold 16 { \skip1 }
+  }
+}
+
+addedninthsRootPositionFiveNotesRootOnTop = \chordmode {
+% * tetrads
+% ** (major) added ninths
+% *** root position
+% **** five notes
+% ***** root on the top
+  \aShape
+%{
+  Shape shifting not possible without altering the chord structure.
+%}
+  a,,:1.3.5.9.10.15
+  \bar "|."
+}
+
 addedninthsRootPositionFourNotesNinthOnTopChordSymbols = \chordmode {
 % * tetrads
 % ** (major) added ninths
@@ -163,7 +239,9 @@ addedninthsRootPositionFiveNotesTwelfthOnTopChordSymbols = \chordmode {
 % **** five notes
 % ***** twelfth on the top
   %\cShape
-  \repeat unfold 1 {
+  %\gShape
+  %\eShape
+  \repeat unfold 3 {
     \set additionalPitchPrefix = #"add"
     c,1:5.9
     cis,1:5.9 
@@ -194,6 +272,12 @@ addedninthsRootPositionFiveNotesTwelfthOnTopShapes = \lyricmode {
   \repeat unfold 1 {
     C-Shape \repeat unfold 16 { \skip1 }
   }
+  \repeat unfold 1 {
+    G-Shape \repeat unfold 16 { \skip1 }
+  }
+  \repeat unfold 1 {
+    E-Shape \repeat unfold 16 { \skip1 }
+  }
 }
 
 addedninthsRootPositionFiveNotesTwelfthOnTop = \chordmode {
@@ -220,6 +304,45 @@ addedninthsRootPositionFiveNotesTwelfthOnTop = \chordmode {
   ais,:1.3.5.9.12
   bes,:1.3.5.9.12
   b,:1.3.5.9.12
+  \bar "||"
+  \gShape
+  c,:1.3.8.9.12
+  cis,:1.3.8.9.12
+  des,:1.3.8.9.12
+  d,:1.3.8.9.12
+  dis,:1.3.8.9.12
+  es,:1.3.8.9.12
+  e,:1.3.8.9.12
+  f,,:1.3.8.9.12
+  fis,,:1.3.8.9.12
+  ges,,:1.3.8.9.12
+  g,,:1.3.8.9.12
+  gis,,:1.3.8.9.12
+  as,,:1.3.8.9.12
+  a,,:1.3.8.9.12
+  ais,,:1.3.8.9.12
+  bes,,:1.3.8.9.12
+  b,,:1.3.8.9.12
+  \bar "||"
+  \eShape
+  c,:1.8.10.12.16
+  cis,:1.8.10.12.16
+  des,:1.8.10.12.16
+  d,:1.8.10.12.16
+  dis,:1.8.10.12.16
+  es,:1.8.10.12.16
+  e,,:1.8.10.12.16
+  f,,:1.8.10.12.16
+  fis,,:1.8.10.12.16
+  ges,,:1.8.10.12.16
+  g,,:1.8.10.12.16
+  gis,,:1.8.10.12.16
+  as,,:1.8.10.12.16
+  a,,:1.8.10.12.16
+  ais,,:1.8.10.12.16
+  bes,,:1.8.10.12.16
+  b,,:1.8.10.12.16
+
   \bar "|."
 }
 
@@ -364,6 +487,62 @@ addedninthsFirstInversionSixNotesTenthOnTop = \chordmode {
   \score {
     <<
       \new ChordNames {
+        \addedninthsRootPositionFourNotesThirdOnTopChordSymbols
+      }
+      \new FretBoards {
+        \addedninthsRootPositionFourNotesThirdOnTop
+      }
+      \new Voice = "addedninths" {
+        \clef "treble_8"
+        \addedninthsRootPositionFourNotesThirdOnTop
+      }
+      \new Lyrics \lyricsto "addedninths" {
+        \addedninthsRootPositionFourNotesThirdOnTopShapes
+      }
+      \new TabStaff {
+        \addedninthsRootPositionFourNotesThirdOnTop
+      }
+    >>
+    \header {
+      title = "(Major) Added Ninths (Mixed Shapes)"
+      subtitle = "Root position"
+      subsubtitle = "Four notes"
+      piece = "Third on the top"
+    }
+  }
+%}
+%{
+  \score {
+    <<
+      \new ChordNames {
+        \addedninthsRootPositionFiveNotesRootOnTopChordSymbols
+      }
+      \new FretBoards {
+        \addedninthsRootPositionFiveNotesRootOnTop
+      }
+      \new Voice = "addedninths" {
+        \clef "treble_8"
+        \addedninthsRootPositionFiveNotesRootOnTop
+      }
+      \new Lyrics \lyricsto "addedninths" {
+        \addedninthsRootPositionFiveNotesRootOnTopShapes
+      }
+      \new TabStaff {
+        \addedninthsRootPositionFiveNotesRootOnTop
+      }
+    >>
+    \header {
+      title = "(Major) Added Ninths (Mixed Shapes)"
+      subtitle = "Root position"
+      subsubtitle = "Five notes"
+      piece = "Root on the top"
+    }
+  }
+%}
+%{
+  \score {
+    <<
+      \new ChordNames {
         \addedninthsRootPositionFourNotesNinthOnTopChordSymbols
       }
       \new FretBoards {
@@ -388,7 +567,7 @@ addedninthsFirstInversionSixNotesTenthOnTop = \chordmode {
     }
   }
 %}
-%%{
+%{
   \score {
     <<
       \new ChordNames {
@@ -416,7 +595,7 @@ addedninthsFirstInversionSixNotesTenthOnTop = \chordmode {
     }
   }
 %}
-%%{
+%{
   \score {
     <<
       \new ChordNames {
@@ -444,7 +623,7 @@ addedninthsFirstInversionSixNotesTenthOnTop = \chordmode {
     }
   }
 %}
-%%{
+%{
   \score {
     <<
       \new ChordNames {
@@ -472,7 +651,7 @@ addedninthsFirstInversionSixNotesTenthOnTop = \chordmode {
     }
   }
 %}
-%%{
+%{
   \score {
     <<
       \new ChordNames {
