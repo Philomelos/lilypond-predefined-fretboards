@@ -4804,5 +4804,150 @@ gShape = {
                           guitar-tuning))
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%% MINOR ADDED NINTHS %%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% * tetrads
+% ** minor added ninths
+% *** root position
+% **** four notes
+% ***** 9th on top
+% ****** add g-shape madd9 defs (root pos., 4 nts, 9th on top)
+\addChordShape #'gis,:1.3-.5.9
+               #guitar-tuning
+               #"4-4;2-2;1-1;3-3;x;x;"
+
+% ****** store predef. g-shape madd9 dgrms. (root pos., 4 n., 9th on top)
+% ******* c madd9, root pos., 4 notes, 9th on top
+\storePredefinedDiagram #g-shape-fretboard-table
+                        \chordmode { c,:1.3-.5.9 }
+                        #guitar-tuning
+                        #(offset-fret 4 (
+                          chord-shape 'gis,:1.3-.5.9
+                          guitar-tuning))
+
+% ******* cis madd9, root pos., 4 notes, 9th on top
+\storePredefinedDiagram #g-shape-fretboard-table
+                        \chordmode { cis,:1.3-.5.9 }
+                        #guitar-tuning
+                        #(offset-fret 5 (
+                          chord-shape 'gis,:1.3-.5.9
+                          guitar-tuning))
+
+% ******* des madd9, root pos., 4 notes, 9th on top
+\storePredefinedDiagram #g-shape-fretboard-table
+                        \chordmode { des,:1.3-.5.9 }
+                        #guitar-tuning
+                        #(offset-fret 5 (
+                          chord-shape 'gis,:1.3-.5.9
+                          guitar-tuning))
+
+% ******* d madd9, root pos., 4 notes, 9th on top
+\storePredefinedDiagram #g-shape-fretboard-table
+                        \chordmode { d,:1.3-.5.9 }
+                        #guitar-tuning
+                        #(offset-fret 6 (
+                          chord-shape 'gis,:1.3-.5.9
+                          guitar-tuning))
+
+% ******* dis madd9, root pos., 4 notes, 9th on top
+\storePredefinedDiagram #g-shape-fretboard-table
+                        \chordmode { dis,:1.3-.5.9 }
+                        #guitar-tuning
+                        #(offset-fret 7 (
+                          chord-shape 'gis,:1.3-.5.9
+                          guitar-tuning))
+
+% ******* es madd9, root pos., 4 notes, 9th on top
+\storePredefinedDiagram #g-shape-fretboard-table
+                        \chordmode { es,:1.3-.5.9 }
+                        #guitar-tuning
+                        #(offset-fret 7 (
+                          chord-shape 'gis,:1.3-.5.9
+                          guitar-tuning))
+
+% ******* e madd9, root pos., 4 notes, 9th on top
+\storePredefinedDiagram #g-shape-fretboard-table
+                        \chordmode { e,:1.3-.5.9 }
+                        #guitar-tuning
+                        #(offset-fret 8 (
+                          chord-shape 'gis,:1.3-.5.9
+                          guitar-tuning))
+
+% ******* f madd9, root pos., 4 notes, 9th on top
+\storePredefinedDiagram #g-shape-fretboard-table
+                        \chordmode { f,:1.3-.5.9 }
+                        #guitar-tuning
+                        #(offset-fret 9 (
+                          chord-shape 'gis,:1.3-.5.9
+                          guitar-tuning))
+
+% ******* fis madd9, root pos., 4 notes, 9th on top
+\storePredefinedDiagram #g-shape-fretboard-table
+                        \chordmode { fis,:1.3-.5.9 }
+                        #guitar-tuning
+                        #(offset-fret 10 (
+                          chord-shape 'gis,:1.3-.5.9
+                          guitar-tuning))
+
+% ******* ges madd9, root pos., 4 notes, 9th on top
+\storePredefinedDiagram #g-shape-fretboard-table
+                        \chordmode { ges,:1.3-.5.9 }
+                        #guitar-tuning
+                        #(offset-fret 10 (
+                          chord-shape 'gis,:1.3-.5.9
+                          guitar-tuning))
+
+% ******* g madd9, root pos., 4 notes, 9th on top
+\storePredefinedDiagram #g-shape-fretboard-table
+                        \chordmode { g,,:1.3-.5.9 }
+                        #guitar-tuning
+                        #"3-3;1-1;o;2-2;x;x;"
+
+% ******* gis madd9, root pos., 4 notes, 9th on top
+\storePredefinedDiagram #g-shape-fretboard-table
+                        \chordmode { gis,,:1.3-.5.9 }
+                        #guitar-tuning
+                        #(chord-shape 'gis,:1.3-.5.9
+                          guitar-tuning)
+
+% ******* as madd9, root pos., 4 notes, 9th on top
+\storePredefinedDiagram #g-shape-fretboard-table
+                        \chordmode { as,,:1.3-.5.9 }
+                        #guitar-tuning
+                        #(chord-shape 'gis,:1.3-.5.9
+                          guitar-tuning)
+
+% ******* a madd9, root pos., 4 notes, 9th on top
+\storePredefinedDiagram #g-shape-fretboard-table
+                        \chordmode { a,,:1.3-.5.9 }
+                        #guitar-tuning
+                        #(offset-fret 1 (
+                          chord-shape 'gis,:1.3-.5.9
+                          guitar-tuning))
+
+% ******* ais madd9, root pos., 4 notes, 9th on top
+\storePredefinedDiagram #g-shape-fretboard-table
+                        \chordmode { ais,,:1.3-.5.9 }
+                        #guitar-tuning
+                        #(offset-fret 2 (
+                          chord-shape 'gis,:1.3-.5.9
+                          guitar-tuning))
+
+% ******* bes madd9, root pos., 4 notes, 9th on top
+\storePredefinedDiagram #g-shape-fretboard-table
+                        \chordmode { bes,,:1.3-.5.9 }
+                        #guitar-tuning
+                        #(offset-fret 2 (
+                          chord-shape 'gis,:1.3-.5.9
+                          guitar-tuning))
+
+% ******* b madd9, root pos., 4 notes, 9th on top
+\storePredefinedDiagram #g-shape-fretboard-table
+                        \chordmode { b,,:1.3-.5.9 }
+                        #guitar-tuning
+                        #(offset-fret 3 (
+                          chord-shape 'gis,:1.3-.5.9
+                          guitar-tuning))
 
 
