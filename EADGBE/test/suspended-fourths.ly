@@ -154,6 +154,72 @@ suspendedfourthsRootPositionFourNotesEighthOnTop = \chordmode {
   \bar "|."
 }
 
+suspendedfourthsRootPositionFiveNotesFifthOnTopChordSymbols = \chordmode {
+% * triads
+% ** suspended fourths
+% *** root position
+% **** five notes
+% ***** fifth on the top
+  %\aShape
+  \repeat unfold 1 {
+    c1:sus4
+    cis1:sus4 
+    des1:sus4
+    d1:sus4
+    dis1:sus4 
+    es1:sus4
+    e1:sus4
+    f1:sus4
+    fis1:sus4 
+    ges1:sus4
+    g1:sus4
+    gis1:sus4 
+    as1:sus4
+    a1:sus4
+    ais1:sus4 
+    bes1:sus4
+    b1:sus4
+  }
+}
+
+suspendedfourthsRootPositionFiveNotesFifthOnTopShapes = \lyricmode {
+% * triads
+% ** suspended fourths
+% *** root position
+% **** five notes
+% ***** fifth on the top
+  \repeat unfold 1 {
+    A-Shape \repeat unfold 16 { \skip1 }
+  }
+}
+
+suspendedfourthsRootPositionFiveNotesFifthOnTop = \chordmode {
+% * triads
+% ** suspended fourths
+% *** root position
+% **** five notes
+% ***** fifth on the top
+  \aShape
+  c,:1.5.8.11.12
+  cis,:1.5.8.11.12
+  des,:1.5.8.11.12
+  d,:1.5.8.11.12
+  dis,:1.5.8.11.12
+  es,:1.5.8.11.12
+  e,:1.5.8.11.12
+  f,:1.5.8.11.12
+  fis,:1.5.8.11.12
+  ges,:1.5.8.11.12
+  g,:1.5.8.11.12
+  gis,:1.5.8.11.12
+  as,:1.5.8.11.12
+  a,,:1.5.8.11.12
+  ais,,:1.5.8.11.12
+  bes,,:1.5.8.11.12
+  b,,:1.5.8.11.12
+  \bar "|."
+}
+
 suspendedfourthsRootPositionFiveNotesEleventhOnTopChordSymbols = \chordmode {
 % * triads
 % ** suspended fourths
@@ -191,6 +257,72 @@ suspendedfourthsRootPositionFiveNotesEleventhOnTop = \chordmode {
   <d g g d' g'>
   %g,:1.4.1.8.11
   <g c' g g' c'>
+  \bar "|."
+}
+
+suspendedfourthsRootPositionSixNotesEighthOnTopChordSymbols = \chordmode {
+% * triads
+% ** suspended fourths
+% *** root position
+% **** six notes
+% ***** eighth on the top
+  %\eShape
+  \repeat unfold 1 {
+    c1:sus4
+    cis1:sus4 
+    des1:sus4
+    d1:sus4
+    dis1:sus4 
+    es1:sus4
+    e1:sus4
+    f1:sus4
+    fis1:sus4 
+    ges1:sus4
+    g1:sus4
+    gis1:sus4 
+    as1:sus4
+    a1:sus4
+    ais1:sus4 
+    bes1:sus4
+    b1:sus4
+  }
+}
+
+suspendedfourthsRootPositionSixNotesEighthOnTopShapes = \lyricmode {
+% * triads
+% ** suspended fourths
+% *** root position
+% **** six notes
+% ***** eighth on the top
+  \repeat unfold 1 {
+    E-Shape \repeat unfold 16 { \skip1 }
+  }
+}
+
+suspendedfourthsRootPositionSixNotesEighthOnTop = \chordmode {
+% * triads
+% ** suspended fourths
+% *** root position
+% **** six notes
+% ***** eighth on the top
+  \eShape
+  c,:1.4.8.11.12.15
+  cis,:1.4.8.11.12.15
+  des,:1.4.8.11.12.15
+  d,:1.4.8.11.12.15
+  dis,:1.4.8.11.12.15
+  es,:1.4.8.11.12.15
+  e,,:1.4.8.11.12.15
+  f,,:1.4.8.11.12.15
+  fis,,:1.4.8.11.12.15
+  ges,,:1.4.8.11.12.15
+  g,,:1.4.8.11.12.15
+  gis,,:1.4.8.11.12.15
+  as,,:1.4.8.11.12.15
+  a,,:1.4.8.11.12.15
+  ais,,:1.4.8.11.12.15
+  bes,,:1.4.8.11.12.15
+  b,,:1.4.8.11.12.15
   \bar "|."
 }
 
@@ -543,7 +675,7 @@ suspendedfourthsSecondInversionSixNotesEleventhOnTop = \chordmode {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%% SCORE DEFINITIONS %%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%{
+%{
   \score {
     <<
       \new ChordNames {
@@ -571,7 +703,7 @@ suspendedfourthsSecondInversionSixNotesEleventhOnTop = \chordmode {
     }
   }
 %}
-%%{
+%{
   \score {
     <<
       \new ChordNames {
@@ -603,6 +735,34 @@ suspendedfourthsSecondInversionSixNotesEleventhOnTop = \chordmode {
   \score {
     <<
       \new ChordNames {
+        \suspendedfourthsRootPositionFiveNotesFifthOnTopChordSymbols
+      }
+      \new FretBoards {
+        \suspendedfourthsRootPositionFiveNotesFifthOnTop
+      }
+      \new Voice = "suspendedfourths" {
+        \clef "treble_8"
+        \suspendedfourthsRootPositionFiveNotesFifthOnTop
+      }
+      \new Lyrics \lyricsto "suspendedfourths" {
+        \suspendedfourthsRootPositionFiveNotesFifthOnTopShapes
+      }
+      \new TabStaff {
+        \suspendedfourthsRootPositionFiveNotesFifthOnTop
+      }
+    >>
+    \header {
+      title = "Suspended Fourths (Mixed Shapes)"
+      subtitle = "Root position"
+      subsubtitle = "Five notes"
+      piece = "Fifth on the top"
+    }
+  }
+%}
+%{
+  \score {
+    <<
+      \new ChordNames {
         \suspendedfourthsRootPositionFiveNotesEleventhOnTopChordSymbols
       }
       \new FretBoards {
@@ -627,7 +787,35 @@ suspendedfourthsSecondInversionSixNotesEleventhOnTop = \chordmode {
     }
   }
 %}
-%%{
+%{
+  \score {
+    <<
+      \new ChordNames {
+        \suspendedfourthsRootPositionSixNotesEighthOnTopChordSymbols
+      }
+      \new FretBoards {
+        \suspendedfourthsRootPositionSixNotesEighthOnTop
+      }
+      \new Voice = "suspendedfourths" {
+        \clef "treble_8"
+        \suspendedfourthsRootPositionSixNotesEighthOnTop
+      }
+      \new Lyrics \lyricsto "suspendedfourths" {
+        \suspendedfourthsRootPositionSixNotesEighthOnTopShapes
+      }
+      \new TabStaff {
+        \suspendedfourthsRootPositionSixNotesEighthOnTop
+      }
+    >>
+    \header {
+      title = "Suspended Fourths (Mixed Shapes)"
+      subtitle = "Root position"
+      subsubtitle = "Six notes"
+      piece = "Eighth on the top"
+    }
+  }
+%}
+%{
   \score {
     <<
       \new ChordNames {
@@ -655,7 +843,7 @@ suspendedfourthsSecondInversionSixNotesEleventhOnTop = \chordmode {
     }
   }
 %}
-%%{
+%{
   \score {
     <<
       \new ChordNames {
@@ -683,7 +871,7 @@ suspendedfourthsSecondInversionSixNotesEleventhOnTop = \chordmode {
     }
   }
 %}
-%%{
+%{
   \score {
     <<
       \new ChordNames {
@@ -711,7 +899,7 @@ suspendedfourthsSecondInversionSixNotesEleventhOnTop = \chordmode {
     }
   }
 %}
-%%{
+%{
   \score {
     <<
       \new ChordNames {
@@ -739,7 +927,7 @@ suspendedfourthsSecondInversionSixNotesEleventhOnTop = \chordmode {
     }
   }
 %}
-%%{
+%{
   \score {
     <<
       \new ChordNames {
@@ -767,7 +955,7 @@ suspendedfourthsSecondInversionSixNotesEleventhOnTop = \chordmode {
     }
   }
 %}
-%%{
+%{
   \score {
     <<
       \new ChordNames {
