@@ -61,7 +61,7 @@ minorsixthaddedninthsRootPositionFiveNotesTwelfthOnTopChordSymbols = \chordmode 
 }
 
 minorsixthaddedninthsRootPositionFiveNotesTwelfthOnTopShapes = \lyricmode {
-% * tetrads
+% * pentads
 % ** minorsixthaddedninths
 % *** root position
 % **** five notes
@@ -72,7 +72,7 @@ minorsixthaddedninthsRootPositionFiveNotesTwelfthOnTopShapes = \lyricmode {
 }
 
 minorsixthaddedninthsRootPositionFiveNotesTwelfthOnTop = \chordmode {
-% * tetrads
+% * pentads
 % ** minorsixthaddedninths
 % *** root position
 % **** five notes
