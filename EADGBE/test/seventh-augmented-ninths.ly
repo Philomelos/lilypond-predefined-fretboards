@@ -88,11 +88,77 @@ seventhaugmentedninthsRootPositionFourNotesNinthOnTop = \chordmode {
   \bar "|."
 }
 
+seventhaugmentedninthsSecondInversionFiveNotesNinthOnTopChordSymbols = \chordmode {
+% * pentads
+% ** seventh augmented ninths
+% *** second inv.
+% **** five notes
+% ***** ninth on the top
+  %\cShape
+  \repeat unfold 1 {
+    c1:9+/g
+    cis1:9+/gis
+    des1:9+/as
+    d1:9+/a
+    dis1:9+/ais 
+    es1:9+/bes
+    e1:9+/b
+    f1:9+/c
+    fis1:9+/cis 
+    ges1:9+/des
+    g1:9+/d
+    gis1:9+/dis 
+    as1:9+/es
+    a1:9+/e
+    ais1:9+/eis 
+    bes1:9+/f
+    b1:9+/fis
+  }
+}
+
+seventhaugmentedninthsSecondInversionFiveNotesNinthOnTopShapes = \lyricmode {
+% * pentads
+% ** seventhaugmentedninths
+% *** second inv.
+% **** five notes
+% ***** ninth on the top
+  \repeat unfold 1 {
+    C-Shape \repeat unfold 16 { \skip1 }
+  }
+}
+
+seventhaugmentedninthsSecondInversionFiveNotesNinthOnTop = \chordmode {
+% * pentads
+% ** seventh augmented ninths
+% *** second inv.
+% **** five notes
+% ***** ninth on the top
+  \cShape
+  c,,:5.8.10.14.16+^1.3
+  cis,,:5.8.10.14.16+^1.3
+  des,,:5.8.10.14.16+^1.3
+  d,,:5.8.10.14.16+^1.3
+  dis,,:5.8.10.14.16+^1.3
+  es,,:5.8.10.14.16+^1.3
+  e,,:5.8.10.14.16+^1.3
+  f,,:5.8.10.14.16+^1.3
+  fis,,:5.8.10.14.16+^1.3
+  ges,,:5.8.10.14.16+^1.3
+  g,,:5.8.10.14.16+^1.3
+  gis,,:5.8.10.14.16+^1.3
+  as,,:5.8.10.14.16+^1.3
+  a,,:5.8.10.14.16+^1.3
+  ais,,,:5.8.10.14.16+^1.3
+  bes,,,:5.8.10.14.16+^1.3
+  b,,,:5.8.10.14.16+^1.3
+  \bar "|."
+}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%% SCORE DEFINITIONS %%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%{
+%{
   \score {
     <<
       \new ChordNames {
@@ -116,6 +182,35 @@ seventhaugmentedninthsRootPositionFourNotesNinthOnTop = \chordmode {
       title = "Seventh augmented ninths (Mixed Shapes)"
       subtitle = "Root position"
       subsubtitle = "Four notes"
+      piece = "Ninth on the top"
+    }
+  }
+%}
+
+%%{
+  \score {
+    <<
+      \new ChordNames {
+        \seventhaugmentedninthsSecondInversionFiveNotesNinthOnTopChordSymbols
+      }
+      \new FretBoards {
+        \seventhaugmentedninthsSecondInversionFiveNotesNinthOnTop
+      }
+      \new Voice = "seventhaugmentedninths" {
+        \clef "treble_8"
+        \seventhaugmentedninthsSecondInversionFiveNotesNinthOnTop
+      }
+      \new Lyrics \lyricsto "seventhaugmentedninths" {
+        \seventhaugmentedninthsSecondInversionFiveNotesNinthOnTopShapes
+      }
+      \new TabStaff {
+        \seventhaugmentedninthsSecondInversionFiveNotesNinthOnTop
+      }
+    >>
+    \header {
+      title = "Seventh augmented ninths (Mixed Shapes)"
+      subtitle = "Second inversion"
+      subsubtitle = "Five notes"
       piece = "Ninth on the top"
     }
   }
