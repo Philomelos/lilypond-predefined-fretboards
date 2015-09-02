@@ -33025,6 +33025,150 @@ cShape = {
                           guitar-tuning)
 
 
+% * pentads
+% ** seventh augmented ninths
+% *** second inv.
+% **** 5 notes
+% ***** 9th on top
+% ****** add c-shape 7+9 defs (second inv., 5 nts, 9th on top)
+\addChordShape #'b,,:5.8.10.14.16+^1.3
+               #guitar-tuning
+               #"2;2-2;1-1;2-3;3-4;x;"
+% 2nd fret on 6. string can only be played with thumb. `2-"T"` is not possible any more in LP 2.19.25. 
+
+% ****** store predef. c-shape 7+9 dgrms. (second inv., 5 n., 9th on top)
+% ******* c 7+9 second inv., 5 notes, 9th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { c,,:5.8.10.14.16+^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 1 (
+                          chord-shape 'b,,:5.8.10.14.16+^1.3
+                          guitar-tuning))
+
+% ******* cis 7+9 second inv., 5 notes, 9th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { cis,,:5.8.10.14.16+^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 2 (
+                          chord-shape 'b,,:5.8.10.14.16+^1.3
+                          guitar-tuning))
+
+% ******* des 7+9 second inv., 5 notes, 9th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { des,,:5.8.10.14.16+^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 2 (
+                          chord-shape 'b,,:5.8.10.14.16+^1.3
+                          guitar-tuning))
+
+% ******* d 7+9 second inv., 5 notes, 9th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { d,,:5.8.10.14.16+^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 3 (
+                          chord-shape 'b,,:5.8.10.14.16+^1.3
+                          guitar-tuning))
+
+% ******* dis 7+9 second inv., 5 notes, 9th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { dis,,:5.8.10.14.16+^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 4 (
+                          chord-shape 'b,,:5.8.10.14.16+^1.3
+                          guitar-tuning))
+
+% ******* es 7+9 second inv., 5 notes, 9th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { es,,:5.8.10.14.16+^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 4 (
+                          chord-shape 'b,,:5.8.10.14.16+^1.3
+                          guitar-tuning))
+
+% ******* e 7+9 second inv., 5 notes, 9th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { e,,:5.8.10.14.16+^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 5 (
+                          chord-shape 'b,,:5.8.10.14.16+^1.3
+                          guitar-tuning))
+
+% ******* f 7+9 second inv., 5 notes, 9th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { f,,:5.8.10.14.16+^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 6 (
+                          chord-shape 'b,,:5.8.10.14.16+^1.3
+                          guitar-tuning))
+
+% ******* fis 7+9 second inv., 5 notes, 9th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { fis,,:5.8.10.14.16+^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 7 (
+                          chord-shape 'b,,:5.8.10.14.16+^1.3
+                          guitar-tuning))
+
+% ******* ges 7+9 second inv., 5 notes, 9th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { ges,,:5.8.10.14.16+^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 7 (
+                          chord-shape 'b,,:5.8.10.14.16+^1.3
+                          guitar-tuning))
+
+% ******* g 7+9 second inv., 5 notes, 9th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { g,,:5.8.10.14.16+^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 8 (
+                          chord-shape 'b,,:5.8.10.14.16+^1.3
+                          guitar-tuning))
+
+% ******* gis 7+9 second inv., 5 notes, 9th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { gis,,:5.8.10.14.16+^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 9 (
+                          chord-shape 'b,,:5.8.10.14.16+^1.3
+                          guitar-tuning))
+
+% ******* as 7+9 second inv., 5 notes, 9th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { as,,:5.8.10.14.16+^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 8 (
+                          chord-shape 'b,,:5.8.10.14.16+^1.3
+                          guitar-tuning))
+
+% ******* a 7+9 second inv., 5 notes, 9th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { a,,:5.8.10.14.16+^1.3 }
+                        #guitar-tuning
+                        #(offset-fret 10 (
+                          chord-shape 'b,,:5.8.10.14.16+^1.3
+                          guitar-tuning))
+
+% ******* ais 7+9 second inv., 5 notes, 9th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { ais,,,:5.8.10.14.16+^1.3 }
+                        #guitar-tuning
+                        #"1;1-1;o;1-2;2-4;x;"
+
+% ******* bes 7+9 second inv., 5 notes, 9th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { bes,,,:5.8.10.14.16+^1.3 }
+                        #guitar-tuning
+                        #"1;1-1;o;1-2;2-4;x;"
+
+% ******* b 7+9 second inv., 5 notes, 9th on top
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { b,,,:5.8.10.14.16+^1.3 }
+                        #guitar-tuning
+                        #(chord-shape 'b,,:5.8.10.14.16+^1.3
+                          guitar-tuning)
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%% MINOR NINTHS %%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
