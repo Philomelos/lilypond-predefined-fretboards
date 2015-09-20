@@ -22,65 +22,109 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%% DOMINANT SEVENTH AUGMENTED FIFTHS %%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-dominantSeventhAugmentedFifthsRootPositionFiveNotesFifteenthOnTopChordSymbols = \chordmode {
+dominantSeventhAugmentedFifthsRootPositionFourNotesThirdOnTopChordSymbols = \chordmode {
 % * tetrads
 % ** dominant seventh augmented fifths
 % *** root position
-% **** five notes
-% ***** 15th on the top
+% **** four notes
+% ***** third on the top
+  %\aShape
   %\eShape
-  c1:7.5+
-  cis1:7.5+ 
-  des1:7.5+
-  d1:7.5+
-  dis1:7.5+ 
-  es1:7.5+
-  e1:7.5+
-  f1:7.5+
-  fis1:7.5+ 
-  ges1:7.5+
-  g1:7.5+
-  gis1:7.5+ 
-  as1:7.5+
-  a1:7.5+
-  ais1:7.5+ 
-  bes1:7.5+
-  b1:7.5+
+  %\dShape
+  \repeat unfold 3 {
+    c1:7.5+
+    cis1:7.5+ 
+    des1:7.5+
+    d1:7.5+
+    dis1:7.5+ 
+    es1:7.5+
+    e1:7.5+
+    f1:7.5+
+    fis1:7.5+ 
+    ges1:7.5+
+    g1:7.5+
+    gis1:7.5+ 
+    as1:7.5+
+    a1:7.5+
+    ais1:7.5+ 
+    bes1:7.5+
+    b1:7.5+
+  }
 }
 
-dominantSeventhAugmentedFifthsRootPositionFiveNotesFifteenthOnTopShapes = \lyricmode {
+dominantSeventhAugmentedFifthsRootPositionFourNotesThirdOnTopShapes = \lyricmode {
 % * tetrads
 % ** dominant seventh augmented fifths
 % *** root position
-% **** five notes
-% ***** 15th on the top
+% **** four notes
+% ***** third on the top
+  A-Shape \repeat unfold 16 { \skip1 }
   E-Shape \repeat unfold 16 { \skip1 }
+  D-Shape \repeat unfold 16 { \skip1 }
 }
 
-dominantSeventhAugmentedFifthsRootPositionFiveNotesFifteenthOnTop = \chordmode {
+dominantSeventhAugmentedFifthsRootPositionFourNotesThirdOnTop = \chordmode {
 % * tetrads
 % ** dominant seventh augmented fifths
 % *** root position
-% **** five notes
-% ***** 15th on the top
+% **** four notes
+% ***** third on the top
+  \aShape
+  c,1:1.5+.7.10
+  cis,1:1.5+.7.10
+  des,1:1.5+.7.10
+  d,1:1.5+.7.10
+  dis,1:1.5+.7.10
+  es,1:1.5+.7.10
+  e,1:1.5+.7.10
+  f,1:1.5+.7.10
+  fis,1:1.5+.7.10
+  ges,1:1.5+.7.10
+  g,1:1.5+.7.10
+  gis,1:1.5+.7.10
+  as,1:1.5+.7.10
+  a,,1:1.5+.7.10
+  ais,,1:1.5+.7.10
+  bes,,1:1.5+.7.10
+  b,,1:1.5+.7.10
+  \bar "||"
   \eShape
-  c,1:1.7.10.12+.15
-  cis,1:1.7.10.12+.15
-  des,1:1.7.10.12+.15
-  d,1:1.7.10.12+.15
-  dis,1:1.7.10.12+.15
-  es,1:1.7.10.12+.15
-  e,,1:1.7.10.12+.15
-  f,,1:1.7.10.12+.15
-  fis,,1:1.7.10.12+.15
-  ges,,1:1.7.10.12+.15
-  g,,1:1.7.10.12+.15
-  gis,,1:1.7.10.12+.15
-  as,,1:1.7.10.12+.15
-  a,,1:1.7.10.12+.15
-  ais,,1:1.7.10.12+.15
-  bes,,1:1.7.10.12+.15
-  b,,1:1.7.10.12+.15
+  c,1:1.5+.7.10
+  cis,1:1.5+.7.10
+  des,1:1.5+.7.10
+  d,1:1.5+.7.10
+  dis,1:1.5+.7.10
+  es,1:1.5+.7.10
+  e,,1:1.5+.7.10
+  f,,1:1.5+.7.10
+  fis,,1:1.5+.7.10
+  ges,,1:1.5+.7.10
+  g,,1:1.5+.7.10
+  gis,,1:1.5+.7.10
+  as,,1:1.5+.7.10
+  a,,1:1.5+.7.10
+  ais,,1:1.5+.7.10
+  bes,,1:1.5+.7.10
+  b,,1:1.5+.7.10
+  \bar "||"
+  \dShape
+  c1:1.5+.7.10
+  cis1:1.5+.7.10
+  des1:1.5+.7.10
+  d,1:1.5+.7.10
+  dis,1:1.5+.7.10
+  es,1:1.5+.7.10
+  e,1:1.5+.7.10
+  f,1:1.5+.7.10
+  fis,1:1.5+.7.10
+  ges,1:1.5+.7.10
+  g,1:1.5+.7.10
+  gis,1:1.5+.7.10
+  as,1:1.5+.7.10
+  a,1:1.5+.7.10
+  ais,1:1.5+.7.10
+  bes,1:1.5+.7.10
+  b,1:1.5+.7.10
   \bar "|."
 }
 
@@ -205,6 +249,68 @@ dominantSeventhAugmentedFifthsRootPositionFourNotesSeventhOnTop = \chordmode {
   ais,1:1.3.5+.7
   bes,1:1.3.5+.7
   b,1:1.3.5+.7
+  \bar "|."
+}
+
+dominantSeventhAugmentedFifthsRootPositionFiveNotesRootOnTopChordSymbols = \chordmode {
+% * tetrads
+% ** dominant seventh augmented fifths
+% *** root position
+% **** five notes
+% ***** root on the top
+  %\eShape
+  c1:7.5+
+  cis1:7.5+ 
+  des1:7.5+
+  d1:7.5+
+  dis1:7.5+ 
+  es1:7.5+
+  e1:7.5+
+  f1:7.5+
+  fis1:7.5+ 
+  ges1:7.5+
+  g1:7.5+
+  gis1:7.5+ 
+  as1:7.5+
+  a1:7.5+
+  ais1:7.5+ 
+  bes1:7.5+
+  b1:7.5+
+}
+
+dominantSeventhAugmentedFifthsRootPositionFiveNotesRootOnTopShapes = \lyricmode {
+% * tetrads
+% ** dominant seventh augmented fifths
+% *** root position
+% **** five notes
+% ***** root on the top
+  E-Shape \repeat unfold 16 { \skip1 }
+}
+
+dominantSeventhAugmentedFifthsRootPositionFiveNotesRootOnTop = \chordmode {
+% * tetrads
+% ** dominant seventh augmented fifths
+% *** root position
+% **** five notes
+% ***** root on the top
+  \eShape
+  c,1:1.7.10.12+.15
+  cis,1:1.7.10.12+.15
+  des,1:1.7.10.12+.15
+  d,1:1.7.10.12+.15
+  dis,1:1.7.10.12+.15
+  es,1:1.7.10.12+.15
+  e,,1:1.7.10.12+.15
+  f,,1:1.7.10.12+.15
+  fis,,1:1.7.10.12+.15
+  ges,,1:1.7.10.12+.15
+  g,,1:1.7.10.12+.15
+  gis,,1:1.7.10.12+.15
+  as,,1:1.7.10.12+.15
+  a,,1:1.7.10.12+.15
+  ais,,1:1.7.10.12+.15
+  bes,,1:1.7.10.12+.15
+  b,,1:1.7.10.12+.15
   \bar "|."
 }
 
@@ -818,35 +924,63 @@ dominantSeventhAugmentedFifthsThirdInversionFourNotesFifthOnTop = \chordmode {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%% SCORE DEFINITIONS %%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%{
+%%{
   \score {
     <<
       \new ChordNames {
-        \dominantSeventhAugmentedFifthsRootPositionFiveNotesFifteenthOnTopChordSymbols
+        \dominantSeventhAugmentedFifthsRootPositionFiveNotesRootOnTopChordSymbols
       }
       \new FretBoards {
-        \dominantSeventhAugmentedFifthsRootPositionFiveNotesFifteenthOnTop
+        \dominantSeventhAugmentedFifthsRootPositionFiveNotesRootOnTop
       }
       \new Voice = "seventhaugmentedfifths" {
         \clef "treble_8"
-        \dominantSeventhAugmentedFifthsRootPositionFiveNotesFifteenthOnTop
+        \dominantSeventhAugmentedFifthsRootPositionFiveNotesRootOnTop
       }
       \new Lyrics \lyricsto "seventhaugmentedfifths" {
-        \dominantSeventhAugmentedFifthsRootPositionFiveNotesFifteenthOnTopShapes
+        \dominantSeventhAugmentedFifthsRootPositionFiveNotesRootOnTopShapes
       }
       \new TabStaff {
-        \dominantSeventhAugmentedFifthsRootPositionFiveNotesFifteenthOnTop
+        \dominantSeventhAugmentedFifthsRootPositionFiveNotesRootOnTop
       }
     >>
     \header {
       title = "Dominant Seventh Augmented Fifths (Mixed Shapes)"
       subtitle = "Root position"
       subsubtitle = "Five notes"
-      piece = "Fifteenth on the top"
+      piece = "Root on the top"
     }
   }
 %}
-%{
+%%{
+  \score {
+    <<
+      \new ChordNames {
+        \dominantSeventhAugmentedFifthsRootPositionFourNotesThirdOnTopChordSymbols
+      }
+      \new FretBoards {
+        \dominantSeventhAugmentedFifthsRootPositionFourNotesThirdOnTop
+      }
+      \new Voice = "seventhaugmentedfifths" {
+        \clef "treble_8"
+        \dominantSeventhAugmentedFifthsRootPositionFourNotesThirdOnTop
+      }
+      \new Lyrics \lyricsto "seventhaugmentedfifths" {
+        \dominantSeventhAugmentedFifthsRootPositionFourNotesThirdOnTopShapes
+      }
+      \new TabStaff {
+        \dominantSeventhAugmentedFifthsRootPositionFourNotesThirdOnTop
+      }
+    >>
+    \header {
+      title = "Dominant Seventh Augmented Fifths (Mixed Shapes)"
+      subtitle = "Root position"
+      subsubtitle = "Four notes"
+      piece = "Third on the top"
+    }
+  }
+%}
+%%{
   \score {
     <<
       \new ChordNames {
@@ -874,7 +1008,7 @@ dominantSeventhAugmentedFifthsThirdInversionFourNotesFifthOnTop = \chordmode {
     }
   }
 %}
-%{
+%%{
   \score {
     <<
       \new ChordNames {
@@ -902,7 +1036,7 @@ dominantSeventhAugmentedFifthsThirdInversionFourNotesFifthOnTop = \chordmode {
     }
   }
 %}
-%{
+%%{
   \score {
     <<
       \new ChordNames {
@@ -930,7 +1064,7 @@ dominantSeventhAugmentedFifthsThirdInversionFourNotesFifthOnTop = \chordmode {
     }
   }
 %}
-%{
+%%{
   \score {
     <<
       \new ChordNames {
@@ -958,7 +1092,7 @@ dominantSeventhAugmentedFifthsThirdInversionFourNotesFifthOnTop = \chordmode {
     }
   }
 %}
-%{
+%%{
   \score {
     <<
       \new ChordNames {
@@ -986,7 +1120,7 @@ dominantSeventhAugmentedFifthsThirdInversionFourNotesFifthOnTop = \chordmode {
     }
   }
 %}
-%{
+%%{
   \score {
     <<
       \new ChordNames {
@@ -1014,7 +1148,7 @@ dominantSeventhAugmentedFifthsThirdInversionFourNotesFifthOnTop = \chordmode {
     }
   }
 %}
-%{
+%%{
   \score {
     <<
       \new ChordNames {
@@ -1070,7 +1204,7 @@ dominantSeventhAugmentedFifthsThirdInversionFourNotesFifthOnTop = \chordmode {
     }
   }
 %}
-%{
+%%{
   \score {
     <<
       \new ChordNames {

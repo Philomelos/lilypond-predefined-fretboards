@@ -950,7 +950,7 @@ minorSeventhsThirdInversionFourNotesFifthOnTop = \chordmode {
     }
   }
 %}
-%{
+%%{
   \score {
     <<
       \new ChordNames {
@@ -978,7 +978,7 @@ minorSeventhsThirdInversionFourNotesFifthOnTop = \chordmode {
     }
   }
 %}
-%{
+%%{
   \score {
     <<
       \new ChordNames {
@@ -1006,7 +1006,7 @@ minorSeventhsThirdInversionFourNotesFifthOnTop = \chordmode {
     }
   }
 %}
-%{
+%%{
   \score {
     <<
       \new ChordNames {
@@ -1034,7 +1034,7 @@ minorSeventhsThirdInversionFourNotesFifthOnTop = \chordmode {
     }
   }
 %}
-%{
+%%{
   \score {
     <<
       \new ChordNames {
@@ -1062,7 +1062,7 @@ minorSeventhsThirdInversionFourNotesFifthOnTop = \chordmode {
     }
   }
 %}
-%{
+%%{
   \score {
     <<
       \new ChordNames {
@@ -1090,7 +1090,7 @@ minorSeventhsThirdInversionFourNotesFifthOnTop = \chordmode {
     }
   }
 %}
-%{
+%%{
   \score {
     <<
       \new ChordNames {
@@ -1118,7 +1118,7 @@ minorSeventhsThirdInversionFourNotesFifthOnTop = \chordmode {
     }
   }
 %}
-%{
+%%{
   \score {
     <<
       \new ChordNames {
@@ -1146,7 +1146,7 @@ minorSeventhsThirdInversionFourNotesFifthOnTop = \chordmode {
     }
   }
 %}
-%{
+%%{
   \score {
     <<
       \new ChordNames {
@@ -1174,7 +1174,7 @@ minorSeventhsThirdInversionFourNotesFifthOnTop = \chordmode {
     }
   }
 %}
-%{
+%%{
   \score {
     <<
       \new ChordNames {

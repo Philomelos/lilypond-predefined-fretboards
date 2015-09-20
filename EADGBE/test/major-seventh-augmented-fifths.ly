@@ -30,7 +30,8 @@ majorseventhaugmentedfifthsRootPositionFourNotesThirdOnTopChordSymbols = \chordm
 % ***** third on the top
   %\aShape
   %\eShape
-  \repeat unfold 2 {
+  %\dShape
+  \repeat unfold 3 {
     c1:maj7.5+
     cis1:maj7.5+ 
     des1:maj7.5+
@@ -62,6 +63,9 @@ majorseventhaugmentedfifthsRootPositionFourNotesThirdOnTopShapes = \lyricmode {
   }
   \repeat unfold 1 {
     E-Shape \repeat unfold 16 { \skip1 }
+  }
+  \repeat unfold 1 {
+    D-Shape \repeat unfold 16 { \skip1 }
   }
 }
 
@@ -108,6 +112,25 @@ majorseventhaugmentedfifthsRootPositionFourNotesThirdOnTop = \chordmode {
   ais,,1:1.5+.7+.10
   bes,,1:1.5+.7+.10
   b,,1:1.5+.7+.10
+  \bar "||"
+  \dShape
+  c1:1.5+.7+.10
+  cis1:1.5+.7+.10
+  des1:1.5+.7+.10
+  d,1:1.5+.7+.10
+  dis,1:1.5+.7+.10
+  es,1:1.5+.7+.10
+  e,1:1.5+.7+.10
+  f,1:1.5+.7+.10
+  fis,1:1.5+.7+.10
+  ges,1:1.5+.7+.10
+  g,1:1.5+.7+.10
+  gis,1:1.5+.7+.10
+  as,1:1.5+.7+.10
+  a,1:1.5+.7+.10
+  ais,1:1.5+.7+.10
+  bes,1:1.5+.7+.10
+  b,1:1.5+.7+.10
   \bar "|."
 }
 
@@ -898,7 +921,7 @@ majorseventhaugmentedfifthsThirdInversionFourNotesFifthOnTop = \chordmode {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%% SCORE DEFINITIONS %%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%{
+%%{
   \score {
     <<
       \new ChordNames {
@@ -926,7 +949,7 @@ majorseventhaugmentedfifthsThirdInversionFourNotesFifthOnTop = \chordmode {
     }
   }
 %}
-%{
+%%{
   \score {
     <<
       \new ChordNames {
@@ -982,7 +1005,7 @@ majorseventhaugmentedfifthsThirdInversionFourNotesFifthOnTop = \chordmode {
     }
   }
 %}
-%{
+%%{
   \score {
     <<
       \new ChordNames {
@@ -1010,7 +1033,7 @@ majorseventhaugmentedfifthsThirdInversionFourNotesFifthOnTop = \chordmode {
     }
   }
 %}
-%{
+%%{
   \score {
     <<
       \new ChordNames {
@@ -1038,7 +1061,7 @@ majorseventhaugmentedfifthsThirdInversionFourNotesFifthOnTop = \chordmode {
     }
   }
 %}
-%{
+%%{
   \score {
     <<
       \new ChordNames {
@@ -1066,7 +1089,7 @@ majorseventhaugmentedfifthsThirdInversionFourNotesFifthOnTop = \chordmode {
     }
   }
 %}
-%{
+%%{
   \score {
     <<
       \new ChordNames {
@@ -1094,7 +1117,7 @@ majorseventhaugmentedfifthsThirdInversionFourNotesFifthOnTop = \chordmode {
     }
   }
 %}
-%{
+%%{
   \score {
     <<
       \new ChordNames {
@@ -1122,7 +1145,7 @@ majorseventhaugmentedfifthsThirdInversionFourNotesFifthOnTop = \chordmode {
     }
   }
 %}
-%{
+%%{
   \score {
     <<
       \new ChordNames {
@@ -1150,7 +1173,7 @@ majorseventhaugmentedfifthsThirdInversionFourNotesFifthOnTop = \chordmode {
     }
   }
 %}
-%{
+%%{
   \score {
     <<
       \new ChordNames {

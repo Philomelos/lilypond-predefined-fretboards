@@ -29,8 +29,9 @@ seventhDiminishedFifthsRootPositionFourNotesThirdOnTopChordSymbols = \chordmode 
 % **** four notes
 % ***** third on the top
   %\aShape
+  %\eShape 
   %\dShape
-  \repeat unfold 2 {
+  \repeat unfold 3 {
     c1:7.5-
     cis1:7.5- 
     des1:7.5-
@@ -58,6 +59,7 @@ seventhDiminishedFifthsRootPositionFourNotesThirdOnTopShapes = \lyricmode {
 % **** four notes
 % ***** third on the top
   A-Shape \repeat unfold 16 { \skip1 }
+  E-Shape \repeat unfold 16 { \skip1 }
   D-Shape \repeat unfold 16 { \skip1 }
 }
 
@@ -81,6 +83,25 @@ seventhDiminishedFifthsRootPositionFourNotesThirdOnTop = \chordmode {
   g,1:1.5-.7.10
   gis,1:1.5-.7.10
   as,1:1.5-.7.10
+  a,,1:1.5-.7.10
+  ais,,1:1.5-.7.10
+  bes,,1:1.5-.7.10
+  b,,1:1.5-.7.10
+  \bar "||"
+  \eShape
+  c,1:1.5-.7.10
+  cis,1:1.5-.7.10
+  des,1:1.5-.7.10
+  d,1:1.5-.7.10
+  dis,1:1.5-.7.10
+  es,1:1.5-.7.10
+  e,,1:1.5-.7.10
+  f,,1:1.5-.7.10
+  fis,,1:1.5-.7.10
+  ges,,1:1.5-.7.10
+  g,,1:1.5-.7.10
+  gis,,1:1.5-.7.10
+  as,,1:1.5-.7.10
   a,,1:1.5-.7.10
   ais,,1:1.5-.7.10
   bes,,1:1.5-.7.10
@@ -920,7 +941,7 @@ seventhDiminishedFifthsThirdInversionFourNotesFifthOnTop = \chordmode {
     }
   }
 %}
-%{
+%%{
   \score {
     <<
       \new ChordNames {
@@ -948,7 +969,7 @@ seventhDiminishedFifthsThirdInversionFourNotesFifthOnTop = \chordmode {
     }
   }
 %}
-%{
+%%{
   \score {
     <<
       \new ChordNames {
@@ -976,7 +997,7 @@ seventhDiminishedFifthsThirdInversionFourNotesFifthOnTop = \chordmode {
     }
   }
 %}
-%{
+%%{
   \score {
     <<
       \new ChordNames {
@@ -1004,7 +1025,7 @@ seventhDiminishedFifthsThirdInversionFourNotesFifthOnTop = \chordmode {
     }
   }
 %}
-%{
+%%{
   \score {
     <<
       \new ChordNames {
@@ -1032,7 +1053,7 @@ seventhDiminishedFifthsThirdInversionFourNotesFifthOnTop = \chordmode {
     }
   }
 %}
-%{
+%%{
   \score {
     <<
       \new ChordNames {
@@ -1060,7 +1081,7 @@ seventhDiminishedFifthsThirdInversionFourNotesFifthOnTop = \chordmode {
     }
   }
 %}
-%{
+%%{
   \score {
     <<
       \new ChordNames {
@@ -1088,7 +1109,7 @@ seventhDiminishedFifthsThirdInversionFourNotesFifthOnTop = \chordmode {
     }
   }
 %}
-%{
+%%{
   \score {
     <<
       \new ChordNames {
@@ -1116,7 +1137,7 @@ seventhDiminishedFifthsThirdInversionFourNotesFifthOnTop = \chordmode {
     }
   }
 %}
-%{
+%%{
   \score {
     <<
       \new ChordNames {
@@ -1144,7 +1165,7 @@ seventhDiminishedFifthsThirdInversionFourNotesFifthOnTop = \chordmode {
     }
   }
 %}
-%{
+%%{
   \score {
     <<
       \new ChordNames {
@@ -1172,7 +1193,7 @@ seventhDiminishedFifthsThirdInversionFourNotesFifthOnTop = \chordmode {
     }
   }
 %}
-%{
+%%{
   \score {
     <<
       \new ChordNames {
