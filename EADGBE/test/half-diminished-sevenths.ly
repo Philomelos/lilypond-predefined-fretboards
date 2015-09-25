@@ -198,23 +198,26 @@ halfDiminishedSeventhsRootPositionFourNotesSeventhOnTopChordSymbols = \chordmode
 % **** four notes
 % ***** 7th on the top
   %\cShape
-  c1:m7.5-
-  cis1:m7.5- 
-  des1:m7.5-
-  d1:m7.5-
-  dis1:m7.5- 
-  es1:m7.5-
-  e1:m7.5-
-  f1:m7.5-
-  fis1:m7.5- 
-  ges1:m7.5-
-  g1:m7.5-
-  gis1:m7.5- 
-  as1:m7.5-
-  a1:m7.5-
-  ais1:m7.5- 
-  bes1:m7.5-
-  b1:m7.5-
+  %\gShape
+  \repeat unfold 2 {
+    c1:m7.5-
+    cis1:m7.5- 
+    des1:m7.5-
+    d1:m7.5-
+    dis1:m7.5- 
+    es1:m7.5-
+    e1:m7.5-
+    f1:m7.5-
+    fis1:m7.5- 
+    ges1:m7.5-
+    g1:m7.5-
+    gis1:m7.5- 
+    as1:m7.5-
+    a1:m7.5-
+    ais1:m7.5- 
+    bes1:m7.5-
+    b1:m7.5-
+  }
 }
 
 halfDiminishedSeventhsRootPositionFourNotesSeventhOnTopShapes = \lyricmode {
@@ -224,6 +227,7 @@ halfDiminishedSeventhsRootPositionFourNotesSeventhOnTopShapes = \lyricmode {
 % **** four notes
 % ***** 7th on the top
   C-Shape \repeat unfold 16 { \skip1 }
+  G-Shape \repeat unfold 16 { \skip1 }
 }
 
 halfDiminishedSeventhsRootPositionFourNotesSeventhOnTop = \chordmode {
@@ -250,6 +254,25 @@ halfDiminishedSeventhsRootPositionFourNotesSeventhOnTop = \chordmode {
   ais,1:1.3-.5-.7
   bes,1:1.3-.5-.7
   b,1:1.3-.5-.7
+  \bar "||"
+  \gShape
+  c,1:1.10-.12-.14
+  cis,1:1.10-.12-.14
+  des,1:1.10-.12-.14
+  d,1:1.10-.12-.14
+  dis,1:1.10-.12-.14
+  es,1:1.10-.12-.14
+  e,1:1.10-.12-.14
+  f,1:1.10-.12-.14
+  fis,,1:1.10-.12-.14
+  ges,,1:1.10-.12-.14
+  g,,1:1.10-.12-.14
+  gis,,1:1.10-.12-.14
+  as,,1:1.10-.12-.14
+  a,,1:1.10-.12-.14
+  ais,,1:1.10-.12-.14
+  bes,,1:1.10-.12-.14
+  b,,1:1.10-.12-.14
   \bar "|."
 }
 
@@ -323,7 +346,8 @@ halfDiminishedSeventhsFirstInversionFourNotesFifthOnTopChordSymbols = \chordmode
 % **** four notes
 % ***** 5th on the top
   %\cShape
-  \repeat unfold 2 {
+  %\gShape
+  \repeat unfold 3 {
     c1:m7.5-/es
     cis1:m7.5-/e
     des1:m7.5-/fes
@@ -350,8 +374,10 @@ halfDiminishedSeventhsFirstInversionFourNotesFifthOnTopShapes = \lyricmode {
 % *** first inversion
 % **** four notes
 % ***** 5th on the top
-  C-Shape \repeat unfold 16 { \skip1 }
-  C-Shape \repeat unfold 16 { \skip1 }
+  \repeat unfold 2 {
+    C-Shape \repeat unfold 16 { \skip1 }
+  }
+  G-Shape \repeat unfold 16 { \skip1 }
 }
 
 halfDiminishedSeventhsFirstInversionFourNotesFifthOnTop = \chordmode {
@@ -397,6 +423,91 @@ halfDiminishedSeventhsFirstInversionFourNotesFifthOnTop = \chordmode {
   ais,1:3-.8.14.19-^1
   bes,1:3-.8.14.19-^1
   b,,1:3-.8.14.19-^1
+  \bar "||"
+  \gShape
+  c,1:3-.7.8.12-^1
+  cis,1:3-.7.8.12-^1
+  des,1:3-.7.8.12-^1
+  d,1:3-.7.8.12-^1
+  dis,1:3-.7.8.12-^1
+  es,1:3-.7.8.12-^1
+  e,1:3-.7.8.12-^1
+  f,1:3-.7.8.12-^1
+  fis,1:3-.7.8.12-^1
+  ges,1:3-.7.8.12-^1
+  g,,1:3-.7.8.12-^1
+  gis,,1:3-.7.8.12-^1
+  as,,1:3-.7.8.12-^1
+  a,,1:3-.7.8.12-^1
+  ais,,1:3-.7.8.12-^1
+  bes,,1:3-.7.8.12-^1
+  b,,1:3-.7.8.12-^1
+  \bar "|."
+}
+
+halfDiminishedSeventhsFirstInversionFourNotesSeventhOnTopChordSymbols = \chordmode {
+% * tetrads
+% ** half-diminished sevenths
+% *** first inversion
+% **** four notes
+% ***** seventh on the top
+  %\gShape
+  \repeat unfold 1 {
+    c1:m7.5-/es
+    cis1:m7.5-/e
+    des1:m7.5-/fes
+    d1:m7.5-/f
+    dis1:m7.5-/fis 
+    es1:m7.5-/ges
+    e1:m7.5-/g
+    f1:m7.5-/as
+    fis1:m7.5-/a
+    ges1:m7.5-/beses
+    g1:m7.5-/bes
+    gis1:m7.5-/b
+    as1:m7.5-/ces
+    a1:m7.5-/c
+    ais1:m7.5-/cis 
+    bes1:m7.5-/des
+    b1:m7.5-/d
+  }
+}
+
+halfDiminishedSeventhsFirstInversionFourNotesSeventhOnTopShapes = \lyricmode {
+% * tetrads
+% ** half-diminished sevenths
+% *** first inversion
+% **** four notes
+% ***** seventh on the top
+  \repeat unfold 1 {
+    G-Shape \repeat unfold 16 { \skip1 }
+  }
+}
+
+halfDiminishedSeventhsFirstInversionFourNotesSeventhOnTop = \chordmode {
+% * tetrads
+% ** half-diminished sevenths
+% *** first inversion
+% **** four notes
+% ***** seventh on the top
+  \gShape
+  c,1:3-.8.12-.14^1
+  cis,1:3-.8.12-.14^1
+  des,1:3-.8.12-.14^1
+  d,1:3-.8.12-.14^1
+  dis,1:3-.8.12-.14^1
+  es,1:3-.8.12-.14^1
+  e,1:3-.8.12-.14^1
+  f,1:3-.8.12-.14^1
+  fis,1:3-.8.12-.14^1
+  ges,1:3-.8.12-.14^1
+  g,,1:3-.8.12-.14^1
+  gis,,1:3-.8.12-.14^1
+  as,,1:3-.8.12-.14^1
+  a,,1:3-.8.12-.14^1
+  ais,,1:3-.8.12-.14^1
+  bes,,1:3-.8.12-.14^1
+  b,,1:3-.8.12-.14^1
   \bar "|."
 }
 
@@ -611,23 +722,26 @@ halfDiminishedSeventhsSecondInversionFourNotesSeventhOnTopChordSymbols = \chordm
 % **** four notes
 % ***** 7th on the top
   %\cShape
-  c1:m7.5-/ges
-  cis1:m7.5-/g
-  des1:m7.5-/ases
-  d1:m7.5-/as
-  dis1:m7.5-/a
-  es1:m7.5-/beses
-  e1:m7.5-/bes
-  f1:m7.5-/ces
-  fis1:m7.5-/c
-  ges1:m7.5-/deses
-  g1:m7.5-/des
-  gis1:m7.5-/d
-  as1:m7.5-/eses
-  a1:m7.5-/es
-  ais1:m7.5-/e
-  bes1:m7.5-/fes
-  b1:m7.5-/f
+  %\gShape
+  \repeat unfold 2 {
+    c1:m7.5-/ges
+    cis1:m7.5-/g
+    des1:m7.5-/ases
+    d1:m7.5-/as
+    dis1:m7.5-/a
+    es1:m7.5-/beses
+    e1:m7.5-/bes
+    f1:m7.5-/ces
+    fis1:m7.5-/c
+    ges1:m7.5-/deses
+    g1:m7.5-/des
+    gis1:m7.5-/d
+    as1:m7.5-/eses
+    a1:m7.5-/es
+    ais1:m7.5-/e
+    bes1:m7.5-/fes
+    b1:m7.5-/f
+  }
 }
 
 halfDiminishedSeventhsSecondInversionFourNotesSeventhOnTopShapes = \lyricmode {
@@ -637,6 +751,7 @@ halfDiminishedSeventhsSecondInversionFourNotesSeventhOnTopShapes = \lyricmode {
 % **** four notes
 % ***** 7th on the top
   C-Shape \repeat unfold 16 { \skip1 }
+  G-Shape \repeat unfold 16 { \skip1 }
 }
 
 halfDiminishedSeventhsSecondInversionFourNotesSeventhOnTop = \chordmode {
@@ -681,6 +796,25 @@ halfDiminishedSeventhsSecondInversionFourNotesSeventhOnTop = \chordmode {
   \transpose c ais { <ges, c es bes> }
   \transpose c bes { <ges, c es bes> }
   \transpose c b, { <ges, c es bes> }
+  \bar "||"
+  \gShape
+  c,1:5-.8.10-.14^1.3-
+  cis,1:5-.8.10-.14^1.3-
+  des,1:5-.8.10-.14^1.3-
+  d,1:5-.8.10-.14^1.3-
+  dis,1:5-.8.10-.14^1.3-
+  es,1:5-.8.10-.14^1.3-
+  e,1:5-.8.10-.14^1.3-
+  f,1:5-.8.10-.14^1.3-
+  fis,1:5-.8.10-.14^1.3-
+  ges,1:5-.8.10-.14^1.3-
+  g,1:5-.8.10-.14^1.3-
+  gis,,1:5-.8.10-.14^1.3-
+  as,,1:5-.8.10-.14^1.3-
+  a,,1:5-.8.10-.14^1.3-
+  ais,,1:5-.8.10-.14^1.3-
+  bes,,1:5-.8.10-.14^1.3-
+  b,,1:5-.8.10-.14^1.3-
   \bar "|."
 }
 
@@ -692,8 +826,9 @@ halfDiminishedSeventhsThirdInversionFourNotesRootOnTopChordSymbols = \chordmode 
 % **** four notes
 % ***** root on the top
   %\cShape
+  %\gShape
   %\eShape
-  \repeat unfold 2 {
+  \repeat unfold 3 {
     c1:m7.5-/bes
     cis1:m7.5-/b
     des1:m7.5-/ces
@@ -721,6 +856,7 @@ halfDiminishedSeventhsThirdInversionFourNotesRootOnTopShapes = \lyricmode {
 % **** four notes
 % ***** root on the top
   C-Shape \repeat unfold 16 { \skip1 }
+  G-Shape \repeat unfold 16 { \skip1 }
   E-Shape \repeat unfold 16 { \skip1 }
 }
 
@@ -749,6 +885,25 @@ halfDiminishedSeventhsThirdInversionFourNotesRootOnTop = \chordmode {
   bes,,1:7.10-.12-.15^1.3-.5-
   b,,,1:7.10-.12-.15^1.3-.5-
   \bar "||"
+  \gShape
+  c,,1:7.10-.12-.15^1.3-.5-
+  cis,,1:7.10-.12-.15^1.3-.5-
+  des,,1:7.10-.12-.15^1.3-.5-
+  d,,1:7.10-.12-.15^1.3-.5-
+  dis,,1:7.10-.12-.15^1.3-.5-
+  es,,1:7.10-.12-.15^1.3-.5-
+  e,,1:7.10-.12-.15^1.3-.5-
+  f,,1:7.10-.12-.15^1.3-.5-
+  fis,,1:7.10-.12-.15^1.3-.5-
+  ges,,1:7.10-.12-.15^1.3-.5-
+  g,,1:7.10-.12-.15^1.3-.5-
+  gis,,,1:7.10-.12-.15^1.3-.5-
+  as,,,1:7.10-.12-.15^1.3-.5-
+  a,,,1:7.10-.12-.15^1.3-.5-
+  ais,,,1:7.10-.12-.15^1.3-.5-
+  bes,,,1:7.10-.12-.15^1.3-.5-
+  b,,,1:7.10-.12-.15^1.3-.5-
+  \bar "||"
   \eShape
   c,1:7.10-.12-.15^1.3-.5-
   cis,1:7.10-.12-.15^1.3-.5-
@@ -767,6 +922,70 @@ halfDiminishedSeventhsThirdInversionFourNotesRootOnTop = \chordmode {
   ais,,1:7.10-.12-.15^1.3-.5-
   bes,,1:7.10-.12-.15^1.3-.5-
   b,,1:7.10-.12-.15^1.3-.5-
+  \bar "|."
+}
+
+halfDiminishedSeventhsThirdInversionFourNotesThirdOnTopChordSymbols = \chordmode {
+% * tetrads
+% ** half-diminished sevenths
+% *** third inversion
+% **** four notes
+% ***** third on the top
+  %\gShape
+  \repeat unfold 1 {
+    c1:m7.5-/bes
+    cis1:m7.5-/b
+    des1:m7.5-/ces
+    d1:m7.5-/c
+    dis1:m7.5-/cis 
+    es1:m7.5-/des
+    e1:m7.5-/d
+    f1:m7.5-/es
+    fis1:m7.5-/e
+    ges1:m7.5-/fes
+    g1:m7.5-/f
+    gis1:m7.5-/fis
+    as1:m7.5-/ges
+    a1:m7.5-/g
+    ais1:m7.5-/gis 
+    bes1:m7.5-/as
+    b1:m7.5-/a
+  }
+}
+
+halfDiminishedSeventhsThirdInversionFourNotesThirdOnTopShapes = \lyricmode {
+% * tetrads
+% ** half-diminished sevenths
+% *** third inversion
+% **** four notes
+% ***** third on the top
+  G-Shape \repeat unfold 16 { \skip1 }
+}
+
+halfDiminishedSeventhsThirdInversionFourNotesThirdOnTop = \chordmode {
+% * tetrads
+% ** half-diminished sevenths
+% *** third inversion
+% **** four notes
+% ***** third on the top
+  \gShape
+  c,,1:7.12-.15.17-^1.3-.5-
+  cis,,1:7.12-.15.17-^1.3-.5-
+  des,,1:7.12-.15.17-^1.3-.5-
+  d,,1:7.12-.15.17-^1.3-.5-
+  dis,,1:7.12-.15.17-^1.3-.5-
+  es,,1:7.12-.15.17-^1.3-.5-
+  e,,1:7.12-.15.17-^1.3-.5-
+  f,,1:7.12-.15.17-^1.3-.5-
+  fis,,1:7.12-.15.17-^1.3-.5-
+  ges,,1:7.12-.15.17-^1.3-.5-
+  g,,1:7.12-.15.17-^1.3-.5-
+  gis,,,1:7.12-.15.17-^1.3-.5-
+  as,,,1:7.12-.15.17-^1.3-.5-
+  a,,,1:7.12-.15.17-^1.3-.5-
+  ais,,,1:7.12-.15.17-^1.3-.5-
+  bes,,,1:7.12-.15.17-^1.3-.5-
+  b,,,1:7.12-.15.17-^1.3-.5-
   \bar "|."
 }
 
@@ -1022,6 +1241,34 @@ halfDiminishedSeventhsThirdInversionFourNotesFifthOnTop = \chordmode {
   \score {
     <<
       \new ChordNames {
+        \halfDiminishedSeventhsFirstInversionFourNotesSeventhOnTopChordSymbols
+      }
+      \new FretBoards {
+        \halfDiminishedSeventhsFirstInversionFourNotesSeventhOnTop
+      }
+      \new Voice = "halfdiminishedsevenths" {
+        \clef "treble_8"
+        \halfDiminishedSeventhsFirstInversionFourNotesSeventhOnTop
+      }
+      \new Lyrics \lyricsto "halfdiminishedsevenths" {
+        \halfDiminishedSeventhsFirstInversionFourNotesSeventhOnTopShapes
+      }
+      \new TabStaff {
+        \halfDiminishedSeventhsFirstInversionFourNotesSeventhOnTop
+      }
+    >>
+    \header {
+      title = "Half-Diminished Sevenths (Mixed Shapes)"
+      subtitle = "First inversion"
+      subsubtitle = "Four notes"
+      piece = "7th on the top"
+    }
+  }
+%}
+%%{
+  \score {
+    <<
+      \new ChordNames {
         \halfDiminishedSeventhsSecondInversionFourNotesRootOnTopChordSymbols
       }
       \new FretBoards {
@@ -1127,6 +1374,34 @@ halfDiminishedSeventhsThirdInversionFourNotesFifthOnTop = \chordmode {
       subtitle = "Third inversion"
       subsubtitle = "Four notes"
       piece = "Root on the top"
+    }
+  }
+%}
+%%{
+  \score {
+    <<
+      \new ChordNames {
+        \halfDiminishedSeventhsThirdInversionFourNotesThirdOnTopChordSymbols
+      }
+      \new FretBoards {
+        \halfDiminishedSeventhsThirdInversionFourNotesThirdOnTop
+      }
+      \new Voice = "halfdiminishedsevenths" {
+        \clef "treble_8"
+        \halfDiminishedSeventhsThirdInversionFourNotesThirdOnTop
+      }
+      \new Lyrics \lyricsto "halfdiminishedsevenths" {
+        \halfDiminishedSeventhsThirdInversionFourNotesThirdOnTopShapes
+      }
+      \new TabStaff {
+        \halfDiminishedSeventhsThirdInversionFourNotesThirdOnTop
+      }
+    >>
+    \header {
+      title = "Half-Diminished Sevenths (Mixed Shapes)"
+      subtitle = "Third inversion"
+      subsubtitle = "Four notes"
+      piece = "Third on the top"
     }
   }
 %}
