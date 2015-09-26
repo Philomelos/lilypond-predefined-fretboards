@@ -413,8 +413,10 @@ halfDiminishedSeventhsFirstInversionFourNotesFifthOnTopChordSymbols = \chordmode
 % **** four notes
 % ***** 5th on the top
   %\cShape
+  %\cShape
   %\gShape
-  \repeat unfold 3 {
+  %\dShape
+  \repeat unfold 4 {
     c1:m7.5-/es
     cis1:m7.5-/e
     des1:m7.5-/fes
@@ -445,6 +447,7 @@ halfDiminishedSeventhsFirstInversionFourNotesFifthOnTopShapes = \lyricmode {
     C-Shape \repeat unfold 16 { \skip1 }
   }
   G-Shape \repeat unfold 16 { \skip1 }
+  D-Shape \repeat unfold 16 { \skip1 }
 }
 
 halfDiminishedSeventhsFirstInversionFourNotesFifthOnTop = \chordmode {
@@ -509,6 +512,25 @@ halfDiminishedSeventhsFirstInversionFourNotesFifthOnTop = \chordmode {
   ais,,1:3-.7.8.12-^1
   bes,,1:3-.7.8.12-^1
   b,,1:3-.7.8.12-^1
+  \bar "||"
+  \dShape
+  c,1:3-.7.8.12-^1
+  cis,1:3-.7.8.12-^1
+  des,1:3-.7.8.12-^1
+  d,,1:3-.7.8.12-^1
+  dis,,1:3-.7.8.12-^1
+  es,,1:3-.7.8.12-^1
+  e,,1:3-.7.8.12-^1
+  f,,1:3-.7.8.12-^1
+  fis,,1:3-.7.8.12-^1
+  ges,,1:3-.7.8.12-^1
+  g,,1:3-.7.8.12-^1
+  gis,,1:3-.7.8.12-^1
+  as,,1:3-.7.8.12-^1
+  a,,1:3-.7.8.12-^1
+  ais,,1:3-.7.8.12-^1
+  bes,,1:3-.7.8.12-^1
+  b,,1:3-.7.8.12-^1
   \bar "|."
 }
 
@@ -519,7 +541,8 @@ halfDiminishedSeventhsFirstInversionFourNotesSeventhOnTopChordSymbols = \chordmo
 % **** four notes
 % ***** seventh on the top
   %\gShape
-  \repeat unfold 1 {
+  %\dShape
+  \repeat unfold 2 {
     c1:m7.5-/es
     cis1:m7.5-/e
     des1:m7.5-/fes
@@ -546,9 +569,8 @@ halfDiminishedSeventhsFirstInversionFourNotesSeventhOnTopShapes = \lyricmode {
 % *** first inversion
 % **** four notes
 % ***** seventh on the top
-  \repeat unfold 1 {
-    G-Shape \repeat unfold 16 { \skip1 }
-  }
+  G-Shape \repeat unfold 16 { \skip1 }
+  D-Shape \repeat unfold 16 { \skip1 }
 }
 
 halfDiminishedSeventhsFirstInversionFourNotesSeventhOnTop = \chordmode {
@@ -568,6 +590,25 @@ halfDiminishedSeventhsFirstInversionFourNotesSeventhOnTop = \chordmode {
   f,1:3-.8.12-.14^1
   fis,1:3-.8.12-.14^1
   ges,1:3-.8.12-.14^1
+  g,,1:3-.8.12-.14^1
+  gis,,1:3-.8.12-.14^1
+  as,,1:3-.8.12-.14^1
+  a,,1:3-.8.12-.14^1
+  ais,,1:3-.8.12-.14^1
+  bes,,1:3-.8.12-.14^1
+  b,,1:3-.8.12-.14^1
+  \bar "||"
+  \dShape
+  c,1:3-.8.12-.14^1
+  cis,1:3-.8.12-.14^1
+  des,1:3-.8.12-.14^1
+  d,,1:3-.8.12-.14^1
+  dis,,1:3-.8.12-.14^1
+  es,,1:3-.8.12-.14^1
+  e,,1:3-.8.12-.14^1
+  f,,1:3-.8.12-.14^1
+  fis,,1:3-.8.12-.14^1
+  ges,,1:3-.8.12-.14^1
   g,,1:3-.8.12-.14^1
   gis,,1:3-.8.12-.14^1
   as,,1:3-.8.12-.14^1
