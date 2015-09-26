@@ -1143,9 +1143,10 @@ diminishedSeventhsThirdInversionFourNotesThirdOnTopChordSymbols = \chordmode {
 % *** third inversion
 % **** four notes
 % ***** third on the top
+  %\cShape
   %\gShape
   %\dShape
-  \repeat unfold 2 {
+  \repeat unfold 3 {
     c1:dim7/beses
     cis1:dim7/bes
     des1:dim7/ceses
@@ -1172,6 +1173,7 @@ diminishedSeventhsThirdInversionFourNotesThirdOnTopShapes = \lyricmode {
 % *** third inversion
 % **** four notes
 % ***** third on the top
+  C-Shape \repeat unfold 16 { \skip1 }
   G-Shape \repeat unfold 16 { \skip1 }
   D-Shape \repeat unfold 16 { \skip1 }
 }
@@ -1182,6 +1184,25 @@ diminishedSeventhsThirdInversionFourNotesThirdOnTop = \chordmode {
 % *** third inversion
 % **** four notes
 % ***** third on the top
+  \cShape
+  c,1:7-.12-.15.17-^1.3-.5-
+  cis,,1:7-.12-.15.17-^1.3-.5-
+  des,,1:7-.12-.15.17-^1.3-.5-
+  d,,1:7-.12-.15.17-^1.3-.5-
+  dis,,1:7-.12-.15.17-^1.3-.5-
+  es,,1:7-.12-.15.17-^1.3-.5-
+  e,,1:7-.12-.15.17-^1.3-.5-
+  f,,1:7-.12-.15.17-^1.3-.5-
+  fis,,1:7-.12-.15.17-^1.3-.5-
+  ges,,1:7-.12-.15.17-^1.3-.5-
+  g,,1:7-.12-.15.17-^1.3-.5-
+  gis,,1:7-.12-.15.17-^1.3-.5-
+  as,,1:7-.12-.15.17-^1.3-.5-
+  a,,1:7-.12-.15.17-^1.3-.5-
+  ais,,1:7-.12-.15.17-^1.3-.5-
+  bes,,1:7-.12-.15.17-^1.3-.5-
+  b,,1:7-.12-.15.17-^1.3-.5-
+  \bar "||"
   \gShape
   c,,1:7-.12-.15.17-^1.3-.5-
   cis,,1:7-.12-.15.17-^1.3-.5-
@@ -1203,8 +1224,8 @@ diminishedSeventhsThirdInversionFourNotesThirdOnTop = \chordmode {
   \bar "||"
   \dShape
   c,1:7-.12-.15.17-^1.3-.5-
-  cis,,1:7-.12-.15.17-^1.3-.5-
-  des,,1:7-.12-.15.17-^1.3-.5-
+  cis,1:7-.12-.15.17-^1.3-.5-
+  des,1:7-.12-.15.17-^1.3-.5-
   d,,1:7-.12-.15.17-^1.3-.5-
   dis,,1:7-.12-.15.17-^1.3-.5-
   es,,1:7-.12-.15.17-^1.3-.5-
