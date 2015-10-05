@@ -474,8 +474,9 @@ seventhDiminishedFifthsFirstInversionFourNotesFifthOnTopChordSymbols = \chordmod
 % ***** 5th on the top
   %\cShape
   %\cShape
+  %\aShape
   %\gShape
-  \repeat unfold 3 {
+  \repeat unfold 4 {
     c1:7.5-/e
     cis1:7.5-/eis 
     des1:7.5-/f
@@ -505,6 +506,7 @@ seventhDiminishedFifthsFirstInversionFourNotesFifthOnTopShapes = \lyricmode {
   \repeat unfold 2 {
     C-Shape \repeat unfold 16 { \skip1 }
   }
+  A-Shape \repeat unfold 16 { \skip1 }
   G-Shape \repeat unfold 16 { \skip1 }
 }
 
@@ -568,6 +570,25 @@ seventhDiminishedFifthsFirstInversionFourNotesFifthOnTop = \chordmode {
   a,1:3.7.8.12-^1
   ais,1:3.7.8.12-^1
   bes,1:3.7.8.12-^1
+  b,,1:3.7.8.12-^1
+  \bar "||"
+  \aShape
+  c,1:3.7.8.12-^1
+  cis,1:3.7.8.12-^1
+  des,1:3.7.8.12-^1
+  d,1:3.7.8.12-^1
+  dis,1:3.7.8.12-^1
+  es,1:3.7.8.12-^1
+  e,1:3.7.8.12-^1
+  f,1:3.7.8.12-^1
+  fis,1:3.7.8.12-^1
+  ges,1:3.7.8.12-^1
+  g,,1:3.7.8.12-^1
+  gis,,1:3.7.8.12-^1
+  as,,1:3.7.8.12-^1
+  a,,1:3.7.8.12-^1
+  ais,,1:3.7.8.12-^1
+  bes,,1:3.7.8.12-^1
   b,,1:3.7.8.12-^1
   \bar "||"
   \gShape
