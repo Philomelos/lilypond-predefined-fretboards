@@ -9023,7 +9023,7 @@ eShape = {
 
 % ******* e dom. 7-5, root pos., 4 notes, 5th on top 
 \storePredefinedDiagram #e-shape-fretboard-table
-                        \chordmode { e,,:1.7.10.12- }
+                        \chordmode { e,:1.7.10.12- }
                         #guitar-tuning
                         #(offset-fret 10 (
 			  chord-shape 'fis,:1.7.10.12- 
