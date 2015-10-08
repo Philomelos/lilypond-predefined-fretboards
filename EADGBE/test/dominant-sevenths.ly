@@ -141,8 +141,9 @@ dominantSeventhsRootPositionFourNotesFifthOnTopChordSymbols = \chordmode {
 % **** four notes
 % ***** fifth on the top
   %\cShape
+  %\aShape
   %\eShape
-  \repeat unfold 2 {
+  \repeat unfold 3 {
     c1:7
     cis1:7 
     des1:7
@@ -170,6 +171,7 @@ dominantSeventhsRootPositionFourNotesFifthOnTopShapes = \lyricmode {
 % **** four notes
 % ***** fifth on the top
   C-Shape \repeat unfold 16 { \skip1 }
+  A-Shape \repeat unfold 16 { \skip1 }
   E-Shape \repeat unfold 16 { \skip1 }
 }
 
@@ -197,6 +199,25 @@ dominantSeventhsRootPositionFourNotesFifthOnTop = \chordmode {
   ais,,1:1.3.7.12
   bes,,1:1.3.7.12
   b,,1:1.3.7.12
+  \bar "||"
+  \aShape
+  c,1:1.7.10.12
+  cis,1:1.7.10.12
+  des,1:1.7.10.12
+  d,1:1.7.10.12
+  dis,1:1.7.10.12
+  es,1:1.7.10.12
+  e,1:1.7.10.12
+  f,1:1.7.10.12
+  fis,1:1.7.10.12
+  ges,1:1.7.10.12
+  g,1:1.7.10.12
+  gis,1:1.7.10.12
+  as,1:1.7.10.12
+  a,,1:1.7.10.12
+  ais,,1:1.7.10.12
+  bes,,1:1.7.10.12
+  b,,1:1.7.10.12
   \bar "||"
   \eShape
   c,1:1.7.10.12
@@ -397,8 +418,9 @@ dominantSeventhsFirstInversionFourNotesFifthOnTopChordSymbols = \chordmode {
 % ***** 5th on the top
   %\cShape
   %\cShape
+  %\aShape
   %\gShape
-  \repeat unfold 3 {
+  \repeat unfold 4 {
     c1:7/e
     cis1:7/eis 
     des1:7/f
@@ -428,6 +450,7 @@ dominantSeventhsFirstInversionFourNotesFifthOnTopShapes = \lyricmode {
   \repeat unfold 2 {
     C-Shape \repeat unfold 16 { \skip1 }
   }
+  A-Shape \repeat unfold 16 { \skip1 }
   G-Shape \repeat unfold 16 { \skip1 }
 }
 
@@ -491,6 +514,25 @@ dominantSeventhsFirstInversionFourNotesFifthOnTop = \chordmode {
   a,1:3.7.8.12^1
   ais,1:3.7.8.12^1
   bes,1:3.7.8.12^1
+  b,,1:3.7.8.12^1
+  \bar "||"
+  \aShape
+  c,1:3.7.8.12^1
+  cis,1:3.7.8.12^1
+  des,1:3.7.8.12^1
+  d,1:3.7.8.12^1
+  dis,1:3.7.8.12^1
+  es,1:3.7.8.12^1
+  e,1:3.7.8.12^1
+  f,1:3.7.8.12^1
+  fis,1:3.7.8.12^1
+  ges,1:3.7.8.12^1
+  g,,1:3.7.8.12^1
+  gis,,1:3.7.8.12^1
+  as,,1:3.7.8.12^1
+  a,,1:3.7.8.12^1
+  ais,,1:3.7.8.12^1
+  bes,,1:3.7.8.12^1
   b,,1:3.7.8.12^1
   \bar "||"
   \gShape
@@ -1025,8 +1067,9 @@ dominantSeventhsThirdInversionFourNotesThirdOnTopChordSymbols = \chordmode {
 % *** third inversion
 % **** four notes
 % ***** third on the top
+  %\aShape
   %\gShape
-  \repeat unfold 1 {
+  \repeat unfold 2 {
     c1:7/bes
     cis1:7/b 
     des1:7/ces
@@ -1053,6 +1096,7 @@ dominantSeventhsThirdInversionFourNotesThirdOnTopShapes = \lyricmode {
 % *** third inversion
 % **** four notes
 % ***** third on the top
+  A-Shape \repeat unfold 16 { \skip1 }
   G-Shape \repeat unfold 16 { \skip1 }
 }
 
@@ -1062,6 +1106,25 @@ dominantSeventhsThirdInversionFourNotesThirdOnTop = \chordmode {
 % *** third inversion
 % **** four notes
 % ***** third on the top
+  \aShape
+  c,,1:7.12.15.17^1.3.5
+  cis,,1:7.12.15.17^1.3.5
+  des,,1:7.12.15.17^1.3.5
+  d,,1:7.12.15.17^1.3.5
+  dis,,1:7.12.15.17^1.3.5
+  es,,1:7.12.15.17^1.3.5
+  e,,1:7.12.15.17^1.3.5
+  f,,1:7.12.15.17^1.3.5
+  fis,,1:7.12.15.17^1.3.5
+  ges,,1:7.12.15.17^1.3.5
+  g,,,1:7.12.15.17^1.3.5
+  gis,,,1:7.12.15.17^1.3.5
+  as,,,1:7.12.15.17^1.3.5
+  a,,,1:7.12.15.17^1.3.5
+  ais,,,1:7.12.15.17^1.3.5
+  bes,,,1:7.12.15.17^1.3.5
+  b,,,1:7.12.15.17^1.3.5
+  \bar "||"
   \gShape
   c,,1:7.12.15.17^1.3.5
   cis,,1:7.12.15.17^1.3.5
@@ -1091,7 +1154,10 @@ dominantSeventhsThirdInversionFourNotesFifthOnTopChordSymbols = \chordmode {
 % **** four notes
 % ***** 5th on the top
   %\cShape
-  \repeat unfold 3 {
+  %\cShape
+  %\cShape
+  %\aShape
+  \repeat unfold 4 {
     c1:7/bes
     cis1:7/b 
     des1:7/ces
@@ -1121,6 +1187,7 @@ dominantSeventhsThirdInversionFourNotesFifthOnTopShapes = \lyricmode {
   \repeat unfold 3 {
     C-Shape \repeat unfold 16 { \skip1 }
   }
+  A-Shape \repeat unfold 16 { \skip1 }
 }
 
 dominantSeventhsThirdInversionFourNotesFifthOnTop = \chordmode {
@@ -1185,6 +1252,25 @@ dominantSeventhsThirdInversionFourNotesFifthOnTop = \chordmode {
   ais,,1:7.8.10.19^1.3.5
   bes,,1:7.8.10.19^1.3.5
   b,,1:7.8.10.19^1.3.5
+  \bar "||"
+  \aShape
+  c,,1:7.15.17.19^1.3.5
+  cis,,1:7.15.17.19^1.3.5
+  des,,1:7.15.17.19^1.3.5
+  d,,1:7.15.17.19^1.3.5
+  dis,,1:7.15.17.19^1.3.5
+  es,,1:7.15.17.19^1.3.5
+  e,,1:7.15.17.19^1.3.5
+  f,,1:7.15.17.19^1.3.5
+  fis,,1:7.15.17.19^1.3.5
+  ges,,1:7.15.17.19^1.3.5
+  g,,1:7.15.17.19^1.3.5
+  gis,,1:7.15.17.19^1.3.5
+  as,,1:7.15.17.19^1.3.5
+  a,,,1:7.15.17.19^1.3.5
+  ais,,,1:7.15.17.19^1.3.5
+  bes,,,1:7.15.17.19^1.3.5
+  b,,,1:7.15.17.19^1.3.5
   \bar "|."
 }
 
