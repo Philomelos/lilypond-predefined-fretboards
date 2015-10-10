@@ -897,9 +897,10 @@ dominantSeventhsSecondInversionFourNotesSeventhOnTopChordSymbols = \chordmode {
 % **** four notes
 % ***** 7th on the top
   %\cShape
+  %\aShape
   %\gShape
   %\eShape
-  \repeat unfold 3 {
+  \repeat unfold 4 {
     c1:7/g
     cis1:7/gis 
     des1:7/as
@@ -927,6 +928,7 @@ dominantSeventhsSecondInversionFourNotesSeventhOnTopShapes = \lyricmode {
 % **** four notes
 % ***** 7th on the top
   C-Shape \repeat unfold 16 { \skip1 }
+  A-Shape \repeat unfold 16 { \skip1 }
   G-Shape \repeat unfold 16 { \skip1 }
   E-Shape \repeat unfold 16 { \skip1 }
 }
@@ -955,6 +957,25 @@ dominantSeventhsSecondInversionFourNotesSeventhOnTop = \chordmode {
   ais,,,1:5.8.10.14^1.3
   bes,,,1:5.8.10.14^1.3
   b,,,1:5.8.10.14^1.3
+  \bar "||"
+  \aShape
+  c,1:5.8.10.14^1.3
+  cis,1:5.8.10.14^1.3
+  des,1:5.8.10.14^1.3
+  d,1:5.8.10.14^1.3
+  dis,1:5.8.10.14^1.3
+  es,1:5.8.10.14^1.3
+  e,1:5.8.10.14^1.3
+  f,1:5.8.10.14^1.3
+  fis,1:5.8.10.14^1.3
+  ges,1:5.8.10.14^1.3
+  g,,1:5.8.10.14^1.3
+  gis,,1:5.8.10.14^1.3
+  as,,1:5.8.10.14^1.3
+  a,,1:5.8.10.14^1.3
+  ais,,1:5.8.10.14^1.3
+  bes,,1:5.8.10.14^1.3
+  b,,1:5.8.10.14^1.3
   \bar "||"
   \gShape
   c,1:5.8.10.14^1.3
