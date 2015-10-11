@@ -9568,141 +9568,141 @@ gShape = {
 % **** 4 notes
 % ***** root on top
 % ****** add g-shape 7+5 defs (3rd inv., 4 nts, root on top)
-\addChordShape #'as,,:7.10.12+.14^1.3.5+ %Drop 2
+\addChordShape #'as,,:7.10.12+.15^1.3.5+ %Drop 2
                #guitar-tuning
                #"2-2;3-4;2-3;1-1;x;x;"
 
 % ****** store predef. g-shape 7+5 dgrms. (3rd inv., 4 n., root on top)
 % ******* c 7+5, 3rd inv., 4 notes, root on top
 \storePredefinedDiagram #g-shape-fretboard-table
-                        \chordmode { c,,:7.10.12+.14^1.3.5+ }
+                        \chordmode { c,,:7.10.12+.15^1.3.5+ }
                         #guitar-tuning
                         #(offset-fret 4 (
-                          chord-shape 'as,,:7.10.12+.14^1.3.5+
+                          chord-shape 'as,,:7.10.12+.15^1.3.5+
                           guitar-tuning))
 
 % ******* cis 7+5, 3rd inv., 4 notes, root on top
 \storePredefinedDiagram #g-shape-fretboard-table
-                        \chordmode { cis,,:7.10.12+.14^1.3.5+ }
+                        \chordmode { cis,,:7.10.12+.15^1.3.5+ }
                         #guitar-tuning
                         #(offset-fret 5 (
-                          chord-shape 'as,,:7.10.12+.14^1.3.5+
+                          chord-shape 'as,,:7.10.12+.15^1.3.5+
                           guitar-tuning))
 
 % ******* des 7+5, 3rd inv., 4 notes, root on top
 \storePredefinedDiagram #g-shape-fretboard-table
-                        \chordmode { des,,:7.10.12+.14^1.3.5+ }
+                        \chordmode { des,,:7.10.12+.15^1.3.5+ }
                         #guitar-tuning
                         #(offset-fret 5 (
-                          chord-shape 'as,,:7.10.12+.14^1.3.5+
+                          chord-shape 'as,,:7.10.12+.15^1.3.5+
                           guitar-tuning))
 
 % ******* d 7+5, 3rd inv., 4 notes, root on top
 \storePredefinedDiagram #g-shape-fretboard-table
-                        \chordmode { d,,:7.10.12+.14^1.3.5+ }
+                        \chordmode { d,,:7.10.12+.15^1.3.5+ }
                         #guitar-tuning
                         #(offset-fret 6 (
-                          chord-shape 'as,,:7.10.12+.14^1.3.5+
+                          chord-shape 'as,,:7.10.12+.15^1.3.5+
                           guitar-tuning))
 
 % ******* dis 7+5, 3rd inv., 4 notes, root on top
 \storePredefinedDiagram #g-shape-fretboard-table
-                        \chordmode { dis,,:7.10.12+.14^1.3.5+ }
+                        \chordmode { dis,,:7.10.12+.15^1.3.5+ }
                         #guitar-tuning
                         #(offset-fret 7 (
-                          chord-shape 'as,,:7.10.12+.14^1.3.5+
+                          chord-shape 'as,,:7.10.12+.15^1.3.5+
                           guitar-tuning))
 
 % ******* es 7+5, 3rd inv., 4 notes, root on top
 \storePredefinedDiagram #g-shape-fretboard-table
-                        \chordmode { es,,:7.10.12+.14^1.3.5+ }
+                        \chordmode { es,,:7.10.12+.15^1.3.5+ }
                         #guitar-tuning
                         #(offset-fret 7 (
-                          chord-shape 'as,,:7.10.12+.14^1.3.5+
+                          chord-shape 'as,,:7.10.12+.15^1.3.5+
                           guitar-tuning))
 
 % ******* e 7+5, 3rd inv., 4 notes, root on top
 \storePredefinedDiagram #g-shape-fretboard-table
-                        \chordmode { e,,:7.10.12+.14^1.3.5+ }
+                        \chordmode { e,,:7.10.12+.15^1.3.5+ }
                         #guitar-tuning
                         #(offset-fret 8 (
-                          chord-shape 'as,,:7.10.12+.14^1.3.5+
+                          chord-shape 'as,,:7.10.12+.15^1.3.5+
                           guitar-tuning))
 
 % ******* f 7+5, 3rd inv., 4 notes, root on top
 \storePredefinedDiagram #g-shape-fretboard-table
-                        \chordmode { f,,:7.10.12+.14^1.3.5+ }
+                        \chordmode { f,,:7.10.12+.15^1.3.5+ }
                         #guitar-tuning
                         #(offset-fret 9 (
-                          chord-shape 'as,,:7.10.12+.14^1.3.5+
+                          chord-shape 'as,,:7.10.12+.15^1.3.5+
                           guitar-tuning))
 
 % ******* fis 7+5, 3rd inv., 4 notes, root on top
 \storePredefinedDiagram #g-shape-fretboard-table
-                        \chordmode { fis,,:7.10.12+.14^1.3.5+ }
+                        \chordmode { fis,,:7.10.12+.15^1.3.5+ }
                         #guitar-tuning
                         #(offset-fret 10 (
-                          chord-shape 'as,,:7.10.12+.14^1.3.5+
+                          chord-shape 'as,,:7.10.12+.15^1.3.5+
                           guitar-tuning))
                         
 % ******* ges 7+5, 3rd inv., 4 notes, root on top
 \storePredefinedDiagram #g-shape-fretboard-table
-                        \chordmode { ges,,:7.10.12+.14^1.3.5+ }
+                        \chordmode { ges,,:7.10.12+.15^1.3.5+ }
                         #guitar-tuning
                         #(offset-fret 10 (
-                          chord-shape 'as,,:7.10.12+.14^1.3.5+
+                          chord-shape 'as,,:7.10.12+.15^1.3.5+
                           guitar-tuning))
 
 % ******* g 7+5, 3rd inv., 4 notes, root on top
 \storePredefinedDiagram #g-shape-fretboard-table
-                        \chordmode { g,,,:7.10.12+.14^1.3.5+ }
+                        \chordmode { g,,,:7.10.12+.15^1.3.5+ }
                         #guitar-tuning
                         #"1-1;2-3;1-2;o;x;x;"
 
 % ******* gis 7+5, 3rd inv., 4 notes, root on top
 \storePredefinedDiagram #g-shape-fretboard-table
-                        \chordmode { gis,,,:7.10.12+.14^1.3.5+ }
+                        \chordmode { gis,,,:7.10.12+.15^1.3.5+ }
                         #guitar-tuning
-                        #(chord-shape 'as,,:7.10.12+.14^1.3.5+
+                        #(chord-shape 'as,,:7.10.12+.15^1.3.5+
                           guitar-tuning)
 
 % ******* as 7+5, 3rd inv., 4 notes, root on top
 \storePredefinedDiagram #g-shape-fretboard-table
-                        \chordmode { as,,,:7.10.12+.14^1.3.5+ }
+                        \chordmode { as,,,:7.10.12+.15^1.3.5+ }
                         #guitar-tuning
-                        #(chord-shape 'as,,:7.10.12+.14^1.3.5+
+                        #(chord-shape 'as,,:7.10.12+.15^1.3.5+
                           guitar-tuning)
 
 % ******* a 7+5, 3rd inv., 4 notes, root on top
 \storePredefinedDiagram #g-shape-fretboard-table
-                        \chordmode { a,,,:7.10.12+.14^1.3.5+ }
+                        \chordmode { a,,,:7.10.12+.15^1.3.5+ }
                         #guitar-tuning
                         #(offset-fret 1 (
-                          chord-shape 'as,,:7.10.12+.14^1.3.5+
+                          chord-shape 'as,,:7.10.12+.15^1.3.5+
                           guitar-tuning))
 
 % ******* ais 7+5, 3rd inv., 4 notes, root on top
 \storePredefinedDiagram #g-shape-fretboard-table
-                        \chordmode { ais,,,:7.10.12+.14^1.3.5+ }
+                        \chordmode { ais,,,:7.10.12+.15^1.3.5+ }
                         #guitar-tuning
                         #(offset-fret 2 (
-                          chord-shape 'as,,:7.10.12+.14^1.3.5+
+                          chord-shape 'as,,:7.10.12+.15^1.3.5+
                           guitar-tuning))
 
 % ******* bes 7+5, 3rd inv., 4 notes, root on top
 \storePredefinedDiagram #g-shape-fretboard-table
-                        \chordmode { bes,,,:7.10.12+.14^1.3.5+ }
+                        \chordmode { bes,,,:7.10.12+.15^1.3.5+ }
                         #guitar-tuning
                         #(offset-fret 2 (
-                          chord-shape 'as,,:7.10.12+.14^1.3.5+
+                          chord-shape 'as,,:7.10.12+.15^1.3.5+
                           guitar-tuning))
 
 % ******* b 7+5, 3rd inv., 4 notes, root on top
 \storePredefinedDiagram #g-shape-fretboard-table
-                        \chordmode { b,,,:7.10.12+.14^1.3.5+ }
+                        \chordmode { b,,,:7.10.12+.15^1.3.5+ }
                         #guitar-tuning
                         #(offset-fret 3 (
-                          chord-shape 'as,,:7.10.12+.14^1.3.5+
+                          chord-shape 'as,,:7.10.12+.15^1.3.5+
                           guitar-tuning))
 
 
