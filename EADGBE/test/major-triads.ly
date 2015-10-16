@@ -540,6 +540,68 @@ majorTriadsRootPositionFourNotesThirdOnTop = {
   \transpose c b, { <c'\4 g'\3 c''\2 e''\1>1 }
 }
 
+majorTriadsRootPositionFourNotesFifthOnTopChordSymbols = \chordmode {
+% * triads
+% ** major triads
+% *** root pos.
+% **** four notes
+% ***** fifth on top
+  %\eShape
+  c1
+  cis1 
+  des1
+  d1
+  dis1
+  es1
+  e1
+  f1
+  fis1
+  ges1
+  g1
+  gis1
+  as1
+  a1
+  ais1
+  bes1
+  b1
+}
+
+majorTriadsRootPositionFourNotesFifthOnTopShapes = \lyricmode {
+% * triads
+% ** major triads
+% *** root pos.
+% **** four notes
+% ***** fifth on top
+  E-Shapes \repeat unfold 16 { \skip1 }
+}
+
+majorTriadsRootPositionFourNotesFifthOnTop = \chordmode {
+% * triads
+% ** major triads
+% *** root pos.
+% **** four notes
+% ***** fifth on top
+  \eShape
+  c,1:1.8.10.12
+  cis,1:1.8.10.12
+  des,1:1.8.10.12
+  d,1:1.8.10.12
+  dis,1:1.8.10.12
+  es,1:1.8.10.12
+  e,,1:1.8.10.12
+  f,,1:1.8.10.12
+  fis,,1:1.8.10.12
+  ges,,1:1.8.10.12
+  g,,1:1.8.10.12
+  gis,,1:1.8.10.12
+  as,,1:1.8.10.12
+  a,,1:1.8.10.12
+  ais,,1:1.8.10.12
+  bes,,1:1.8.10.12
+  b,,1:1.8.10.12
+  \bar "|."
+}
+
 majorTriadsRootPositionFiveNotesThirdOnTopChordSymbols = \chordmode {
   %\cShape
   c1 cis des d dis es e f fis ges g gis as a ais
@@ -2571,7 +2633,7 @@ majorTriadsSecondInversionSixNotesFifthOnTop = {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \bookpart {
-  %{
+%%{
   \score {
     <<
       \new ChordNames {
@@ -2599,7 +2661,7 @@ majorTriadsSecondInversionSixNotesFifthOnTop = {
     }
   }
 %}
-%{
+%%{
   \score {
     <<
       \new ChordNames {
@@ -2627,7 +2689,7 @@ majorTriadsSecondInversionSixNotesFifthOnTop = {
     }
   }
 %}
-%{
+%%{
   \score {
     <<
       \new ChordNames {
@@ -2655,7 +2717,7 @@ majorTriadsSecondInversionSixNotesFifthOnTop = {
     }
   }
 %}
-%{
+%%{
   \score {
   <<
     \new ChordNames {
@@ -2683,7 +2745,7 @@ majorTriadsSecondInversionSixNotesFifthOnTop = {
     }
   }
 %}
-%{
+%%{
   \score {
     <<
       \new ChordNames {
@@ -2711,7 +2773,35 @@ majorTriadsSecondInversionSixNotesFifthOnTop = {
     }
   }
 %}  
-%{
+%%{
+  \score {
+    <<
+      \new ChordNames {
+        \majorTriadsRootPositionFourNotesFifthOnTopChordSymbols
+      }
+      \new FretBoards {
+        \majorTriadsRootPositionFourNotesFifthOnTop
+      }
+      \new Voice = "majortriads" {
+        \clef "treble_8"
+        \majorTriadsRootPositionFourNotesFifthOnTop
+      }
+      \new Lyrics \lyricsto majortriads {
+        \majorTriadsRootPositionFourNotesFifthOnTopShapes
+      }
+      \new TabStaff {
+        \majorTriadsRootPositionFourNotesFifthOnTop
+      }
+    >>
+    \header {
+      title = "Major Triads (C-Shape)"
+      subtitle = "Root position"
+      subsubtitle = "Four notes"
+      piece = "Fifth on top"
+    }
+  }
+%}  
+%%{
   \score {
   <<
     \new ChordNames {
@@ -2739,7 +2829,7 @@ majorTriadsSecondInversionSixNotesFifthOnTop = {
     }
   }
 %}
-%{  
+%%{  
   \score {
   <<
     \new ChordNames {
@@ -2770,7 +2860,7 @@ majorTriadsSecondInversionSixNotesFifthOnTop = {
 }
 
 \bookpart {
-%{
+%%{
   \score {
   <<
     \new ChordNames {
@@ -2798,7 +2888,7 @@ majorTriadsSecondInversionSixNotesFifthOnTop = {
     }
   }
 %}
-%{
+%%{
   \score {
     <<
       \new ChordNames {
@@ -2826,7 +2916,7 @@ majorTriadsSecondInversionSixNotesFifthOnTop = {
     }
   }
 %}
-%{
+%%{
   \score {
     <<
       \new ChordNames {
@@ -2854,7 +2944,7 @@ majorTriadsSecondInversionSixNotesFifthOnTop = {
     }
   }
 %}
-%{
+%%{
   \score {
     <<
       \new ChordNames {
@@ -2882,7 +2972,7 @@ majorTriadsSecondInversionSixNotesFifthOnTop = {
     }
   }
 %}
-%{
+%%{
   \score {
     <<
       \new ChordNames {
@@ -2910,7 +3000,7 @@ majorTriadsSecondInversionSixNotesFifthOnTop = {
     }
   }
 %}
-%{
+%%{
   \score {
     <<
       \new ChordNames {
@@ -2969,7 +3059,7 @@ majorTriadsSecondInversionSixNotesFifthOnTop = {
     }
   }
 %}
-%{  
+%%{  
   \score {
     <<    
       \new ChordNames {
@@ -2997,7 +3087,7 @@ majorTriadsSecondInversionSixNotesFifthOnTop = {
     }
   }
 %}
-%{
+%%{
   \score {
     <<    
       \new ChordNames {
@@ -3026,7 +3116,7 @@ majorTriadsSecondInversionSixNotesFifthOnTop = {
   }
 %}
 
-%{
+%%{
   \score {
     <<    
       \new ChordNames {
@@ -3054,7 +3144,7 @@ majorTriadsSecondInversionSixNotesFifthOnTop = {
     }
   }
 %}
-%{
+%%{
   \score {
     <<    
       \new ChordNames {
@@ -3082,7 +3172,7 @@ majorTriadsSecondInversionSixNotesFifthOnTop = {
     }
   }
 %}
-%{
+%%{
   \score {
     <<    
       \new ChordNames {
@@ -3110,7 +3200,7 @@ majorTriadsSecondInversionSixNotesFifthOnTop = {
     }
   }
 %}
-%{
+%%{
   \score {
     <<    
       \new ChordNames {
@@ -3138,7 +3228,7 @@ majorTriadsSecondInversionSixNotesFifthOnTop = {
     }
   }
 %}
-%{
+%%{
   \score {
     <<    
       \new ChordNames {
@@ -3166,7 +3256,7 @@ majorTriadsSecondInversionSixNotesFifthOnTop = {
     }
   }
 %}
-%{
+%%{
   \score {
     <<    
       \new ChordNames {
