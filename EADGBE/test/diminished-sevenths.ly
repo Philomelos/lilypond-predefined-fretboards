@@ -83,7 +83,7 @@ diminishedSeventhsRootPositionFourNotesThirdOnTop = \chordmode {
   g,1:1.5-.7-.10-
   gis,1:1.5-.7-.10-
   as,1:1.5-.7-.10-
-  a,,1:1.5-.7-.10-
+  a,1:1.5-.7-.10-
   ais,,1:1.5-.7-.10-
   bes,,1:1.5-.7-.10-
   b,,1:1.5-.7-.10-
