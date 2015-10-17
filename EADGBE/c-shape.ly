@@ -785,7 +785,7 @@ cShape = {
 % * triads (c-shape)
 % ** major triads
 % *** root pos.
-% **** four notes
+% **** 4 notes
 % ***** 8th on the top
 % ****** add c-shape triad definitions (root pos., 4 notes, 8th on top)
 \addChordShape #'cis:1.3.5.8 
@@ -929,7 +929,7 @@ cShape = {
 % * triads (c-shape)
 % ** major triads
 % *** root pos.
-% **** four notes
+% **** 4 notes
 % ***** third on the top
 % ****** add c-shape triad defs (root pos., 4 notes, 3rd on top)
 \addChordShape #'cis:1.5.8.10 
@@ -1268,7 +1268,7 @@ cShape = {
 
 % * triads (c-shape)
 % ** major triads
-% *** 1st inversion
+% *** 1st inv.
 % **** three notes
 % ***** root on the top
 % ****** add c-shape major triad definitions (1st inv., 3 n., root on top)
@@ -1277,27 +1277,27 @@ cShape = {
                #"x;x;3-3;1-1;2-2;x;"
 
 % ****** store prdfnd c-shape major trd dgr (1st inv., 3 n., 1st on top)
-% ******* c major triads, 1st inversion, 3 notes, root on top
+% ******* c major triads, 1st inv., 3 notes, root on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { c,:3.5.8^1 }
                         #guitar-tuning
                         #"x;x;2-2;o;1-1;x;"
 
-% ******* cis major triads, 1st inversion, 3 notes, root on top
+% ******* cis major triads, 1st inv., 3 notes, root on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { cis,:3.5.8^1 }
                         #guitar-tuning
                         #(chord-shape 'cis:3.5.8^1
                           guitar-tuning)
 
-% ******* des major triads, 1st inversion, 3 notes, root on top
+% ******* des major triads, 1st inv., 3 notes, root on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { des,:3.5.8^1 }
                         #guitar-tuning
                         #(chord-shape 'cis:3.5.8^1
                           guitar-tuning)
 
-% ******* d major triads, 1st inversion, 3 notes, root on top
+% ******* d major triads, 1st inv., 3 notes, root on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { d,:3.5.8^1 }
                         #guitar-tuning
@@ -1305,7 +1305,7 @@ cShape = {
                           chord-shape 'cis:3.5.8^1
                           guitar-tuning))
 
-% ******* dis major triads, 1st inversion, 3 notes, root on top
+% ******* dis major triads, 1st inv., 3 notes, root on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { dis,:3.5.8^1 }
                         #guitar-tuning
@@ -1313,7 +1313,7 @@ cShape = {
                           chord-shape 'cis:3.5.8^1
                           guitar-tuning))
 
-% ******* es major triads, 1st inversion, 3 notes, root on top
+% ******* es major triads, 1st inv., 3 notes, root on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { es,:3.5.8^1 }
                         #guitar-tuning
@@ -1321,7 +1321,7 @@ cShape = {
                           chord-shape 'cis:3.5.8^1
                           guitar-tuning))
 
-% ******* e major triads, 1st inversion, 3 notes, root on top
+% ******* e major triads, 1st inv., 3 notes, root on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { e,:3.5.8^1 }
                         #guitar-tuning
@@ -1329,7 +1329,7 @@ cShape = {
                           chord-shape 'cis:3.5.8^1
                           guitar-tuning))
 
-% ******* f major triads, 1st inversion, 3 notes, root on top
+% ******* f major triads, 1st inv., 3 notes, root on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { f,:3.5.8^1 }
                         #guitar-tuning
@@ -1337,7 +1337,7 @@ cShape = {
                           chord-shape 'cis:3.5.8^1
                           guitar-tuning))
 
-% ******* fis major triads, 1st inversion, 3 notes, root on top
+% ******* fis major triads, 1st inv., 3 notes, root on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { fis,:3.5.8^1 }
                         #guitar-tuning
@@ -1345,7 +1345,7 @@ cShape = {
                           chord-shape 'cis:3.5.8^1
                           guitar-tuning))
 
-% ******* ges major triads, 1st inversion, 3 notes, root on top
+% ******* ges major triads, 1st inv., 3 notes, root on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { ges,:3.5.8^1 }
                         #guitar-tuning
@@ -1353,7 +1353,7 @@ cShape = {
                           chord-shape 'cis:3.5.8^1
                           guitar-tuning))
 
-% ******* g major triads, 1st inversion, 3 notes, root on top
+% ******* g major triads, 1st inv., 3 notes, root on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { g,:3.5.8^1 }
                         #guitar-tuning
@@ -1361,7 +1361,7 @@ cShape = {
                           chord-shape 'cis:3.5.8^1
                           guitar-tuning))
 
-% ******* gis major triads, 1st inversion, 3 notes, root on top
+% ******* gis major triads, 1st inv., 3 notes, root on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { gis,:3.5.8^1 }
                         #guitar-tuning
@@ -1369,7 +1369,7 @@ cShape = {
                           chord-shape 'cis:3.5.8^1
                           guitar-tuning))
 
-% ******* as major triads, 1st inversion, 3 notes, root on top
+% ******* as major triads, 1st inv., 3 notes, root on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { as,:3.5.8^1 }
                         #guitar-tuning
@@ -1377,7 +1377,7 @@ cShape = {
                           chord-shape 'cis:3.5.8^1
                           guitar-tuning))
 
-% ******* a major triads, 1st inversion, 3 notes, root on top
+% ******* a major triads, 1st inv., 3 notes, root on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { a,:3.5.8^1 }
                         #guitar-tuning
@@ -1385,7 +1385,7 @@ cShape = {
                           chord-shape 'cis:3.5.8^1
                           guitar-tuning))
 
-% ******* ais major triads, 1st inversion, 3 notes, root on top
+% ******* ais major triads, 1st inv., 3 notes, root on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { ais,:3.5.8^1 }
                         #guitar-tuning
@@ -1393,7 +1393,7 @@ cShape = {
                           chord-shape 'cis:3.5.8^1
                           guitar-tuning))
 
-% ******* bes major triads, 1st inversion, 3 notes, root on top
+% ******* bes major triads, 1st inv., 3 notes, root on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { bes,:3.5.8^1 }
                         #guitar-tuning
@@ -1401,7 +1401,7 @@ cShape = {
                           chord-shape 'cis:3.5.8^1
                           guitar-tuning))
 
-% ******* b major triads, 1st inversion, 3 notes, root on top
+% ******* b major triads, 1st inv., 3 notes, root on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { b,:3.5.8^1 }
                         #guitar-tuning
@@ -1411,7 +1411,7 @@ cShape = {
 
 % * triads (c-shape)
 % ** major triads
-% *** first inversion
+% *** 1st inv.
 % **** three notes
 % ***** fifth on the top 
 % ****** add c-shape major triad definitions (1st inv., 3 notes, 5th on top)
@@ -1423,7 +1423,7 @@ cShape = {
                #"1-1-(;4-4;x;1-1-);x;x;"
 
 % ****** store prdfnd c-shape major trd dgrms (1st inv., 3 n., 5th on top)
-% c ******* major triads, 1st inversion, 3 notes, 5th on top
+% c ******* major triads, 1st inv., 3 notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { c,:3.8.12^1 }
                         #guitar-tuning
@@ -1434,7 +1434,7 @@ cShape = {
                         #guitar-tuning
                         #"o;3-3;x;o;x;x;"
 
-% ******* cis major triads, 1st inversion, 3 notes, 5th on top
+% ******* cis major triads, 1st inv., 3 notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { cis,:3.8.12^1 }
                         #guitar-tuning
@@ -1447,7 +1447,7 @@ cShape = {
                         #(chord-shape 'des,:3.8.12^1
                           guitar-tuning)
 
-% ******* des major triads, 1st inversion, 3 notes, 5th on top
+% ******* des major triads, 1st inv., 3 notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { des,:3.8.12^1 }
                         #guitar-tuning
@@ -1460,7 +1460,7 @@ cShape = {
                         #(chord-shape 'des,:3.8.12^1
                           guitar-tuning)
 
-% ******* d major triads, 1st inversion, 3 notes, 5th on top
+% ******* d major triads, 1st inv., 3 notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { d,:3.8.12^1 }
                         #guitar-tuning
@@ -1474,7 +1474,7 @@ cShape = {
                           chord-shape 'des,:3.8.12^1
                           guitar-tuning))
 
-% ******* dis major triads, 1st inversion, 3 notes, 5th on top
+% ******* dis major triads, 1st inv., 3 notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { dis,:3.8.12^1 }
                         #guitar-tuning
@@ -1488,7 +1488,7 @@ cShape = {
                           chord-shape 'des,:3.8.12^1
                           guitar-tuning))
 
-% ******* es major triads, 1st inversion, 3 notes, 5th on top
+% ******* es major triads, 1st inv., 3 notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { es,:3.8.12^1 }
                         #guitar-tuning
@@ -1502,7 +1502,7 @@ cShape = {
                           chord-shape 'des,:3.8.12^1
                           guitar-tuning))
 
-% ******* e major triads, 1st inversion, 3 notes, 5th on top
+% ******* e major triads, 1st inv., 3 notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { e,:3.8.12^1 }
                         #guitar-tuning
@@ -1516,7 +1516,7 @@ cShape = {
                           chord-shape 'des,:3.8.12^1
                           guitar-tuning))
 
-% ******* f major triads, 1st inversion, 3 notes, 5th on top
+% ******* f major triads, 1st inv., 3 notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { f,:3.8.12^1 }
                         #guitar-tuning
@@ -1530,7 +1530,7 @@ cShape = {
                           chord-shape 'des,:3.8.12^1
                           guitar-tuning))
 
-% ******* fis major triads, 1st inversion, 3 notes, 5th on top
+% ******* fis major triads, 1st inv., 3 notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { fis,:3.8.12^1 }
                         #guitar-tuning
@@ -1544,7 +1544,7 @@ cShape = {
                           chord-shape 'des,:3.8.12^1
                           guitar-tuning))
 
-% ******* ges major triads, 1st inversion, 3 notes, 5th on top
+% ******* ges major triads, 1st inv., 3 notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { ges,:3.8.12^1 }
                         #guitar-tuning
@@ -1558,7 +1558,7 @@ cShape = {
                           chord-shape 'des,:3.8.12^1
                           guitar-tuning))
 
-% ******* g major triads, 1st inversion, 3 notes, 5th on top
+% ******* g major triads, 1st inv., 3 notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { g,:3.8.12^1 }
                         #guitar-tuning
@@ -1572,7 +1572,7 @@ cShape = {
                           chord-shape 'des,:3.8.12^1
                           guitar-tuning))
 
-% ******* gis major triads, 1st inversion, 3 notes, 5th on top
+% ******* gis major triads, 1st inv., 3 notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { gis,:3.8.12^1 }
                         #guitar-tuning
@@ -1586,7 +1586,7 @@ cShape = {
                           chord-shape 'des,:3.8.12^1
                           guitar-tuning))
 
-% ******* as major triads, 1st inversion, 3 notes, 5th on top
+% ******* as major triads, 1st inv., 3 notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { as,:3.8.12^1 }
                         #guitar-tuning
@@ -1600,7 +1600,7 @@ cShape = {
                           chord-shape 'des,:3.8.12^1
                           guitar-tuning))
 
-% ******* a major triads, 1st inversion 3, notes, 5th on top
+% ******* a major triads, 1st inv. 3, notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { a,:3.8.12^1 }
                         #guitar-tuning
@@ -1614,7 +1614,7 @@ cShape = {
                           chord-shape 'des,:3.8.12^1
                           guitar-tuning))
 
-% ******* ais major triads, 1st inversion, 3 notes, 5th on top
+% ******* ais major triads, 1st inv., 3 notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { ais,:3.8.12^1 }
                         #guitar-tuning
@@ -1628,7 +1628,7 @@ cShape = {
                           chord-shape 'des,:3.8.12^1
                           guitar-tuning))
 
-% ******* bes major triads, 1st inversion, 3 notes, 5th on top
+% ******* bes major triads, 1st inv., 3 notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { bes,:3.8.12^1 }
                         #guitar-tuning
@@ -1642,7 +1642,7 @@ cShape = {
                           chord-shape 'des,:3.8.12^1
                           guitar-tuning))
 
-% ******* b major triads, 1st inversion, 3 notes, 5th on top
+% ******* b major triads, 1st inv., 3 notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { b,:3.8.12^1 }
                         #guitar-tuning
@@ -1657,8 +1657,8 @@ cShape = {
 
 % * triads (c-shape)
 % ** major triads
-% *** first inversion
-% **** four notes
+% *** 1st inv.
+% **** 4 notes
 % ***** third on the top
 % ****** add c-shape major triad definitions (1st inv., 4 n., 3rd on top)
 \addChordShape #'cis:3.5.8.10^1
@@ -1666,27 +1666,27 @@ cShape = {
                #"x;x;4-3;1-1-(;2-2;1-1-);"
 
 % ****** store prdfnd c-shape major trd dgrms (1st inv., 4 n., 3rd on top)
-% ******* c major triads, 1st inversion, 4 notes, 3rd on top
+% ******* c major triads, 1st inv., 4 notes, 3rd on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { c,:3.5.8.10^1 }
                         #guitar-tuning
                         #"x;x;2-2;o;1-1;o;"
 
-% ******* cis major triads, 1st inversion, 4 notes, 3rd on top
+% ******* cis major triads, 1st inv., 4 notes, 3rd on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { cis,:3.5.8.10^1 }
                         #guitar-tuning
                         #(chord-shape 'cis:3.5.8.10^1
                           guitar-tuning)
 
-% ******* des major triads, 1st inversion, 4 notes, 3rd on top
+% ******* des major triads, 1st inv., 4 notes, 3rd on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { des,:3.5.8.10^1 }
                         #guitar-tuning
                         #(chord-shape 'cis:3.5.8.10^1
                           guitar-tuning)
 
-% ******* d major triads, 1st inversion, 4 notes, 3rd on top
+% ******* d major triads, 1st inv., 4 notes, 3rd on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { d,:3.5.8.10^1 }
                         #guitar-tuning
@@ -1694,7 +1694,7 @@ cShape = {
                           chord-shape 'cis:3.5.8.10^1
                           guitar-tuning))
 
-% ******* dis major triads, 1st inversion, 4 notes, 3rd on top
+% ******* dis major triads, 1st inv., 4 notes, 3rd on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { dis,:3.5.8.10^1 }
                         #guitar-tuning
@@ -1702,7 +1702,7 @@ cShape = {
                           chord-shape 'cis:3.5.8.10^1
                           guitar-tuning))
 
-% ******* es major triads, 1st inversion, 4 notes, 3rd on top
+% ******* es major triads, 1st inv., 4 notes, 3rd on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { es,:3.5.8.10^1 }
                         #guitar-tuning
@@ -1710,7 +1710,7 @@ cShape = {
                           chord-shape 'cis:3.5.8.10^1
                           guitar-tuning))
 
-% ******* e major triads, 1st inversion, 4 notes, 3rd on top
+% ******* e major triads, 1st inv., 4 notes, 3rd on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { e,:3.5.8.10^1 }
                         #guitar-tuning
@@ -1718,7 +1718,7 @@ cShape = {
                           chord-shape 'cis:3.5.8.10^1
                           guitar-tuning))
 
-% ******* f major triads, 1st inversion, 4 notes, 3rd on top
+% ******* f major triads, 1st inv., 4 notes, 3rd on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { f,:3.5.8.10^1 }
                         #guitar-tuning
@@ -1726,7 +1726,7 @@ cShape = {
                           chord-shape 'cis:3.5.8.10^1
                           guitar-tuning))
 
-% ******* fis major triads, 1st inversion, 4 notes, 3rd on top
+% ******* fis major triads, 1st inv., 4 notes, 3rd on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { fis,:3.5.8.10^1 }
                         #guitar-tuning
@@ -1734,7 +1734,7 @@ cShape = {
                           chord-shape 'cis:3.5.8.10^1
                           guitar-tuning))
 
-% ******* ges major triads, 1st inversion, 4 notes, 3rd on top
+% ******* ges major triads, 1st inv., 4 notes, 3rd on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { ges,:3.5.8.10^1 }
                         #guitar-tuning
@@ -1742,7 +1742,7 @@ cShape = {
                           chord-shape 'cis:3.5.8.10^1
                           guitar-tuning))
 
-% ******* g major triads, 1st inversion, 4 notes, 3rd on top
+% ******* g major triads, 1st inv., 4 notes, 3rd on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { g,:3.5.8.10^1 }
                         #guitar-tuning
@@ -1750,7 +1750,7 @@ cShape = {
                           chord-shape 'cis:3.5.8.10^1
                           guitar-tuning))
 
-% ******* gis major triads, 1st inversion, 4 notes, 3rd on top
+% ******* gis major triads, 1st inv., 4 notes, 3rd on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { gis,:3.5.8.10^1 }
                         #guitar-tuning
@@ -1758,7 +1758,7 @@ cShape = {
                           chord-shape 'cis:3.5.8.10^1
                           guitar-tuning))
 
-% ******* as major triads, 1st inversion, 4 notes, 3rd on top
+% ******* as major triads, 1st inv., 4 notes, 3rd on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { as,:3.5.8.10^1 }
                         #guitar-tuning
@@ -1766,7 +1766,7 @@ cShape = {
                           chord-shape 'cis:3.5.8.10^1
                           guitar-tuning))
 
-% ******* a major triads, 1st inversion, 4 notes, 3rd on top
+% ******* a major triads, 1st inv., 4 notes, 3rd on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { a,:3.5.8.10^1 }
                         #guitar-tuning
@@ -1774,7 +1774,7 @@ cShape = {
                           chord-shape 'cis:3.5.8.10^1
                           guitar-tuning))
 
-% ******* ais major triads, 1st inversion, 4 notes, 3rd on top
+% ******* ais major triads, 1st inv., 4 notes, 3rd on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { ais,:3.5.8.10^1 }
                         #guitar-tuning
@@ -1782,7 +1782,7 @@ cShape = {
                           chord-shape 'cis:3.5.8.10^1
                           guitar-tuning))
 
-% ******* bes major triads, 1st inversion, 4 notes, 3rd on top
+% ******* bes major triads, 1st inv., 4 notes, 3rd on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { bes,:3.5.8.10^1 }
                         #guitar-tuning
@@ -1790,7 +1790,7 @@ cShape = {
                           chord-shape 'cis:3.5.8.10^1
                           guitar-tuning))
 
-% ******* b major triads, 1st inversion, 4 notes, 3rd on top
+% ******* b major triads, 1st inv., 4 notes, 3rd on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { b,:3.5.8.10^1 }
                         #guitar-tuning
@@ -1801,8 +1801,8 @@ cShape = {
 
 % * triads (c-shape)
 % ** major triads
-% *** first inversion
-% **** four notes
+% *** 1st inv.
+% **** 4 notes
 % ***** fifth on the top
 % ****** add c-shape major triad defs (1st inv., 4 notes, 5th on top)
 \addChordShape #'cis:3.5.8.12^1
@@ -1813,7 +1813,7 @@ cShape = {
                #"1-1-(;4-4;3-3;1-1-);x;x;"
 
 % ****** store prdfnd c-shape major trd dgrm (1st inv., 4 n., 5th on top)
-% ******* c major triads, 1st inversion 4 notes, 5th on top
+% ******* c major triads, 1st inv. 4 notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { c,:3.5.8.12^1 }
                         #guitar-tuning
@@ -1823,7 +1823,7 @@ cShape = {
                         #guitar-tuning
                         #"o;3-3;2-2;o;x;x;"
 
-% ******* cis major triads, 1st inversion 4 notes, 5th on top
+% ******* cis major triads, 1st inv. 4 notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { cis,:3.5.8.12^1 }
                         #guitar-tuning
@@ -1835,7 +1835,7 @@ cShape = {
                         #(chord-shape 'cis,:3.8.10.12^1
                           guitar-tuning)
 
-% ******* des major triads, 1st inversion 4 notes, 5th on top
+% ******* des major triads, 1st inv. 4 notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { des,:3.5.8.12^1 }
                         #guitar-tuning
@@ -1847,7 +1847,7 @@ cShape = {
                         #(chord-shape 'cis,:3.8.10.12^1
                           guitar-tuning)
 
-% ******* d major triads, 1st inversion 4 notes, 5th on top
+% ******* d major triads, 1st inv. 4 notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { d,:3.5.8.12^1 }
                         #guitar-tuning
@@ -1861,7 +1861,7 @@ cShape = {
                           chord-shape 'cis,:3.8.10.12^1
                           guitar-tuning))
 
-% ******* dis major triads, 1st inversion 4 notes, 5th on top
+% ******* dis major triads, 1st inv. 4 notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { dis,:3.5.8.12^1 }
                         #guitar-tuning
@@ -1875,7 +1875,7 @@ cShape = {
                           chord-shape 'cis,:3.8.10.12^1
                           guitar-tuning))
 
-% ******* es major triads, 1st inversion 4 notes, 5th on top
+% ******* es major triads, 1st inv. 4 notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { es,:3.5.8.12^1 }
                         #guitar-tuning
@@ -1889,7 +1889,7 @@ cShape = {
                           chord-shape 'cis,:3.8.10.12^1
                           guitar-tuning))
 
-% ******* e major triads, 1st inversion 4 notes, 5th on top
+% ******* e major triads, 1st inv. 4 notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { e,:3.5.8.12^1 }
                         #guitar-tuning
@@ -1903,7 +1903,7 @@ cShape = {
                           chord-shape 'cis,:3.8.10.12^1
                           guitar-tuning))
 
-% ******* f major triads, 1st inversion 4 notes, 5th on top
+% ******* f major triads, 1st inv. 4 notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { f,:3.5.8.12^1 }
                         #guitar-tuning
@@ -1917,7 +1917,7 @@ cShape = {
                           chord-shape 'cis,:3.8.10.12^1
                           guitar-tuning))
 
-% ******* fis major triads, 1st inversion 4 notes, 5th on top
+% ******* fis major triads, 1st inv. 4 notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { fis,:3.5.8.12^1 }
                         #guitar-tuning
@@ -1931,7 +1931,7 @@ cShape = {
                           chord-shape 'cis,:3.8.10.12^1
                           guitar-tuning))
 
-% ******* ges major triads, 1st inversion 4 notes, 5th on top
+% ******* ges major triads, 1st inv. 4 notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { ges,:3.5.8.12^1 }
                         #guitar-tuning
@@ -1945,7 +1945,7 @@ cShape = {
                           chord-shape 'cis,:3.8.10.12^1
                           guitar-tuning))
 
-% ******* g major triads, 1st inversion 4 notes, 5th on top
+% ******* g major triads, 1st inv. 4 notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { g,:3.5.8.12^1 }
                         #guitar-tuning
@@ -1959,7 +1959,7 @@ cShape = {
                           chord-shape 'cis,:3.8.10.12^1
                           guitar-tuning))
 
-% ******* gis major triads, 1st inversion 4 notes, 5th on top
+% ******* gis major triads, 1st inv. 4 notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { gis,:3.5.8.12^1 }
                         #guitar-tuning
@@ -1973,7 +1973,7 @@ cShape = {
                           chord-shape 'cis,:3.8.10.12^1
                           guitar-tuning))
 
-% ******* as major triads, 1st inversion 4 notes, 5th on top
+% ******* as major triads, 1st inv. 4 notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { as,:3.5.8.12^1 }
                         #guitar-tuning
@@ -1987,7 +1987,7 @@ cShape = {
                           chord-shape 'cis,:3.8.10.12^1
                           guitar-tuning))
 
-% ******* a major triads, 1st inversion 4 notes, 5th on top
+% ******* a major triads, 1st inv. 4 notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { a,:3.5.8.12^1 }
                         #guitar-tuning
@@ -2001,7 +2001,7 @@ cShape = {
                           chord-shape 'cis,:3.8.10.12^1
                           guitar-tuning))
 
-% ******* ais major triads, 1st inversion 4 notes, 5th on top
+% ******* ais major triads, 1st inv. 4 notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { ais,:3.5.8.12^1 }
                         #guitar-tuning
@@ -2015,7 +2015,7 @@ cShape = {
                           chord-shape 'cis,:3.8.10.12^1
                           guitar-tuning))
 
-% ******* bes major triads, 1st inversion 4 notes, 5th on top
+% ******* bes major triads, 1st inv. 4 notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { bes,:3.5.8.12^1 }
                         #guitar-tuning
@@ -2029,7 +2029,7 @@ cShape = {
                           chord-shape 'cis,:3.8.10.12^1
                           guitar-tuning))
 
-% ******* b major triads, 1st inversion 4 notes, 5th on top
+% ******* b major triads, 1st inv. 4 notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { b,:3.5.8.12^1 }
                         #guitar-tuning
@@ -2047,43 +2047,43 @@ cShape = {
 
 % * triads (c-Shape)
 % ** major triads
-% *** 1st inversion
-% **** four notes
+% *** 1st inv.
+% **** 4 notes
 % ***** octave on the top
 % not possible
 
 % * triads (c-shape)
 % ** major triads
-% *** first inversion
+% *** 1st inv.
 % **** chords of five notes
 % ***** octave on the top
-% ****** add c-shape major triad definitions (1st inversion, 5 notes, 8th on top)
+% ****** add c-shape major triad definitions (1st inv., 5 notes, 8th on top)
 \addChordShape #'cis,:3.8.10.12.15^1
                #guitar-tuning
                #"1-1-(;4-4;3-3;1-1-);2-2;x;"
 
-% ****** store predefined c-shape major triad diagrams (1st inversion, 5 notes, 8th on top)
-% ******* c major triads, 1st inversion 5 notes, 8th on top
+% ****** store predefined c-shape major triad diagrams (1st inv., 5 notes, 8th on top)
+% ******* c major triads, 1st inv. 5 notes, 8th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { c,,:3.8.10.12.15^1 }
                         #guitar-tuning
                         #"o;3-3;2-2;o;1-1;x;"
 
-% ******* cis major triads, 1st inversion 5 notes, 8th on top
+% ******* cis major triads, 1st inv. 5 notes, 8th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { cis,,:3.8.10.12.15^1 }
                         #guitar-tuning
                         #(chord-shape 'cis,:3.8.10.12.15^1
                           guitar-tuning)
 
-% ******* des major triads, 1st inversion 5 notes, 8th on top
+% ******* des major triads, 1st inv. 5 notes, 8th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { des,,:3.8.10.12.15^1 }
                         #guitar-tuning
                         #(chord-shape 'cis,:3.8.10.12.15^1
                           guitar-tuning)
 
-% ******* d major triads, 1st inversion 5 notes, 8th on top
+% ******* d major triads, 1st inv. 5 notes, 8th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { d,,:3.8.10.12.15^1 }
                         #guitar-tuning
@@ -2091,7 +2091,7 @@ cShape = {
                           chord-shape 'cis,:3.8.10.12.15^1
                           guitar-tuning))
 
-% ******* dis major triads, 1st inversion 5 notes, 8th on top
+% ******* dis major triads, 1st inv. 5 notes, 8th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { dis,,:3.8.10.12.15^1 }
                         #guitar-tuning
@@ -2099,7 +2099,7 @@ cShape = {
                           chord-shape 'cis,:3.8.10.12.15^1
                           guitar-tuning))
 
-% ******* es major triads, 1st inversion 5 notes, 8th on top
+% ******* es major triads, 1st inv. 5 notes, 8th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { es,,:3.8.10.12.15^1 }
                         #guitar-tuning
@@ -2107,7 +2107,7 @@ cShape = {
                           chord-shape 'cis,:3.8.10.12.15^1
                           guitar-tuning))
 
-% ******* e major triads, 1st inversion 5 notes, 8th on top
+% ******* e major triads, 1st inv. 5 notes, 8th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { e,,:3.8.10.12.15^1 }
                         #guitar-tuning
@@ -2115,7 +2115,7 @@ cShape = {
                           chord-shape 'cis,:3.8.10.12.15^1
                           guitar-tuning))
 
-% ******* f major triads, 1st inversion 5 notes, 8th on top
+% ******* f major triads, 1st inv. 5 notes, 8th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { f,,:3.8.10.12.15^1 }
                         #guitar-tuning
@@ -2123,7 +2123,7 @@ cShape = {
                           chord-shape 'cis,:3.8.10.12.15^1
                           guitar-tuning))
 
-% ******* fis major triads, 1st inversion 5 notes, 8th on top
+% ******* fis major triads, 1st inv. 5 notes, 8th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { fis,,:3.8.10.12.15^1 }
                         #guitar-tuning
@@ -2131,7 +2131,7 @@ cShape = {
                           chord-shape 'cis,:3.8.10.12.15^1
                           guitar-tuning))
 
-% ******* ges major triads, 1st inversion 5 notes, 8th on top
+% ******* ges major triads, 1st inv. 5 notes, 8th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { ges,,:3.8.10.12.15^1 }
                         #guitar-tuning
@@ -2139,7 +2139,7 @@ cShape = {
                           chord-shape 'cis,:3.8.10.12.15^1
                           guitar-tuning))
 
-% ******* g major triads, 1st inversion 5 notes, 8th on top
+% ******* g major triads, 1st inv. 5 notes, 8th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { g,,:3.8.10.12.15^1 }
                         #guitar-tuning
@@ -2147,7 +2147,7 @@ cShape = {
                           chord-shape 'cis,:3.8.10.12.15^1
                           guitar-tuning))
 
-% ******* gis major triads, 1st inversion 5 notes, 8th on top
+% ******* gis major triads, 1st inv. 5 notes, 8th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { gis,,:3.8.10.12.15^1 }
                         #guitar-tuning
@@ -2155,7 +2155,7 @@ cShape = {
                           chord-shape 'cis,:3.8.10.12.15^1
                           guitar-tuning))
 
-% ******* as major triads, 1st inversion 5 notes, 8th on top
+% ******* as major triads, 1st inv. 5 notes, 8th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { as,,:3.8.10.12.15^1 }
                         #guitar-tuning
@@ -2163,7 +2163,7 @@ cShape = {
                           chord-shape 'cis,:3.8.10.12.15^1
                           guitar-tuning))
 
-% ******* a major triads, 1st inversion 5 notes, 8th on top
+% ******* a major triads, 1st inv. 5 notes, 8th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { a,,:3.8.10.12.15^1 }
                         #guitar-tuning
@@ -2171,7 +2171,7 @@ cShape = {
                           chord-shape 'cis,:3.8.10.12.15^1
                           guitar-tuning))
 
-% ******* ais major triads, 1st inversion 5 notes, 8th on top
+% ******* ais major triads, 1st inv. 5 notes, 8th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { ais,,:3.8.10.12.15^1 }
                         #guitar-tuning
@@ -2179,7 +2179,7 @@ cShape = {
                           chord-shape 'cis,:3.8.10.12.15^1
                           guitar-tuning))
 
-% ******* bes major triads, 1st inversion 5 notes, 8th on top
+% ******* bes major triads, 1st inv. 5 notes, 8th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { bes,,:3.8.10.12.15^1 }
                         #guitar-tuning
@@ -2187,7 +2187,7 @@ cShape = {
                           chord-shape 'cis,:3.8.10.12.15^1
                           guitar-tuning))
 
-% ******* b major triads, 1st inversion 5 notes, 8th on top
+% ******* b major triads, 1st inv. 5 notes, 8th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { b,,:3.8.10.12.15^1 }
                         #guitar-tuning
@@ -2196,57 +2196,57 @@ cShape = {
                           guitar-tuning))
 % * triads (c-shape)
 % ** major triads
-% *** 1st inversion
+% *** 1st inv.
 % **** five notes
 % ***** third on the top
 % not possible
 
 % * triads (c-shape)
 % ** major triads
-% *** 1st inversion
+% *** 1st inv.
 % **** five notes
 % ***** fifth on the top
 % not possible
 
 % * triads (c-shape)
 % ** major triads
-% *** 1st inversion
+% *** 1st inv.
 % **** six notes
 % ***** 1st/8th on the top
 % not possible
 
 % * triads (c-shape)
 % ** major triads
-% *** first inversion
+% *** 1st inv.
 % **** six notes
 % ***** third on the top
-% ****** add c-shape major triad definitions (1st inversion, 6 notes, 3rd on top)
+% ****** add c-shape major triad definitions (1st inv., 6 notes, 3rd on top)
 \addChordShape #'cis,:3.8.10.12.15.17^1
                #guitar-tuning
                #"1-1-(;4-4;3-3;1-1;2-2;1-1-);"
 
 % ****** store predefined c-shape major triad diagrams (1st inv., 6 n., 3rd on top)
-% ******* c major triads, 1st inversion 6 notes, 3rd on top
+% ******* c major triads, 1st inv. 6 notes, 3rd on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { c,,:3.8.10.12.15.17^1 }
                         #guitar-tuning
                         #"o;3-3;2-2;o;1-1;o;"
 
-% ******* cis major triads, 1st inversion 6 notes, 3rd on top
+% ******* cis major triads, 1st inv. 6 notes, 3rd on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { cis,,:3.8.10.12.15.17^1 }
                         #guitar-tuning
                         #(chord-shape 'cis,:3.8.10.12.15.17^1
                           guitar-tuning)
 
-% ******* des major triads, 1st inversion 6 notes, 3rd on top
+% ******* des major triads, 1st inv. 6 notes, 3rd on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { des,,:3.8.10.12.15.17^1 }
                         #guitar-tuning
                         #(chord-shape 'cis,:3.8.10.12.15.17^1
                           guitar-tuning)
 
-% ******* d major triads, 1st inversion 6 notes, 3rd on top
+% ******* d major triads, 1st inv. 6 notes, 3rd on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { d,,:3.8.10.12.15.17^1 }
                         #guitar-tuning
@@ -2254,7 +2254,7 @@ cShape = {
                           chord-shape 'cis,:3.8.10.12.15.17^1
                           guitar-tuning))
 
-% ******* dis major triads, 1st inversion 6 notes, 3rd on top
+% ******* dis major triads, 1st inv. 6 notes, 3rd on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { dis,,:3.8.10.12.15.17^1 }
                         #guitar-tuning
@@ -2262,7 +2262,7 @@ cShape = {
                           chord-shape 'cis,:3.8.10.12.15.17^1
                           guitar-tuning))
 
-% ******* es major triads, 1st inversion 6 notes, 3rd on top
+% ******* es major triads, 1st inv. 6 notes, 3rd on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { es,,:3.8.10.12.15.17^1 }
                         #guitar-tuning
@@ -2270,7 +2270,7 @@ cShape = {
                           chord-shape 'cis,:3.8.10.12.15.17^1
                           guitar-tuning))
 
-% ******* e major triads, 1st inversion 6 notes, 3rd on top
+% ******* e major triads, 1st inv. 6 notes, 3rd on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { e,,:3.8.10.12.15.17^1 }
                         #guitar-tuning
@@ -2278,7 +2278,7 @@ cShape = {
                           chord-shape 'cis,:3.8.10.12.15.17^1
                           guitar-tuning))
 
-% ******* f major triads, 1st inversion 6 notes, 3rd on top
+% ******* f major triads, 1st inv. 6 notes, 3rd on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { f,,:3.8.10.12.15.17^1 }
                         #guitar-tuning
@@ -2286,7 +2286,7 @@ cShape = {
                           chord-shape 'cis,:3.8.10.12.15.17^1
                           guitar-tuning))
 
-% ******* fis major triads, 1st inversion 6 notes, 3rd on top
+% ******* fis major triads, 1st inv. 6 notes, 3rd on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { fis,,:3.8.10.12.15.17^1 }
                         #guitar-tuning
@@ -2294,7 +2294,7 @@ cShape = {
                           chord-shape 'cis,:3.8.10.12.15.17^1
                           guitar-tuning))
 
-% ******* ges major triads, 1st inversion 6 notes, 3rd on top
+% ******* ges major triads, 1st inv. 6 notes, 3rd on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { ges,,:3.8.10.12.15.17^1 }
                         #guitar-tuning
@@ -2302,7 +2302,7 @@ cShape = {
                           chord-shape 'cis,:3.8.10.12.15.17^1
                           guitar-tuning))
 
-% ******* g major triads, 1st inversion 6 notes, 3rd on top
+% ******* g major triads, 1st inv. 6 notes, 3rd on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { g,,:3.8.10.12.15.17^1 }
                         #guitar-tuning
@@ -2310,7 +2310,7 @@ cShape = {
                           chord-shape 'cis,:3.8.10.12.15.17^1
                           guitar-tuning))
 
-% ******* gis major triads, 1st inversion 6 notes, 3rd on top
+% ******* gis major triads, 1st inv. 6 notes, 3rd on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { gis,,:3.8.10.12.15.17^1 }
                         #guitar-tuning
@@ -2318,7 +2318,7 @@ cShape = {
                           chord-shape 'cis,:3.8.10.12.15.17^1
                           guitar-tuning))
 
-% ******* as major triads, 1st inversion 6 notes, 3rd on top
+% ******* as major triads, 1st inv. 6 notes, 3rd on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { as,,:3.8.10.12.15.17^1 }
                         #guitar-tuning
@@ -2326,7 +2326,7 @@ cShape = {
                           chord-shape 'cis,:3.8.10.12.15.17^1
                           guitar-tuning))
 
-% ******* a major triads, 1st inversion 6 notes, 3rd on top
+% ******* a major triads, 1st inv. 6 notes, 3rd on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { a,,:3.8.10.12.15.17^1 }
                         #guitar-tuning
@@ -2334,7 +2334,7 @@ cShape = {
                           chord-shape 'cis,:3.8.10.12.15.17^1
                           guitar-tuning))
 
-% ******* ais major triads, 1st inversion 6 notes, 3rd on top
+% ******* ais major triads, 1st inv. 6 notes, 3rd on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { ais,,:3.8.10.12.15.17^1 }
                         #guitar-tuning
@@ -2342,7 +2342,7 @@ cShape = {
                           chord-shape 'cis,:3.8.10.12.15.17^1
                           guitar-tuning))
 
-% ******* bes major triads, 1st inversion 6 notes, 3rd on top
+% ******* bes major triads, 1st inv. 6 notes, 3rd on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { bes,,:3.8.10.12.15.17^1 }
                         #guitar-tuning
@@ -2350,7 +2350,7 @@ cShape = {
                           chord-shape 'cis,:3.8.10.12.15.17^1
                           guitar-tuning))
 
-% ******* b major triads, 1st inversion 6 notes, 3rd on top
+% ******* b major triads, 1st inv. 6 notes, 3rd on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { b,,:3.8.10.12.15.17^1 }
                         #guitar-tuning
@@ -2363,11 +2363,11 @@ cShape = {
 
 % * triads (c-shape)
 % ** major triads
-% *** 1st inversion
+% *** 1st inv.
 % **** six notes
 % ***** fifth on the top
 % ****** store predefined c-shape major triad diagrams (1st inv., 6 notes, 3rd on top)
-% ******* c major triads, 1st inversion 6 notes, 5th on top
+% ******* c major triads, 1st inv. 6 notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { c,,:3.8.10.12.15.19^1 }
                         #guitar-tuning
@@ -2773,7 +2773,7 @@ cShape = {
 % * triads (c-shape)
 % ** major triads
 % *** second inversion
-% **** four notes
+% **** 4 notes
 % ***** octave on the top
 % ****** add c-shape major triad definitions (2nd inversion, 4 notes, 8th on the top)
 \addChordShape #'des,:5.10.12.15^1.3
@@ -2918,7 +2918,7 @@ cShape = {
 % * triads (c-shape)
 % ** major triads
 % *** second inversion
-% **** four notes
+% **** 4 notes
 % ***** third on the top
 % ****** add c-shape major triad definitions (2nd inversion, 4 n., 3rd on top)
 \addChordShape #'des,:5.12.15.17^1.3
@@ -3062,7 +3062,7 @@ cShape = {
 % * triads
 % ** major triads
 % *** 2nd inversion
-% **** four notes
+% **** 4 notes
 % ***** fifth on the top
 % ****** add c-shape major triad defs (2nd inv., 4 n., 5th on top)
 \addChordShape #'des,:5.8.10.12^1.3
@@ -3590,7 +3590,7 @@ cShape = {
 % * triads
 % ** augmented triads
 % *** root pos.
-% **** four notes
+% **** 4 notes
 % ***** 8th on top
 % ****** add c-shape augm. triad defs (root pos., 4 notes, 8th on top)
 \addChordShape #'c:1.3.5+.8
@@ -3743,7 +3743,7 @@ cShape = {
 % * triads
 % ** augmented triads
 % *** root pos.
-% **** four notes 
+% **** 4 notes 
 % ***** 3rd on top
 % ****** add c-shape augmntd triad defs (root pos., 4 n., 3rd on top)
 %{
@@ -3762,7 +3762,7 @@ cShape = {
 % * triads
 % ** augmented triads
 % *** root pos.
-% **** four notes
+% **** 4 notes
 % ***** 5th on top
 %{
   not possible
@@ -3979,7 +3979,7 @@ cShape = {
 
 % * triads
 % ** augmented triads
-% *** 1st inversion
+% *** 1st inv.
 % **** three notes
 % ***** 1st on top
 % ****** add c-shape augmntd triad defs (1st inv., 3 n., 1st on top)
@@ -3988,14 +3988,14 @@ cShape = {
                #"x;x;2-2;1-1-(;1-1-);x;"
 
 % ****** store prdfnd c-shape aug. trd dgrm (1st inv., 3 n., 1st on top)
-% ******* c augmented triads, 1st inversion, 3 notes, 1st on top
+% ******* c augmented triads, 1st inv., 3 notes, 1st on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { c,:3.5+.8^1 }
                         #guitar-tuning
                         #(chord-shape 'c:3.5+.8^1
                           guitar-tuning)
 
-% ******* cis augmented triads, 1st inversion, 3 notes, 1st on top
+% ******* cis augmented triads, 1st inv., 3 notes, 1st on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { cis,:3.5+.8^1 }
                         #guitar-tuning
@@ -4003,7 +4003,7 @@ cShape = {
                           chord-shape 'c:3.5+.8^1
                           guitar-tuning))
 
-% *******  des augmented triads, 1st inversion, 3 notes, 1st on top
+% *******  des augmented triads, 1st inv., 3 notes, 1st on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { des,:3.5+.8^1 }
                         #guitar-tuning
@@ -4011,7 +4011,7 @@ cShape = {
                           chord-shape 'c:3.5+.8^1
                           guitar-tuning))
 
-% ******* d augmented triads, 1st inversion, 3 notes, 1st on top
+% ******* d augmented triads, 1st inv., 3 notes, 1st on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { d,:3.5+.8^1 }
                         #guitar-tuning
@@ -4019,7 +4019,7 @@ cShape = {
                           chord-shape 'c:3.5+.8^1
                           guitar-tuning))
 
-% ******* dis augmented triads, 1st inversion, 3 notes, 1st on top
+% ******* dis augmented triads, 1st inv., 3 notes, 1st on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { d,:3.5+.8^1 }
                         #guitar-tuning
@@ -4027,7 +4027,7 @@ cShape = {
                           chord-shape 'c:3.5+.8^1
                           guitar-tuning))
 
-% ******* es augmented triads, 1st inversion, 3 notes, 1st on top
+% ******* es augmented triads, 1st inv., 3 notes, 1st on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { es,:3.5+.8^1 }
                         #guitar-tuning
@@ -4035,7 +4035,7 @@ cShape = {
                           chord-shape 'c:3.5+.8^1
                           guitar-tuning))
 
-% ******* e augmented triads, 1st inversion, 3 notes, 1st on top
+% ******* e augmented triads, 1st inv., 3 notes, 1st on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { e,:3.5+.8^1 }
                         #guitar-tuning
@@ -4043,7 +4043,7 @@ cShape = {
                           chord-shape 'c:3.5+.8^1
                           guitar-tuning))
 
-% ******* f augmented triads, 1st inversion, 3 notes, 1st on top
+% ******* f augmented triads, 1st inv., 3 notes, 1st on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { f,:3.5+.8^1 }
                         #guitar-tuning
@@ -4051,7 +4051,7 @@ cShape = {
                           chord-shape 'c:3.5+.8^1
                           guitar-tuning))
 
-% ******* fis augmented triads, 1st inversion, 3 notes, 1st on top
+% ******* fis augmented triads, 1st inv., 3 notes, 1st on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { fis,:3.5+.8^1 }
                         #guitar-tuning
@@ -4059,7 +4059,7 @@ cShape = {
                           chord-shape 'c:3.5+.8^1
                           guitar-tuning))
 
-% ******* ges augmented triads, 1st inversion, 3 notes, 1st on top
+% ******* ges augmented triads, 1st inv., 3 notes, 1st on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { ges,:3.5+.8^1 }
                         #guitar-tuning
@@ -4067,7 +4067,7 @@ cShape = {
                           chord-shape 'c:3.5+.8^1
                           guitar-tuning))
 
-% ******* g augmented triads, 1st inversion, 3 notes, 1st on top
+% ******* g augmented triads, 1st inv., 3 notes, 1st on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { g,:3.5+.8^1 }
                         #guitar-tuning
@@ -4075,7 +4075,7 @@ cShape = {
                           chord-shape 'c:3.5+.8^1
                           guitar-tuning))
 
-% ******* gis augmented triads, 1st inversion, 3 notes, 1st on top
+% ******* gis augmented triads, 1st inv., 3 notes, 1st on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { gis,:3.5+.8^1 }
                         #guitar-tuning
@@ -4083,7 +4083,7 @@ cShape = {
                           chord-shape 'c:3.5+.8^1
                           guitar-tuning))
 
-% ******* as augmented triads, 1st inversion, 3 notes, 1st on top
+% ******* as augmented triads, 1st inv., 3 notes, 1st on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { as,:3.5+.8^1 }
                         #guitar-tuning
@@ -4091,7 +4091,7 @@ cShape = {
                           chord-shape 'c:3.5+.8^1
                           guitar-tuning))
 
-% ******* a augmented triads, 1st inversion, 3 notes, 1st on top
+% ******* a augmented triads, 1st inv., 3 notes, 1st on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { a,:3.5+.8^1 }
                         #guitar-tuning
@@ -4099,7 +4099,7 @@ cShape = {
                           chord-shape 'c:3.5+.8^1
                           guitar-tuning))
 
-% ******* ais augmented triads, 1st inversion, 3 notes, 1st on top
+% ******* ais augmented triads, 1st inv., 3 notes, 1st on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { ais,:3.5+.8^1 }
                         #guitar-tuning
@@ -4107,7 +4107,7 @@ cShape = {
                           chord-shape 'c:3.5+.8^1
                           guitar-tuning))
 
-% ******* bes augmented triads, 1st inversion, 3 notes, 1st on top
+% ******* bes augmented triads, 1st inv., 3 notes, 1st on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { bes,:3.5+.8^1 }
                         #guitar-tuning
@@ -4115,7 +4115,7 @@ cShape = {
                           chord-shape 'c:3.5+.8^1
                           guitar-tuning))
 
-% ******* b augmented triads, 1st inversion, 3 notes, 1st on top
+% ******* b augmented triads, 1st inv., 3 notes, 1st on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { b,,:3.5+.8^1 }
                         #guitar-tuning
@@ -4123,7 +4123,7 @@ cShape = {
 
 % * triads
 % ** augmented triads
-% *** 1st inversion
+% *** 1st inv.
 % **** three notes
 % ***** 5th on top (open position, Drop 2 root pos.)
 % ****** add c-shape augmntd triad defs (1st inv., 3 n., 5th on top)
@@ -4132,14 +4132,14 @@ cShape = {
                #"x;x;2-2;x;1-1;4-4;"
 
 % ****** store prdfnd c-shape aug. triad dgrm (1st inv., 3 n., 5th on top)
-% ******* c augmented triads, 1st inversion, 3 notes, 5th on top
+% ******* c augmented triads, 1st inv., 3 notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { c,:3.8.12+^1 }
                         #guitar-tuning
                         #(chord-shape 'c:3.8.12+^1 
                           guitar-tuning)
 
-% ******* cis augmented triads, 1st inversion, 3 notes, 5th on top
+% ******* cis augmented triads, 1st inv., 3 notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { cis,:3.8.12+^1 }
                         #guitar-tuning
@@ -4147,7 +4147,7 @@ cShape = {
                           chord-shape 'c:3.8.12+^1 
                           guitar-tuning))
 
-% ******* des augmented triads, 1st inversion, 3 notes, 5th on top
+% ******* des augmented triads, 1st inv., 3 notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { des,:3.8.12+^1 }
                         #guitar-tuning
@@ -4155,7 +4155,7 @@ cShape = {
                           chord-shape 'c:3.8.12+^1
                           guitar-tuning))
 
-% ******* d augmented triads, 1st inversion, 3 notes, 5th on top
+% ******* d augmented triads, 1st inv., 3 notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { d,:3.8.12+^1 }
                         #guitar-tuning
@@ -4163,7 +4163,7 @@ cShape = {
                           chord-shape 'c:3.8.12+^1 
                           guitar-tuning))
 
-% ******* dis augmented triads, 1st inversion, 3 notes, 5th on top
+% ******* dis augmented triads, 1st inv., 3 notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { dis,:3.8.12+^1 }
                         #guitar-tuning
@@ -4171,7 +4171,7 @@ cShape = {
                           chord-shape 'c:3.8.12+^1 
                           guitar-tuning))
 
-% ******* es augmented triads, 1st inversion, 3 notes, 5th on top
+% ******* es augmented triads, 1st inv., 3 notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { es,:3.8.12+^1 }
                         #guitar-tuning
@@ -4179,7 +4179,7 @@ cShape = {
                           chord-shape 'c:3.8.12+^1
                           guitar-tuning))
 
-% ******* e augmented triads, 1st inversion, 3 notes, 5th on top
+% ******* e augmented triads, 1st inv., 3 notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { e,:3.8.12+^1 }
                         #guitar-tuning
@@ -4187,7 +4187,7 @@ cShape = {
                           chord-shape 'c:3.8.12+^1
                           guitar-tuning))
 
-% ******* f augmented triads, 1st inversion, 3 notes, 5th on top
+% ******* f augmented triads, 1st inv., 3 notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { f,:3.8.12+^1 }
                         #guitar-tuning
@@ -4195,7 +4195,7 @@ cShape = {
                           chord-shape 'c:3.8.12+^1
                           guitar-tuning))
 
-% ******* fis augmented triads, 1st inversion, 3 notes, 5th on top
+% ******* fis augmented triads, 1st inv., 3 notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { fis,:3.8.12+^1 }
                         #guitar-tuning
@@ -4203,7 +4203,7 @@ cShape = {
                           chord-shape 'c:3.8.12+^1
                           guitar-tuning))
 
-% ******* ges augmented triads, 1st inversion, 3 notes, 5th on top
+% ******* ges augmented triads, 1st inv., 3 notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { ges,:3.8.12+^1 }
                         #guitar-tuning
@@ -4211,7 +4211,7 @@ cShape = {
                           chord-shape 'c:3.8.12+^1
                           guitar-tuning))
 
-% ******* g augmented triads, 1st inversion, 3 notes, 5th on top
+% ******* g augmented triads, 1st inv., 3 notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { g,:3.8.12+^1 }
                         #guitar-tuning
@@ -4219,7 +4219,7 @@ cShape = {
                           chord-shape 'c:3.8.12+^1
                           guitar-tuning))
 
-% ******* gis augmented triads, 1st inversion, 3 notes, 5th on top
+% ******* gis augmented triads, 1st inv., 3 notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { gis,:3.8.12+^1 }
                         #guitar-tuning
@@ -4227,7 +4227,7 @@ cShape = {
                           chord-shape 'c:3.8.12+^1
                           guitar-tuning))
 
-% ******* as augmented triads, 1st inversion, 3 notes, 5th on top
+% ******* as augmented triads, 1st inv., 3 notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { as,:3.8.12+^1 }
                         #guitar-tuning
@@ -4235,7 +4235,7 @@ cShape = {
                           chord-shape 'c:3.8.12+^1
                           guitar-tuning))
 
-% ******* a augmented triads, 1st inversion, 3 notes, 5th on top
+% ******* a augmented triads, 1st inv., 3 notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { a,:3.8.12+^1 }
                         #guitar-tuning
@@ -4243,7 +4243,7 @@ cShape = {
                           chord-shape 'c:3.8.12+^1
                           guitar-tuning))
 
-% ******* ais augmented triads, 1st inversion, 3 notes, 5th on top
+% ******* ais augmented triads, 1st inv., 3 notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { ais,:3.8.12+^1 }
                         #guitar-tuning
@@ -4251,7 +4251,7 @@ cShape = {
                           chord-shape 'c:3.8.12+^1
                           guitar-tuning))
 
-% ******* bes augmented triads, 1st inversion, 3 notes, 5th on top
+% ******* bes augmented triads, 1st inv., 3 notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { bes:3.8.12+^1 }
                         #guitar-tuning
@@ -4259,7 +4259,7 @@ cShape = {
                           chord-shape 'c:3.8.12+^1
                           guitar-tuning))
 
-% ******* b augmented triads, 1st inversion, 3 notes, 5th on top
+% ******* b augmented triads, 1st inv., 3 notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { b,,:3.8.12+^1 }
                         #guitar-tuning
@@ -4270,8 +4270,8 @@ cShape = {
 
 % * triads
 % ** augmented triads
-% *** 1st inversion
-% **** four notes
+% *** 1st inv.
+% **** 4 notes
 % ***** root on top
 % ****** add c-shape augmntd triad defs (1st inv., 4 n., root  on top)
 \addChordShape #'des,:3.10.12+.15^1 
@@ -4279,14 +4279,14 @@ cShape = {
                #"1-1;x;3-4;2-2;2-3;x;"
 
 % ****** store prdfnd c-shape aug. triad dgr (1st inv., 4 n., root on top)
-% ******* c augmented triads, 1st inversion, 4 notes, 8th on top
+% ******* c augmented triads, 1st inv., 4 notes, 8th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                        \chordmode { c,,:3.10.12+.15^1 }
                         #guitar-tuning
                         #(chord-shape 'des,:3.10.12+.15^1 
                           guitar-tuning)
 
-% ******* cis augmented triads, 1st inversion, 4 notes, root on top
+% ******* cis augmented triads, 1st inv., 4 notes, root on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { cis,,:3.10.12+.15^1 }
                         #guitar-tuning
@@ -4294,7 +4294,7 @@ cShape = {
                           chord-shape 'des,:3.10.12+.15^1
                           guitar-tuning))
 
-% ******* des augmented triads, 1st inversion, 4 notes, root on top
+% ******* des augmented triads, 1st inv., 4 notes, root on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { des,,:3.10.12+.15^1 }
                         #guitar-tuning
@@ -4302,7 +4302,7 @@ cShape = {
                           chord-shape 'des,:3.10.12+.15^1
                           guitar-tuning))
 
-% ******* d augmented triads, 1st inversion, 4 notes, root on top
+% ******* d augmented triads, 1st inv., 4 notes, root on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { d,,:3.10.12+.15^1 }
                         #guitar-tuning
@@ -4310,7 +4310,7 @@ cShape = {
                           chord-shape 'des,:3.10.12+.15^1 
                           guitar-tuning))
 
-% ******* dis augmented triads, 1st inversion, 4 notes, root on top
+% ******* dis augmented triads, 1st inv., 4 notes, root on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { dis,,:3.10.12+.15^1 }
                         #guitar-tuning
@@ -4318,7 +4318,7 @@ cShape = {
                           chord-shape 'des,:3.10.12+.15^1 
                           guitar-tuning))
 
-% ******* es augmented triads, 1st inversion, 4 notes, root on top
+% ******* es augmented triads, 1st inv., 4 notes, root on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { es,,:3.10.12+.15^1 }
                         #guitar-tuning
@@ -4326,7 +4326,7 @@ cShape = {
                           chord-shape 'des,:3.10.12+.15^1 
                           guitar-tuning))
 
-% ******* e augmented triads, 1st inversion, 4 notes, root on top
+% ******* e augmented triads, 1st inv., 4 notes, root on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { e,,:3.10.12+.15^1 }
                         #guitar-tuning
@@ -4334,7 +4334,7 @@ cShape = {
                           chord-shape 'des,:3.10.12+.15^1 
                           guitar-tuning))
 
-% ******* f augmented triads, 1st inversion, 4 notes, root on top
+% ******* f augmented triads, 1st inv., 4 notes, root on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { f,,:3.10.12+.15^1 }
                         #guitar-tuning
@@ -4342,7 +4342,7 @@ cShape = {
                           chord-shape 'des,:3.10.12+.15^1 
                           guitar-tuning))
 
-% ******* fis augmented triads, 1st inversion, 4 notes, root on top
+% ******* fis augmented triads, 1st inv., 4 notes, root on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { fis,,:3.10.12+.15^1 }
                         #guitar-tuning
@@ -4350,7 +4350,7 @@ cShape = {
                           chord-shape 'des,:3.10.12+.15^1 
                           guitar-tuning))
 
-% ******* ges augmented triads, 1st inversion 4 notes, root on top
+% ******* ges augmented triads, 1st inv. 4 notes, root on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { ges,,:3.10.12+.15^1 }
                         #guitar-tuning
@@ -4358,7 +4358,7 @@ cShape = {
                           chord-shape 'des,:3.10.12+.15^1 
                           guitar-tuning))
 
-% ******* g augmented triads, 1st inversion, 4 notes, root on top
+% ******* g augmented triads, 1st inv., 4 notes, root on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { g,,:3.10.12+.15^1 }
                         #guitar-tuning
@@ -4366,7 +4366,7 @@ cShape = {
                           chord-shape 'des,:3.10.12+.15^1
                           guitar-tuning))
 
-% ******* gis augmented triads, 1st inversion, 4 notes, root on top
+% ******* gis augmented triads, 1st inv., 4 notes, root on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { gis,,:3.10.12+.15^1 }
                         #guitar-tuning
@@ -4374,7 +4374,7 @@ cShape = {
                           chord-shape 'des,:3.10.12+.15^1 
                           guitar-tuning))
 
-% ******* as augmented triads, 1st inversion, 4 notes, root on top
+% ******* as augmented triads, 1st inv., 4 notes, root on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { as,,:3.10.12+.15^1 }
                         #guitar-tuning
@@ -4382,7 +4382,7 @@ cShape = {
                           chord-shape 'des,:3.10.12+.15^1
                           guitar-tuning))
 
-% ******* a augmented triads, 1st inversion, 4 notes, root on top
+% ******* a augmented triads, 1st inv., 4 notes, root on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { a,,:3.10.12+.15^1 }
                         #guitar-tuning
@@ -4390,7 +4390,7 @@ cShape = {
                           chord-shape 'des,:3.10.12+.15^1
                           guitar-tuning))
 
-% ******* ais augmented triads, 1st inversion, 4 notes, root on top
+% ******* ais augmented triads, 1st inv., 4 notes, root on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { ais,,:3.10.12+.15^1 }
                         #guitar-tuning
@@ -4398,7 +4398,7 @@ cShape = {
                           chord-shape 'des,:3.10.12+.15^1
                           guitar-tuning))
 
-% ******* bes augmented triads, 1st inversion, 4 notes, root on top
+% ******* bes augmented triads, 1st inv., 4 notes, root on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { bes,,:3.10.12+.15^1 }
                         #guitar-tuning
@@ -4406,7 +4406,7 @@ cShape = {
                           chord-shape 'des,:3.10.12+.15^1
                           guitar-tuning))
 
-% ******* b augmented triads, 1st inversion 4 notes, root on top
+% ******* b augmented triads, 1st inv. 4 notes, root on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { b,,:3.10.12+.15^1 }
                         #guitar-tuning
@@ -4417,8 +4417,8 @@ cShape = {
 
 % * triads
 % ** augmented triads
-% *** 1st inversion
-% **** four notes
+% *** 1st inv.
+% **** 4 notes
 % ***** 3rd on top
 % ****** add c-shape augmntd triad defs (1st inv., 4 n., 3rd on top)
 \addChordShape #'des:3.5+.8.10^1 
@@ -4426,27 +4426,27 @@ cShape = {
                #"x;x;3-4;2-2;2-3;1-1;"
 
 % ****** store prdfnd c-shape aug. triad dgrm (1st inv., 4 n., 3rd on top)
-% ******* c augmented triads, 1st inversion, 4 notes, 3rd on top
+% ******* c augmented triads, 1st inv., 4 notes, 3rd on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { c,:3.5+.8.10^1 }
                         #guitar-tuning
                          #"x;x;2-3;1-1;1-2;o;"
 
-% ******* cis augmented triads, 1st inversion, 4 notes, 3rd on top
+% ******* cis augmented triads, 1st inv., 4 notes, 3rd on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { cis,:3.5+.8.10^1 }
                         #guitar-tuning
                         #(chord-shape 'des:3.5+.8.10^1 
                           guitar-tuning)
 
-% ******* des augmented triads, 1st inversion, 4 notes, 3rd on top
+% ******* des augmented triads, 1st inv., 4 notes, 3rd on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { des,:3.5+.8.10^1 }
                         #guitar-tuning
                         #(chord-shape 'des:3.5+.8.10^1 
                           guitar-tuning)
 
-% ******* d augmented triads, 1st inversion, 4 notes, 3rd on top
+% ******* d augmented triads, 1st inv., 4 notes, 3rd on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { d,:3.5+.8.10^1 }
                         #guitar-tuning
@@ -4454,7 +4454,7 @@ cShape = {
                           chord-shape 'des:3.5+.8.10^1 
                           guitar-tuning))
 
-% ******* dis augmented triads, 1st inversion, 4 notes, 3rd on top
+% ******* dis augmented triads, 1st inv., 4 notes, 3rd on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { dis,:3.5+.8.10^1 }
                         #guitar-tuning
@@ -4462,7 +4462,7 @@ cShape = {
                           chord-shape 'des:3.5+.8.10^1 
                           guitar-tuning))
 
-% ******* es augmented triads, 1st inversion, 4 notes, 3rd on top
+% ******* es augmented triads, 1st inv., 4 notes, 3rd on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { es,:3.5+.8.10^1 }
                         #guitar-tuning
@@ -4470,7 +4470,7 @@ cShape = {
                           chord-shape 'des:3.5+.8.10^1 
                           guitar-tuning))
 
-% ******* e augmented triads, 1st inversion, 4 notes, 3rd on top
+% ******* e augmented triads, 1st inv., 4 notes, 3rd on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { e,:3.5+.8.10^1 }
                         #guitar-tuning
@@ -4478,7 +4478,7 @@ cShape = {
                           chord-shape 'des:3.5+.8.10^1 
                           guitar-tuning))
 
-% ******* f augmented triads, 1st inversion, 4 notes, 3rd on top
+% ******* f augmented triads, 1st inv., 4 notes, 3rd on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { f,:3.5+.8.10^1 }
                         #guitar-tuning
@@ -4486,7 +4486,7 @@ cShape = {
                           chord-shape 'des:3.5+.8.10^1 
                           guitar-tuning))
 
-% ******* fis augmented triads, 1st inversion, 4 notes, 3rd on top
+% ******* fis augmented triads, 1st inv., 4 notes, 3rd on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { fis,:3.5+.8.10^1 }
                         #guitar-tuning
@@ -4494,7 +4494,7 @@ cShape = {
                           chord-shape 'des:3.5+.8.10^1 
                           guitar-tuning))
 
-% ******* ges augmented triads, 1st inversion 4 notes, 3rd on top
+% ******* ges augmented triads, 1st inv. 4 notes, 3rd on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { ges,:3.5+.8.10^1 }
                         #guitar-tuning
@@ -4502,7 +4502,7 @@ cShape = {
                           chord-shape 'des:3.5+.8.10^1 
                           guitar-tuning))
 
-% ******* g augmented triads, 1st inversion, 4 notes, 3rd on top
+% ******* g augmented triads, 1st inv., 4 notes, 3rd on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { g,:3.5+.8.10^1 }
                         #guitar-tuning
@@ -4510,7 +4510,7 @@ cShape = {
                           chord-shape 'des:3.5+.8.10^1 
                           guitar-tuning))
 
-% ******* gis augmented triads, 1st inversion, 4 notes, 3rd on top
+% ******* gis augmented triads, 1st inv., 4 notes, 3rd on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { gis,:3.5+.8.10^1 }
                         #guitar-tuning
@@ -4518,7 +4518,7 @@ cShape = {
                           chord-shape 'des:3.5+.8.10^1 
                           guitar-tuning))
 
-% ******* as augmented triads, 1st inversion, 4 notes, 3rd on top
+% ******* as augmented triads, 1st inv., 4 notes, 3rd on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { as,:3.5+.8.10^1 }
                         #guitar-tuning
@@ -4526,7 +4526,7 @@ cShape = {
                           chord-shape 'des:3.5+.8.10^1 
                           guitar-tuning))
 
-% ******* a augmented triads, 1st inversion, 4 notes, 3rd on top
+% ******* a augmented triads, 1st inv., 4 notes, 3rd on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { a,:3.5+.8.10^1 }
                         #guitar-tuning
@@ -4534,7 +4534,7 @@ cShape = {
                           chord-shape 'des:3.5+.8.10^1 
                           guitar-tuning))
 
-% ******* ais augmented triads, 1st inversion, 4 notes, 3rd on top
+% ******* ais augmented triads, 1st inv., 4 notes, 3rd on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { ais,:3.5+.8.10^1 }
                         #guitar-tuning
@@ -4542,7 +4542,7 @@ cShape = {
                           chord-shape 'des:3.5+.8.10^1 
                           guitar-tuning))
 
-% ******* bes augmented triads, 1st inversion, 4 notes, 3rd on top
+% ******* bes augmented triads, 1st inv., 4 notes, 3rd on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { bes,:3.5+.8.10^1 }
                         #guitar-tuning
@@ -4550,7 +4550,7 @@ cShape = {
                           chord-shape 'des:3.5+.8.10^1 
                           guitar-tuning))
 
-% ******* b augmented triads, 1st inversion 4 notes, 3rd on top
+% ******* b augmented triads, 1st inv. 4 notes, 3rd on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { b,:3.5+.8.10^1 }
                         #guitar-tuning
@@ -4561,8 +4561,8 @@ cShape = {
 
 % * triads (c-shape)
 % ** augmented triads
-% *** 1st inversion
-% **** four notes
+% *** 1st inv.
+% **** 4 notes
 % ***** 5th on the top
 % ****** add c-shape augmntd triad defs (1st inv., 4 n., 5th on top)
 \addChordShape #'c:3.5+.8.12+^1 % same shape as e:1.3.5+.10 (e-shape)
@@ -4573,7 +4573,7 @@ cShape = {
                #"1-1;4-4;3-3;2-2;x;x;"
 
 % ****** store prdfnd c-shape aug. triad dgrm (1st inv., 4 n., 5th on top)
-% ******* c augmented triads, 1st inversion, 4 notes, 5th on top
+% ******* c augmented triads, 1st inv., 4 notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { c,:3.5+.8.12+^1 }
                         #guitar-tuning
@@ -4584,7 +4584,7 @@ cShape = {
                         #guitar-tuning
                         #"o;3-3;2-2;1-1;x;x;"
 
-% ******* cis augmented triads, 1st inversion, 4 notes, 5th on top
+% ******* cis augmented triads, 1st inv., 4 notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { cis,:3.5+.8.12+^1 }
                         #guitar-tuning
@@ -4597,7 +4597,7 @@ cShape = {
                         #(chord-shape 'des,:3.8.10.12+^1 
                           guitar-tuning)
 
-% ******* des augmented triads, 1st inversion, 4 notes, 5th on top
+% ******* des augmented triads, 1st inv., 4 notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { des,:3.5+.8.12+^1 }
                         #guitar-tuning
@@ -4610,7 +4610,7 @@ cShape = {
                         #(chord-shape 'des,:3.8.10.12+^1 
                           guitar-tuning)
 
-% ******* d augmented triads, 1st inversion, 4 notes, 5th on top
+% ******* d augmented triads, 1st inv., 4 notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { d,:3.5+.8.12+^1 }
                         #guitar-tuning
@@ -4624,7 +4624,7 @@ cShape = {
                           chord-shape 'des,:3.8.10.12+^1 
                           guitar-tuning))
 
-% ******* dis augmented triads, 1st inversion, 4 notes, 5th on top
+% ******* dis augmented triads, 1st inv., 4 notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { dis,:3.5+.8.12+^1 }
                         #guitar-tuning
@@ -4638,7 +4638,7 @@ cShape = {
                           chord-shape 'des,:3.8.10.12+^1 
                           guitar-tuning))
 
-% ******* es augmented triads, 1st inversion, 4 notes, 5th on top
+% ******* es augmented triads, 1st inv., 4 notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { es,:3.5+.8.12+^1 }
                         #guitar-tuning
@@ -4652,7 +4652,7 @@ cShape = {
                           chord-shape 'des,:3.8.10.12+^1 
                           guitar-tuning))
 
-% ******* e augmented triads, 1st inversion, 4 notes, 5th on top
+% ******* e augmented triads, 1st inv., 4 notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { e,:3.5+.8.12+^1 }
                         #guitar-tuning
@@ -4666,7 +4666,7 @@ cShape = {
                           chord-shape 'des,:3.8.10.12+^1 
                           guitar-tuning))
 
-% ******* f augmented triads, 1st inversion, 4 notes, 5th on top
+% ******* f augmented triads, 1st inv., 4 notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { f,:3.5+.8.12+^1 }
                         #guitar-tuning
@@ -4680,7 +4680,7 @@ cShape = {
                           chord-shape 'des,:3.8.10.12+^1 
                           guitar-tuning))
 
-% ******* fis augmented triads, 1st inversion, 4 notes, 5th on top
+% ******* fis augmented triads, 1st inv., 4 notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { fis,:3.5+.8.12+^1 }
                         #guitar-tuning
@@ -4694,7 +4694,7 @@ cShape = {
                           chord-shape 'des,:3.8.10.12+^1 
                           guitar-tuning))
 
-% ******* ges augmented triads, 1st inversion, 4 notes, 5th on top
+% ******* ges augmented triads, 1st inv., 4 notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { ges,:3.5+.8.12+^1 }
                         #guitar-tuning
@@ -4708,7 +4708,7 @@ cShape = {
                           chord-shape 'des,:3.8.10.12+^1 
                           guitar-tuning))
 
-% ******* g augmented triads, 1st inversion, 4 notes, 5th on top
+% ******* g augmented triads, 1st inv., 4 notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { g,:3.5+.8.12+^1 }
                         #guitar-tuning
@@ -4722,7 +4722,7 @@ cShape = {
                           chord-shape 'des,:3.8.10.12+^1 
                           guitar-tuning))
 
-% ******* gis augmented triads, 1st inversion, 4 notes, 5th on top
+% ******* gis augmented triads, 1st inv., 4 notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { gis,:3.5+.8.12+^1 }
                         #guitar-tuning
@@ -4736,7 +4736,7 @@ cShape = {
                           chord-shape 'des,:3.8.10.12+^1 
                           guitar-tuning))
 
-% ******* as augmented triads, 1st inversion, 4 notes, 5th on top
+% ******* as augmented triads, 1st inv., 4 notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { as,:3.5+.8.12+^1 }
                         #guitar-tuning
@@ -4750,7 +4750,7 @@ cShape = {
                           chord-shape 'des,:3.8.10.12+^1 
                           guitar-tuning))
 
-% ******* a augmented triads, 1st inversion, 4 notes, 5th on top
+% ******* a augmented triads, 1st inv., 4 notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { a:3.5+.8.12+^1 }
                         #guitar-tuning
@@ -4764,7 +4764,7 @@ cShape = {
                           chord-shape 'des,:3.8.10.12+^1 
                           guitar-tuning))
 
-% ******* ais augmented triads, 1st inversion, 4 notes, 5th on top
+% ******* ais augmented triads, 1st inv., 4 notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { ais,:3.5+.8.12+^1 }
                         #guitar-tuning
@@ -4778,7 +4778,7 @@ cShape = {
                           chord-shape 'des,:3.8.10.12+^1 
                           guitar-tuning))
 
-% ******* bes augmented triads, 1st inversion, 4 notes, 5th on top
+% ******* bes augmented triads, 1st inv., 4 notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { bes,:3.5+.8.12+^1 }
                         #guitar-tuning
@@ -4792,7 +4792,7 @@ cShape = {
                           chord-shape 'des,:3.8.10.12+^1 
                           guitar-tuning))
 
-% ******* b augmented triads, 1st inversion, 4 notes, 5th on top
+% ******* b augmented triads, 1st inv., 4 notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { b,,:3.5+.8.12+^1 }
                         #guitar-tuning
@@ -4808,7 +4808,7 @@ cShape = {
 
 % * triads
 % ** augmented triads
-% *** 1st inversion
+% *** 1st inv.
 % **** five notes
 % ***** root on top
 % ****** add c-shape augmntd triad defs (1st inv., 5 n., root on top)
@@ -4817,7 +4817,7 @@ cShape = {
 %}
 
 % ****** store prdfnd c-shape aug. trd dgrms (1st inv., 5 n., root on top)
-% ******* c augmented triads, 1st inversion, 5 notes, root on top
+% ******* c augmented triads, 1st inv., 5 notes, root on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { c,,:3.8.10.12+.15^1 }
                         #guitar-tuning
@@ -4826,7 +4826,7 @@ cShape = {
 
 % * triads
 % ** augmented triads
-% *** 1st inversion
+% *** 1st inv.
 % **** five notes
 % ***** 3rd on top
 % ****** add c-shape augmntd triad defs (1st inv., 5 n., 3rd on top)
@@ -4836,7 +4836,7 @@ cShape = {
 
 
 % ****** store prdfnd c-shape augm trd dgrms (1st inv., 5 n., 3rd on top)
-% ******* c augmented triads, 1st inversion, 5 notes, 3rd on top
+% ******* c augmented triads, 1st inv., 5 notes, 3rd on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { c,,:3.8.10.12+.17^1 }
                         #guitar-tuning
@@ -4846,21 +4846,21 @@ cShape = {
 %                         #guitar-tuning
 %                         #"o;3-3;2-2;1-1;5-4;x;"
 
-% ******* cis augmented triads, 1st inversion, 5 notes, 3rd on top
+% ******* cis augmented triads, 1st inv., 5 notes, 3rd on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { cis,,:3.8.10.12+.17^1  }
                         #guitar-tuning
                         #(chord-shape 'cis,:3.8.10.12+.17^1
                           guitar-tuning)
 
-% ******* des augmented triads, 1st inversion, 5 notes, 3rd on top
+% ******* des augmented triads, 1st inv., 5 notes, 3rd on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { des,,:3.8.10.12+.17^1 }
                         #guitar-tuning
                         #(chord-shape 'cis,:3.8.10.12+.17^1
                           guitar-tuning)
 
-% ******* d augmented triads, 1st inversion, 5 notes, 3rd on top
+% ******* d augmented triads, 1st inv., 5 notes, 3rd on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { d,,:3.8.10.12+.17^1 }
                         #guitar-tuning
@@ -4868,7 +4868,7 @@ cShape = {
                           chord-shape 'cis,:3.8.10.12+.17^1
                           guitar-tuning))
 
-% ******* dis augmented triads, 1st inversion, 5 notes, 3rd on top
+% ******* dis augmented triads, 1st inv., 5 notes, 3rd on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { dis,,:3.8.10.12+.17^1 }
                         #guitar-tuning
@@ -4876,7 +4876,7 @@ cShape = {
                           chord-shape 'cis,:3.8.10.12+.17^1
                           guitar-tuning))
 
-% ******* es augmented triads, 1st inversion, 5 notes, 3rd on top
+% ******* es augmented triads, 1st inv., 5 notes, 3rd on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { es,,:3.8.10.12+.17^1 }
                         #guitar-tuning
@@ -4884,7 +4884,7 @@ cShape = {
                           chord-shape 'cis,:3.8.10.12+.17^1
                           guitar-tuning))
 
-% ******* e augmented triads, 1st inversion, 5 notes, 3rd on top
+% ******* e augmented triads, 1st inv., 5 notes, 3rd on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { e,,:3.8.10.12+.17^1 }
                         #guitar-tuning
@@ -4892,7 +4892,7 @@ cShape = {
                           chord-shape 'cis,:3.8.10.12+.17^1
                           guitar-tuning))
 
-% ******* f augmented triads, 1st inversion, 5 notes, 3rd on top
+% ******* f augmented triads, 1st inv., 5 notes, 3rd on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { f,,:3.8.10.12+.17^1 }
                         #guitar-tuning
@@ -4900,7 +4900,7 @@ cShape = {
                           chord-shape 'cis,:3.8.10.12+.17^1
                           guitar-tuning))
 
-% ******* fis augmented triads, 1st inversion, 5 notes, 3rd on top
+% ******* fis augmented triads, 1st inv., 5 notes, 3rd on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { fis,,:3.8.10.12+.17^1 }
                         #guitar-tuning
@@ -4908,7 +4908,7 @@ cShape = {
                           chord-shape 'cis,:3.8.10.12+.17^1
                           guitar-tuning))
 
-% ******* ges augmented triads, 1st inversion, 5 notes, 3rd on top
+% ******* ges augmented triads, 1st inv., 5 notes, 3rd on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { ges,,:3.8.10.12+.17^1 }
                         #guitar-tuning
@@ -4916,7 +4916,7 @@ cShape = {
                           chord-shape 'cis,:3.8.10.12+.17^1
                           guitar-tuning))
 
-% ******* g augmented triads, 1st inversion, 5 notes, 3rd on top
+% ******* g augmented triads, 1st inv., 5 notes, 3rd on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { g,,:3.8.10.12+.17^1 }
                         #guitar-tuning
@@ -4924,7 +4924,7 @@ cShape = {
                           chord-shape 'cis,:3.8.10.12+.17^1
                           guitar-tuning))
 
-% ******* gis augmented triads, 1st inversion, 5 notes, 3rd on top
+% ******* gis augmented triads, 1st inv., 5 notes, 3rd on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { gis,,:3.8.10.12+.17^1 }
                         #guitar-tuning
@@ -4932,7 +4932,7 @@ cShape = {
                           chord-shape 'cis,:3.8.10.12+.17^1
                           guitar-tuning))
 
-% ******* as augmented triads, 1st inversion, 5 notes, 3rd on top
+% ******* as augmented triads, 1st inv., 5 notes, 3rd on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { as,,:3.8.10.12+.17^1 }
                         #guitar-tuning
@@ -4940,7 +4940,7 @@ cShape = {
                           chord-shape 'cis,:3.8.10.12+.17^1
                           guitar-tuning))
 
-% ******* a augmented triads, 1st inversion, 5 notes, 3rd on top
+% ******* a augmented triads, 1st inv., 5 notes, 3rd on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { a,,:3.8.10.12+.17^1 }
                         #guitar-tuning
@@ -4948,7 +4948,7 @@ cShape = {
                           chord-shape 'cis,:3.8.10.12+.17^1
                           guitar-tuning))
 
-% ******* ais augmented triads, 1st inversion, 5 notes, 3rd on top
+% ******* ais augmented triads, 1st inv., 5 notes, 3rd on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { ais,,:3.8.10.12+.17^1 }
                         #guitar-tuning
@@ -4956,7 +4956,7 @@ cShape = {
                           chord-shape 'cis,:3.8.10.12+.17^1
                           guitar-tuning))
 
-% ******* bes augmented triads, 1st inversion, 5 notes, 3rd on top
+% ******* bes augmented triads, 1st inv., 5 notes, 3rd on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { bes,,:3.8.10.12+.17^1 }
                         #guitar-tuning
@@ -4964,7 +4964,7 @@ cShape = {
                           chord-shape 'cis,:3.8.10.12+.17^1
                           guitar-tuning))
 
-% ******* b augmented triads, 1st inversion, 5 notes, 3rd on top
+% ******* b augmented triads, 1st inv., 5 notes, 3rd on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { b,,:3.8.10.12+.17^1 }
                         #guitar-tuning
@@ -4975,7 +4975,7 @@ cShape = {
 
 % * triads
 % ** augmented triads
-% *** 1st inversion
+% *** 1st inv.
 % **** five notes
 % ***** 5th on top
 % ****** add c-shape augmntd triad defs (1st inv., 5 n., 5th on top)
@@ -4984,7 +4984,7 @@ cShape = {
 %}
 
 % ****** store prdfnd c-shape augm. trd dgrms (1st inv., 5 n., 5th on top)
-% ******* c augmented triads, 1st inversion, 5 notes, 5th on top
+% ******* c augmented triads, 1st inv., 5 notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { c,,:3.8.10.12+.19+^1 }
                         #guitar-tuning
@@ -4992,7 +4992,7 @@ cShape = {
 
 % * triads
 % ** augmented triads
-% *** 1st inversion
+% *** 1st inv.
 % **** six notes
 % ***** 8th on top
 % ****** add c-shape augm. triad defs (1st inv., 5 n., 8th on top)
@@ -5000,7 +5000,7 @@ cShape = {
 
 % * triads (c-shape)
 % ** augmented triads
-% *** 1st inversion
+% *** 1st inv.
 % **** six notes
 % ***** 3rd on top
 % ****** add c-shape augm. triad defs (1st inv., 6 n., 3rd on top)
@@ -5009,7 +5009,7 @@ cShape = {
 %}
 
 % ****** store predfnd c-shape augm. trd dgrm (1st inv., 6 n., 3rd on top)
-% ******* c augmented triads, 1st inversion 6 notes, 3rd on top
+% ******* c augmented triads, 1st inv. 6 notes, 3rd on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { c,:3.8.10.12+.15.17^1 }
                         #guitar-tuning
@@ -5017,7 +5017,7 @@ cShape = {
 
 % * triads (c-shape)
 % ** augmented triads
-% *** 1st inversion
+% *** 1st inv.
 % **** six notes
 % ***** 5th on top
 % ****** add c-shape augm. triad defs (1st inv., 6 n., 3rd on top)
@@ -5026,7 +5026,7 @@ cShape = {
 %}
 
 % ****** store predfnd c-shape augm. trd dgrm (1st inv., 6 n., 5th on top)
-% ******* c augmented triads, 1st inversion 6 notes, 5th on top
+% ******* c augmented triads, 1st inv. 6 notes, 5th on top
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { c,:3.8.10.12+.15.19+^1 }
                         #guitar-tuning
@@ -5433,7 +5433,7 @@ cShape = {
 % * triads
 % ** augmented triads
 % *** 2nd inversion
-% **** four notes
+% **** 4 notes
 % ***** root on top
 % ****** add c-shape augm. triad defs (2nd inv., 4 n., root on top)
 \addChordShape #'c,:5+.10.12+.15^1.3
@@ -5579,7 +5579,7 @@ cShape = {
 % * triads
 % ** augmented triads
 % *** 2nd inversion
-% **** four notes
+% **** 4 notes
 % ***** 3rd on top
 %{
   possible but weird, e.g. <gis, c c' e'> (\chordmode { c,,:5+.8.15.17^1.3 }) or <gis, e c' e'> (\chordmode { c,,:5+.10.15.17^1.3 })
@@ -5589,7 +5589,7 @@ cShape = {
 % * triads
 % ** augmented triads
 % *** 2nd inversion
-% **** four notes
+% **** 4 notes
 % ***** 5th on top
 % ****** add c-shape augm. triad defs (2nd inv., 4 nts, 5th on top.)
 \addChordShape #'c,:5+.8.10.12+^1.3 
@@ -6219,7 +6219,7 @@ cShape = {
 % * triads
 % ** minor triads
 % *** root pos.
-% **** four notes
+% **** 4 notes
 % ***** 8th on top
 % ****** add c-shape minor triad defs (root pos., 4 n., 8th on top)
 \addChordShape #'cis:1.3-.5.8
@@ -6363,7 +6363,7 @@ cShape = {
 % * triads
 % ** minor triads
 % *** root pos.
-% **** four notes
+% **** 4 notes
 % ***** 3rd on top
 % ****** add c-shape minor triad defs (root pos., 4 n., 3rd on top)
 \addChordShape #'cis:1.3-.5.10-
@@ -6508,7 +6508,7 @@ cShape = {
 % * triads
 % ** minor triads
 % *** root pos.
-% **** four notes
+% **** 4 notes
 % ***** 5th on top
 % ****** add c-shape minor triad defs (root pos., 4 n., 5th on top)
 \addChordShape #'cis:1.3-.5.12
@@ -6707,7 +6707,7 @@ cShape = {
 
 % * triads
 % ** minor triads
-% *** 1st inversion
+% *** 1st inv.
 % **** three notes
 % ***** root on top
 % ****** add c-shape minor triad defs (1st inv., 3 n., root on top)
@@ -6850,7 +6850,7 @@ cShape = {
 
 % * triads
 % ** minor triads
-% *** 1st inversion
+% *** 1st inv.
 % **** three notes
 % ***** 5th on top
 % ****** add c-shape minor triad defs (1st inv., 3 n., 5th on top)
@@ -6995,22 +6995,22 @@ cShape = {
 
 % * triads
 % ** minor triads
-% *** 1st inversion
-% **** four notes
+% *** 1st inv.
+% **** 4 notes
 % ***** 8th on top
 % not possible
 
 % * triads
 % ** minor triads
-% *** 1st inversion
-% **** four notes
+% *** 1st inv.
+% **** 4 notes
 % ***** 3rd on top
 % not possible
 
 % * triads
 % ** minor triads
-% *** 1st inversion
-% **** four notes
+% *** 1st inv.
+% **** 4 notes
 % ***** 5th on top
 % ****** add c-shape minor triad definitions (1st inv., 4 notes, 5th on top)
 \addChordShape #'cis:3-.5.8.12^1
@@ -7154,42 +7154,42 @@ cShape = {
 
 % * triads
 % ** minor triads
-% *** 1st inversion
+% *** 1st inv.
 % **** five notes
 % ***** root on top
 % not possible
 
 % * triads
 % ** minor triads
-% *** 1st inversion
+% *** 1st inv.
 % **** five notes
 % ***** 3rd on top
 % not possible
 
 % * triads
 % ** minor triads
-% *** 1st inversion
+% *** 1st inv.
 % **** five notes
 % ***** 5th on top
 % not possible
 
 % * triads
 % ** minor triads
-% *** 1st inversion
+% *** 1st inv.
 % **** six notes
 % ***** root on top
 % not possible
 
 % * triads
 % ** minor triads
-% *** 1st inversion
+% *** 1st inv.
 % **** six notes
 % ***** 3rd on top
 % not possible
 
 % * triads
 % ** minor triads
-% *** 1st inversion
+% *** 1st inv.
 % **** six notes
 % ***** 5th on top
 % not possible
@@ -7489,7 +7489,7 @@ cShape = {
 % * triads
 % ** minor triads
 % *** 2nd inversion
-% **** four notes
+% **** 4 notes
 % ***** root on top
 % ****** add c-shape minor triad definitions (2nd inv., 4 notes, root on top)
 \addChordShape #'c,:5.8.10-.15^1.3-
@@ -7635,7 +7635,7 @@ cShape = {
 % * triads
 % ** minor triads
 % *** 2nd inversion
-% **** four notes
+% **** 4 notes
 % ***** 3rd on top
 % ****** add c-shape minor triad definitions (2nd inv., 4 notes, 3rd on top)
 \addChordShape #'cis,:5.8.12.17-^1.3-
@@ -7882,7 +7882,7 @@ cShape = {
 % * triads
 % ** minor triads
 % *** 2nd inversion
-% **** four notes
+% **** 4 notes
 % ***** 5th on top
 % ****** add c-shape minor triad definitions (2nd inv., 4 notes, 5th on top)
 \addChordShape #'cis,:5.8.10-.12^1.3
@@ -8386,7 +8386,7 @@ cShape = {
 % * triads
 % ** diminished triads
 % *** root pos.
-% **** four notes
+% **** 4 notes
 % ***** 8th on top
 % ****** add c-shape diminished triad definitions (root pos., 4 nts, 8th on top)
 \addChordShape #'d:1.3-.5-.8
@@ -8529,7 +8529,7 @@ cShape = {
 % * triads
 % ** diminished triads
 % *** root pos.
-% **** four notes
+% **** 4 notes
 % ***** 3rd on top
 % ****** add c-shape dim. triad definitions (root pos., 4 nts, 3rd on top)
 \addChordShape #'d:1.3-.5-.10-
@@ -8673,7 +8673,7 @@ cShape = {
 % * triads
 % ** diminished triads
 % *** root pos.
-% **** four notes
+% **** 4 notes
 % ***** 5th on top
 % ****** add c-shape diminished triad definitions (root pos., 4 nts, 5th on top)
 \addChordShape #'d:1.3-.5-.12
@@ -8995,7 +8995,7 @@ cShape = {
 
 % * triads
 % ** diminished triads
-% *** first inversion
+% *** 1st inv.
 % **** three notes
 % ***** 8th on top
 % c-shape not possible
@@ -9003,7 +9003,7 @@ cShape = {
 
 % * triads
 % ** diminished triads
-% *** first inversion
+% *** 1st inv.
 % **** three notes
 % ***** 5th on top
 % ****** add c-shape diminished triad definitions (1st inv., 3 notes, 5th on top)
@@ -9140,42 +9140,42 @@ cShape = {
 
 % * triads
 % ** diminished triads
-% *** first inversion
-% **** four notes
+% *** 1st inv.
+% **** 4 notes
 % ***** 8th on top
 % not possible
 
 % * triads
 % ** diminished triads
-% *** first inversion
-% **** four notes
+% *** 1st inv.
+% **** 4 notes
 % ***** 3rd on top
 % c-shape not possible
 
 % * triads
 % ** diminished triads
-% *** first inversion
-% **** four notes
+% *** 1st inv.
+% **** 4 notes
 % ***** 5th on top
 % c-shape not possible
 
 % * triads
 % ** diminished triads
-% *** first inversion
+% *** 1st inv.
 % **** five notes
 % ***** 8th on top
 % c-shape not possible
 
 % * triads
 % ** diminished triads
-% *** first inversion
+% *** 1st inv.
 % **** five notes
 % ***** 3rd on top
 % c-shape not possible
 
 % * triads
 % ** diminished triads
-% *** first inversion
+% *** 1st inv.
 % **** five notes
 % ***** 5th on top
 % c-shape not possible
@@ -9183,21 +9183,21 @@ cShape = {
 
 % * triads
 % ** diminished triads
-% *** first inversion
+% *** 1st inv.
 % **** six notes
 % ***** 8th on top
 % c-shape not possible
 
 % * triads
 % ** diminished triads
-% *** first inversion
+% *** 1st inv.
 % **** six notes
 % ***** 3rd on top
 % c-shape not possible
 
 % * triads
 % ** diminished triads
-% *** first inversion
+% *** 1st inv.
 % **** six notes
 % ***** 5th on top
 % c-shape not possible
@@ -9497,7 +9497,7 @@ cShape = {
 % * triads
 % ** diminished triads
 % *** second inversion
-% **** four notes
+% **** 4 notes
 % ***** 8th on top
 % ****** add c-shape dim. triad definitions (2nd inv., 4 notes, 8th on top)
 \addChordShape #'c,:5-.8.10-.15^1.3
@@ -9643,7 +9643,7 @@ cShape = {
 % * triads
 % ** diminished triads
 % *** second inversion
-% **** four notes
+% **** 4 notes
 % ***** 3rd on top
 % ****** add c-shape dim. triad definitions (2nd inv., 4 notes, 3rd on top)
 \addChordShape #'c,:5-.8.10-.17-^1.3
@@ -9788,7 +9788,7 @@ cShape = {
 % * triads
 % ** diminished triads
 % *** 2nd inversion
-% **** four notes
+% **** 4 notes
 % ***** 5th on top
 % ****** add c-shape dim. tr. definitions (2nd inv., 4 nts, 5th on top)
 \addChordShape #'d,:5-.8.10-.12-^1.3
@@ -10256,7 +10256,7 @@ cShape = {
 % * triads
 % ** suspended fourths
 % *** root pos.
-% **** four notes
+% **** 4 notes
 % ***** 8th on top
 % ****** add c-shape sus4 definitions (root pos., 4 n., 8th on top)
 \addChordShape #'cis:1.4.5.8
@@ -10581,7 +10581,7 @@ cShape = {
 % * triads
 % ** suspended fourths
 % *** second inversion
-% **** four notes
+% **** 4 notes
 % ***** 5th on top
 % ****** add c-shape sus4 definitions (2nd inv., 4 n., 5th on top)
 \addChordShape #'cis,:5.8.11.12^1.3
@@ -10725,7 +10725,7 @@ cShape = {
 % * triads
 % ** suspended fourths
 % *** second inversion
-% **** four notes
+% **** 4 notes
 % ***** 8th on top
 % ****** add c-shape sus4 definitions (2nd inv., 4 n., 8th on top)
 \addChordShape #'c,:5.8.11.15^1.3
@@ -11249,7 +11249,7 @@ cShape = {
 % * tetrads
 % ** (major) added ninths
 % *** root pos.
-% **** four notes
+% **** 4 notes
 % ***** 9th on top
 % ****** add c-shape add9 defs (root pos., 4 nts, 9th on top)
 \addChordShape #'cis:1.3.5.9
@@ -11681,7 +11681,7 @@ cShape = {
 
 % * tetrads
 % ** (major) added ninths
-% *** first inversion
+% *** 1st inv.
 % **** six notes
 % ***** 10th on top
 % ****** add c-shape add9 defs (1st inv., 6 nts, 10th on top)
@@ -11825,7 +11825,7 @@ cShape = {
 
 % * tetrads
 % ** (major) added ninths
-% *** first inversion
+% *** 1st inv.
 % **** six notes
 % ***** 12th on top
 % ****** add c-shape add9 defs (1st inv., 6 nts, 12th on top)
@@ -12032,7 +12032,7 @@ cShape = {
 % * tetrads
 % ** minor added ninths
 % *** root pos.
-% **** four notes
+% **** 4 notes
 % ***** 9th on top
 % ****** add c-shape madd9 defs (root pos., 4 nts, 9th on top)
 \addChordShape #'cis:1.3-.5.9
@@ -12385,7 +12385,7 @@ cShape = {
 % * tetrads
 % ** diminished seventh chords
 % *** root pos.
-% **** four notes
+% **** 4 notes
 % ***** 5th on top
 % ****** add c-shape dim7 definitions (root pos., 4 nts, 5th on top)
 \addChordShape #'c:1.3-.7-.12-    
@@ -12531,7 +12531,7 @@ cShape = {
 % * tetrads
 % ** diminished seventh chords
 % *** root pos.
-% **** four notes
+% **** 4 notes
 % ***** 7th on top
 % ****** add c-shape dim7 definitions (root pos., 4 nts, 7th on top)
 \addChordShape #'es:1.3-.5-.7-
@@ -12675,8 +12675,8 @@ cShape = {
 
 % * tetrads 
 % ** diminished sevenths
-% *** first inversion
-% **** four notes
+% *** 1st inv.
+% **** 4 notes
 % ***** root on top
 % ****** add c-shape dim7 definitions (first inv., 4 notes, root on top)
 \addChordShape #'c:3-.5-.7-.8^1
@@ -12820,8 +12820,8 @@ cShape = {
 
 % * tetrads 
 % ** diminished sevenths
-% *** first inversion
-% **** four notes
+% *** 1st inv.
+% **** 4 notes
 % ***** 5th on top
 % ****** add c-shape dim7 definitions (first inv., 4 notes, 5th on top)
 \addChordShape #'c:3-.7-.8.12-^1
@@ -13087,7 +13087,7 @@ cShape = {
 % * tetrads
 % ** diminished sevenths
 % *** second inversion
-% **** four notes
+% **** 4 notes
 % ***** root on top
 % ****** add c-shape dim7 defs (2nd inv., 4 nts, root on top)
 \addChordShape #'c,:5-.10-.14-.15^1.3
@@ -13353,7 +13353,7 @@ cShape = {
 % * tetrads
 % ** diminished sevenths
 % *** second inversion
-% **** four notes
+% **** 4 notes
 % ***** 3rd on top
 % ****** add c-shape dim7 defs (2nd inv., 4 nts, 3rd on top)
 \addChordShape #'d,:5-.14-.15.17-^1.3
@@ -13618,7 +13618,7 @@ cShape = {
 % * tetrads
 % ** diminished sevenths
 % *** second inversion
-% **** four notes
+% **** 4 notes
 % ***** 7th on top
 % ****** add c-shape dim7 defs (2nd inv., 4 nts, 7th on top)
 \addChordShape #'c,:5-.8.10-.14-^1.3
@@ -13784,7 +13784,7 @@ cShape = {
 % * tetrads
 % ** diminished sevenths
 % *** third inversion
-% **** four notes
+% **** 4 notes
 % ***** root on top
 % ****** add c-shape dim7 definitions (3rd inv., 4 notes, root on top)
 \addChordShape #'d,:7-.10-.12-.15^1.3.5
@@ -14070,7 +14070,7 @@ cShape = {
 % * tetrads
 % ** diminished sevenths
 % *** third inversion
-% **** four notes
+% **** 4 notes
 % ***** 5th on top
 % ****** add c-shape dim7 definitions (3rd inv., 4 notes, 5th on top)
 \addChordShape #'d,:7-.8.10-.12-^1.3.5
@@ -14419,7 +14419,7 @@ cShape = {
 % * tetrads
 % ** half-diminished sevenths
 % *** root pos.
-% **** four notes
+% **** 4 notes
 % ***** 5th on top
 % ****** add c-shape half-dim 7th defs (root pos., 4 notes, 5th on top)
 \addChordShape #'c:1.3-.7.12-
@@ -14565,7 +14565,7 @@ cShape = {
 % * tetrads
 % ** half-diminished sevenths
 % *** root pos.
-% **** four notes
+% **** 4 notes
 % ***** 7th on top
 % ****** add c-shape half-dim 7th defs (root pos., 4 notes, 7th on top)
 \addChordShape #'d:1.3-.5-.7
@@ -14708,8 +14708,8 @@ cShape = {
 
 % * tetrads
 % ** half-diminished sevenths
-% *** first inversion
-% **** four notes
+% *** 1st inv.
+% **** 4 notes
 % ***** root on top
 % ****** add c-shape half-dim 7th defs (1st inv., 4 notes, root on top)
 \addChordShape #'c,:3-.5-.7.8^1
@@ -14854,8 +14854,8 @@ cShape = {
 
 % * tetrads
 % ** half-diminished sevenths
-% *** first inversion
-% **** four notes
+% *** 1st inv.
+% **** 4 notes
 % ***** 5th on top
 % ****** add c-shape half-dim 7th defs (1st inv., 4 notes, 5th on top)
 \addChordShape #'c:3-.7.8.12-^1
@@ -15101,7 +15101,7 @@ cShape = {
 % * tetrads
 % ** half-diminished sevenths
 % *** second inversion
-% **** four notes
+% **** 4 notes
 % ***** root on top
 % ****** add c-shape half-dim 7th defs (2nd inv., 4 notes, root on top)
 \addChordShape #'c,:5-.10-.14.15^1.3 % 14 is supposed to mean a flattened 7th!
@@ -15365,7 +15365,7 @@ cShape = {
 % * tetrads
 % ** half-diminished sevenths
 % *** second inversion
-% **** four notes
+% **** 4 notes
 % ***** 3rd on top
 % ****** add c-shape half-dim 7th defs (2nd inv., 4 notes, 3rd on top)
 \addChordShape #'d,:5-.14.15.17-^1.3 % 14 is supposed to mean a flattened 7th!
@@ -15626,7 +15626,7 @@ cShape = {
 % * tetrads
 % ** half-diminished sevenths
 % *** second inversion
-% **** four notes
+% **** 4 notes
 % ***** 7th on top
 % ****** add c-shape half-dim 7th defs (2nd inv., 4 notes, 7th on top)
 \addChordShape #'c,:5-.8.10-.14^1.3 % 14 is supposed to mean a flattened 7th!
@@ -15788,7 +15788,7 @@ cShape = {
 % * tetrads
 % ** half-diminished sevenths
 % *** third inversion
-% **** four notes
+% **** 4 notes
 % ***** root on top
 % ****** add c-shape half-dim 7th defs (3rd inv., 4 notes, root on top)
 \addChordShape #'d,:7.10-.12-.15^1.3-.5-
@@ -15931,7 +15931,7 @@ cShape = {
 % * tetrads
 % ** half-diminished sevenths
 % *** third inversion
-% **** four notes
+% **** 4 notes
 % ***** root on top
 % ****** add c-shape half-dim 7th defs (3rd inv., 4 notes, root on top)
 \addChordShape #'d,:7.12-.15.17-^1.3-.5- %Drop 3
@@ -16074,7 +16074,7 @@ cShape = {
 % * tetrads
 % ** half-diminished sevenths
 % *** third inversion
-% **** four notes
+% **** 4 notes
 % ***** 5th on top
 % ****** add c-shape half-dim 7th defs (3rd inv., 4 notes, 5th on top)
 \addChordShape #'d,:7.8.10-.12-^1.3-.5-
@@ -16425,7 +16425,7 @@ cShape = {
 % * tetrads
 % **  minor seventh chords
 % *** root pos.
-% **** four notes
+% **** 4 notes
 % ***** 5th on top
 % ****** add c-shape m7 defs (root pos., 4 nts, 5th on top)
 \addChordShape #'c:1.3-.7.12 
@@ -16571,7 +16571,7 @@ cShape = {
 % * tetrads
 % **  m7
 % *** root pos.
-% **** four notes
+% **** 4 notes
 % ***** 7th on top
 % ****** add c-shape m7 defs (root pos., 4 nts, 7th on top)
 \addChordShape #'d:1.3-.5.7 
@@ -16713,8 +16713,8 @@ cShape = {
 
 % * tetrads
 % **  minor seventh chords
-% *** first inversion
-% **** four notes
+% *** 1st inv.
+% **** 4 notes
 % ***** root on top
 % ****** add c-shape m7 defs (1st inv., 4 nts, root on top)
 \addChordShape #'c:3-.5.7.8 
@@ -16859,8 +16859,8 @@ cShape = {
 
 % * tetrads
 % **  minor seventh chords
-% *** first inversion
-% **** four notes
+% *** 1st inv.
+% **** 4 notes
 % ***** 5th on top
 % ****** add c-shape m7 defs (1st inv., 4 nts, 5th on top)
 \addChordShape #'c:3-.7.8.12 
@@ -17123,7 +17123,7 @@ cShape = {
 % * tetrads
 % ** minor seventh chords
 % *** second inversion
-% **** four notes
+% **** 4 notes
 % ***** root on top
 % ****** add c-shape m7 defs (2nd inv., 4 nts, root on top)
 \addChordShape #'c,:5.10-.14.15^1.3- % 14 = flattened 7th!
@@ -17388,7 +17388,7 @@ cShape = {
 % * tetrads
 % ** minor seventh chords
 % *** second inversion
-% **** four notes
+% **** 4 notes
 % ***** 3rd on top
 % ****** add c-shape m7 defs (2nd inv., 4 nts, 3rd on top)
 \addChordShape #'d,:5.14.15.17-^1.3- % 14 = flattened 7th!
@@ -17666,7 +17666,7 @@ cShape = {
 % * tetrads
 % ** minor seventh chords
 % *** second inversion
-% **** four notes
+% **** 4 notes
 % ***** 7th on top
 % ****** add c-shape m7 defs (2nd inv., 4 nts, 7th on top)
 \addChordShape #'c,:5.8.10-.14^1.3- % 14 = flattened 7th!
@@ -17828,7 +17828,7 @@ cShape = {
 % * tetrads
 % ** minor seventh chords
 % *** third inversion
-% **** four notes
+% **** 4 notes
 % ***** root on top
 % ****** add c-shape m7 defs (3rd inv., 4 nts, root on top)
 \addChordShape #'d,:7.10-.12.15^1.3-.5
@@ -17973,7 +17973,7 @@ cShape = {
 % * tetrads
 % ** minor sevenths
 % *** 3rd inv.
-% **** four notes
+% **** 4 notes
 % ***** 3rd on top
 % ****** add c-shape m7 defs (3rd inv., 4 n., 3rd on top)
 \addChordShape #'d,:7.12.15.17-^1.3-.5 %Drop 3
@@ -18116,7 +18116,7 @@ cShape = {
 % * tetrads
 % ** minor seventh chords
 % *** third inversion
-% **** four notes
+% **** 4 notes
 % ***** 5th on top
 % ****** add c-shape m7 defs (3rd inv., 4 nts, 5th on top)
 \addChordShape #'cis,:7.8.10-.12^1.3-.5
@@ -18467,7 +18467,7 @@ cShape = {
 % * tetrads
 % ** minor/major seventh chords
 % *** root pos.
-% **** four notes
+% **** 4 notes
 % ***** 5th on top
 % ****** add c-shape min/maj7 defs (root pos., 4 n., 5th on top)
 \addChordShape #'c:1.3-.7+.12
@@ -18612,7 +18612,7 @@ cShape = {
 % * tetrads
 % ** minor/major seventh chords
 % *** root pos.
-% **** four notes
+% **** 4 notes
 % ***** 7th on top
 % ****** add c-shape min/maj7 defs (root pos., 4 n., 7th on top)
 \addChordShape #'cis:1.3-.5.7+
@@ -18755,8 +18755,8 @@ cShape = {
 
 % * tetrads
 % ** minor/major seventh chords
-% *** first inversion
-% **** four notes
+% *** 1st inv.
+% **** 4 notes
 % ***** root on top
 % ****** add c-shape min/maj7 defs (1st inv., 4 n., root on top)
 \addChordShape #'c:3-.5.7+.8^1
@@ -18899,8 +18899,8 @@ cShape = {
 
 % * tetrads
 % ** minor/major seventh chords
-% *** first inversion
-% **** four notes
+% *** 1st inv.
+% **** 4 notes
 % ***** 5th on top
 % ****** add c-shape min/maj7 defs (1st inv., 4 n., 5th on top)
 \addChordShape #'d,:3-.8.14+.19^1
@@ -19163,7 +19163,7 @@ cShape = {
 % * tetrads
 % ** minor/major seventh chords
 % *** second inversion
-% **** four notes
+% **** 4 notes
 % ***** root on top
 % ****** add c-shape min/maj7 defs (2nd inv., 4 n., root on top)
 \addChordShape #'c,:5.7+.10-.15^1.3-
@@ -19428,7 +19428,7 @@ cShape = {
 % * tetrads
 % ** minor/major seventh chords
 % *** second inversion
-% **** four notes
+% **** 4 notes
 % ***** 3rd on top
 % ****** add c-shape min/maj7 defs (2nd inv., 4 n., 3rd on top)
 \addChordShape #'d:5.7+.8.10-^1.3-
@@ -19689,7 +19689,7 @@ cShape = {
 % * tetrads
 % ** minor/major seventh chords
 % *** second inversion
-% **** four notes
+% **** 4 notes
 % ***** 7th on top
 % ****** add c-shape min/maj7 defs (2nd inv., 4 n., 7th on top)
 \addChordShape #'c,:5.8.10-.14+^1.3- % 14+ supposed to be major 7th!
@@ -19853,7 +19853,7 @@ cShape = {
 % * tetrads
 % ** minor/major seventh chords
 % *** third inversion
-% **** four notes
+% **** 4 notes
 % ***** root on top
 % ****** add c-shape min/maj7 defs (3rd inv., 4 n., root on top)
 \addChordShape #'c,:7+.10-.12.15^1.3-.5
@@ -19998,7 +19998,7 @@ cShape = {
 % * tetrads
 % ** minor/major seventh chords
 % *** third inversion
-% **** four notes
+% **** 4 notes
 % ***** 5th on top
 % ****** add c-shape min/maj7 defs (3rd inv., 4 n., 5th on top)
 \addChordShape #'cis,:7+.8.10-.12^1.3-.5
@@ -20350,7 +20350,7 @@ cShape = {
 % * tetrads
 % ** dominant sevenths
 % *** root pos.
-% **** four notes
+% **** 4 notes
 % ***** 5th on top
 % ****** add c-shape dom. 7 defs (root pos., 4 n., 5th on top)
 \addChordShape #'b,:1.3.7.12 
@@ -20493,7 +20493,7 @@ cShape = {
 % * tetrads
 % ** dominant sevenths
 % *** root pos.
-% **** four notes
+% **** 4 notes
 % ***** 7th on top
 % ****** add c-shape dominant 7 defs (root pos., 4 n., 7th on top)
 \addChordShape #'d:1.3.5.7 
@@ -20635,8 +20635,8 @@ cShape = {
 
 % * tetrads
 % ** dominant sevenths
-% *** first inversion
-% **** four notes
+% *** 1st inv.
+% **** 4 notes
 % ***** root on top
 % ****** add c-shape dominant 7 defs (1st inv., 4 n., root on top)
 \addChordShape #'c:3.5.7.8^1 
@@ -20780,8 +20780,8 @@ cShape = {
 
 % * tetrads
 % ** dominant sevenths
-% *** first inversion
-% **** four notes
+% *** 1st inv.
+% **** 4 notes
 % ***** 5th on top
 % ****** add c-shape dominant 7 defs (1st inv., 4 n., 5th on top)
 \addChordShape #'cis,:3.8.14.19^1 % 14 means flattened 7th! 
@@ -21045,7 +21045,7 @@ cShape = {
 % * tetrads
 % ** dominant sevenths
 % *** second inversion
-% **** four notes
+% **** 4 notes
 % ***** root on top
 % ****** add c-shape dominant 7 defs (2nd inv., 4 n., root on top)
 \addChordShape #'c,:5.7.10.15^1.3 
@@ -21310,7 +21310,7 @@ cShape = {
 % * tetrads
 % ** dominant sevenths
 % *** second inversion
-% **** four notes
+% **** 4 notes
 % ***** 3rd on top
 % ****** add c-shape dominant 7 defs (2nd inv., 4 n., 3rd on top)
 \addChordShape #'cis:5.7.8.10^1.3 
@@ -21572,7 +21572,7 @@ cShape = {
 % * tetrads
 % ** dominant sevenths
 % *** second inversion
-% **** four notes
+% **** 4 notes
 % ***** 7th on top
 % ****** add c-shape dominant 7 defs (2nd inv., 4 n., 7th on top)
 \addChordShape #'b,,:5.8.10.14^1.3 % 14 means flattened 7th! 
@@ -21716,7 +21716,7 @@ cShape = {
 % * tetrads
 % ** dominant sevenths
 % *** third inversion
-% **** four notes
+% **** 4 notes
 % ***** root on top
 % ****** add c-shape dominant 7 defs (3rd inv., 4 n., root on top)
 \addChordShape #'cis,:7.10.12.15^1.3.5
@@ -21860,7 +21860,7 @@ cShape = {
 % * tetrads
 % ** dominant sevenths
 % *** 3rd inv.
-% **** four notes
+% **** 4 notes
 % ***** 3rd on top
 % ****** add c-shape dom. 7 defs (3rd inv., 4 n., 3rd on top)
 \addChordShape #'des,:7.12.15.17^1.3.5 %Drop 3
@@ -22004,7 +22004,7 @@ cShape = {
 % * tetrads
 % ** dominant sevenths
 % *** third inversion
-% **** four notes
+% **** 4 notes
 % ***** 5th on top
 % ****** add c-shape dominant 7 defs (3rd inv., 4 n., 5th on top)
 \addChordShape #'cis,:7.8.10.12^1.3.5 
@@ -22535,7 +22535,7 @@ cShape = {
 % * tetrads
 % ** dominant seventh diminished fifths
 % *** root pos.
-% **** four notes
+% **** 4 notes
 % ***** 5th on top
 % ****** add c-shape 7-5 defs (root pos., 4 n., 5th on top)
 \addChordShape #'b,:1.3.7.12- 
@@ -22678,7 +22678,7 @@ cShape = {
 % * tetrads
 % ** dominant seventh diminished fifths
 % *** root pos.
-% **** four notes
+% **** 4 notes
 % ***** 7th on top
 % ****** add c-shape dom. 7-5 defs (2nd inv., 4 n., 7th on top)
 \addChordShape #'d:1.3.5-.7 
@@ -22820,8 +22820,8 @@ cShape = {
 
 % * tetrads
 % ** dominant seventh diminished fifths
-% *** first inversion
-% **** four notes
+% *** 1st inv.
+% **** 4 notes
 % ***** root on top
 % ****** add c-shape dom. 7-5 defs (1st inv., 4 n., root on top)
 \addChordShape #'c:3.5-.7.8^1
@@ -22965,8 +22965,8 @@ cShape = {
 
 % * tetrads
 % ** dominant seventh diminished fifths
-% *** first inversion
-% **** four notes
+% *** 1st inv.
+% **** 4 notes
 % ***** 3rd on top
 % ****** add c-shape dom. 7-5 defs (1st inv., 4 n., 3rd on top)
 \addChordShape #'cis:5-.7.8.10^1.3
@@ -23109,8 +23109,8 @@ cShape = {
 
 % * tetrads
 % ** dominant seventh diminished fifths
-% *** first inversion
-% **** four notes
+% *** 1st inv.
+% **** 4 notes
 % ***** 5th on top
 % ****** add c-shape dom. 7-5 defs (1st inv., 4 n., 5th on top)
 \addChordShape #'cis,:3.8.14.19-^1 % 14 = flattened 7th
@@ -23374,7 +23374,7 @@ cShape = {
 % * tetrads
 % ** dominant seventh diminished fifths
 % *** second inversion
-% **** four notes
+% **** 4 notes
 % ***** root on top
 % ****** add c-shape dom. 7-5 defs (2nd inv., 4 n., root on top)
 \addChordShape #'c,:5-.7.10.15^1.3
@@ -23638,7 +23638,7 @@ cShape = {
 % * tetrads
 % ** dominant seventh diminished fifths
 % *** second inversion
-% **** four notes
+% **** 4 notes
 % ***** 3rd on top
 % ****** add c-shape dom. 7-5 defs (2nd inv., 4 n., 3rd on top)
 \addChordShape #'cis,:5-.14.15.17^1.3 % 14 -> flattened seventh!
@@ -23800,7 +23800,7 @@ cShape = {
 % * tetrads
 % ** dominant seventh diminished fifths
 % *** second inversion
-% **** four notes
+% **** 4 notes
 % ***** 7th on top
 % ****** add c-shape dom. 7-5 defs (2nd inv., 4 n., 7th on top)
 \addChordShape #'b,,:5-.8.10.14.^1.3 % 14 -> flattened seventh!
@@ -23962,7 +23962,7 @@ cShape = {
 % * tetrads
 % ** dominant seventh diminished fifths
 % *** third inversion
-% **** four notes
+% **** 4 notes
 % ***** root on top
 % ****** add c-shape dom. 7-5 defs (3rd inv., 4 n., root on top)
 \addChordShape #'d,:7.10.12-.15^1.3.5-
@@ -24106,7 +24106,7 @@ cShape = {
 % * tetrads
 % ** dominant sevenths diminished fifths
 % *** 3rd inv.
-% **** four notes
+% **** 4 notes
 % ***** 3rd on top
 % ****** add c-shape 7-5 defs (3rd inv., 4 n., 3rd on top)
 \addChordShape #'d,:7.12-.15.17^1.3.5- %Drop 3
@@ -24249,7 +24249,7 @@ cShape = {
 % * tetrads
 % ** dominant seventh diminished fifths
 % *** third inversion
-% **** four notes
+% **** 4 notes
 % ***** 5th on top
 % ****** add c-shape dom. 7-5 defs (3rd inv., 4 n., 5th on top)
 \addChordShape #'d,:7.8.10.12-^1.3.5-
@@ -24596,7 +24596,7 @@ cShape = {
 % * tetrads
 % ** dominant seventh augmented fifths
 % *** root pos.
-% **** four notes
+% **** 4 notes
 % ***** 7th on top
 % ****** add c-shape dom. 7+5 defs (root pos., 4 n., 7th on top)
 \addChordShape #'d:1.3.5+.7
@@ -24739,7 +24739,7 @@ cShape = {
 % * tetrads
 % ** dominant seventh augmented fifths
 % *** root pos.
-% **** four notes
+% **** 4 notes
 % ***** 5th on top
 % ****** add c-shape dom. 7+5 defs (root pos., 4 n., 5th on top)
 \addChordShape #'b,:1.3.7.12+
@@ -24881,8 +24881,8 @@ cShape = {
 
 % * tetrads
 % ** dominant seventh augmented fifths
-% *** 1st inversion
-% **** four notes
+% *** 1st inv.
+% **** 4 notes
 % ***** root on top
 % ****** add c-shape dom. 7+5 defs (1st inv., 4 n., root on top)
 \addChordShape #'c:3.5+.7.8^1
@@ -25026,8 +25026,8 @@ cShape = {
 
 % * tetrads
 % ** dominant seventh augmented fifths
-% *** 1st inversion
-% **** four notes
+% *** 1st inv.
+% **** 4 notes
 % ***** 5th on top
 % ****** add c-shape dom. 7+5 defs (1st inv., 4 n., 5th on top)
 \addChordShape #'cis,:3.8.14.19+^1 % 14 = flattened 7th
@@ -25290,7 +25290,7 @@ cShape = {
 % * tetrads
 % ** dominant seventh augmented fifths
 % *** second inversion
-% **** four notes
+% **** 4 notes
 % ***** root on top
 % ****** add c-shape dom. 7+5 defs (2nd inv., 4 n., root on top)
 \addChordShape #'c,:5+.7.10.15^1.3
@@ -25555,7 +25555,7 @@ cShape = {
 % * tetrads
 % ** dominant seventh augmented fifths
 % *** second inversion
-% **** four notes
+% **** 4 notes
 % ***** 3rd on top
 % ****** add c-shape dom. 7+5 defs (2nd inv., 4 n., 3rd on top)
 \addChordShape #'cis,:5+.7.8.10^1.3
@@ -25800,7 +25800,7 @@ cShape = {
 % * tetrads
 % ** dominant seventh augmented fifths
 % *** second inversion
-% **** four notes
+% **** 4 notes
 % ***** 7th on top
 % ****** add c-shape dom. 7+5 defs (2nd inv., 4 n., 7th on top)
 \addChordShape #'b,,:5+.8.10.14^1.3 % 14 = flattened 7th!
@@ -25960,7 +25960,7 @@ cShape = {
 % * tetrads
 % ** dominant seventh augmented fifths
 % *** third inversion
-% **** four notes
+% **** 4 notes
 % ***** root on top
 % ****** add c-shape dom. 7+5 defs (3rd inv., 4 n., root on top)
 \addChordShape #'c,:7.10.12+.15^1.3.5+
@@ -26105,7 +26105,7 @@ cShape = {
 % * tetrads
 % ** dominant seventh augmented fifths
 % *** 3rd inv.
-% **** four notes
+% **** 4 notes
 % ***** 3rd on top
 % ****** add c-shape dom. 7+5 defs (3rd inv., 4 n., 3rd on top)
 \addChordShape #'des,:7.12+.15.17^1.3.5+ %Drop 3
@@ -26249,7 +26249,7 @@ cShape = {
 % * tetrads
 % ** dominant seventh augmented fifths
 % *** third inversion
-% **** four notes
+% **** 4 notes
 % ***** 5th on top
 % ****** add c-shape dom. 7+5 defs (3rd inv., 4 n., 5th on top)
 \addChordShape #'c,:7.8.10.12+^1.3.5+
@@ -26598,7 +26598,7 @@ cShape = {
 % * tetrads
 % ** major sevenths
 % *** root pos.
-% **** four notes
+% **** 4 notes
 % ***** 5th on top
 % ****** add c-shape maj7 defs (root pos., 4 n., 5th on top)
 \addChordShape #'b,:1.3.7+.12 
@@ -26741,7 +26741,7 @@ cShape = {
 % * tetrads
 % ** major sevenths
 % *** root pos.
-% **** four notes
+% **** 4 notes
 % ***** 7th on top
 % ****** add c-shape maj7 defs (root pos., 4 n., 7th on top)
 \addChordShape #'cis:1.3.5.7+ 
@@ -26884,8 +26884,8 @@ cShape = {
 
 % * tetrads
 % ** major sevenths
-% *** first inversion
-% **** four notes
+% *** 1st inv.
+% **** 4 notes
 % ***** root on top
 % ****** add c-shape maj7 defs (1st inv., 4 n., root on top)
 \addChordShape #'c:3.5.7+.8^1 % hardly possible 
@@ -27029,8 +27029,8 @@ cShape = {
 
 % * tetrads
 % ** major sevenths
-% *** first inversion
-% **** four notes
+% *** 1st inv.
+% **** 4 notes
 % ***** 5th on top
 % ****** add c-shape maj7 defs (1st inv., 4 n., 5th on top)
 \addChordShape #'cis,:3.8.14+.19^1 % 14 supposed to mean major 7th 
@@ -27293,8 +27293,8 @@ cShape = {
 
 % * tetrads
 % ** major sevenths
-% *** second inversion
-% **** four notes
+% *** 2nd inv.
+% **** 4 notes
 % ***** root on top
 % ****** add c-shape maj7 defs (2nd inv., 4 n., root on top)
 \addChordShape #'c,:5.7+.10.15^1.3
@@ -27559,8 +27559,8 @@ cShape = {
 
 % * tetrads
 % ** major sevenths
-% *** second inversion
-% **** four notes
+% *** 2nd inv.
+% **** 4 notes
 % ***** 3rd on top
 % ****** add c-shape maj7 defs (2nd inv., 4 n., 3rd on top)
 \addChordShape #'cis:5.7+.8.10^1.3 % hardly possible
@@ -27821,8 +27821,8 @@ cShape = {
 
 % * tetrads
 % ** major sevenths
-% *** second inversion
-% **** four notes
+% *** 2nd inv.
+% **** 4 notes
 % ***** 7th on top
 % ****** add c-shape maj7 defs (2nd inv., 4 n., 7th on top)
 \addChordShape #'b,,:5.8.10.14+^1.3 % 14+ supposed to be major 7th
@@ -27982,8 +27982,8 @@ cShape = {
 
 % * tetrads
 % ** major sevenths
-% *** third inversion
-% **** four notes
+% *** 3rd inv.
+% **** 4 notes
 % ***** root on top
 % ****** add c-shape maj7 defs (3rd inv., 4 n., root on top)
 \addChordShape #'cis,:7+.10.12.15^1.3.5
@@ -28124,11 +28124,154 @@ cShape = {
 			  guitar-tuning))
 
 
+% * tetrads
+% ** major sevenths
+% *** 3rd inv.
+% **** 4 notes
+% ***** 3rd on top
+% ****** add c-shape maj7 defs (3rd inv., 4 n., 3rd on top)
+\addChordShape #'des,:7+.12.15.17^1.3.5 %Drop 3
+               #guitar-tuning 
+               #"x;3-3;x;1-1-(;2-2;1-1-);"
+
+% ****** store predef. c-shape maj7 dgr. (3rd inv., 4 n., 3rd on top)
+% ******* c maj7, 3rd inv., 4 notes, 3rd on top 
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { c,:7+.12.15.17^1.3.5 }
+                        #guitar-tuning
+                        #"x;2-2;x;o;1-1;o;"
+
+% ******* cis maj7, 3rd inv., 4 notes, 3rd on top 
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { cis,:7+.12.15.17^1.3.5 }
+                        #guitar-tuning
+                        #(chord-shape 'des,:7+.12.15.17^1.3.5 
+			  guitar-tuning)
+
+% ******* des maj7, 3rd inv., 4 notes, 3rd on top 
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { des,:7+.12.15.17^1.3.5 }
+                        #guitar-tuning
+                        #(chord-shape 'des,:7+.12.15.17^1.3.5 
+			  guitar-tuning)
+
+% ******* d maj7, 3rd inv., 4 notes, 3rd on top 
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { d,:7+.12.15.17^1.3.5 }
+                        #guitar-tuning
+                        #(offset-fret 1 (
+			  chord-shape 'des,:7+.12.15.17^1.3.5 
+			  guitar-tuning))
+
+% ******* dis maj7, 3rd inv., 4 notes, 3rd on top 
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { dis,:7+.12.15.17^1.3.5 }
+                        #guitar-tuning
+                        #(offset-fret 2 (
+			  chord-shape 'des,:7+.12.15.17^1.3.5 
+			  guitar-tuning))
+
+% ******* es maj7, 3rd inv., 4 notes, 3rd on top 
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { es,:7+.12.15.17^1.3.5 }
+                        #guitar-tuning
+                        #(offset-fret 2 (
+			  chord-shape 'des,:7+.12.15.17^1.3.5 
+			  guitar-tuning))
+
+% ******* e maj7, 3rd inv., 4 notes, 3rd on top 
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { e,:7+.12.15.17^1.3.5 }
+                        #guitar-tuning
+                        #(offset-fret 3 (
+			  chord-shape 'des,:7+.12.15.17^1.3.5 
+			  guitar-tuning))
+
+% ******* f maj7, 3rd inv., 4 notes, 3rd on top 
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { f,:7+.12.15.17^1.3.5 }
+                        #guitar-tuning
+                        #(offset-fret 4 (
+			  chord-shape 'des,:7+.12.15.17^1.3.5 
+			  guitar-tuning))
+
+% ******* fis maj7, 3rd inv., 4 notes, 3rd on top 
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { fis,:7+.12.15.17^1.3.5 }
+                        #guitar-tuning
+                        #(offset-fret 5 (
+			  chord-shape 'des,:7+.12.15.17^1.3.5 
+			  guitar-tuning))
+
+% ******* ges maj7, 3rd inv., 4 notes, 3rd on top 
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { ges,:7+.12.15.17^1.3.5 }
+                        #guitar-tuning
+                        #(offset-fret 5 (
+			  chord-shape 'des,:7+.12.15.17^1.3.5 
+			  guitar-tuning))
+
+% ******* g maj7, 3rd inv., 4 notes, 3rd on top 
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { g,:7+.12.15.17^1.3.5 }
+                        #guitar-tuning
+                        #(offset-fret 6 (
+			  chord-shape 'des,:7+.12.15.17^1.3.5 
+			  guitar-tuning))
+
+% ******* gis maj7, 3rd inv., 4 notes, 3rd on top 
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { gis,:7+.12.15.17^1.3.5 }
+                        #guitar-tuning
+                        #(offset-fret 7 (
+			  chord-shape 'des,:7+.12.15.17^1.3.5 
+			  guitar-tuning))
+
+% ******* as maj7, 3rd inv., 4 notes, 3rd on top 
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { as,:7+.12.15.17^1.3.5 }
+                        #guitar-tuning
+                        #(offset-fret 7 (
+			  chord-shape 'des,:7+.12.15.17^1.3.5 
+			  guitar-tuning))
+
+% ******* a maj7, 3rd inv., 4 notes, 3rd on top 
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { a,:7+.12.15.17^1.3.5 }
+                        #guitar-tuning
+                        #(offset-fret 8 (
+			  chord-shape 'des,:7+.12.15.17^1.3.5 
+			  guitar-tuning))
+
+% ******* ais maj7, 3rd inv., 4 notes, 3rd on top 
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { ais,:7+.12.15.17^1.3.5 }
+                        #guitar-tuning
+                        #(offset-fret 9 (
+			  chord-shape 'des,:7+.12.15.17^1.3.5 
+			  guitar-tuning))
+
+% ******* bes maj7, 3rd inv., 4 notes, 3rd on top 
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { bes,:7+.12.15.17^1.3.5 }
+                        #guitar-tuning
+                        #(offset-fret 9 (
+			  chord-shape 'des,:7+.12.15.17^1.3.5 
+			  guitar-tuning))
+
+% ******* b maj7, 3rd inv., 4 notes, 3rd on top 
+\storePredefinedDiagram #c-shape-fretboard-table
+                        \chordmode { b,:7+.12.15.17^1.3.5 }
+                        #guitar-tuning
+                        #(offset-fret 10 (
+			  chord-shape 'des,:7+.12.15.17^1.3.5 
+			  guitar-tuning))
+
 
 % * tetrads
 % ** major sevenths
-% *** third inversion
-% **** four notes
+% *** 3rd inv.
+% **** 4 notes
 % ***** 5th on top
 % ****** add c-shape maj7 defs (3rd inv., 4 n., 5th on top)
 \addChordShape #'cis,:7+.8.10.12^1.3.5 % hardly possible
@@ -28478,7 +28621,7 @@ cShape = {
 % * tetrads
 % ** major seventh diminished fifths
 % *** root pos.
-% **** four notes
+% **** 4 notes
 % ***** 5th on top
 % ****** add c-shape maj7-5 defs (root pos., 4 n., 5th on top)
 \addChordShape #'b,:1.3.7+.12- 
@@ -28621,7 +28764,7 @@ cShape = {
 % * tetrads
 % ** major seventh diminished fifths
 % *** root pos.
-% **** four notes
+% **** 4 notes
 % ***** 7th on top
 % ****** add c-shape maj7-5 defs (root pos., 4 n., 7th on top)
 \addChordShape #'d:1.3.5-.7+ 
@@ -28763,8 +28906,8 @@ cShape = {
 
 % * tetrads
 % ** major seventh diminished fifths
-% *** first inversion
-% **** four notes
+% *** 1st inv.
+% **** 4 notes
 % ***** root on top
 % ****** add c-shape maj7-5 defs (1st inv., 4 n., root on top)
 \addChordShape #'c:3.5-.7+.8^1 
@@ -28908,8 +29051,8 @@ cShape = {
 
 % * tetrads
 % ** major seventh diminished fifths
-% *** first inversion
-% **** four notes
+% *** 1st inv.
+% **** 4 notes
 % ***** 5th on top
 % ****** add c-shape maj7-5 defs (1st inv., 4 n., 5th on top)
 \addChordShape #'c,:3.8.14+.19-^1 % 14+ supposed to be major 7th!
@@ -29172,8 +29315,8 @@ cShape = {
 
 % * tetrads
 % ** major seventh diminished fifths
-% *** second inversion
-% **** four notes
+% *** 2nd inv.
+% **** 4 notes
 % ***** root on top
 % ****** add c-shape maj7-5 defs (2nd inv., 4 n., root on top)
 \addChordShape #'c,:5-.7+.10.15^1.3 
@@ -29439,8 +29582,8 @@ cShape = {
 
 % * tetrads
 % ** major seventh diminished fifths
-% *** second inversion
-% **** four notes
+% *** 2nd inv.
+% **** 4 notes
 % ***** 3rd on top
 % ****** add c-shape maj7-5 defs (2nd inv., 4 n., 3rd on top)
 \addChordShape #'cis:5-.7+.8.10^1.3 
@@ -29702,8 +29845,8 @@ cShape = {
 
 % * tetrads
 % ** major seventh diminished fifths
-% *** second inversion
-% **** four notes
+% *** 2nd inv.
+% **** 4 notes
 % ***** 7th on top
 % ****** add c-shape maj7-5 defs (2nd inv., 4 n., 7th on top)
 \addChordShape #'b,:5-.8.10.14+^1.3 % 14+ supposed to be major 7th 
@@ -29864,8 +30007,8 @@ cShape = {
 
 % * tetrads
 % ** major seventh diminished fifths
-% *** third inversion
-% **** four notes
+% *** 3rd inv.
+% **** 4 notes
 % ***** root on top
 % ****** add c-shape maj7-5 defs (3rd inv., 4 n., root on top)
 \addChordShape #'d,:7+.10.12-.15^1.3.5- 
@@ -30007,8 +30150,8 @@ cShape = {
 
 % * tetrads
 % ** major seventh diminished fifths
-% *** third inversion
-% **** four notes
+% *** 3rd inv.
+% **** 4 notes
 % ***** 5th on top
 % ****** add c-shape maj7-5 defs (3rd inv., 4 n., 5th on top)
 \addChordShape #'d,:7+.8.10.12-^1.3.5- 
@@ -30357,7 +30500,7 @@ cShape = {
 % * tetrads
 % ** major seventh augmented fifths
 % *** root pos.
-% **** four notes
+% **** 4 notes
 % ***** 5th on top
 % ****** add c-shape maj7+5 defs (root pos., 4 n., 5th on top)
 \addChordShape #'b,:1.3.7+.12+ 
@@ -30501,7 +30644,7 @@ cShape = {
 % * tetrads
 % ** major seventh augmented fifths
 % *** root pos.
-% **** four notes
+% **** 4 notes
 % ***** 7th on top
 % ****** add c-shape maj7+5 defs (root pos., 4 n., 7th on top)
 \addChordShape #'cis:1.3.5+.7+ 
@@ -30644,8 +30787,8 @@ cShape = {
 
 % * tetrads
 % ** major seventh augmented fifths
-% *** first inversion
-% **** four notes
+% *** 1st inv.
+% **** 4 notes
 % ***** root on top
 % ****** add c-shape maj7+5 defs (1st inv., 4 n., root on top)
 \addChordShape #'c:3.5+.7+.8^1 
@@ -30789,8 +30932,8 @@ cShape = {
 
 % * tetrads
 % ** major seventh augmented fifths
-% *** first inversion
-% **** four notes
+% *** 1st inv.
+% **** 4 notes
 % ***** 5th on top
 % ****** add c-shape maj7+5 defs (1st inv., 4 n., 5th on top)
 \addChordShape #'cis,:3.8.14+.19+^1 % 14+ supposed to be major 7th 
@@ -31054,8 +31197,8 @@ cShape = {
 
 % * tetrads
 % ** major seventh augmented fifths
-% *** second inversion
-% **** four notes
+% *** 2nd inv.
+% **** 4 notes
 % ***** root on top
 % ****** add c-shape maj7+5 defs (2nd inv., 4 n., root on top)
 \addChordShape #'c,:5+.7+.10.15^1.3 
@@ -31319,8 +31462,8 @@ cShape = {
 
 % * tetrads
 % ** major seventh augmented fifths
-% *** second inversion
-% **** four notes
+% *** 2nd inv.
+% **** 4 notes
 % ***** 3rd on top
 % ****** add c-shape maj7+5 defs (2nd inv., 4 n., 3rd on top)
 \addChordShape #'cis:5+.7+.8.10^1.3 
@@ -31582,8 +31725,8 @@ cShape = {
 
 % * tetrads
 % ** major seventh augmented fifths
-% *** second inversion
-% **** four notes
+% *** 2nd inv.
+% **** 4 notes
 % ***** 7th on top
 % ****** add c-shape maj7+5 defs (2nd inv., 4 n., 7th on top)
 \addChordShape #'b,:5+.8.10.14+^1.3 % 14+ supposed to be major 7th 
@@ -31743,8 +31886,8 @@ cShape = {
 
 % * tetrads
 % ** major seventh augmented fifths
-% *** third inversion
-% **** four notes
+% *** 3rd inv.
+% **** 4 notes
 % ***** root on top
 % ****** add c-shape maj7+5 defs (3rd inv., 4 n., root on top)
 \addChordShape #'c,:7+.10.12+.15^1.3.5+ 
@@ -31889,8 +32032,8 @@ cShape = {
 
 % * tetrads
 % ** major seventh augmented fifths
-% *** third inversion
-% **** four notes
+% *** 3rd inv.
+% **** 4 notes
 % ***** 5th on top
 % ****** add c-shape maj7+5 defs (3rd inv., 4 n., 5th on top)
 \addChordShape #'c,:7+.8.10.12+^1.3.5+ 
@@ -33309,7 +33452,7 @@ cShape = {
 
 % * pentads
 % ** ninths
-% *** second inversion
+% *** 2nd inv.
 % **** 5 notes
 % ***** 9th on top
 % ****** add c-shape 9 defs (2nd inv., 5 nts, 9th on top)
@@ -33452,7 +33595,7 @@ cShape = {
 
 % * pentads
 % ** ninths
-% *** second inversion
+% *** 2nd inv.
 % **** 6 notes
 % ***** 19th on top
 % ****** add c-shape 9 defs (2nd inv., 6 nts, 19th on top)
