@@ -58,9 +58,9 @@ diminishedSeventhsRootPositionFourNotesThirdOnTopShapes = \lyricmode {
 % *** root position
 % **** four notes
 % ***** third on the top
-  A-Shape \repeat unfold 16 { \skip1 }
-  E-Shape \repeat unfold 16 { \skip1 }
-  D-Shape \repeat unfold 16 { \skip1 }
+  A-Shape __ \repeat unfold 16 { _ }
+  E-Shape __ \repeat unfold 16 { _ }
+  D-Shape __ \repeat unfold 16 { _ }
 }
 
 diminishedSeventhsRootPositionFourNotesThirdOnTop = \chordmode {
@@ -88,6 +88,7 @@ diminishedSeventhsRootPositionFourNotesThirdOnTop = \chordmode {
   bes,,1:1.5-.7-.10-
   b,,1:1.5-.7-.10-
   \bar "||"
+  \break
   \eShape
   c,1:1.5-.7-.10-
   cis,1:1.5-.7-.10-
@@ -107,6 +108,7 @@ diminishedSeventhsRootPositionFourNotesThirdOnTop = \chordmode {
   bes,,1:1.5-.7-.10-
   b,,1:1.5-.7-.10-
   \bar "||"
+  \break
   \dShape
   c1:1.5-.7-.10-
   cis1:1.5-.7-.10-
