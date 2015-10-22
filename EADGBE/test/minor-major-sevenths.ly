@@ -424,7 +424,8 @@ minormajorSeventhsFirstInversionFourNotesFifthOnTopChordSymbols = \chordmode {
   %\cShape
   %\aShape
   %\gShape
-  \repeat unfold 4 {
+  %\dShape
+  \repeat unfold 5 {
     c1:m7+/es
     cis1:m7+/e 
     des1:m7+/fes
@@ -456,6 +457,7 @@ minormajorSeventhsFirstInversionFourNotesFifthOnTopShapes = \lyricmode {
   }
   A-Shape __ \repeat unfold 16 { _ }
   G-Shape __ \repeat unfold 16 { _ }
+  D-Shape __ \repeat unfold 16 { _ }
 }
 
 minormajorSeventhsFirstInversionFourNotesFifthOnTop = \chordmode {
@@ -559,6 +561,26 @@ minormajorSeventhsFirstInversionFourNotesFifthOnTop = \chordmode {
   ais,,:3-.7+.8.12^1
   bes,,:3-.7+.8.12^1
   b,,:3-.7+.8.12^1
+  \bar "||"
+  \break
+  \dShape
+  c,:3-.7+.8.12^1
+  cis,:3-.7+.8.12^1
+  des,:3-.7+.8.12^1
+  d,,:3-.7+.8.12^1
+  dis,,:3-.7+.8.12^1
+  es,,:3-.7+.8.12^1
+  e,,:3-.7+.8.12^1
+  f,,:3-.7+.8.12^1
+  fis,,:3-.7+.8.12^1
+  ges,,:3-.7+.8.12^1
+  g,,:3-.7+.8.12^1
+  gis,,:3-.7+.8.12^1
+  as,,:3-.7+.8.12^1
+  a,,:3-.7+.8.12^1
+  ais,,:3-.7+.8.12^1
+  bes,,:3-.7+.8.12^1
+  b,,:3-.7+.8.12^1
   \bar "|."
 }
 
@@ -569,7 +591,8 @@ minormajorSeventhsFirstInversionFourNotesSeventhOnTopChordSymbols = \chordmode {
 % **** four notes
 % ***** seventh on top
   %\gShape
-  \repeat unfold 1 {
+  %\dShape
+  \repeat unfold 2 {
     c1:m7+/es
     cis1:m7+/e 
     des1:m7+/fes
@@ -597,6 +620,7 @@ minormajorSeventhsFirstInversionFourNotesSeventhOnTopShapes = \lyricmode {
 % **** four notes
 % ***** seventh on top
   G-Shape __ \repeat unfold 16 { _ }
+  D-Shape __ \repeat unfold 16 { _ }
 }
 
 minormajorSeventhsFirstInversionFourNotesSeventhOnTop = \chordmode {
@@ -616,6 +640,26 @@ minormajorSeventhsFirstInversionFourNotesSeventhOnTop = \chordmode {
   f,:3-.8.12.14+^1
   fis,:3-.8.12.14+^1
   ges,:3-.8.12.14+^1
+  g,,:3-.8.12.14+^1
+  gis,,:3-.8.12.14+^1
+  as,,:3-.8.12.14+^1
+  a,,:3-.8.12.14+^1
+  ais,,:3-.8.12.14+^1
+  bes,,:3-.8.12.14+^1
+  b,,:3-.8.12.14+^1
+  \bar "||"
+  \break
+  \dShape
+  c,:3-.8.12.14+^1
+  cis,:3-.8.12.14+^1
+  des,:3-.8.12.14+^1
+  d,,:3-.8.12.14+^1
+  dis,,:3-.8.12.14+^1
+  es,,:3-.8.12.14+^1
+  e,,:3-.8.12.14+^1
+  f,,:3-.8.12.14+^1
+  fis,,:3-.8.12.14+^1
+  ges,,:3-.8.12.14+^1
   g,,:3-.8.12.14+^1
   gis,,:3-.8.12.14+^1
   as,,:3-.8.12.14+^1
@@ -1118,9 +1162,11 @@ minormajorSeventhsThirdInversionFourNotesThirdOnTopChordSymbols = \chordmode {
 % *** third inversion
 % **** four notes
 % ***** third on top
+  %\cShape
   %\aShape
   %\gShape
-  \repeat unfold 2 {
+  %\dShape
+  \repeat unfold 4 {
     c1:m7+/b
     cis1:m7+/bis 
     des1:m7+/c
@@ -1147,8 +1193,10 @@ minormajorSeventhsThirdInversionFourNotesThirdOnTopShapes = \lyricmode {
 % *** third inversion
 % **** four notes
 % ***** third on top
+  C-Shape __ \repeat unfold 16 { _ }
   A-Shape __ \repeat unfold 16 { _ }
   G-Shape __ \repeat unfold 16 { _ }
+  D-Shape __ \repeat unfold 16 { _ }
 }
 
 minormajorSeventhsThirdInversionFourNotesThirdOnTop = \chordmode {
@@ -1157,6 +1205,26 @@ minormajorSeventhsThirdInversionFourNotesThirdOnTop = \chordmode {
 % *** third inversion
 % **** four notes
 % ***** third on top
+  \cShape
+  c,1:7+.12.15.17-^1.3-.5
+  cis,1:7+.12.15.17-^1.3-.5
+  des,1:7+.12.15.17-^1.3-.5
+  d,,1:7+.12.15.17-^1.3-.5
+  dis,,1:7+.12.15.17-^1.3-.5
+  es,,1:7+.12.15.17-^1.3-.5
+  e,,1:7+.12.15.17-^1.3-.5
+  f,,1:7+.12.15.17-^1.3-.5
+  fis,,1:7+.12.15.17-^1.3-.5
+  ges,,1:7+.12.15.17-^1.3-.5
+  g,,1:7+.12.15.17-^1.3-.5
+  gis,,1:7+.12.15.17-^1.3-.5
+  as,,1:7+.12.15.17-^1.3-.5
+  a,,1:7+.12.15.17-^1.3-.5
+  ais,,1:7+.12.15.17-^1.3-.5
+  bes,,1:7+.12.15.17-^1.3-.5
+  b,,1:7+.12.15.17-^1.3-.5
+  \bar "||"
+  \break
   \aShape
   c,,1:7+.12.15.17-^1.3-.5
   cis,,1:7+.12.15.17-^1.3-.5
@@ -1195,6 +1263,26 @@ minormajorSeventhsThirdInversionFourNotesThirdOnTop = \chordmode {
   ais,,,1:7+.12.15.17-^1.3-.5
   bes,,,1:7+.12.15.17-^1.3-.5
   b,,,1:7+.12.15.17-^1.3-.5
+  \bar "||"
+  \break
+  \dShape
+  c,1:7+.12.15.17-^1.3-.5
+  cis,1:7+.12.15.17-^1.3-.5
+  des,1:7+.12.15.17-^1.3-.5
+  d,,1:7+.12.15.17-^1.3-.5
+  dis,,1:7+.12.15.17-^1.3-.5
+  es,,1:7+.12.15.17-^1.3-.5
+  e,,1:7+.12.15.17-^1.3-.5
+  f,,1:7+.12.15.17-^1.3-.5
+  fis,,1:7+.12.15.17-^1.3-.5
+  ges,,1:7+.12.15.17-^1.3-.5
+  g,,1:7+.12.15.17-^1.3-.5
+  gis,,1:7+.12.15.17-^1.3-.5
+  as,,1:7+.12.15.17-^1.3-.5
+  a,,1:7+.12.15.17-^1.3-.5
+  ais,,1:7+.12.15.17-^1.3-.5
+  bes,,1:7+.12.15.17-^1.3-.5
+  b,,1:7+.12.15.17-^1.3-.5
   \bar "|."
 }
 
