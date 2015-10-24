@@ -141,23 +141,26 @@ majorseventhdiminishedfifthsRootPositionFourNotesFifthOnTopChordSymbols = \chord
 % **** four notes
 % ***** fifth on top
   %\cShape
-  c1:maj7.5-
-  cis,1:maj7.5-
-  des,1:maj7.5-
-  d,1:maj7.5-
-  dis,1:maj7.5-
-  es,1:maj7.5-
-  e,1:maj7.5-
-  f,1:maj7.5-
-  fis,1:maj7.5-
-  ges,1:maj7.5-
-  g,1:maj7.5-
-  gis,1:maj7.5-
-  as,1:maj7.5-
-  a,1:maj7.5-
-  ais,1:maj7.5-
-  bes,1:maj7.5-
-  b,1:maj7.5-
+  %\eShape
+  \repeat unfold 2 {
+    c1:maj7.5-
+    cis,1:maj7.5-
+    des,1:maj7.5-
+    d,1:maj7.5-
+    dis,1:maj7.5-
+    es,1:maj7.5-
+    e,1:maj7.5-
+    f,1:maj7.5-
+    fis,1:maj7.5-
+    ges,1:maj7.5-
+    g,1:maj7.5-
+    gis,1:maj7.5-
+    as,1:maj7.5-
+    a,1:maj7.5-
+    ais,1:maj7.5-
+    bes,1:maj7.5-
+    b,1:maj7.5-
+  }
 }
 
 majorseventhdiminishedfifthsRootPositionFourNotesFifthOnTopShapes = \lyricmode {
@@ -166,9 +169,8 @@ majorseventhdiminishedfifthsRootPositionFourNotesFifthOnTopShapes = \lyricmode {
 % *** root position
 % **** four notes
 % ***** fifth on top
-  \repeat unfold 1 {
-    C-Shape \repeat unfold 16 { \skip1 }
-  }
+  C-Shape __ \repeat unfold 16 { _ }
+  E-Shape __ \repeat unfold 16 { _ }
 }
 
 majorseventhdiminishedfifthsRootPositionFourNotesFifthOnTop = \chordmode {
@@ -195,6 +197,26 @@ majorseventhdiminishedfifthsRootPositionFourNotesFifthOnTop = \chordmode {
   ais,,1:1.3.7+.12-
   bes,,1:1.3.7+.12-
   b,,1:1.3.7+.12-
+  \bar "||"
+  \break
+  \eShape
+  c,1:1.7+.10.12-
+  cis,1:1.7+.10.12-
+  des,1:1.7+.10.12-
+  d,1:1.7+.10.12-
+  dis,1:1.7+.10.12-
+  es,1:1.7+.10.12-
+  e,1:1.7+.10.12-
+  f,,1:1.7+.10.12-
+  fis,,1:1.7+.10.12-
+  ges,,1:1.7+.10.12-
+  g,,1:1.7+.10.12-
+  gis,,1:1.7+.10.12-
+  as,,1:1.7+.10.12-
+  a,,1:1.7+.10.12-
+  ais,,1:1.7+.10.12-
+  bes,,1:1.7+.10.12-
+  b,,1:1.7+.10.12-
   \bar "|."
 }
 
@@ -313,23 +335,26 @@ majorseventhdiminishedfifthsFirstInversionFourNotesRootOnTopChordSymbols = \chor
 % **** four notes
 % ***** root on top
   %\cShape
-  c1:maj7.5-/e
-  cis,1:maj7.5-/eis
-  des,1:maj7.5-/f
-  d,1:maj7.5-/fis
-  dis,1:maj7.5-/fisis
-  es,1:maj7.5-/g
-  e,1:maj7.5-/gis
-  f,1:maj7.5-/a
-  fis,1:maj7.5-/ais
-  ges,1:maj7.5-/bes
-  g,1:maj7.5-/b
-  gis,1:maj7.5-/bis
-  as,1:maj7.5-/c
-  a,1:maj7.5-/cis
-  ais,1:maj7.5-/cisis
-  bes,1:maj7.5-/d
-  b,1:maj7.5-/dis
+  %\eShape
+  \repeat unfold 2 {
+    c1:maj7.5-/e
+    cis,1:maj7.5-/eis
+    des,1:maj7.5-/f
+    d,1:maj7.5-/fis
+    dis,1:maj7.5-/fisis
+    es,1:maj7.5-/g
+    e,1:maj7.5-/gis
+    f,1:maj7.5-/a
+    fis,1:maj7.5-/ais
+    ges,1:maj7.5-/bes
+    g,1:maj7.5-/b
+    gis,1:maj7.5-/bis
+    as,1:maj7.5-/c
+    a,1:maj7.5-/cis
+    ais,1:maj7.5-/cisis
+    bes,1:maj7.5-/d
+    b,1:maj7.5-/dis
+  }
 }
 
 majorseventhdiminishedfifthsFirstInversionFourNotesRootOnTopShapes = \lyricmode {
@@ -338,9 +363,8 @@ majorseventhdiminishedfifthsFirstInversionFourNotesRootOnTopShapes = \lyricmode 
 % *** first inversion
 % **** four notes
 % ***** root on top
-  \repeat unfold 1 {
-    C-Shape \repeat unfold 16 { \skip1 }
-  }
+  C-Shape __ \repeat unfold 16 { _ }
+  E-Shape __ \repeat unfold 16 { _ }
 }
 
 majorseventhdiminishedfifthsFirstInversionFourNotesRootOnTop = \chordmode {
@@ -367,6 +391,26 @@ majorseventhdiminishedfifthsFirstInversionFourNotesRootOnTop = \chordmode {
   ais,1:3.5-.7+.8^1
   bes,1:3.5-.7+.8^1
   b,,1:3.5-.7+.8^1
+  \bar "||"
+  \break
+  \eShape
+  c,1:3.12-.14+.15^1
+  cis,1:3.12-.14+.15^1
+  des,1:3.12-.14+.15^1
+  d,1:3.12-.14+.15^1
+  dis,1:3.12-.14+.15^1
+  es,1:3.12-.14+.15^1
+  e,,1:3.12-.14+.15^1
+  f,,1:3.12-.14+.15^1
+  fis,,1:3.12-.14+.15^1
+  ges,,1:3.12-.14+.15^1
+  g,,1:3.12-.14+.15^1
+  gis,,1:3.12-.14+.15^1
+  as,,1:3.12-.14+.15^1
+  a,,1:3.12-.14+.15^1
+  ais,,1:3.12-.14+.15^1
+  bes,,1:3.12-.14+.15^1
+  b,,1:3.12-.14+.15^1
   \bar "|."
 }
 
@@ -569,7 +613,9 @@ majorseventhdiminishedfifthsSecondInversionFourNotesRootOnTopChordSymbols = \cho
 % **** four notes
 % ***** root on top
   %\cShape
-  \repeat unfold 2 {
+  %\cShape
+  %\eShape
+  \repeat unfold 3 {
     c1:maj7.5-/ges
     cis,1:maj7.5-/g
     des,1:maj7.5-/ases
@@ -597,8 +643,9 @@ majorseventhdiminishedfifthsSecondInversionFourNotesRootOnTopShapes = \lyricmode
 % **** four notes
 % ***** root on top
   \repeat unfold 2 {
-    C-Shape \repeat unfold 16 { \skip1 }
+    C-Shape __ \repeat unfold 16 { _ }
   }
+  E-Shape __ \repeat unfold 16 { _ }
 }
 
 majorseventhdiminishedfifthsSecondInversionFourNotesRootOnTop = \chordmode {
@@ -626,24 +673,25 @@ majorseventhdiminishedfifthsSecondInversionFourNotesRootOnTop = \chordmode {
   bes,,:5-.7+.10.15^1.3
   b,,,:5-.7+.10.15^1.3
   \bar "||"
+  \break
   \cShape
-  % c,,:5-.10.14+.15^1.3
-  % cis,,:5-.10.14+.15^1.3
-  % des,,:5-.10.14+.15^1.3
-  % d,,:5-.10.14+.15^1.3
-  % dis,,:5-.10.14+.15^1.3
-  % es,,:5-.10.14+.15^1.3
-  % e,,:5-.10.14+.15^1.3
-  % f,,:5-.10.14+.15^1.3
-  % fis,,:5-.10.14+.15^1.3
-  % ges,,:5-.10.14+.15^1.3
-  % g,,:5-.10.14+.15^1.3
-  % gis,,:5-.10.14+.15^1.3
-  % as,,:5-.10.14+.15^1.3
-  % a,,:5-.10.14+.15^1.3
-  % ais,,:5-.10.14+.15^1.3
-  % bes,,:5-.10.14+.15^1.3
-  % b,,,:5-.10.14+.15^1.3
+  % c,,1:5-.10.14+.15^1.3
+  % cis,,1:5-.10.14+.15^1.3
+  % des,,1:5-.10.14+.15^1.3
+  % d,,1:5-.10.14+.15^1.3
+  % dis,,1:5-.10.14+.15^1.3
+  % es,,1:5-.10.14+.15^1.3
+  % e,,1:5-.10.14+.15^1.3
+  % f,,1:5-.10.14+.15^1.3
+  % fis,,1:5-.10.14+.15^1.3
+  % ges,,1:5-.10.14+.15^1.3
+  % g,,1:5-.10.14+.15^1.3
+  % gis,,1:5-.10.14+.15^1.3
+  % as,,1:5-.10.14+.15^1.3
+  % a,,1:5-.10.14+.15^1.3
+  % ais,,1:5-.10.14+.15^1.3
+  % bes,,1:5-.10.14+.15^1.3
+  % b,,,1:5-.10.14+.15^1.3
 % due to a lilypond bug (lp issue 4433: false interpretation of 14 in chord mode) chord mode cannot be used here! All chords need to be defined in note mode.
   <g, e b c'>
   \transpose c cis { <g, e b c'> }
@@ -662,6 +710,26 @@ majorseventhdiminishedfifthsSecondInversionFourNotesRootOnTop = \chordmode {
   \transpose c ais { <g, e b c'> }
   \transpose c bes { <g, e b c'> }
   \transpose c b, { <g, e b c'> }
+  \bar "||"
+  \break
+  \eShape
+  c,1:5-.10.14+.15^1.3
+  cis,1:5-.10.14+.15^1.3
+  des,1:5-.10.14+.15^1.3
+  d,1:5-.10.14+.15^1.3
+  dis,1:5-.10.14+.15^1.3
+  es,1:5-.10.14+.15^1.3
+  e,,1:5-.10.14+.15^1.3
+  f,,1:5-.10.14+.15^1.3
+  fis,,1:5-.10.14+.15^1.3
+  ges,,1:5-.10.14+.15^1.3
+  g,,1:5-.10.14+.15^1.3
+  gis,,1:5-.10.14+.15^1.3
+  as,,1:5-.10.14+.15^1.3
+  a,,1:5-.10.14+.15^1.3
+  ais,,1:5-.10.14+.15^1.3
+  bes,,1:5-.10.14+.15^1.3
+  b,,1:5-.10.14+.15^1.3
   \bar "|."
 }
 
@@ -775,8 +843,9 @@ majorseventhdiminishedfifthsSecondInversionFourNotesSeventhOnTopChordSymbols = \
 % **** four notes
 % ***** seventh on top
   %\cShape
+  %\eShape
   %\gShape
-  \repeat unfold 2 {
+  \repeat unfold 3 {
     c1:maj7.5-/ges
     cis,1:maj7.5-/g
     des,1:maj7.5-/ases
@@ -804,6 +873,7 @@ majorseventhdiminishedfifthsSecondInversionFourNotesSeventhOnTopShapes = \lyricm
 % **** four notes
 % ***** seventh on top
   C-Shape __ \repeat unfold 16 { _ }
+  E-Shape __ \repeat unfold 16 { _ }
   G-Shape __ \repeat unfold 16 { _ }
 }
 
@@ -851,6 +921,26 @@ majorseventhdiminishedfifthsSecondInversionFourNotesSeventhOnTop = \chordmode {
   \transpose c b, { <ges, c e b> }
   \bar "||"
   \break
+  \eShape
+  c,1:5-.8.10.14+^1.3
+  cis,1:5-.8.10.14+^1.3
+  des,1:5-.8.10.14+^1.3
+  d,1:5-.8.10.14+^1.3
+  dis,,1:5-.8.10.14+^1.3
+  es,,1:5-.8.10.14+^1.3
+  e,,1:5-.8.10.14+^1.3
+  f,,1:5-.8.10.14+^1.3
+  fis,,1:5-.8.10.14+^1.3
+  ges,,1:5-.8.10.14+^1.3
+  g,,1:5-.8.10.14+^1.3
+  gis,,1:5-.8.10.14+^1.3
+  as,,1:5-.8.10.14+^1.3
+  a,,1:5-.8.10.14+^1.3
+  ais,,1:5-.8.10.14+^1.3
+  bes,,1:5-.8.10.14+^1.3
+  b,,1:5-.8.10.14+^1.3
+  \bar "||"
+  \break
   \gShape
   c,1:5-.8.10.14+^1.3
   cis,1:5-.8.10.14+^1.3
@@ -879,8 +969,9 @@ majorseventhdiminishedfifthsThirdInversionFourNotesRootOnTopChordSymbols = \chor
 % **** four notes
 % ***** root on top
   %\cShape
+  %\eShape
   %\gShape
-  \repeat unfold 2 {
+  \repeat unfold 3 {
     c1:maj7.5-/b
     cis,1:maj7.5-/bis
     des,1:maj7.5-/c
@@ -908,6 +999,7 @@ majorseventhdiminishedfifthsThirdInversionFourNotesRootOnTopShapes = \lyricmode 
 % **** four notes
 % ***** root on top
   C-Shape __ \repeat unfold 16 { _ }
+  E-Shape __ \repeat unfold 16 { _ }
   G-Shape __ \repeat unfold 16 { _ }
 }
 
@@ -925,6 +1017,26 @@ majorseventhdiminishedfifthsThirdInversionFourNotesRootOnTop = \chordmode {
   dis,,1:7+.10.12-.15^1.3.5-
   es,,1:7+.10.12-.15^1.3.5-
   e,,1:7+.10.12-.15^1.3.5-
+  f,,1:7+.10.12-.15^1.3.5-
+  fis,,1:7+.10.12-.15^1.3.5-
+  ges,,1:7+.10.12-.15^1.3.5-
+  g,,1:7+.10.12-.15^1.3.5-
+  gis,,1:7+.10.12-.15^1.3.5-
+  as,,1:7+.10.12-.15^1.3.5-
+  a,,1:7+.10.12-.15^1.3.5-
+  ais,,1:7+.10.12-.15^1.3.5-
+  bes,,1:7+.10.12-.15^1.3.5-
+  b,,1:7+.10.12-.15^1.3.5-
+  \bar "||"
+  \break
+  \eShape
+  c,1:7+.10.12-.15^1.3.5-
+  cis,1:7+.10.12-.15^1.3.5-
+  des,1:7+.10.12-.15^1.3.5-
+  d,1:7+.10.12-.15^1.3.5-
+  dis,1:7+.10.12-.15^1.3.5-
+  es,1:7+.10.12-.15^1.3.5-
+  e,1:7+.10.12-.15^1.3.5-
   f,,1:7+.10.12-.15^1.3.5-
   fis,,1:7+.10.12-.15^1.3.5-
   ges,,1:7+.10.12-.15^1.3.5-
