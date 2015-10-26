@@ -11150,6 +11150,151 @@ aShape = {
 
 % * tetrads
 % ** major seventh diminished fifths
+% *** 1st inv.
+% **** 5th on top
+% ***** open position (Drop 2)
+% ****** 4 notes
+% ******* add a-shape maj7-5 defs (1st inv., 5th on top, o.p., 4 n.)
+\addChordShape #'as,:3.7+.8.12-^1
+               #guitar-tuning
+               #"x;3-2;5-4;1-1;3-3;x;"
+
+% ******* store predef. a-shape maj7-5 dgrms. (1st inv., 5th on top, o.p., 4 n.)
+% ******** c maj7-5, 1st inv., 5th on top, o.p., 4 n.
+\storePredefinedDiagram #a-shape-fretboard-table
+                        \chordmode { c,:3.7+.8.12-^1 }
+                        #guitar-tuning
+                        #(offset-fret 4 (
+                          chord-shape 'as,:3.7+.8.12-^1
+                          guitar-tuning))
+
+% ******** cis maj7-5, 1st inv., 5th on top, o.p., 4 n.
+\storePredefinedDiagram #a-shape-fretboard-table
+                        \chordmode { cis,:3.7+.8.12-^1 }
+                        #guitar-tuning
+                        #(offset-fret 5 (
+                          chord-shape 'as,:3.7+.8.12-^1
+                          guitar-tuning))
+
+% ******** des maj7-5, 1st inv., 5th on top, o.p., 4 n.
+\storePredefinedDiagram #a-shape-fretboard-table
+                        \chordmode { des,:3.7+.8.12-^1 }
+                        #guitar-tuning
+                        #(offset-fret 5 (
+                          chord-shape 'as,:3.7+.8.12-^1
+                          guitar-tuning))
+
+% ******** d maj7-5, 1st inv., 5th on top, o.p., 4 n.
+\storePredefinedDiagram #a-shape-fretboard-table
+                        \chordmode { d,:3.7+.8.12-^1 }
+                        #guitar-tuning
+                        #(offset-fret 6 (
+                          chord-shape 'as,:3.7+.8.12-^1
+                          guitar-tuning))
+
+% ******** dis maj7-5, 1st inv., 5th on top, o.p., 4 n.
+\storePredefinedDiagram #a-shape-fretboard-table
+                        \chordmode { dis,:3.7+.8.12-^1 }
+                        #guitar-tuning
+                        #(offset-fret 7 (
+                          chord-shape 'as,:3.7+.8.12-^1
+                          guitar-tuning))
+
+% ******** es maj7-5, 1st inv., 5th on top, o.p., 4 n.
+\storePredefinedDiagram #a-shape-fretboard-table
+                        \chordmode { es,:3.7+.8.12-^1 }
+                        #guitar-tuning
+                        #(offset-fret 7 (
+                          chord-shape 'as,:3.7+.8.12-^1
+                          guitar-tuning))
+
+% ******** e maj7-5, 1st inv., 5th on top, o.p., 4 n.
+\storePredefinedDiagram #a-shape-fretboard-table
+                        \chordmode { e,:3.7+.8.12-^1 }
+                        #guitar-tuning
+                        #(offset-fret 8 (
+                          chord-shape 'as,:3.7+.8.12-^1
+                          guitar-tuning))
+
+% ******** f maj7-5, 1st inv., 5th on top, o.p., 4 n.
+\storePredefinedDiagram #a-shape-fretboard-table
+                        \chordmode { f,:3.7+.8.12-^1 }
+                        #guitar-tuning
+                        #(offset-fret 9 (
+                          chord-shape 'as,:3.7+.8.12-^1
+                          guitar-tuning))
+
+% ******** fis maj7-5, 1st inv., 5th on top, o.p., 4 n.
+\storePredefinedDiagram #a-shape-fretboard-table
+                        \chordmode { fis,:3.7+.8.12-^1 }
+                        #guitar-tuning
+                        #(offset-fret 10 (
+                          chord-shape 'as,:3.7+.8.12-^1
+                          guitar-tuning))
+
+% ******** ges maj7-5, 1st inv., 5th on top, o.p., 4 n.
+\storePredefinedDiagram #a-shape-fretboard-table
+                        \chordmode { ges,:3.7+.8.12-^1 }
+                        #guitar-tuning
+                        #(offset-fret 10 (
+                          chord-shape 'as,:3.7+.8.12-^1
+                          guitar-tuning))
+
+% ******** g maj7-5, 1st inv., 5th on top, o.p., 4 n.
+\storePredefinedDiagram #a-shape-fretboard-table
+                        \chordmode { g,,:3.7+.8.12-^1 }
+                        #guitar-tuning
+                        #"2-1;x;4-4;o;2-2;x;"
+
+% ******** gis maj7-5, 1st inv., 5th on top, o.p., 4 n.
+\storePredefinedDiagram #a-shape-fretboard-table
+                        \chordmode { gis,,:3.7+.8.12-^1 }
+                        #guitar-tuning
+                        #(chord-shape 'as,:3.7+.8.12-^1
+                          guitar-tuning)
+
+% ******** as maj7-5, 1st inv., 5th on top, o.p., 4 n.
+\storePredefinedDiagram #a-shape-fretboard-table
+                        \chordmode { as,,:3.7+.8.12-^1 }
+                        #guitar-tuning
+                        #(chord-shape 'as,:3.7+.8.12-^1
+                          guitar-tuning)
+
+% ******** a maj7-5, 1st inv., 5th on top, o.p., 4 n.
+\storePredefinedDiagram #a-shape-fretboard-table
+                        \chordmode { a,,:3.7+.8.12-^1 }
+                        #guitar-tuning
+                        #(offset-fret 1 (
+                          chord-shape 'as,:3.7+.8.12-^1
+                          guitar-tuning))
+
+% ******** ais maj7-5, 1st inv., 5th on top, o.p., 4 n.
+\storePredefinedDiagram #a-shape-fretboard-table
+                        \chordmode { ais,,:3.7+.8.12-^1 }
+                        #guitar-tuning
+                        #(offset-fret 2 (
+                          chord-shape 'as,:3.7+.8.12-^1
+                          guitar-tuning))
+
+% ******** bes maj7-5, 1st inv., 5th on top, o.p., 4 n.
+\storePredefinedDiagram #a-shape-fretboard-table
+                        \chordmode { bes,,:3.7+.8.12-^1 }
+                        #guitar-tuning
+                        #(offset-fret 2 (
+                          chord-shape 'as,:3.7+.8.12-^1
+                          guitar-tuning))
+
+% ******** b maj7-5, 1st inv., 5th on top, o.p., 4 n.
+\storePredefinedDiagram #a-shape-fretboard-table
+                        \chordmode { b,,:3.7+.8.12-^1 }
+                        #guitar-tuning
+                        #(offset-fret 3 (
+                          chord-shape 'as,:3.7+.8.12-^1
+                          guitar-tuning))
+
+
+% * tetrads
+% ** major seventh diminished fifths
 % *** 2nd inv.
 % **** 7th on top
 % ***** open position (Drop 2)
