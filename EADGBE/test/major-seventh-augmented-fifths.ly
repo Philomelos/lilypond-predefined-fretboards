@@ -141,8 +141,9 @@ majorseventhaugmentedfifthsRootPositionFifthOnTopFourNotesChordSymbols = \chordm
 % **** fifth on top
 % ***** four notes
   %\cShape
+  %\aShape
   %\eShape
-  \repeat unfold 2 {
+  \repeat unfold 3 {
     c,1:maj7.5+
     cis,1:maj7.5+
     des,1:maj7.5+
@@ -170,6 +171,7 @@ majorseventhaugmentedfifthsRootPositionFifthOnTopFourNotesShapes = \lyricmode {
 % **** fifth on top
 % ***** four notes
   "C-Shape (Drop 23)" __ \repeat unfold 16 { _ }
+  "A-Shape (Drop 3)" __ \repeat unfold 16 { _ }
   "E-Shape (Drop 3)" __ \repeat unfold 16 { _ }
 }
 
@@ -197,6 +199,26 @@ majorseventhaugmentedfifthsRootPositionFifthOnTopFourNotes = \chordmode {
   ais,:1.3.7+.12+
   bes,:1.3.7+.12+
   b,,:1.3.7+.12+
+  \bar "||"
+  \break
+  \aShape
+  c,:1.7+.10.12+
+  cis,:1.7+.10.12+
+  des,:1.7+.10.12+
+  d,:1.7+.10.12+
+  dis,:1.7+.10.12+
+  es,:1.7+.10.12+
+  e,,:1.7+.10.12+
+  f,:1.7+.10.12+
+  fis,:1.7+.10.12+
+  ges,:1.7+.10.12+
+  g,:1.7+.10.12+
+  gis,:1.7+.10.12+
+  as,:1.7+.10.12+
+  a,,:1.7+.10.12+
+  ais,,:1.7+.10.12+
+  bes,,:1.7+.10.12+
+  b,,:1.7+.10.12+
   \bar "||"
   \break
   \eShape
@@ -414,16 +436,17 @@ majorseventhaugmentedfifthsFirstInversionRootOnTopFourNotes = \chordmode {
   \bar "|."
 }
 
-majorseventhaugmentedfifthsFirstInversionFifthOnTopDropThreeFourNotesChordSymbols = \chordmode {
+majorseventhaugmentedfifthsFirstInversionFifthOnTopFourNotesChordSymbols = \chordmode {
 % * tetrads
 % ** major seventh augmented fifths
 % *** first inversion
-% **** four notes
-% ***** fifth on top
+% **** fifth on top
+% ***** four notes
   %\cShape
   %\cShape
+  %\aShape
   %\gShape
-  \repeat unfold 3 {
+  \repeat unfold 4 {
     c,1:maj7.5+/e
     cis,1:maj7.5+/eis
     des,1:maj7.5+/f
@@ -444,24 +467,24 @@ majorseventhaugmentedfifthsFirstInversionFifthOnTopDropThreeFourNotesChordSymbol
   }
 }
 
-majorseventhaugmentedfifthsFirstInversionFifthOnTopDropThreeFourNotesShapes = \lyricmode {
+majorseventhaugmentedfifthsFirstInversionFifthOnTopFourNotesShapes = \lyricmode {
 % * tetrads
 % ** major seventh augmented fifths
 % *** first inversion
-% **** four notes
-% ***** fifth on top
-  \repeat unfold 2 {
-    C-Shape __ \repeat unfold 16 { _ }
-  }
-  G-Shape __ \repeat unfold 16 { _ }
+% **** fifth on top
+% ***** four notes
+  "C-Shape (Drop 432/Swap 24)" __ \repeat unfold 16 { _ }
+  "C-Shape (Drop 2)" __ \repeat unfold 16 { _ }
+  "A-Shape (Drop 2)" __ \repeat unfold 16 { _ }
+  "G-Shape (Drop 2)" __ \repeat unfold 16 { _ }
 }
 
-majorseventhaugmentedfifthsFirstInversionFifthOnTopDropThreeFourNotes = \chordmode {
+majorseventhaugmentedfifthsFirstInversionFifthOnTopFourNotes = \chordmode {
 % * tetrads
 % ** major seventh augmented fifths
 % *** first inversion
-% **** four notes
-% ***** fifth on top
+% **** fifth on top
+% ***** four notes
   \cShape
   % c,,1:3.8.14+.19+^1
   % cis,,1:3.8.14+.19+^1
@@ -517,6 +540,26 @@ majorseventhaugmentedfifthsFirstInversionFifthOnTopDropThreeFourNotes = \chordmo
   a,1:3.7+.8.12+^1
   ais,1:3.7+.8.12+^1
   bes,1:3.7+.8.12+^1
+  b,,1:3.7+.8.12+^1
+  \bar "||"
+  \break
+  \aShape
+  c,1:3.7+.8.12+^1
+  cis,1:3.7+.8.12+^1
+  des,1:3.7+.8.12+^1
+  d,1:3.7+.8.12+^1
+  dis,1:3.7+.8.12+^1
+  es,1:3.7+.8.12+^1
+  e,1:3.7+.8.12+^1
+  f,1:3.7+.8.12+^1
+  fis,1:3.7+.8.12+^1
+  ges,1:3.7+.8.12+^1
+  g,,1:3.7+.8.12+^1
+  gis,,1:3.7+.8.12+^1
+  as,,1:3.7+.8.12+^1
+  a,,1:3.7+.8.12+^1
+  ais,,1:3.7+.8.12+^1
+  bes,,1:3.7+.8.12+^1
   b,,1:3.7+.8.12+^1
   \bar "||"
   \break
@@ -843,9 +886,10 @@ majorseventhaugmentedfifthsSecondInversionSeventhOnTopFourNotesChordSymbols = \c
 % **** seventh on top
 % ***** four notes
   %\cShape
-  %\eShape
+  %\aShape
   %\gShape
-  \repeat unfold 3 {
+  %\eShape
+  \repeat unfold 4 {
     c,1:maj7.5+/gis
     cis,1:maj7.5+/gisis
     des,1:maj7.5+/a
@@ -873,8 +917,9 @@ majorseventhaugmentedfifthsSecondInversionSeventhOnTopFourNotesShapes = \lyricmo
 % **** seventh on top
 % ***** four notes
   "C-Shape (Drop 2)" __ \repeat unfold 16 { _ }
-  "E-Shape (Drop 2)" __ \repeat unfold 16 { _ }
+  "A-Shape (Drop 2)" __ \repeat unfold 16 { _ }
   "G-Shape (Drop 2)" __ \repeat unfold 16 { _ }
+  "E-Shape (Drop 2)" __ \repeat unfold 16 { _ }
 }
 
 majorseventhaugmentedfifthsSecondInversionSeventhOnTopFourNotes = \chordmode {
@@ -921,17 +966,17 @@ majorseventhaugmentedfifthsSecondInversionSeventhOnTopFourNotes = \chordmode {
   \transpose c b, { <gis, c e b> }
   \bar "||"
   \break
-  \eShape
+  \aShape
   c,1:5+.8.10.14+^1.3
   cis,1:5+.8.10.14+^1.3
   des,1:5+.8.10.14+^1.3
   d,1:5+.8.10.14+^1.3
-  dis,,1:5+.8.10.14+^1.3
-  es,,1:5+.8.10.14+^1.3
-  e,,1:5+.8.10.14+^1.3
-  f,,1:5+.8.10.14+^1.3
-  fis,,1:5+.8.10.14+^1.3
-  ges,,1:5+.8.10.14+^1.3
+  dis,1:5+.8.10.14+^1.3
+  es,1:5+.8.10.14+^1.3
+  e,1:5+.8.10.14+^1.3
+  f,1:5+.8.10.14+^1.3
+  fis,1:5+.8.10.14+^1.3
+  ges,1:5+.8.10.14+^1.3
   g,,1:5+.8.10.14+^1.3
   gis,,1:5+.8.10.14+^1.3
   as,,1:5+.8.10.14+^1.3
@@ -952,6 +997,26 @@ majorseventhaugmentedfifthsSecondInversionSeventhOnTopFourNotes = \chordmode {
   f,1:5+.8.10.14+^1.3
   fis,1:5+.8.10.14+^1.3
   ges,1:5+.8.10.14+^1.3
+  g,,1:5+.8.10.14+^1.3
+  gis,,1:5+.8.10.14+^1.3
+  as,,1:5+.8.10.14+^1.3
+  a,,1:5+.8.10.14+^1.3
+  ais,,1:5+.8.10.14+^1.3
+  bes,,1:5+.8.10.14+^1.3
+  b,,1:5+.8.10.14+^1.3
+  \bar "||"
+  \break
+  \eShape
+  c,1:5+.8.10.14+^1.3
+  cis,1:5+.8.10.14+^1.3
+  des,1:5+.8.10.14+^1.3
+  d,1:5+.8.10.14+^1.3
+  dis,,1:5+.8.10.14+^1.3
+  es,,1:5+.8.10.14+^1.3
+  e,,1:5+.8.10.14+^1.3
+  f,,1:5+.8.10.14+^1.3
+  fis,,1:5+.8.10.14+^1.3
+  ges,,1:5+.8.10.14+^1.3
   g,,1:5+.8.10.14+^1.3
   gis,,1:5+.8.10.14+^1.3
   as,,1:5+.8.10.14+^1.3
@@ -1070,15 +1135,15 @@ majorseventhaugmentedfifthsThirdInversionRootOnTopFourNotes = \chordmode {
   \bar "|."
 }
 
-majorseventhaugmentedfifthsThirdInversionThirdOnTopDropThreeFourNotesChordSymbols = \chordmode {
+majorseventhaugmentedfifthsThirdInversionThirdOnTopFourNotesChordSymbols = \chordmode {
 % * tetrads
 % ** major seventh augmented fifths
 % *** third inversion
 % **** third on top
-% ***** drop three (open position)
-% ****** four notes
+% ***** four notes
+  %\aShape
   %\gShape
-  \repeat unfold 1 {
+  \repeat unfold 2 {
     c,1:maj7.5+/b
     cis,1:maj7.5+/bis
     des,1:maj7.5+/c
@@ -1099,23 +1164,42 @@ majorseventhaugmentedfifthsThirdInversionThirdOnTopDropThreeFourNotesChordSymbol
   }
 }
 
-majorseventhaugmentedfifthsThirdInversionThirdOnTopDropThreeFourNotesShapes = \lyricmode {
+majorseventhaugmentedfifthsThirdInversionThirdOnTopFourNotesShapes = \lyricmode {
 % * tetrads
 % ** major seventh augmented fifths
 % *** third inversion
 % **** third on top
-% ***** drop three (open position)
-% ****** four notes
-  G-Shape __ \repeat unfold 16 { _ }
+% ***** four notes
+  "A-Shape (Drop 3)" __ \repeat unfold 16 { _ }
+  "G-Shape (Drop 3)" __ \repeat unfold 16 { _ }
 }
 
-majorseventhaugmentedfifthsThirdInversionThirdOnTopDropThreeFourNotes = \chordmode {
+majorseventhaugmentedfifthsThirdInversionThirdOnTopFourNotes = \chordmode {
 % * tetrads
 % ** major seventh augmented fifths
 % *** third inversion
 % **** third on top
-% ***** drop 2 (open position)
-% ****** four notes
+% ***** four notes
+  \gShape
+  c,,1:7+.12+.15.17^1.3.5+
+  cis,,1:7+.12+.15.17^1.3.5+
+  des,,1:7+.12+.15.17^1.3.5+
+  d,,1:7+.12+.15.17^1.3.5+
+  dis,,1:7+.12+.15.17^1.3.5+
+  es,,1:7+.12+.15.17^1.3.5+
+  e,,1:7+.12+.15.17^1.3.5+
+  f,,1:7+.12+.15.17^1.3.5+
+  fis,,1:7+.12+.15.17^1.3.5+
+  ges,,1:7+.12+.15.17^1.3.5+
+  g,,,1:7+.12+.15.17^1.3.5+
+  gis,,,1:7+.12+.15.17^1.3.5+
+  as,,,1:7+.12+.15.17^1.3.5+
+  a,,,1:7+.12+.15.17^1.3.5+
+  ais,,,1:7+.12+.15.17^1.3.5+
+  bes,,,1:7+.12+.15.17^1.3.5+
+  b,,,1:7+.12+.15.17^1.3.5+
+  \bar "||"
+  \break
   \gShape
   c,,1:7+.12+.15.17^1.3.5+
   cis,,1:7+.12+.15.17^1.3.5+
@@ -1138,14 +1222,17 @@ majorseventhaugmentedfifthsThirdInversionThirdOnTopDropThreeFourNotes = \chordmo
 }
 
 
-majorseventhaugmentedfifthsThirdInversionFourNotesFifthOnTopChordSymbols = \chordmode {
+majorseventhaugmentedfifthsThirdInversionFifthOnTopFourNotesChordSymbols = \chordmode {
 % * tetrads
 % ** major seventh augmented fifths
 % *** third inversion
-% **** four notes
-% ***** fifth on top
+% **** fifth on top
+% ***** four notes
   %\cShape
-  \repeat unfold 3 {
+  %\cShape
+  %\cShape
+  %\aShape
+  \repeat unfold 4 {
     c,1:maj7.5+/b
     cis,1:maj7.5+/bis
     des,1:maj7.5+/c
@@ -1166,23 +1253,24 @@ majorseventhaugmentedfifthsThirdInversionFourNotesFifthOnTopChordSymbols = \chor
   }
 }
 
-majorseventhaugmentedfifthsThirdInversionFourNotesFifthOnTopShapes = \lyricmode {
+majorseventhaugmentedfifthsThirdInversionFifthOnTopFourNotesShapes = \lyricmode {
 % * tetrads
 % ** major seventh augmented fifths
 % *** third inversion
-% **** four notes
-% ***** fifth on top
-  \repeat unfold 3 {
-    C-Shape \repeat unfold 16 { \skip1 }
-  }
+% **** fifth on top
+% ***** four notes
+  "C-Shape (Lift 1)" __ \repeat unfold 16 { _ }
+  "C-Shape (Drop 24/Swap 23)" __ \repeat unfold 16 { _ }
+  "C-Shape (Drop 4)" __ \repeat unfold 16 { _ }
+  "A-Shape (Drop 4)" __ \repeat unfold 16 { _ }
 }
 
-majorseventhaugmentedfifthsThirdInversionFourNotesFifthOnTop = \chordmode {
+majorseventhaugmentedfifthsThirdInversionFifthOnTopFourNotes = \chordmode {
 % * tetrads
 % ** major seventh augmented fifths
 % *** third inversion
-% **** four notes
-% ***** fifth on top
+% **** fifth on top
+% ***** four notes
   \cShape
   c,,1:7+.8.10.12+^1.3.5+
   cis,,1:7+.8.10.12+^1.3.5+
@@ -1202,6 +1290,7 @@ majorseventhaugmentedfifthsThirdInversionFourNotesFifthOnTop = \chordmode {
   bes,,1:7+.8.10.12+^1.3.5+
   b,,,1:7+.8.10.12+^1.3.5+
   \bar "||"
+  \break
   \cShape
   c,,1:7+.10.15.19+^1.3.5+
   cis,,1:7+.10.15.19+^1.3.5+
@@ -1221,6 +1310,7 @@ majorseventhaugmentedfifthsThirdInversionFourNotesFifthOnTop = \chordmode {
   bes,,1:7+.10.15.19+^1.3.5+
   b,,,1:7+.10.15.19+^1.3.5+
   \bar "||"
+  \break
   \cShape
   c,,1:7+.8.10.19+^1.3.5+
   cis,,1:7+.8.10.19+^1.3.5+
@@ -1239,6 +1329,26 @@ majorseventhaugmentedfifthsThirdInversionFourNotesFifthOnTop = \chordmode {
   ais,,1:7+.8.10.19+^1.3.5+
   bes,,1:7+.8.10.19+^1.3.5+
   b,,,1:7+.8.10.19+^1.3.5+
+  \bar "||"
+  \break
+  \aShape
+  c,,1:7+.15.17.19+^1.3.5+
+  cis,,1:7+.15.17.19+^1.3.5+
+  des,,1:7+.15.17.19+^1.3.5+
+  d,,1:7+.15.17.19+^1.3.5+
+  dis,,1:7+.15.17.19+^1.3.5+
+  es,,1:7+.15.17.19+^1.3.5+
+  e,,1:7+.15.17.19+^1.3.5+
+  f,,1:7+.15.17.19+^1.3.5+
+  fis,,1:7+.15.17.19+^1.3.5+
+  ges,,1:7+.15.17.19+^1.3.5+
+  g,,1:7+.15.17.19+^1.3.5+
+  gis,,1:7+.15.17.19+^1.3.5+
+  as,,,1:7+.15.17.19+^1.3.5+
+  a,,,1:7+.15.17.19+^1.3.5+
+  ais,,,1:7+.15.17.19+^1.3.5+
+  bes,,,1:7+.15.17.19+^1.3.5+
+  b,,,1:7+.15.17.19+^1.3.5+
   \bar "|."
 }
 
@@ -1361,27 +1471,27 @@ majorseventhaugmentedfifthsThirdInversionFourNotesFifthOnTop = \chordmode {
   \score {
     <<
       \new ChordNames {
-        \majorseventhaugmentedfifthsFirstInversionFifthOnTopDropThreeFourNotesChordSymbols
+        \majorseventhaugmentedfifthsFirstInversionFifthOnTopFourNotesChordSymbols
       }
       \new FretBoards {
-        \majorseventhaugmentedfifthsFirstInversionFifthOnTopDropThreeFourNotes
+        \majorseventhaugmentedfifthsFirstInversionFifthOnTopFourNotes
       }
       \new Voice = "majorseventhaugmentedfifths" {
         \clef "treble_8"
-        \majorseventhaugmentedfifthsFirstInversionFifthOnTopDropThreeFourNotes
+        \majorseventhaugmentedfifthsFirstInversionFifthOnTopFourNotes
       }
       \new Lyrics \lyricsto "majorseventhaugmentedfifths" {
-        \majorseventhaugmentedfifthsFirstInversionFifthOnTopDropThreeFourNotesShapes
+        \majorseventhaugmentedfifthsFirstInversionFifthOnTopFourNotesShapes
       }
       \new TabStaff {
-        \majorseventhaugmentedfifthsFirstInversionFifthOnTopDropThreeFourNotes
+        \majorseventhaugmentedfifthsFirstInversionFifthOnTopFourNotes
       }
     >>
     \header {
       title = "Major Seventh Augmented Fifths (Mixed Shapes)"
       subtitle = "First inversion"
-      subsubtitle = "Four notes"
-      piece = "Fifth on top"
+      subsubtitle = "Fifth on top"
+      piece = "Four notes"
     }
   }
 %}
@@ -1529,27 +1639,27 @@ majorseventhaugmentedfifthsThirdInversionFourNotesFifthOnTop = \chordmode {
   \score {
     <<
       \new ChordNames {
-        \majorseventhaugmentedfifthsThirdInversionThirdOnTopDropThreeFourNotesChordSymbols
+        \majorseventhaugmentedfifthsThirdInversionThirdOnTopFourNotesChordSymbols
       }
       \new FretBoards {
-        \majorseventhaugmentedfifthsThirdInversionThirdOnTopDropThreeFourNotes
+        \majorseventhaugmentedfifthsThirdInversionThirdOnTopFourNotes
       }
       \new Voice = "majorseventhaugmentedfifths" {
         \clef "treble_8"
-        \majorseventhaugmentedfifthsThirdInversionThirdOnTopDropThreeFourNotes
+        \majorseventhaugmentedfifthsThirdInversionThirdOnTopFourNotes
       }
       \new Lyrics \lyricsto "majorseventhaugmentedfifths" {
-        \majorseventhaugmentedfifthsThirdInversionThirdOnTopDropThreeFourNotesShapes
+        \majorseventhaugmentedfifthsThirdInversionThirdOnTopFourNotesShapes
       }
       \new TabStaff {
-        \majorseventhaugmentedfifthsThirdInversionThirdOnTopDropThreeFourNotes
+        \majorseventhaugmentedfifthsThirdInversionThirdOnTopFourNotes
       }
     >>
     \header {
       title = "Major Seventh Augmented Fifths (Mixed Shapes)"
       subtitle = "Third inversion"
-      subsubtitle = "Four notes"
-      piece = "Third on top"
+      subsubtitle = "Third on top"
+      piece = "Four notes"
     }
   }
 %}
@@ -1557,27 +1667,27 @@ majorseventhaugmentedfifthsThirdInversionFourNotesFifthOnTop = \chordmode {
   \score {
     <<
       \new ChordNames {
-        \majorseventhaugmentedfifthsThirdInversionFourNotesFifthOnTopChordSymbols
+        \majorseventhaugmentedfifthsThirdInversionFifthOnTopFourNotesChordSymbols
       }
       \new FretBoards {
-        \majorseventhaugmentedfifthsThirdInversionFourNotesFifthOnTop
+        \majorseventhaugmentedfifthsThirdInversionFifthOnTopFourNotes
       }
       \new Voice = "majorseventhaugmentedfifths" {
         \clef "treble_8"
-        \majorseventhaugmentedfifthsThirdInversionFourNotesFifthOnTop
+        \majorseventhaugmentedfifthsThirdInversionFifthOnTopFourNotes
       }
       \new Lyrics \lyricsto "majorseventhaugmentedfifths" {
-        \majorseventhaugmentedfifthsThirdInversionFourNotesFifthOnTopShapes
+        \majorseventhaugmentedfifthsThirdInversionFifthOnTopFourNotesShapes
       }
       \new TabStaff {
-        \majorseventhaugmentedfifthsThirdInversionFourNotesFifthOnTop
+        \majorseventhaugmentedfifthsThirdInversionFifthOnTopFourNotes
       }
     >>
     \header {
       title = "Major Seventh Augmented Fifths (Mixed Shapes)"
       subtitle = "Third inversion"
-      subsubtitle = "Four notes"
-      piece = "Fifth on top"
+      subsubtitle = "Fifth on top"
+      piece = "Four notes"
     }
   }
 %}
