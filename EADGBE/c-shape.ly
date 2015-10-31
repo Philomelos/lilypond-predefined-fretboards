@@ -14076,7 +14076,7 @@ cShape = {
 \addChordShape #'d,:7-.8.10-.12-^1.3.5
                #guitar-tuning
                #"7-4;5-3;3-2;1-1;x;x;" % hardly possible
-\addChordShape #'cis:7-.10-.15.12-^1.3.5
+\addChordShape #'cis:7-.10-.15.19-^1.3.5
                #guitar-tuning
                #"x;1-1;2-2;x;2-3;3-4;"
 \addChordShape #'c,:7-.8.10-.19-^1.3.5
@@ -14092,7 +14092,7 @@ cShape = {
                           chord-shape 'd,:7-.8.10-.12-^1.3.5
                           guitar-tuning))
 \storePredefinedDiagram #c-shape-fretboard-table
-                        \chordmode { c,,:7-.10-.15.12-^1.3.5 }
+                        \chordmode { c,,:7-.10-.15.19-^1.3.5 }
                         #guitar-tuning
                         #"x;o;1-1;x;1-2;2-4;"
 \storePredefinedDiagram #c-shape-fretboard-table
@@ -14107,9 +14107,9 @@ cShape = {
                         #guitar-tuning
                         #"6-4;4-2;2-1;o;x;x;"
 \storePredefinedDiagram #c-shape-fretboard-table
-                        \chordmode { cis,,:7-.10-.15.12-^1.3.5 }
+                        \chordmode { cis,,:7-.10-.15.19-^1.3.5 }
                         #guitar-tuning
-                        #(chord-shape 'cis:7-.10-.15.12-^1.3.5
+                        #(chord-shape 'cis:7-.10-.15.19-^1.3.5
                           guitar-tuning)
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { cis,,:7-.8.10-.19-^1.3.5 }
@@ -14124,9 +14124,9 @@ cShape = {
                         #guitar-tuning
                         #"6-4;4-2;2-1;o;x;x;"
 \storePredefinedDiagram #c-shape-fretboard-table
-                        \chordmode { des,,:7-.10-.15.12-^1.3.5 }
+                        \chordmode { des,,:7-.10-.15.19-^1.3.5 }
                         #guitar-tuning
-                        #(chord-shape 'cis:7-.10-.15.12-^1.3.5
+                        #(chord-shape 'cis:7-.10-.15.19-^1.3.5
                           guitar-tuning)
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { des,,:7-.8.10-.19-^1.3.5 }
@@ -14142,10 +14142,10 @@ cShape = {
                         #(chord-shape 'd,:7-.8.10-.12-^1.3.5
                           guitar-tuning)
 \storePredefinedDiagram #c-shape-fretboard-table
-                        \chordmode { d,,:7-.10-.15.12-^1.3.5 }
+                        \chordmode { d,,:7-.10-.15.19-^1.3.5 }
                         #guitar-tuning
                         #(offset-fret 1 (
-                          chord-shape 'cis:7-.10-.15.12-^1.3.5
+                          chord-shape 'cis:7-.10-.15.19-^1.3.5
                           guitar-tuning))
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { d,,:7-.8.10-.19-^1.3.5 }
@@ -14162,10 +14162,10 @@ cShape = {
                           chord-shape 'd,:7-.8.10-.12-^1.3.5
                           guitar-tuning))
 \storePredefinedDiagram #c-shape-fretboard-table
-                        \chordmode { dis,,:7-.10-.15.12-^1.3.5 }
+                        \chordmode { dis,,:7-.10-.15.19-^1.3.5 }
                         #guitar-tuning
                         #(offset-fret 2 (
-                          chord-shape 'cis:7-.10-.15.12-^1.3.5
+                          chord-shape 'cis:7-.10-.15.19-^1.3.5
                           guitar-tuning))
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { dis,,:7-.8.10-.19-^1.3.5 }
@@ -14182,10 +14182,10 @@ cShape = {
                           chord-shape 'd,:7-.8.10-.12-^1.3.5
                           guitar-tuning))
 \storePredefinedDiagram #c-shape-fretboard-table
-                        \chordmode { es,,:7-.10-.15.12-^1.3.5 }
+                        \chordmode { es,,:7-.10-.15.19-^1.3.5 }
                         #guitar-tuning
                         #(offset-fret 2 (
-                          chord-shape 'cis:7-.10-.15.12-^1.3.5
+                          chord-shape 'cis:7-.10-.15.19-^1.3.5
                           guitar-tuning))
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { es,,:7-.8.10-.19-^1.3.5 }
@@ -14202,10 +14202,10 @@ cShape = {
                           chord-shape 'd,:7-.8.10-.12-^1.3.5
                           guitar-tuning))
 \storePredefinedDiagram #c-shape-fretboard-table
-                        \chordmode { e,,:7-.10-.15.12-^1.3.5 }
+                        \chordmode { e,,:7-.10-.15.19-^1.3.5 }
                         #guitar-tuning
                         #(offset-fret 3 (
-                          chord-shape 'cis:7-.10-.15.12-^1.3.5
+                          chord-shape 'cis:7-.10-.15.19-^1.3.5
                           guitar-tuning))
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { e,,:7-.8.10-.19-^1.3.5 }
@@ -14222,10 +14222,10 @@ cShape = {
                           chord-shape 'd,:7-.8.10-.12-^1.3.5
                           guitar-tuning))
 \storePredefinedDiagram #c-shape-fretboard-table
-                        \chordmode { f,,:7-.10-.15.12-^1.3.5 }
+                        \chordmode { f,,:7-.10-.15.19-^1.3.5 }
                         #guitar-tuning
                         #(offset-fret 4 (
-                          chord-shape 'cis:7-.10-.15.12-^1.3.5
+                          chord-shape 'cis:7-.10-.15.19-^1.3.5
                           guitar-tuning))
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { f,,:7-.8.10-.19-^1.3.5 }
@@ -14242,10 +14242,10 @@ cShape = {
                           chord-shape 'd,:7-.8.10-.12-^1.3.5
                           guitar-tuning))
 \storePredefinedDiagram #c-shape-fretboard-table
-                        \chordmode { fis,,:7-.10-.15.12-^1.3.5 }
+                        \chordmode { fis,,:7-.10-.15.19-^1.3.5 }
                         #guitar-tuning
                         #(offset-fret 5 (
-                          chord-shape 'cis:7-.10-.15.12-^1.3.5
+                          chord-shape 'cis:7-.10-.15.19-^1.3.5
                           guitar-tuning))
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { fis,,:7-.8.10-.19-^1.3.5 }
@@ -14262,10 +14262,10 @@ cShape = {
                           chord-shape 'd,:7-.8.10-.12-^1.3.5
                           guitar-tuning))
 \storePredefinedDiagram #c-shape-fretboard-table
-                        \chordmode { ges,,:7-.10-.15.12-^1.3.5 }
+                        \chordmode { ges,,:7-.10-.15.19-^1.3.5 }
                         #guitar-tuning
                         #(offset-fret 5 (
-                          chord-shape 'cis:7-.10-.15.12-^1.3.5
+                          chord-shape 'cis:7-.10-.15.19-^1.3.5
                           guitar-tuning))
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { ges,,:7-.8.10-.19-^1.3.5 }
@@ -14282,10 +14282,10 @@ cShape = {
                           chord-shape 'd,:7-.8.10-.12-^1.3.5
                           guitar-tuning))
 \storePredefinedDiagram #c-shape-fretboard-table
-                        \chordmode { g,,:7-.10-.15.12-^1.3.5 }
+                        \chordmode { g,,:7-.10-.15.19-^1.3.5 }
                         #guitar-tuning
                         #(offset-fret 6 (
-                          chord-shape 'cis:7-.10-.15.12-^1.3.5
+                          chord-shape 'cis:7-.10-.15.19-^1.3.5
                           guitar-tuning))
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { g,,:7-.8.10-.19-^1.3.5 }
@@ -14302,10 +14302,10 @@ cShape = {
                           chord-shape 'd,:7-.8.10-.12-^1.3.5
                           guitar-tuning))
 \storePredefinedDiagram #c-shape-fretboard-table
-                        \chordmode { gis,,:7-.10-.15.12-^1.3.5 }
+                        \chordmode { gis,,:7-.10-.15.19-^1.3.5 }
                         #guitar-tuning
                         #(offset-fret 7 (
-                          chord-shape 'cis:7-.10-.15.12-^1.3.5
+                          chord-shape 'cis:7-.10-.15.19-^1.3.5
                           guitar-tuning))
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { gis,,:7-.8.10-.19-^1.3.5 }
@@ -14322,10 +14322,10 @@ cShape = {
                           chord-shape 'd,:7-.8.10-.12-^1.3.5
                           guitar-tuning))
 \storePredefinedDiagram #c-shape-fretboard-table
-                        \chordmode { as,,:7-.10-.15.12-^1.3.5 }
+                        \chordmode { as,,:7-.10-.15.19-^1.3.5 }
                         #guitar-tuning
                         #(offset-fret 7 (
-                          chord-shape 'cis:7-.10-.15.12-^1.3.5
+                          chord-shape 'cis:7-.10-.15.19-^1.3.5
                           guitar-tuning))
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { as,,:7-.8.10-.19-^1.3.5 }
@@ -14342,10 +14342,10 @@ cShape = {
                           chord-shape 'd,:7-.8.10-.12-^1.3.5
                           guitar-tuning))
 \storePredefinedDiagram #c-shape-fretboard-table
-                        \chordmode { a,,:7-.10-.15.12-^1.3.5 }
+                        \chordmode { a,,:7-.10-.15.19-^1.3.5 }
                         #guitar-tuning
                         #(offset-fret 8 (
-                          chord-shape 'cis:7-.10-.15.12-^1.3.5
+                          chord-shape 'cis:7-.10-.15.19-^1.3.5
                           guitar-tuning))
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { a,,:7-.8.10-.19-^1.3.5 }
@@ -14362,10 +14362,10 @@ cShape = {
                           chord-shape 'd,:7-.8.10-.12-^1.3.5
                           guitar-tuning))
 \storePredefinedDiagram #c-shape-fretboard-table
-                        \chordmode { ais,,:7-.10-.15.12-^1.3.5 }
+                        \chordmode { ais,,:7-.10-.15.19-^1.3.5 }
                         #guitar-tuning
                         #(offset-fret 9 (
-                          chord-shape 'cis:7-.10-.15.12-^1.3.5
+                          chord-shape 'cis:7-.10-.15.19-^1.3.5
                           guitar-tuning))
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { ais,,:7-.8.10-.19-^1.3.5 }
@@ -14382,10 +14382,10 @@ cShape = {
                           chord-shape 'd,:7-.8.10-.12-^1.3.5
                           guitar-tuning))
 \storePredefinedDiagram #c-shape-fretboard-table
-                        \chordmode { bes,,:7-.10-.15.12-^1.3.5 }
+                        \chordmode { bes,,:7-.10-.15.19-^1.3.5 }
                         #guitar-tuning
                         #(offset-fret 9 (
-                          chord-shape 'cis:7-.10-.15.12-^1.3.5
+                          chord-shape 'cis:7-.10-.15.19-^1.3.5
                           guitar-tuning))
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { bes,,:7-.8.10-.19-^1.3.5 }
@@ -14402,10 +14402,10 @@ cShape = {
                           chord-shape 'd,:7-.8.10-.12-^1.3.5
                           guitar-tuning))
 \storePredefinedDiagram #c-shape-fretboard-table
-                        \chordmode { b,,:7-.10-.15.12-^1.3.5 }
+                        \chordmode { b,,:7-.10-.15.19-^1.3.5 }
                         #guitar-tuning
                         #(offset-fret 10 (
-                          chord-shape 'cis:7-.10-.15.12-^1.3.5
+                          chord-shape 'cis:7-.10-.15.19-^1.3.5
                           guitar-tuning))
 \storePredefinedDiagram #c-shape-fretboard-table
                         \chordmode { b,,,:7-.8.10-.19-^1.3.5 }
