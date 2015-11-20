@@ -1,4 +1,4 @@
-\version "2.19.15"
+\version "2.19.31"
 %\include "predefined-guitar-fretboards.ly"
 \include "../c-shape.ly"
 \include "../a-shape.ly"
@@ -65,7 +65,7 @@ majorTriadsRootPositionMixedShapes = \chordmode {
   \bar "||"
   \gShape
   c,1:1.3.5
-  c,1:1.3.5.8 
+  c,1:1.3.5.8
   c,:1.3.5.8.10
   c,:1.3.5.8.12
   c,:1.3.5.8.10.15
@@ -91,7 +91,7 @@ chromaticChordSymbols = \chordmode {
 
 majorTriadsRootPositionThreeNotesFifthOnTopChordSymbols = {
   %\cShape
-  %\aShape 
+  %\aShape
   %\gShape
   %\eShape
   %\dShape not possible for voicings in close root position
@@ -131,7 +131,7 @@ majorTriadsRootPositionThreeNotesFifthOnTop = \chordmode {
   bes,1:1.3.5
   b,1:1.3.5
   \bar "||"
-  
+
   \aShape
   c1:1.3.5
   cis1:1.3.5
@@ -151,7 +151,7 @@ majorTriadsRootPositionThreeNotesFifthOnTop = \chordmode {
   bes,1:1.3.5
   b,1:1.3.5
   \bar "||"
-  
+
   \gShape
   c,1:1.3.5
   cis,1:1.3.5
@@ -171,7 +171,7 @@ majorTriadsRootPositionThreeNotesFifthOnTop = \chordmode {
   bes,,1:1.3.5
   b,,1:1.3.5
   \bar "||"
-  
+
   \eShape
   c1:1.3.5
   cis1:1.3.5
@@ -296,7 +296,7 @@ majorTriadsRootPositionThreeNotesThirdOnTop = \chordmode {
   bes,,1:1.5.10
   b,,1:1.5.10
   \bar "||"
-  
+
   \dShape
   c1:1.5.10
   cis1:1.5.10
@@ -344,9 +344,11 @@ majorTriadsRootPositionFourNotesOctaveOnTop = {
 % *** root position
 % **** four notes
 % ***** octave on the top
-\cShape
+  %\cShape
+  \cShapeWithIntervals
   %\chordmode{c,:1.3.5.8}
   <c e g c'>1
+  \cShape
   \transpose c cis { <c e g c'>1 }
   \transpose c des { <c e g c'>1 }
   \transpose c d { <c e g c'>1 }
@@ -384,7 +386,7 @@ majorTriadsRootPositionFourNotesOctaveOnTop = {
   \transpose c ais, { <c\6 e\5 g\4 c'\3>1 }
   \transpose c bes, { <c\6 e\5 g\4 c'\3>1 }
   \transpose c b, { <c\6 e\5 g\4 c'\3>1 }
-  
+
   \eShape
   %\chordmode{c:1.3.5.8}
   <c'\4 e'\3 g'\2 c''\1>1
@@ -458,7 +460,7 @@ majorTriadsRootPositionFourNotesThirdOnTop = {
   \transpose c ais { <c\5 g\3 c'\2 e'\1>1 }
   \transpose c bes { <c\5 g\3 c'\2 e'\1>1 }
   \transpose c b { <c\5 g\3 c'\2 e'\1>1 }
-  
+
   \aShape
   %\chordmode { c,1:1.5.8.10 }
   <c\5 g\4 c'\3 e'\2>1
@@ -478,7 +480,7 @@ majorTriadsRootPositionFourNotesThirdOnTop = {
   \transpose c ais, { <c\5 g\4 c'\3 e'\2>1 }
   \transpose c bes, { <c\5 g\4 c'\3 e'\2>1 }
   \transpose c b, { <c\5 g\4 c'\3 e'\2>1 }
-  
+
   \gShape
   %\chordmode { c,1:1.5.8.10 }
   <c\6 g\4 c'\3 e'\2>1
@@ -498,7 +500,7 @@ majorTriadsRootPositionFourNotesThirdOnTop = {
   \transpose c ais, { <c\6 g\4 c'\3 e'\2>1 }
   \transpose c bes, { <c\6 g\4 c'\3 e'\2>1 }
   \transpose c b, { <c\6 g\4 c'\3 e'\2>1 }
-  
+
   \eShape
   %\chordmode { c,1:1.5.8.10 }
   <c\6 g\5 c'\4 e'\3>1
@@ -518,7 +520,7 @@ majorTriadsRootPositionFourNotesThirdOnTop = {
   \transpose c ais, { <c\6 g\5 c'\4 e'\3>1 }
   \transpose c bes, { <c\6 g\5 c'\4 e'\3>1 }
   \transpose c b, { <c\6 g\5 c'\4 e'\3>1 }
-  
+
   \dShape
   %\chordmode { c1:1.5.8.10 }
   <c'\4 g'\3 c''\2 e''\1>1
@@ -548,7 +550,7 @@ majorTriadsRootPositionFourNotesFifthOnTopChordSymbols = \chordmode {
 % ***** fifth on top
   %\eShape
   c1
-  cis1 
+  cis1
   des1
   d1
   dis1
@@ -643,7 +645,7 @@ majorTriadsRootPositionFiveNotesThirdOnTop = {
   \transpose c ais { <c e g c' e'>1 }
   \transpose c bes { <c e g c' e'>1 }
   \transpose c b { <c e g c' e'>1 }
-  
+
 \gShape
   %\chordmode {c1:1.3.5.8.10}
   <c e g c' e'>1
@@ -712,7 +714,7 @@ majorTriadsRootPositionFiveNotesFifthOnTop = {
   \transpose c bes { <c\5 e\4 g\3 c'\2 g'\1>1 }
   \transpose c b { <c\5 e\4 g\3 c'\2 g'\1>1 }
   %}
-  \bar "||" 
+  \bar "||"
   \aShape
   %\chordmode { c,1:1.5.8.10.12 }
   <c\5 g\4 c'\3 e'\2 g'\1>1
@@ -732,8 +734,8 @@ majorTriadsRootPositionFiveNotesFifthOnTop = {
   \transpose c ais { <c\5 g\4 c'\3 e'\2 g'\1>1 }
   \transpose c bes { <c\5 g\4 c'\3 e'\2 g'\1>1 }
   \transpose c b { <c\5 g\4 c'\3 e'\2 g'\1>1 }
-  
-  \bar "||" 
+
+  \bar "||"
   \gShape
   %\chordmode { c1:1.3.5.8.12 }
   <c\6 e\5 g\4 c'\3 g'\2>1
@@ -753,8 +755,8 @@ majorTriadsRootPositionFiveNotesFifthOnTop = {
   \transpose c ais { <c\6 e\5 g\4 c'\3 g'\2>1 }
   \transpose c bes { <c\6 e\5 g\4 c'\3 g'\2>1 }
   \transpose c b { <c\6 e\5 g\4 c'\3 g'\2>1 }
-  
-  \bar "||" 
+
+  \bar "||"
   \eShape
   %\chordmode { c1:1.5.8.10.12 }
   <c\6 g\5 c'\4 e'\3 g'\2>1
@@ -795,7 +797,7 @@ majorTriadsFirstInversionThreeNotesOctaveOnTopChordSymbols = \chordmode {
   \transpose c ais {c1/e}
   \transpose c bes {c1/e}
   \transpose c b {c1/e}
-  
+
   %\gShape
   c1/e
   \transpose c cis {c1/e}
@@ -885,7 +887,7 @@ majorTriadsFirstInversionThreeNotesOctaveOnTop = {
   \transpose c ais { <e\4 g\3 c'\2>1 }
   \transpose c bes { <e\4 g\3 c'\2>1 }
   \transpose c b { <e\4 g\3 c'\2>1 }
-  
+
   \bar "||"
   \gShape
   %\chordmode {c,1:3.5.8^1}
@@ -906,7 +908,7 @@ majorTriadsFirstInversionThreeNotesOctaveOnTop = {
   \transpose c ais, { <e\5 g\4 c'\3>1 }
   \transpose c bes, { <e\5 g\4 c'\3>1 }
   \transpose c b, { <e\5 g\4 c'\3>1 }
-  
+
   \bar "||"
   \eShape
   %\chordmode {c1:3.5.8^1}
@@ -927,7 +929,7 @@ majorTriadsFirstInversionThreeNotesOctaveOnTop = {
   \transpose c ais, { <e'\3 g'\2 c''\1>1 }
   \transpose c bes, { <e'\3 g'\2 c''\1>1 }
   \transpose c b, { <e'\3 g'\2 c''\1>1 }
-  
+
   \bar "||"
   \dShape
   %\chordmode {c,1:3.5.8^1}
@@ -969,7 +971,7 @@ majorTriadsFirstInversionThreeNotesFifthOnTopChordSymbols = \chordmode {
   \transpose c ais {c1/e }
   \transpose c bes {c1/e }
   \transpose c b {c1/e }
-  
+
   %\cShape
   c1/e
   \transpose c cis {c1/e}
@@ -988,7 +990,7 @@ majorTriadsFirstInversionThreeNotesFifthOnTopChordSymbols = \chordmode {
   \transpose c ais {c1/e }
   \transpose c bes {c1/e }
   \transpose c b {c1/e }
-  
+
   %\aShape
   c1/e
   \transpose c cis {c1/e}
@@ -1043,7 +1045,7 @@ majorTriadsFirstInversionThreeNotesFifthOnTopChordSymbols = \chordmode {
   \transpose c ais {c1/e }
   \transpose c bes {c1/e }
   \transpose c b {c1/e }
-  
+
   %\dShape
   c1/e
   \transpose c cis {c1/e}
@@ -1079,7 +1081,7 @@ majorTriadsFirstInversionThreeNotesFifthOnTop = {
 % **** three notes
 % ***** 5th on top
 \cShape
-  %\chordmode {c,:3.8.12^1} 
+  %\chordmode {c,:3.8.12^1}
   <e\4 c'\2 g'\1>1
   \transpose c cis { <e\4 c'\2 g'\1>1 }
   \transpose c des { <e\4 c'\2 g'\1>1 }
@@ -1097,7 +1099,7 @@ majorTriadsFirstInversionThreeNotesFifthOnTop = {
   \transpose c ais { <e\4 c'\2 g'\1>1 }
   \transpose c bes { <e\4 c'\2 g'\1>1 }
   \transpose c b { <e\4 c'\2 g'\1>1 }
-  
+
   %\chordmode {c,,:3.8.12^1}
   <e, c g>1
   \transpose c cis { <e,\6 c\5 g\3>1 }
@@ -1138,7 +1140,7 @@ majorTriadsFirstInversionThreeNotesFifthOnTop = {
   \transpose c ais, { <e\5 c'\3 g'\1>1 }
   \transpose c bes, { <e\5 c'\3 g'\1>1 }
   \transpose c b, { <e\5 c'\3 g'\1>1 }
-  
+
   \bar "||"
   \gShape
   %\chordmode {c,:3.8.12^1}
@@ -1159,7 +1161,7 @@ majorTriadsFirstInversionThreeNotesFifthOnTop = {
   \transpose c ais, { <e\5 c'\3 g'\2>1 }
   \transpose c bes, { <e\5 c'\3 g'\2>1 }
   \transpose c b, { <e\5 c'\3 g'\2>1 }
-  
+
   \bar "||"
   \eShape
   %\chordmode {c,:3.8.12^1}
@@ -1180,7 +1182,7 @@ majorTriadsFirstInversionThreeNotesFifthOnTop = {
   \transpose c ais, { <e\6 c'\4 g'\2>1 }
   \transpose c bes, { <e\6 c'\4 g'\2>1 }
   \transpose c b, { <e\6 c'\4 g'\2>1 }
-  
+
   \bar "||"
   \dShape
   %\chordmode {c,:3.8.12^1}
@@ -1293,7 +1295,7 @@ majorTriadsFirstInversionFourNotesThirdOnTop = {
 % **** four notes
 % ***** 3rd on top
 \cShape
-  %\chordmode {c,:3.5.8.10^1} 
+  %\chordmode {c,:3.5.8.10^1}
   <e g c' e'>1
   \transpose c cis { <e g c' e'>1 }
   \transpose c des { <e g c' e'>1 }
@@ -1314,7 +1316,7 @@ majorTriadsFirstInversionFourNotesThirdOnTop = {
   \bar "||"
   % \aShape not possible
   \gShape
-  %\chordmode {c,:3.5.8.10^1} 
+  %\chordmode {c,:3.5.8.10^1}
   <e\5 g\4 c'\3 e'\2>1
   \transpose c cis { <e\5 g\4 c'\3 e'\2>1 }
   \transpose c des { <e\5 g\4 c'\3 e'\2>1 }
@@ -1334,7 +1336,7 @@ majorTriadsFirstInversionFourNotesThirdOnTop = {
   \transpose c b, { <e\5 g\4 c'\3 e'\2>1 }
   \bar "||"
   \eShape
-  %\chordmode {c,:3.5.8.10^1} 
+  %\chordmode {c,:3.5.8.10^1}
   <e\6 g\5 c'\4 e'\3>1
   \transpose c cis { <e\6 g\5 c'\4 e'\3>1 }
   \transpose c des { <e\6 g\5 c'\4 e'\3>1 }
@@ -1352,10 +1354,10 @@ majorTriadsFirstInversionFourNotesThirdOnTop = {
   \transpose c ais, { <e\6 g\5 c'\4 e'\3>1 }
   \transpose c bes, { <e\6 g\5 c'\4 e'\3>1 }
   \transpose c b, { <e\6 g\5 c'\4 e'\3>1 }
-  
+
   \bar "||"
   \dShape
-  %\chordmode {c,,:3.12.15.17^1} 
+  %\chordmode {c,,:3.12.15.17^1}
   <e,\6 g\3 c'\2 e'\1>1
   \transpose c cis { <e,\6 g\3 c'\2 e'\1>1 }
   \transpose c des { <e,\6 g\3 c'\2 e'\1>1 }
@@ -1395,7 +1397,7 @@ majorTriadsFirstInversionFourNotesFifthOnTopChordSymbols = \chordmode {
   \transpose c ais { c1/e }
   \transpose c bes { c1/e }
   \transpose c b { c1/e }
-  
+
   c1/e
   \transpose c cis { c1/e}
   \transpose c des { c1/e}
@@ -1484,7 +1486,7 @@ majorTriadsFirstInversionFourNotesFifthOnTop = {
 % **** four notes
 % ***** 5th on top
 \cShape
-  %\chordmode {c,:3.5.8.12^1} 
+  %\chordmode {c,:3.5.8.12^1}
   <e\4 g\3 c'\2 g'\1>1
   \transpose c cis { <e\4 g\3 c'\2 g'\1>1 }
   \transpose c des { <e\4 g\3 c'\2 g'\1>1 }
@@ -1502,7 +1504,7 @@ majorTriadsFirstInversionFourNotesFifthOnTop = {
   \transpose c ais { <e\4 g\3 c'\2 g'\1>1 }
   \transpose c bes { <e\4 g\3 c'\2 g'\1>1 }
   \transpose c b { <e\4 g\3 c'\2 g'\1>1 }
-  
+
   %\chordmode { c,,:3.8.10.12^1 c,:5/+e}
   <e,\6 c\5 e\4 g\3>1
   \transpose c cis { <e,\6 c\5 e\4 g\3>1 }
@@ -1541,7 +1543,7 @@ majorTriadsFirstInversionFourNotesFifthOnTop = {
   \transpose c ais { <e\5 g\4 c'\3 g'\2>1 }
   \transpose c bes { <e\5 g\4 c'\3 g'\2>1 }
   \transpose c b { <e\5 g\4 c'\3 g'\2>1 }
-  
+
   \bar "||"
   \eShape
   %\chordmode { c,:3.8.10.12^1}
@@ -1562,7 +1564,7 @@ majorTriadsFirstInversionFourNotesFifthOnTop = {
    \transpose c ais { <e\6 c'\4 e'\3 g'\2>1 }
    \transpose c bes { <e\6 c'\4 e'\3 g'\2>1 }
    \transpose c b { <e\6 c'\4 e'\3 g'\2>1 }
-  
+
   \bar "||"
   \dShape
   %\chordmode { c,:3.5.8.12^1}
@@ -1675,7 +1677,7 @@ majorTriadsFirstInversionFiveNotesOctaveOnTop = {
 % **** five notes
 % ***** 8th on top
 \cShape
-  %\chordmode {c,,:3.8.10.12.15^1} 
+  %\chordmode {c,,:3.8.10.12.15^1}
   <e,\6 c\5 e\4 g\3 c'\2>1
   \transpose c cis { <e,\6 c\5 e\4 g\3 c'\2>1 }
   \transpose c des { <e,\6 c\5 e\4 g\3 c'\2>1 }
@@ -1695,7 +1697,7 @@ majorTriadsFirstInversionFiveNotesOctaveOnTop = {
   \transpose c b { <e,\6 c\5 e\4 g\3 c'\2>1 }
   \bar "||"
   \gShape
-  %\chordmode {c,:3.5.8.10.15^1} 
+  %\chordmode {c,:3.5.8.10.15^1}
   <e\5 g\4 c'\3 e'\2 c''\1>1
   \transpose c cis { <e\5 g\4 c'\3 e'\2 c''\1>1 }
   \transpose c des { <e\5 g\4 c'\3 e'\2 c''\1>1 }
@@ -1715,7 +1717,7 @@ majorTriadsFirstInversionFiveNotesOctaveOnTop = {
   \transpose c b, { <e\5 g\4 c'\3 e'\2 c''\1>1 }
   \bar "||"
   %\gShape
-  %\chordmode {c,:3.5.8.12.15^1} 
+  %\chordmode {c,:3.5.8.12.15^1}
   <e\5 g\4 c'\3 g'\2 c''\1>1
   \transpose c cis { <e\5 g\4 c'\3 g'\2 c''\1> }
   \transpose c des { <e\5 g\4 c'\3 g'\2 c''\1> }
@@ -1735,7 +1737,7 @@ majorTriadsFirstInversionFiveNotesOctaveOnTop = {
   \transpose c b, { <e\5 g\4 c'\3 g'\2 c''\1> }
   \bar "||"
   \dShape
-  %\chordmode {c,:3.5.8.12.15^1} 
+  %\chordmode {c,:3.5.8.12.15^1}
   <e\6 g\5 c'\4 g'\3 c''\2>1
   \transpose c cis { <e\6 g\5 c'\4 g'\3 c''\2>1 }
   \transpose c des { <e\6 g\5 c'\4 g'\3 c''\2>1 }
@@ -1793,7 +1795,7 @@ majorTriadsFirstInversionSixNotesThirdOnTop = {
 % **** six notes
 % **** 3rd on top
 \cShape
-  %\chordmode {c,,:3.8.10.12.15.17^1} 
+  %\chordmode {c,,:3.8.10.12.15.17^1}
   <e,\6 c\5 e\4 g\3 c'\2 e'\1>1
   \transpose c cis { <e,\6 c\5 e\4 g\3 c'\2 e'\1>1 }
   \transpose c des { <e,\6 c\5 e\4 g\3 c'\2 e'\1>1 }
@@ -1825,20 +1827,20 @@ majorTriadsSecondInversionThreeNotesRootOnTopChordSymbols = \chordmode {
 % ***** root on the top
   %\cShape
   c1:/gis
-  cis1:/gisis 
-  des1:/a 
-  d1:/ais 
-  dis1:/aisis 
+  cis1:/gisis
+  des1:/a
+  d1:/ais
+  dis1:/aisis
   es1:/b
-  e1:/bis 
+  e1:/bis
   f1:/cis
-  fis1:/cisis 
-  ges1:/d 
-  g1:/dis 
-  gis1:/disis 
-  as1:/e 
-  a1:/eis 
-  ais1:/eisis 
+  fis1:/cisis
+  ges1:/d
+  g1:/dis
+  gis1:/disis
+  as1:/e
+  a1:/eis
+  ais1:/eisis
   bes1:/fis
   b1:/fisis
 }
@@ -1898,7 +1900,7 @@ majorTriadsSecondInversionThreeNotesThirdOnTopChordSymbols = \chordmode {
   \transpose c ais { c1/g }
   \transpose c bes { c1/g }
   \transpose c b { c1/g }
-  
+
   c1/g
   \transpose c cis { c1/g }
   \transpose c des { c1/g }
@@ -2006,7 +2008,7 @@ majorTriadsSecondInversionThreeNotesThirdOnTop = {
 % **** three notes
 % ***** 3rd on top
 \cShape
-  %\chordmode {c,:5.8.10^1.3} 
+  %\chordmode {c,:5.8.10^1.3}
   <g\3 c'\2 e'\1>1
   \transpose c cis { <g\3 c'\2 e'\1>1 }
   \transpose c des { <g\3 c'\2 e'\1>1 }
@@ -2025,7 +2027,7 @@ majorTriadsSecondInversionThreeNotesThirdOnTop = {
   \transpose c bes { <g\3 c'\2 e'\1>1 }
   \transpose c b { <g\3 c'\2 e'\1>1 }
   \bar "||"
-  %\chordmode {c,/g} 
+  %\chordmode {c,/g}
   <g,\6 c\5 e\4>1
   \transpose c cis { <g,\6 c\5 e\4>1 }
   \transpose c des { <g,\6 c\5 e\4>1 }
@@ -2043,10 +2045,10 @@ majorTriadsSecondInversionThreeNotesThirdOnTop = {
   \transpose c ais, { <g,\6 c\5 e\4>1 }
   \transpose c bes, { <g,\6 c\5 e\4>1 }
   \transpose c b, { <g,\6 c\5 e\4>1 }
-  
+
   \bar "||"
   \aShape
-  %\chordmode {c/g} 
+  %\chordmode {c/g}
   <g\4 c'\3 e'\2>1
   \transpose c cis { <g\4 c'\3 e'\2>1 }
   \transpose c des { <g\4 c'\3 e'\2>1 }
@@ -2064,10 +2066,10 @@ majorTriadsSecondInversionThreeNotesThirdOnTop = {
   \transpose c ais, { <g\4 c'\3 e'\2>1 }
   \transpose c bes, { <g\4 c'\3 e'\2>1 }
   \transpose c b, { <g\4 c'\3 e'\2>1 }
-  
+
   \bar "||"
   \gShape
-  %\chordmode {c/g} 
+  %\chordmode {c/g}
   <g\4 c'\3 e'\2>1
   \transpose c cis { <g\4 c'\3 e'\2>1 }
   \transpose c des { <g\4 c'\3 e'\2>1 }
@@ -2085,10 +2087,10 @@ majorTriadsSecondInversionThreeNotesThirdOnTop = {
   \transpose c ais, { <g\4 c'\3 e'\2>1 }
   \transpose c bes, { <g\4 c'\3 e'\2>1 }
   \transpose c b, { <g\4 c'\3 e'\2>1 }
-  
+
   \bar "||"
   \eShape
-  %\chordmode {c/g} 
+  %\chordmode {c/g}
   <g\5 c'\4 e'\3>1
   \transpose c cis { <g\5 c'\4 e'\3>1 }
   \transpose c des { <g\5 c'\4 e'\3>1 }
@@ -2106,10 +2108,10 @@ majorTriadsSecondInversionThreeNotesThirdOnTop = {
   \transpose c ais, { <g\5 c'\4 e'\3>1 }
   \transpose c bes, { <g\5 c'\4 e'\3>1 }
   \transpose c b, { <g\5 c'\4 e'\3>1 }
-  
+
   \bar "||"
   \dShape
-  %\chordmode {c/g} 
+  %\chordmode {c/g}
   <g\3 c'\2 e'\1>1
   \transpose c cis { <g\3 c'\2 e'\1>1 }
   \transpose c des { <g\3 c'\2 e'\1>1 }
@@ -2254,7 +2256,7 @@ majorTriadsSecondInversionFourNotesFifthOnTop = {
 % **** four notes
 % ***** 5th on top
 \cShape
-  %\chordmode {c,,:5.8.10.12^1.3} 
+  %\chordmode {c,,:5.8.10.12^1.3}
   <g,\6 c\5 e\4 g\3>1
   \transpose c cis { <g,\6 c\5 e\4 g\3>1 }
   \transpose c des { <g,\6 c\5 e\4 g\3>1 }
@@ -2274,7 +2276,7 @@ majorTriadsSecondInversionFourNotesFifthOnTop = {
   \transpose c b { <g,\6 c\5 e\4 g\3>1 }
   \bar "||"
   \aShape
-  %\chordmode {c,:5.8.10.12^1.3} 
+  %\chordmode {c,:5.8.10.12^1.3}
   <g\4 c'\3 e'\2 g'\1>1
   \transpose c cis { <g\4 c'\3 e'\2 g'\1>1 }
   \transpose c des { <g\4 c'\3 e'\2 g'\1>1 }
@@ -2294,7 +2296,7 @@ majorTriadsSecondInversionFourNotesFifthOnTop = {
   \transpose c b, { <g\4 c'\3 e'\2 g'\1>1 }
   \bar "||"
   \eShape
-  %\chordmode {c,:5.8.10.12^1.3} 
+  %\chordmode {c,:5.8.10.12^1.3}
   <g\5 c'\4 e'\3 g'\2>1
   \transpose c cis { <g\5 c'\4 e'\3 g'\2>1 }
   \transpose c des { <g\5 c'\4 e'\3 g'\2>1 }
@@ -2424,7 +2426,7 @@ majorTriadsSecondInversionFiveNotesOctaveOnTop = {
 % **** five notes
 % ***** 8th on top
 \cShape
-  %\chordmode {c,,:5.8.10.12.15^1.3} 
+  %\chordmode {c,,:5.8.10.12.15^1.3}
   <g,\6 c\5 e\4 g\3 c'\2>1
   %{ (not possible)
   \transpose c cis { <g,\6 c\5 e\4 g\3 c'\2>1 }
@@ -2446,7 +2448,7 @@ majorTriadsSecondInversionFiveNotesOctaveOnTop = {
   %}
   \bar "||"
   \eShape
-  %\chordmode {c,:5.8.10.12.15^1.3} 
+  %\chordmode {c,:5.8.10.12.15^1.3}
   <g\5 c'\4 e'\3 g'\2 c''\1>1
   \transpose c cis { <g\5 c'\4 e'\3 g'\2 c''\1>1 }
   \transpose c des { <g\5 c'\4 e'\3 g'\2 c''\1>1 }
@@ -2463,7 +2465,7 @@ majorTriadsSecondInversionFiveNotesOctaveOnTop = {
   \transpose c a, { <g\5 c'\4 e'\3 g'\2 c''\1>1 }
   \transpose c ais, { <g\5 c'\4 e'\3 g'\2 c''\1>1 }
   \transpose c bes, { <g\5 c'\4 e'\3 g'\2 c''\1>1 }
-  \transpose c b, { <g\5 c'\4 e'\3 g'\2 c''\1>1 } 
+  \transpose c b, { <g\5 c'\4 e'\3 g'\2 c''\1>1 }
 }
 
 majorTriadsSecondInversionFiveNotesThirdOnTopChordSymbols = \chordmode {
@@ -2498,7 +2500,7 @@ majorTriadsSecondInversionFiveNotesThirdOnTop = {
 % **** five notes
 % ***** 3rd on top
   \dShape
-  %\chordmode {c,:5.8.12.15.17^1.3} 
+  %\chordmode {c,:5.8.12.15.17^1.3}
   <g\5 c'\4 g'\3 c''\2 e''\1>1
   \transpose c cis { <g\5 c'\4 g'\3 c''\2 e''\1>1 }
   \transpose c des { <g\5 c'\4 g'\3 c''\2 e''\1>1 }
@@ -2553,7 +2555,7 @@ majorTriadsSecondInversionSixNotesThirdOnTop = {
 % **** six notes
 % ***** 3rd on top
 \cShape
-  %\chordmode {c,,:5.8.10.12.15.17^1.3} 
+  %\chordmode {c,,:5.8.10.12.15.17^1.3}
   <g,\6 c\5 e\4 g\3 c'\2 e'\1>1
   %{ (not possible)
   \transpose c cis { <g,\6 c\5 e\4 g\3 c'\2 e'\1>1 }
@@ -2607,7 +2609,7 @@ majorTriadsSecondInversionSixNotesFifthOnTop = {
 % **** six notes
 % ***** 5th on top
 \aShape
-  %\chordmode {c,,:5.8.12.15.17.19^1.3} 
+  %\chordmode {c,,:5.8.12.15.17.19^1.3}
   <g,\6 c\5 g\4 c'\3 e'\2 g'\1>1
   \transpose c cis { <g,\6 c\5 g\4 c'\3 e'\2 g'\1>1 }
   \transpose c des { <g,\6 c\5 g\4 c'\3 e'\2 g'\1>1 }
@@ -2772,7 +2774,7 @@ majorTriadsSecondInversionSixNotesFifthOnTop = {
       piece = "3rd on top"
     }
   }
-%}  
+%}
 %%{
   \score {
     <<
@@ -2800,7 +2802,7 @@ majorTriadsSecondInversionSixNotesFifthOnTop = {
       piece = "Fifth on top"
     }
   }
-%}  
+%}
 %%{
   \score {
   <<
@@ -2829,7 +2831,7 @@ majorTriadsSecondInversionSixNotesFifthOnTop = {
     }
   }
 %}
-%%{  
+%%{
   \score {
   <<
     \new ChordNames {
@@ -3059,9 +3061,9 @@ majorTriadsSecondInversionSixNotesFifthOnTop = {
     }
   }
 %}
-%%{  
+%%{
   \score {
-    <<    
+    <<
       \new ChordNames {
         \majorTriadsSecondInversionThreeNotesThirdOnTopChordSymbols
       }
@@ -3079,7 +3081,7 @@ majorTriadsSecondInversionSixNotesFifthOnTop = {
         \majorTriadsSecondInversionThreeNotesThirdOnTop
       }
     >>
-    \header {        
+    \header {
       title = "Major Triads"
       subtitle = "Second Inversion"
       subsubtitle = "Three notes"
@@ -3089,7 +3091,7 @@ majorTriadsSecondInversionSixNotesFifthOnTop = {
 %}
 %%{
   \score {
-    <<    
+    <<
       \new ChordNames {
         \majorTriadsSecondInversionFourNotesThirdOnTopChordSymbols
       }
@@ -3107,7 +3109,7 @@ majorTriadsSecondInversionSixNotesFifthOnTop = {
         \majorTriadsSecondInversionFourNotesThirdOnTop
       }
     >>
-    \header {        
+    \header {
       title = "Major Triads"
       subtitle = "Second Inversion"
       subsubtitle = "Four notes"
@@ -3118,7 +3120,7 @@ majorTriadsSecondInversionSixNotesFifthOnTop = {
 
 %%{
   \score {
-    <<    
+    <<
       \new ChordNames {
         \majorTriadsSecondInversionFourNotesFifthOnTopChordSymbols
       }
@@ -3136,7 +3138,7 @@ majorTriadsSecondInversionSixNotesFifthOnTop = {
         \majorTriadsSecondInversionFourNotesFifthOnTop
       }
     >>
-    \header {        
+    \header {
       title = "Major Triads"
       subtitle = "Second Inversion"
       subsubtitle = "Four notes"
@@ -3146,7 +3148,7 @@ majorTriadsSecondInversionSixNotesFifthOnTop = {
 %}
 %%{
   \score {
-    <<    
+    <<
       \new ChordNames {
         \majorTriadsSecondInversionFourNotesOctaveOnTopChordSymbols
       }
@@ -3164,7 +3166,7 @@ majorTriadsSecondInversionSixNotesFifthOnTop = {
         \majorTriadsSecondInversionFourNotesOctaveOnTop
       }
     >>
-    \header {        
+    \header {
       title = "Major Triads"
       subtitle = "Second Inversion"
       subsubtitle = "Four notes"
@@ -3174,7 +3176,7 @@ majorTriadsSecondInversionSixNotesFifthOnTop = {
 %}
 %%{
   \score {
-    <<    
+    <<
       \new ChordNames {
         \majorTriadsSecondInversionFiveNotesOctaveOnTopChordSymbols
       }
@@ -3192,7 +3194,7 @@ majorTriadsSecondInversionSixNotesFifthOnTop = {
         \majorTriadsSecondInversionFiveNotesOctaveOnTop
       }
     >>
-    \header {        
+    \header {
       title = "Major Triads"
       subtitle = "Second Inversion"
       subsubtitle = "Five notes"
@@ -3202,7 +3204,7 @@ majorTriadsSecondInversionSixNotesFifthOnTop = {
 %}
 %%{
   \score {
-    <<    
+    <<
       \new ChordNames {
         \majorTriadsSecondInversionFiveNotesThirdOnTopChordSymbols
       }
@@ -3220,7 +3222,7 @@ majorTriadsSecondInversionSixNotesFifthOnTop = {
         \majorTriadsSecondInversionFiveNotesThirdOnTop
       }
     >>
-    \header {        
+    \header {
       title = "Major Triads"
       subtitle = "Second Inversion"
       subsubtitle = "Five notes"
@@ -3230,7 +3232,7 @@ majorTriadsSecondInversionSixNotesFifthOnTop = {
 %}
 %%{
   \score {
-    <<    
+    <<
       \new ChordNames {
         \majorTriadsSecondInversionSixNotesThirdOnTopChordSymbols
       }
@@ -3248,7 +3250,7 @@ majorTriadsSecondInversionSixNotesFifthOnTop = {
         \majorTriadsSecondInversionSixNotesThirdOnTop
       }
     >>
-    \header {        
+    \header {
       title = "Major Triads"
       subtitle = "Second Inversion"
       subsubtitle = "Six notes"
@@ -3258,7 +3260,7 @@ majorTriadsSecondInversionSixNotesFifthOnTop = {
 %}
 %%{
   \score {
-    <<    
+    <<
       \new ChordNames {
         \majorTriadsSecondInversionSixNotesFifthOnTopChordSymbols
       }
@@ -3276,7 +3278,7 @@ majorTriadsSecondInversionSixNotesFifthOnTop = {
         \majorTriadsSecondInversionSixNotesFifthOnTop
       >>
     >>
-    \header {        
+    \header {
       title = "Major Triads"
       subtitle = "Second Inversion"
       subsubtitle = "Six notes"
