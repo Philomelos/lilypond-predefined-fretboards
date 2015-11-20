@@ -474,7 +474,7 @@ majorseventhaugmentedfifthsFirstInversionFifthOnTopFourNotesShapes = \lyricmode 
 % *** first inversion
 % **** fifth on top
 % ***** four notes
-  "C-Shape (Drop 432/Swap 24)" __ \repeat unfold 16 { _ }
+  "C-Shape (Drop 32)" __ \repeat unfold 16 { _ }
   "C-Shape (Drop 2)" __ \repeat unfold 16 { _ }
   "A-Shape (Drop 2)" __ \repeat unfold 16 { _ }
   "G-Shape (Drop 2)" __ \repeat unfold 16 { _ }
