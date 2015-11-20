@@ -1,4 +1,4 @@
-\version "2.19.15"
+\version "2.19.31"
 %\include "predefined-guitar-fretboards.ly"
 \include "../c-shape.ly"
 \include "../a-shape.ly"
@@ -445,7 +445,7 @@ diminishedSeventhsFirstInversionFifthOnTopFourNotesShapes = \lyricmode {
 % **** fifth on top
 % ***** four notes
   "C-Shape (Drop 2)" \repeat unfold 16 { \skip1 }
-  "C-Shape (Drop 432)" \repeat unfold 16 { \skip1 }
+  "C-Shape (Drop 32)" \repeat unfold 16 { \skip1 }
   "A-Shape (Drop 2)" \repeat unfold 16 { \skip1 }
   "G-Shape (Drop 2)" \repeat unfold 16 { \skip1 }
   "D-Shape (Drop 2)" \repeat unfold 16 { \skip1 }
