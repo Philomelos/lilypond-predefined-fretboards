@@ -1,4 +1,4 @@
-\version "2.19.15"
+\version "2.19.31"
 %\include "predefined-guitar-fretboards.ly"
 \include "../c-shape.ly"
 \include "../a-shape.ly"
