@@ -18,32 +18,38 @@
 % diagrams containing fingering indications
 #(define g-shape-with-fingering (make-fretboard-table))
 % diagrams containing chord degrees
-% #(define g-shape-with-chord-degrees (make-fretboard-table))
+#(define g-shape-with-chord-degrees (make-fretboard-table))
 % diagrams containing pitch names
 #(define g-shape-with-pitch-names (make-fretboard-table))
 % diagrams containing movable do solfege names (do-based)
-%#(define g-shape-with-movable-do (make-fretboard-table))
+#(define g-shape-with-movable-do (make-fretboard-table))
 % diagrams containing movable fa solfege names (fa-based)
-%#(define g-shape-with-movable-fa (make-fretboard-table))
+#(define g-shape-with-movable-fa (make-fretboard-table))
 % diagrams containing movable so solfege names (so-based)
 #(define g-shape-with-movable-so (make-fretboard-table))
 
-
-%%%includeStyleSheet = {
-%%%  \include "../../chord-diagram-stylesheet-philomelos.ly"
-%%%}
-
 gShape = {
   \set predefinedDiagramTable = #g-shape-with-fingering
-  %\includeStyleSheet
 }
 
 gShapeFingering = {
   \gShape
 }
 
+gShapeChordDegrees = {
+  \set predefinedDiagramTable = #g-shape-with-chord-degrees
+}
+
 gShapePitchNames = {
   \set predefinedDiagramTable = #g-shape-with-pitch-names
+}
+
+gShapeMovableDo = {
+  \set predefinedDiagramTable = #g-shape-with-movable-do
+}
+
+gShapeMovableFa = {
+  \set predefinedDiagramTable = #g-shape-with-movable-fa
 }
 
 gShapeMovableSo = {
@@ -14067,3 +14073,315 @@ gShapeMovableSo = {
                         #(offset-fret 5 (
                           chord-shape 'g,:1.3-.7.9.12-
                           guitar-tuning))
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%% G SHAPE SCALES %%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% * modern "church modes"
+% ** major/ionian
+% *** complete box pattern (17 pitches)
+% **** add g-shape ionian definitions (17 pitches)
+\addChordShape #'as,,:6.7+.8.9.10.11.12.22
+               #guitar-tuning
+               #'((place-fret 1 4 4 blue)
+                  (place-fret 1 3 3)
+                  (place-fret 1 1 1)
+                  (place-fret 2 4 4)
+                  (place-fret 2 2 2)
+                  (place-fret 2 1 1)
+                  (place-fret 3 3 3)
+                  (place-fret 3 1 1 blue)
+                  (place-fret 4 5 4)
+                  (place-fret 4 3 3)
+                  (place-fret 4 1 1)
+                  (place-fret 5 4 4 )
+                  (place-fret 5 3 3)
+                  (place-fret 5 1 1)
+                  (place-fret 6 4 4 blue)
+                  (place-fret 6 3 3)
+                  (place-fret 6 1 1))
+
+\addChordShape #'as,,:6.7+.8.9.10.11.12.22_movable-do
+               #guitar-tuning
+               #'((place-fret 1 4 "Do''" blue)
+                  (place-fret 1 3 "Ti'")
+                  (place-fret 1 1 "La'")
+                  (place-fret 2 4 "So'")
+                  (place-fret 2 2 "Fa'")
+                  (place-fret 2 1 "Mi'")
+                  (place-fret 3 3 "Re'")
+                  (place-fret 3 1 "Do'" blue)
+                  (place-fret 4 5 "Ti")
+                  (place-fret 4 3 "La")
+                  (place-fret 4 1 "So")
+                  (place-fret 5 4 "Fa")
+                  (place-fret 5 3 "Mi")
+                  (place-fret 5 1 "Re")
+                  (place-fret 6 4 "Do" blue)
+                  (place-fret 6 3 "Ti,")
+                  (place-fret 6 1 "La,"))
+
+% **** store predefined g-shape ionian mode (17 pitches)
+% ***** a ionian mode, complete box pattern (17 pitches)
+\storePredefinedDiagram #g-shape-with-fingering
+                        \chordmode { a,,,:6.7+.8.9.10.11.12.22 }
+                        #guitar-tuning
+                        #(offset-fret 1 (
+                          chord-shape 'as,,:6.7+.8.9.10.11.12.22
+                          guitar-tuning))
+\storePredefinedDiagram #g-shape-with-movable-do
+                        \chordmode { a,,,:6.7+.8.9.10.11.12.22 }
+                        #guitar-tuning
+                        #(offset-fret 1 (
+                          chord-shape 'as,,:6.7+.8.9.10.11.12.22_movable-do
+                          guitar-tuning))
+
+% ***** ais ionian mode, complete box pattern (17 pitches)
+\storePredefinedDiagram #g-shape-with-fingering
+                        \chordmode { ais,,,:6.7+.8.9.10.11.12.22 }
+                        #guitar-tuning
+                        #(offset-fret 2 (
+                          chord-shape 'as,,:6.7+.8.9.10.11.12.22
+                          guitar-tuning))
+\storePredefinedDiagram #g-shape-with-movable-do
+                        \chordmode { ais,,,:6.7+.8.9.10.11.12.22 }
+                        #guitar-tuning
+                        #(offset-fret 2 (
+                          chord-shape 'as,,:6.7+.8.9.10.11.12.22_movable-do
+                          guitar-tuning))
+
+% ***** bes ionian mode, complete box pattern (17 pitches)
+\storePredefinedDiagram #g-shape-with-fingering
+                        \chordmode { bes,,,:6.7+.8.9.10.11.12.22 }
+                        #guitar-tuning
+                        #(offset-fret 2 (
+                          chord-shape 'as,,:6.7+.8.9.10.11.12.22
+                          guitar-tuning))
+\storePredefinedDiagram #g-shape-with-movable-do
+                        \chordmode { bes,,,:6.7+.8.9.10.11.12.22 }
+                        #guitar-tuning
+                        #(offset-fret 2 (
+                          chord-shape 'as,,:6.7+.8.9.10.11.12.22_movable-do
+                          guitar-tuning))
+
+% ***** b ionian mode, complete box pattern (17 pitches)
+\storePredefinedDiagram #g-shape-with-fingering
+                 \chordmode { b,,,:6.7+.8.9.10.11.12.22 }
+                  #guitar-tuning
+                  #(offset-fret 3 (
+                          chord-shape 'as,,:6.7+.8.9.10.11.12.22
+                          guitar-tuning))
+
+\storePredefinedDiagram #g-shape-with-movable-do
+                 \chordmode { b,,,:6.7+.8.9.10.11.12.22 }
+                  #guitar-tuning
+                  #(offset-fret 3 (
+                          chord-shape 'as,,:6.7+.8.9.10.11.12.22_movable-do
+                          guitar-tuning))
+
+% ***** c ionian mode, complete box pattern (17 pitches)
+\storePredefinedDiagram #g-shape-with-fingering
+                        \chordmode { c,,,:6.7+.8.9.10.11.12.22 }
+                        #guitar-tuning
+                        #(offset-fret 4 (
+                          chord-shape 'as,,:6.7+.8.9.10.11.12.22
+                          guitar-tuning))
+\storePredefinedDiagram #g-shape-with-movable-do
+                        \chordmode { c,,,:6.7+.8.9.10.11.12.22 }
+                        #guitar-tuning
+                        #(offset-fret 4 (
+                          chord-shape 'as,,:6.7+.8.9.10.11.12.22_movable-do
+                          guitar-tuning))
+
+% ***** cis ionian mode, complete box pattern (17 pitches)
+\storePredefinedDiagram #g-shape-with-fingering
+                        \chordmode { cis,,,:6.7+.8.9.10.11.12.22 }
+                        #guitar-tuning
+                        #(offset-fret 5 (
+                          chord-shape 'as,,:6.7+.8.9.10.11.12.22
+                          guitar-tuning))
+\storePredefinedDiagram #g-shape-with-movable-do
+                        \chordmode { cis,,,:6.7+.8.9.10.11.12.22 }
+                        #guitar-tuning
+                        #(offset-fret 5 (
+                          chord-shape 'as,,:6.7+.8.9.10.11.12.22_movable-do
+                          guitar-tuning))
+
+% ***** des ionian mode, complete box pattern (17 pitches)
+\storePredefinedDiagram #g-shape-with-fingering
+                        \chordmode { des,,,:6.7+.8.9.10.11.12.22 }
+                        #guitar-tuning
+                        #(offset-fret 5 (
+                          chord-shape 'as,,:6.7+.8.9.10.11.12.22
+                          guitar-tuning))
+\storePredefinedDiagram #g-shape-with-movable-do
+                        \chordmode { des,,,:6.7+.8.9.10.11.12.22 }
+                        #guitar-tuning
+                        #(offset-fret 5 (
+                          chord-shape 'as,,:6.7+.8.9.10.11.12.22_movable-do
+                          guitar-tuning))
+
+% ***** d ionian mode, complete box pattern (17 pitches)
+\storePredefinedDiagram #g-shape-with-fingering
+                        \chordmode { d,,,:6.7+.8.9.10.11.12.22 }
+                        #guitar-tuning
+                        #(offset-fret 6 (
+                          chord-shape 'as,,:6.7+.8.9.10.11.12.22
+                          guitar-tuning))
+\storePredefinedDiagram #g-shape-with-movable-do
+                        \chordmode { d,,,:6.7+.8.9.10.11.12.22 }
+                        #guitar-tuning
+                        #(offset-fret 6 (
+                          chord-shape 'as,,:6.7+.8.9.10.11.12.22_movable-do
+                          guitar-tuning))
+
+% ***** dis ionian mode, complete box pattern (17 pitches)
+\storePredefinedDiagram #g-shape-with-fingering
+                        \chordmode { dis,,:6.7+.8.9.10.11.12.22 }
+                        #guitar-tuning
+                        #(offset-fret 7 (
+                          chord-shape 'as,,:6.7+.8.9.10.11.12.22
+                          guitar-tuning))
+\storePredefinedDiagram #g-shape-with-movable-do
+                        \chordmode { dis,,:6.7+.8.9.10.11.12.22 }
+                        #guitar-tuning
+                        #(offset-fret 7 (
+                          chord-shape 'as,,:6.7+.8.9.10.11.12.22_movable-do
+                          guitar-tuning))
+
+% ***** es ionian mode, complete box pattern (17 pitches)
+\storePredefinedDiagram #g-shape-with-fingering
+                        \chordmode { es,,:6.7+.8.9.10.11.12.22 }
+                        #guitar-tuning
+                        #(offset-fret 7 (
+                          chord-shape 'as,,:6.7+.8.9.10.11.12.22
+                          guitar-tuning))
+\storePredefinedDiagram #g-shape-with-movable-do
+                        \chordmode { es,,:6.7+.8.9.10.11.12.22 }
+                        #guitar-tuning
+                        #(offset-fret 7 (
+                          chord-shape 'as,,:6.7+.8.9.10.11.12.22_movable-do
+                          guitar-tuning))
+
+% ***** e ionian mode, complete box pattern (17 pitches)
+\storePredefinedDiagram #g-shape-with-fingering
+                        \chordmode { e,,:6.7+.8.9.10.11.12.22 }
+                        #guitar-tuning
+                        #(offset-fret 8 (
+     chord-shape 'as,,:6.7+.8.9.10.11.12.22
+                          guitar-tuning))
+\storePredefinedDiagram #g-shape-with-movable-do
+                        \chordmode { e,,:6.7+.8.9.10.11.12.22 }
+                        #guitar-tuning
+                        #(offset-fret 8 (
+                          chord-shape 'as,,:6.7+.8.9.10.11.12.22_movable-do
+                          guitar-tuning))
+
+% ***** f ionian mode, complete box pattern (17 pitches)
+\storePredefinedDiagram #g-shape-with-fingering
+                        \chordmode { f,,:6.7+.8.9.10.11.12.22 }
+                        #guitar-tuning
+                        #(offset-fret 9 (
+                          chord-shape 'as,,:6.7+.8.9.10.11.12.22
+                          guitar-tuning))
+\storePredefinedDiagram #g-shape-with-movable-do
+                        \chordmode { f,,:6.7+.8.9.10.11.12.22 }
+                        #guitar-tuning
+                        #(offset-fret 9 (
+                          chord-shape 'as,,:6.7+.8.9.10.11.12.22_movable-do
+                          guitar-tuning))
+
+% ***** fis ionian mode, complete box pattern (17 pitches)
+\storePredefinedDiagram #g-shape-with-fingering
+                        \chordmode { fis,,:6.7+.8.9.10.11.12.22 }
+                        #guitar-tuning
+                        #(offset-fret 10 (
+                          chord-shape 'as,,:6.7+.8.9.10.11.12.22
+                          guitar-tuning))
+\storePredefinedDiagram #g-shape-with-movable-do
+                        \chordmode { fis,,:6.7+.8.9.10.11.12.22 }
+                        #guitar-tuning
+                        #(offset-fret 10 (
+                          chord-shape 'as,,:6.7+.8.9.10.11.12.22_movable-do
+                          guitar-tuning))
+
+% ***** ges ionian mode, complete box pattern (17 pitches)
+\storePredefinedDiagram #g-shape-with-fingering
+                        \chordmode { ges,,:6.7+.8.9.10.11.12.22 }
+                        #guitar-tuning
+                        #(offset-fret 10 (
+                          chord-shape 'as,,:6.7+.8.9.10.11.12.22
+                          guitar-tuning))
+\storePredefinedDiagram #g-shape-with-movable-do
+                        \chordmode { ges,,:6.7+.8.9.10.11.12.22 }
+                        #guitar-tuning
+                        #(offset-fret 10 (
+                          chord-shape 'as,,:6.7+.8.9.10.11.12.22_movable-do
+                          guitar-tuning))
+
+% ***** g ionian mode, complete box pattern (17 pitches)
+\storePredefinedDiagram #g-shape-with-fingering
+                        \chordmode { g,,,:6.7+.8.9.10.11.12.22 }
+                        #guitar-tuning
+                        #'((place-fret 1 3 3 blue)
+                           (place-fret 1 2 2)
+                           (place-fret 1 0 0)
+                           (place-fret 2 3 3)
+                           (place-fret 2 1 1)
+                           (place-fret 2 0 0)
+                           (place-fret 3 2 2)
+                           (place-fret 3 0 0 blue)
+                           (place-fret 4 4 4)
+                           (place-fret 4 2 2)
+                           (place-fret 4 0 0)
+                           (place-fret 5 3 3)
+                           (place-fret 5 2 2)
+                           (place-fret 5 0 0)
+                           (place-fret 6 3 3 blue)
+                           (place-fret 6 2 2)
+                           (place-fret 6 0 0))
+\storePredefinedDiagram #g-shape-with-movable-do
+                        \chordmode { g,,,:6.7+.8.9.10.11.12.22 }
+                        #guitar-tuning
+                        #'((place-fret 1 3 "Do''" blue)
+                           (place-fret 1 2 "Ti'")
+                           (place-fret 1 0 "La'")
+                           (place-fret 2 3 "So'")
+                           (place-fret 2 1 "Fa'")
+                           (place-fret 2 0 "Mi'")
+                           (place-fret 3 2 "Re'")
+                           (place-fret 3 0 "Do'" blue)
+                           (place-fret 4 4 "Ti")
+                           (place-fret 4 2 "La")
+                           (place-fret 4 0 "So")
+                           (place-fret 5 3 "Fa")
+                           (place-fret 5 2 "Mi")
+                           (place-fret 5 0 "Re")
+                           (place-fret 6 3 "Do" blue)
+                           (place-fret 6 2 "Ti,")
+                           (place-fret 6 0 "La,"))
+
+% ***** gis ionian mode, complete box pattern (17 pitches)
+\storePredefinedDiagram #g-shape-with-fingering
+                        \chordmode { gis,,,:6.7+.8.9.10.11.12.22 }
+                        #guitar-tuning
+                        #(chord-shape 'as,,:6.7+.8.9.10.11.12.22
+                          guitar-tuning)
+\storePredefinedDiagram #g-shape-with-movable-do
+                        \chordmode { gis,,,:6.7+.8.9.10.11.12.22 }
+                        #guitar-tuning
+                        #(chord-shape 'as,,:6.7+.8.9.10.11.12.22_movable-do
+                          guitar-tuning)
+
+% ***** as ionian mode, complete box pattern (17 pitches)
+\storePredefinedDiagram #g-shape-with-fingering
+                        \chordmode { as,,,:6.7+.8.9.10.11.12.22 }
+                        #guitar-tuning
+                        #(chord-shape 'as,,:6.7+.8.9.10.11.12.22
+                          guitar-tuning)
+\storePredefinedDiagram #g-shape-with-movable-do
+                        \chordmode { as,,,:6.7+.8.9.10.11.12.22 }
+                        #guitar-tuning
+                        #(chord-shape 'as,,:6.7+.8.9.10.11.12.22_movable-do
+                          guitar-tuning)
