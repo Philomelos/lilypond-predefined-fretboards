@@ -1,0 +1,2177 @@
+* A WYGIWYM library of predefined chord and scale diagrams to be used with LilyPond.
+
+** Description
+This library currently contains more than 600 different chord shapes and more than 10000 different predefined diagrams.
+
+The library can only be used in conjunction with LilyPond. It requires you to enter all the pitches you want to include in your diagrams (for more details, please see [[*Usage][Usage]]).  If the chord you entered is part of this library you should get the expected diagram including fingerings and barre indicators (if necessary).  You do not need to manually add fingerings and/or string numbers to your chord definitions which means that you can transpose, shift and change shapes without any problems.
+
+You can override almost every detail of the fret diagrams. Please consult the LilyPond documentation on how to customize fretboard fret diagrams (http://lilypond.org/doc/v2.19/Documentation/notation/common-notation-for-fretted-strings#predefined-fret-diagrams).
+
+You can use other definition files in combination (e.g. predefined-guitar-fretboards.ly which is part of the LilyPond package). You can switch the definition files on and off (see  [[*Usage][Usage]]).  If the tables don’t contain a definition for a certain chord structure (or if the chord structure or the octave is impossible in standard tuning) LilyPond kicks in and tries to automatically generate a diagram.  These automatically generated diagrams do not contain fingering indications and might be faulty.
+
+This library is based on the CAGED system.  All fret diagrams are derived from the five basic open chord shapes found around the first few frets:
+
+#+name: version-and-paper()
+#+begin_src org :exports none
+  \version "2.18.2"
+%  #(set-global-staff-size 20)
+  \paper{
+    indent=0\mm
+    line-width=120\mm
+    oddFooterMarkup=##f
+    oddHeaderMarkup=##f
+    bookTitleMarkup=##f
+    scoreTitleMarkup=##f
+  }
+#+end_src
+
+#+ATTR_LaTeX: width=12cm
+#+begin_src lilypond :file open-chord-shapes.eps :noweb yes
+<<version-and-paper>>
+\include "EADGBE/c-shape.ly"
+\include "EADGBE/a-shape.ly"
+\include "EADGBE/g-shape.ly"
+\include "EADGBE/e-shape.ly"
+\include "EADGBE/d-shape.ly"
+\include "EADGBE/alt-shape.ly"
+
+<<
+  \chords { c1 a1 g1 e1 d1 }
+  \new FretBoards {
+    \cShape
+    <e, c e g c' e'>1
+    \aShape
+    <e, a, e a cis' e'>1
+    \gShape
+    <g, b, d g b g'>1
+    \eShape
+    <e, b, e gis b e'>1
+    \dShape
+    <a, d a d' fis'>1
+  }
+>>
+#+end_src
+
+#+RESULTS:
+[[file:open-chord-shapes.eps]]
+
+All these common open chord shapes are movable.  In most cases they need to be re-fingered slightly in order to free the first finger so that it can play the barre.  The shape of a chord is not restricted to major chords. Here are some examples for each shape:
+
+*** C shape
+*** A shape
+*** G shape
+*** E shape
+*** D shape
+
+** Usage
+After including the files of this library in your LilyPond file, six new commands to choose a diagram derived from one of the five basic chord shapes are at your fingertips: =\cShape=, =\aShape=, =\gShape=, =\eShape=, =\dShape=, and =\altShape=.  (alt-shape.ly contains alternative chord shapes that cannot be included in the five basic shape files for technical reasons or due to their ambiguity.)
+
+#+ATTR_LaTeX: width=12cm
+#+begin_src lilypond :file usage.eps :noweb yes
+<<version-and-paper>>
+\include "predefined-guitar-fretboards.ly"
+\include "EADGBE/c-shape.ly"
+\include "EADGBE/a-shape.ly"
+\include "EADGBE/g-shape.ly"
+\include "EADGBE/e-shape.ly"
+\include "EADGBE/d-shape.ly"
+\include "EADGBE/alt-shape.ly"
+
+<<
+  \chords { c1 a1 g1 e1 d1 }
+  \new FretBoards {
+    \cShape
+    <e, c e g c' e'>1
+    \aShape
+    <e, a, e a cis' e'>1
+    \gShape
+    <g, b, d g b g'>1
+    \eShape
+    <e, b, e gis b e'>1
+    \dShape
+    <a, d a d' fis'>1
+    \predefinedOff
+  }
+>>
+#+end_src
+
+Note that you cannot just copy and paste this code. You need to
++ install LilyPond first,
++ then download this library, and finally
++ modify the paths to the files of this library you want to include.
+
+** License
+Copyright (C) 2015  Patrick L. Schmidt <pls@philomelos.net>
+
+This library is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This library is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+** Help?!
+Yes, please!
+
+** Chord Synonyms
+** Current Content
+
+| <2015-12-10> | Chord Shapes | Predefined Diagrams |
+|--------------+--------------+---------------------|
+| c-shape      |          265 |                4311 |
+| a-shape      |           93 |                1567 |
+| g-shape      |          100 |                1704 |
+| e-shape      |          118 |                1987 |
+| d-shape      |           65 |                1105 |
+| alt-shape    |            5 |                  21 |
+|--------------+--------------+---------------------|
+|              |          646 |               10695 |
+#+TBLFM: @8$2=vsum(@2..7)::@8$3=vsum(@2..7)
+*** String Tuning: EADGBE
+**** TODO List of chord diagrams (in 17 keys)  [0%]
+     The following list illustrates the contents and the current status quo of the library of chord diagrams.  The terms Monads, Dyads, Triads, Tetrads, Pentads and Hexads are used here to describe intervals and chords consisting of one, two, three, four, five, or six different pitch names.  Intervals and chords don't change their category in this list if one or more of their pitch names are doubled or even tripled.  For example a chord consisting of three different pitch names but containing one or several doubled notes in different octaves, such as =<c e g c' g'>=, is still considered to be a Triad (as opposed to a Pentad).  For the same reason unisons and octaves are categorized as Monads (one pitch name).
+***** TODO Monads (1 pitch name) [0%]
+****** TODO Perfect unisons [Currently not possible] [0%]
+******* TODO Two Notes [0%]
+******** TODO C shape [0%]
+********* TODO e.g. =\chordmode { c:1.1 }= [not supported by LP] / =\notemode { <c' c'> }=
+******** TODO A shape [0%]
+******** TODO G shape [0%]
+******** TODO E shape [0%]
+******** TODO D shape [0%]
+******** TODO Alt. shapes [0%]
+****** TODO Perfect octaves [0%]
+******* TODO Two Notes [16%]
+******** DONE C shape [100%]
+********* DONE e.g. =\chordmode { c,:1.8 }= i.e. =\notemode { <c c'> }=
+******** TODO A shape [0%]
+******** TODO G shape [0%]
+******** TODO E shape [0%]
+******** TODO D shape [0%]
+******** TODO Alt. shapes [0%]
+******* TODO Three Notes [16%]
+******** DONE C shape [not possible]
+******** TODO A shape [0%]
+******** TODO G shape [0%]
+******** TODO E shape [0%]
+******** TODO D shape [0%]
+******** TODO Alt. shapes [0%]
+***** TODO Dyads (2 different pitch names) [0%]
+****** TODO Perfect fourths [0%]
+******* TODO Two notes [0%]
+******** TODO C shape [%]
+******** TODO A shape [0%]
+******** TODO G shape [0%]
+******** TODO E shape [0%]
+******** TODO D shape [0%]
+******** TODO Alt. shapes [0%]
+******* TODO Three notes [0%]
+******** TODO C shape [%]
+******** TODO A shape [0%]
+******** TODO G shape [0%]
+******** TODO E shape [0%]
+******** TODO D shape [0%]
+******** TODO Alt. shapes [0%]
+****** TODO Perfect fifths (Power chords / Fifth chords) [20%]
+******* DONE Two notes [83%]
+******** DONE C shape [50%]
+********* DONE e.g. =\chordmode { c:1.5 }= / =\notemode { <c' g'> }=
+********* TODO e.g. =\chordmode { c,:1.5 }= / =\notemode { <c g> }=
+******** DONE A shape [0%]
+******** DONE G shape [0%]
+******** DONE E shape [0%]
+******** DONE D shape [0%]
+******** TODO Alt. shapes [0%]
+******* TODO Three notes [83%]
+******** DONE C shape [0%]
+********* TODO e.g. =\chordmode { c,:1.5.8 }= / =\notemode { <c g c'> }=
+******** DONE A shape [0%]
+******** DONE G shape [0%]
+******** DONE E shape [0%]
+******** DONE D shape [0%]
+******** TODO Alt. shapes [0%]
+******* TODO Four notes [0%]
+******** TODO C shape
+********** TODO =\chordmode { c,:1.5.8.12 }= / =\notemode { <c g c' g'> }=
+   Shape shifting not possible.
+******** TODO A shape
+******** TODO G shape
+******** TODO E shape
+******** TODO D shape
+******** TODO Alt. shapes
+******* TODO Five notes [0%]
+******** TODO C shape
+********** TODO e.g. =\chordmode { c,,:5.8.12.15.19 }= / =\notemode { <g, c g c' g'> }=
+   Shape shifting not possible
+******** TODO A shape
+******** TODO G shape
+******** TODO E shape
+******** TODO D shape
+******** TODO Alt. shapes
+******* TODO Six notes [16%]
+******** DONE C shape (not possible)
+******** TODO A shape
+******** TODO G shape
+******** TODO E shape
+******** TODO D shape
+******** TODO Alt. shapes
+***** TODO Triads (3 different pitch names) [7%]
+****** TODO Major triads [0%]
+******* TODO Root position [0%]
+******** TODO Three notes [0%]
+********* TODO 5th on top [16%]
+********** DONE C shape [100%]
+*********** DONE e.g. =\chordmode { c,:1.3.5 }= i.e. =\notemode { <c e g> }=
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 3rd on top [16%]
+********** DONE C shape [100%]
+*********** DONE e.g. =\chordmode { c,:1.5.10 }= i.e. =\notemode { <c g e'> }=
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+******** TODO Four notes [0%]
+********* TODO 8th on top [16%]
+********** DONE C shape [100%]
+*********** DONE e.g. =\chordmode { c,:1.3.5.8 }= i.e. =\notemode { <c e g c'> }=
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 3rd on top [16%]
+********** DONE C shape [100%]
+*********** DONE e.g. =\chordmode { c,:1.5.8.10 }= i.e. =\notemode { <c g c' e'> }=
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 5th on top [0%]
+*********** TODO e.g. =\chordmode { c,:1.3.5.12 }= i.e. =\notemode { <c e g g'> }=
+********** TODO C shape [0%]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+******** TODO Five notes [0%]
+********* TODO 3rd on top [16%]
+********** DONE C shape [100%]
+*********** DONE e.g. =\chordmode { c,:1.3.5.8.10 }= i.e. =\notemode { <c e g c' e'> }=
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 5th on top [16%]
+********** DONE C shape [100%]
+*********** DONE =\chordmode { c,:1.3.5.8.12 }= i.e. =\notemode { <c e g c' g'> }=
+   Shape shifting not possible.
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 8th on top [16%]
+********** DONE C shape [not possible]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+******** TODO Six notes [0%]
+********* TODO 8th on top [16%]
+********** DONE C shape [not possible]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 3rd on top [16%]
+********** DONE C shape [not possible]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 5th on top [16%]
+********** DONE C shape [not possible]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+******* TODO First inversion [0%]
+******** TODO Three notes [0%]
+********* TODO 1st on top [16%]
+********** DONE C shape [100%]
+*********** DONE =\chordmode { c,:3.5+.8^1 }= i.e. =\notemode { <e gis c'> }=
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 5th on top [16%]
+********** DONE C shape [100%]
+*********** DONE e.g. =\chordmode { c,:3.8.12^1 }= i.e. =\notemode { <e c' g'> }=
+*********** DONE e.g. =\chordmode { c,,:3.8.12^1 }= i.e. =\notemode { <e, c g> }=
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+******** TODO Four notes [0%]
+********* TODO 1st/8th on top [16%]
+********** DONE C shape [not possible]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 3rd on top [16%]
+********** DONE C shape [100%]
+*********** DONE =\chordmode { c,:3.5.8.10^1 }= i.e. =\notemode { <e g c' e'> }=
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 5th on top [16%]
+********** DONE C shape [100%]
+*********** DONE =\chordmode { c,:3.5.8.12^1 }= i.e. =\notemode { <e g c' g'> }=
+*********** DONE =\chordmode { c,,:3.8.10.12^1 }= i.e. =\notemode { <e, c e g> }=
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+******** TODO Five notes [0%]
+********* TODO 1st/8th on top [16%]
+********** DONE C shape [100%]
+*********** DONE e.g. =\chordmode { c,,:3.8.10.12.15^1 }= i.e. =\notemode { <e c e g c'> }=
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 3rd on top [16%]
+********** DONE C shape [not possible]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 5th on top [16%]
+********** DONE C shape [not possible]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+******** TODO Six notes [0%]
+********* TODO 1st/8th on top [16%]
+********** DONE C shape [not possible]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 3rd on top [16%]
+********** DONE C shape [100%]
+*********** DONE =\chordmode { c,,:3.8.10.12.15.17^1 }= i.e. =\notemode { <e, c e g c' e'> }=
+   Shape shifting not possible.
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 5th on top [16%]
+********** DONE C shape [100%]
+*********** DONE e.g. =\chordmode { c,,:3.8.10.12.15.19^1 }= i.e. =\notemode { <e, c e g c' g'> }=
+   Shape shifting not possible.
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+******* TODO Second inversion [0%]
+******** TODO Three notes [0%]
+********* TODO 1st/8th on top [16%]
+********** DONE C shape [100%]
+*********** DONE e.g. =\chordmode { c,,:5.10.15^1.3 }= i.e. =\notemode { <g e c'> }=
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 3rd on top [16%]
+********** DONE C shape [100%]
+*********** DONE e.g. =\chordmode { c,:5.8.10^1.3 }= i.e. =\notemode { <g c' e'> }=
+*********** DONE e.g. =\chordmode { c,,:5.8.10^1.3 }= i.e. =\notemode { <e, c g> }=
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+******** TODO Four notes [0%]
+********* TODO 1st/8th on top [16%]
+********** DONE C shape [100%]
+*********** DONE e.g. =\chordmode { c,,:5.10.12.15^1.3 }= i.e. =\notemode { <g, e g c'> }=
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 3rd on top [16%]
+********** DONE C shape [100%]
+*********** DONE e.g. =\chordmode { c,,:5.12.15.17^1.3 }= i.e. =\notemode { <g, g c' e'> }=
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 5th on top [0%]
+********** TODO C shape [100%]
+*********** DONE e.g. =\chordmode { c,,:5.8.10.12^1.3 }= i.e. =\notemode { <g, c e g> }=
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+******** TODO Five notes [33%]
+********* DONE 1st/8th on top [16%]
+********** DONE C shape [100%]
+*********** DONE =\chordmode { c,,:5.8.10.12.15^1.3 }= i.e. =\notemode { <g, c e g c'> }=
+   Shape shifting not possible.
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 3rd on top [0%]
+********** TODO C shape [0%]
+   <g, e g c' e'>
+   Shape shifting not possible.
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 5th on top [0%]
+********** TODO C shape [0%]
+   <g, e g c' g'>
+   Shape shifting not possible.
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+******** TODO Six notes [0%]
+********* TODO 1st/8th on top [16%]
+********** DONE C shape [not possible]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 3rd on top [16%]
+********** DONE C shape [100%]
+*********** DONE =\chordmode { c,,:5.8.10.12.15.17^1.3 }= i.e. =\notemode { <g, c e g c' e'> }=
+   Shape shifting not possi
+   Shape shifting not possible.
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 5th on top [16%]
+********** DONE C shape [100%]
+*********** DONE =\chordmode { c,,:5.8.10.12.15.19^1.3 }= i.e. =\notemode { <g, c e g c' g'> }=
+   Shape shifting not possible.
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+****** TODO Augmented triads [0%]
+******* TODO Root position [0%]
+******** TODO Three notes [0%]
+********* TODO 5th on top [16%]
+********** DONE C shape [100%]
+*********** DONE e.g. =\chordmode { c,:1.3.5+ }= i.e. =\notemode { <c e gis> }=
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 3rd on top [16%]
+********** DONE C shape [100%]
+*********** DONE e.g. =\chordmode { c,:1.5+.10 }= i.e. =\notemode { <c gis e'> }=
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+******** TODO Four notes [0%]
+********* TODO 8th on top [16%]
+********** DONE C shape [100%]
+*********** DONE e.g. =\chordmode { c,:1.3.5+.8 }= i.e. =\notemode { <c e gis c'> }=
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 3rd on top [16%]
+********** DONE C shape [100%]
+*********** DONE e.g. =\chordmode { c,:1.5+.10 }= i.e. =\notemode { <c gis e'> }=
+   Shape shifting not possible.
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 5th on top [16%]
+********** DONE C shape [not possible]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+******** TODO Five notes [0%]
+********* TODO 3rd on top [0%]
+********** TODO C shape [100%]
+*********** DONE e.g. =\chordmode { c,:1.3.5+.8.10 }= i.e. =\notemode { <c e gis c' e'> }=
+   Shape shifting not possible
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 5th on top [16%]
+********** DONE C shape [100%]
+*********** DONE e.g. =\chordmode { c,:1.3.5+.8.12+ }= i.e. =\notemode { <c e gis c' gis'> }=
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 8th on top [16%]
+********** DONE C shape [not possible]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+******** TODO Six notes [0%]
+********* TODO 8th on top [16%]
+********** DONE C shape [not possible]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 3rd on top [16%]
+********** DONE C shape [not possible]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 5th on top [16%]
+********** DONE C shape [not possible]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+******* TODO First inversion [0%]
+******** TODO Three notes [0%]
+********* TODO 1st on top [16%]
+********** DONE C shape [100%]
+*********** DONE e.g. =\chordmode { c,:3.5+.8^1 }= i.e. =\notemode { <e gis c'> }=
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 5th on top [16%]
+********** DONE C shape [100%]
+*********** DONE =\chordmode { c,:3.8.12+^1 }= i.e. =\notemode { <e c' gis'> }=
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+******** TODO Four notes [0%]
+********* TODO root on top [16%]
+********** DONE C shape [100%]
+*********** DONE e.g. =\chordmode { c,,:3.10.12+.15^1 }= i.e. =\notemode { <e, e gis c'> }=
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 3rd on top [16%]
+********** DONE C shape [100%]
+*********** DONE e.g. =\chordmode { c,:3.5+.8.10^1 }= i.e. =\notemode { <e gis c' e'> }=
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 5th on top [16%]
+********** DONE C shape [100%]
+*********** DONE e.g. =\chordmode { c,:3.5+.8.12+^1 }= i.e. =\notemode { <e gis c' gis'> }=
+*********** DONE e.g. =\chordmode { c,,:3.8.10.12+^1 }= i.e. =\notemode { <e, c e gis> }=
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+******** TODO Five notes [0%]
+********* TODO root on top [16%]
+********** DONE C shape [0%]
+*********** DONE =\chordmode { c,,:3.8.10.12+.15^1 }= i.e. =\notemode { <e, c e gis c'> }=
+   Shape shifting not possible
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 3rd on top [16%]
+********** DONE C shape [100%]
+*********** DONE e.g. =\chordmode { c,,:3.8.10.12+.17^1 }= i.e. =\notemode { <e, c e gis e'> }=
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 5th on top [16%]
+********** DONE C shape [0%]
+*********** DONE =\chordmode { c,,:3.8.10.12+.19^1 }= i.e. =\notemode { <e, c e gis gis'> }=
+   Shape shifting not possible
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 8th on top [16%]
+********** DONE C shape [not possible]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+******** TODO Six notes [0%]
+********* TODO root on top [16%]
+********** DONE C shape [not possible]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 3rd on top [0%]
+********** TODO C shape [0%]
+*********** DONE =\chordmode { c,:3.8.10.12+.15.17^1 }= i.e. =\notemode { <e c e gis c' e'> }=
+   Shape shifting not possible.
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 5th on top [0%]
+********** TODO C shape [0%]
+*********** DONE =\chordmode { c,:3.8.10.12+.15.19.^1 }= i.e. =\notemode { <e c e gis c' gis'> }=
+   Shape shifting not possible.
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+******* TODO Second inversion [0%]
+******** TODO Three notes [0%]
+********* TODO root on top [16%]
+********** DONE C shape [0%]
+*********** DONE e.g. =\chordmode { c,,:5+.10.15^1.3 }= i.e. =\notemode { <gis, e c'> }=
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 3rd on top [16%]
+********** DONE C shape [100%]
+*********** DONE e.g. =\chordmode { c,:5+.8.10^1.3 }= i.e. =\notemode { <gis c' e'> }=
+*********** DONE e.g. =\chordmode { c,,:5+.8.10^1.3 }= i.e. =\notemode { <gis, c e> }=
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+******** TODO Four notes [0%]
+********* TODO root on top [16%]
+********** DONE C shape [0%]
+*********** DONE e.g. =\chordmode { c,,:5+.10.12+.15^1.3 }= i.e. =\notemode { <gis, e gis c'> }=
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 3rd on top [0%]
+********** TODO C shape [0%]
+*********** TODO =\chordmode { c,,:5+.8.15.17^1.3 }= i.e. =\notemode { <gis, c c' e'> }=
+   Shape shifting not possible
+*********** TODO =\chordmode { c,,:5+.10.15.17^1.3 }= i.e. =\notemode { <gis, e c' e'> }=
+   Shape shifting not possible
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 5th on top [16%]
+********** DONE C shape [100%]
+*********** DONE =\chordmode { c,,:5+.8.10.12+^1.3 }= i.e. =\notemode { <gis, c e gis> }=
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+******** TODO Five notes [0%]
+********* TODO root on top [16%]
+********** DONE C shape [100%]
+*********** DONE e.g. =\chordmode { c,,:5+.8.10.12+15^1.3 }= i.e. =\notemode { <gis, c e gis c'> }=
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 3rd on top [0%]
+********** TODO C shape [0%]
+*********** TODO e.g. =\chordmode { c,,:5+.8.10.15.17^1.3 }= i.e. =\notemode { <gis, c e c' e'> }=
+   Shape shifting not possible.
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 5th on top [16%]
+********** DONE C shape [not possible]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+******** TODO Six notes [0%]
+********* TODO root on top [16%]
+********** DONE C shape [not possible]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 3rd on top [16%]
+********** DONE C shape [not possible]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 5th on top [16%]
+********** DONE C shape [not possible]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+****** TODO Minor triads [0%]
+******* TODO Root position [0%]
+******** TODO Three notes [0%]
+********* TODO 5th on top [16%]
+********** DONE C shape [0%]
+*********** DONE e.g. =\chordmode { c,:1.3-.5 }= i.e. =\notemode { <c es g> }=
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 3rd on top [16%]
+********** DONE C shape [0%]
+*********** DONE e.g. =\chordmode { c,:1.5.10- }= i.e. =\notemode { <c g es'> }=
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+******** TODO Four notes [0%]
+********* TODO 8th on top [16%]
+********** DONE C shape [0%]
+*********** DONE e.g. =\chordmode { c,:1.3-.5.8 }= i.e. =\notemode { <c es g c'> }=
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 3rd on top [16%]
+********** DONE C shape [0%]
+*********** DONE e.g. =\chordmode { c,:1.3-.5.10- }= i.e. =\notemode { <c es g es'> }=
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 5th on top [16%]
+********** DONE C shape [0%]
+*********** DONE e.g. =\chordmode { c,:1.3-.5.12 }= i.e. =\notemode { <c es g g'> }=
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+******** TODO Five notes [0%]
+********* TODO 8th on top [16%]
+********** DONE C shape [not possible]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 3rd on top [16%]
+********** DONE C shape [not possible]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 5th on top [16%]
+********** DONE C shape [0%]
+*********** DONE =\chordmode { c,:1.3-.5.8.12 }= i.e. =\notemode { <c es g c' g'> }=
+   Shape shifting not possible.
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+******** TODO Six notes [0%]
+********* TODO 8th on top [16%]
+********** DONE C shape [not possible]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 3rd on top [16%]
+********** DONE C shape [not possible]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 5th on top [16%]
+********** DONE C shape [not possible]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+******* TODO First inversion [0%]
+******** TODO Three notes [0%]
+********* TODO root on top [16%]
+********** DONE C shape [%]
+*********** DONE e.g. =\chordmode { c,:3-.5.8^1 }= i.e. =\notemode { <es g c'> }=
+********** TODO A shape [%]
+********** TODO G shape [%]
+********** TODO E shape [%]
+********** TODO D shape [%]
+********** TODO Alt. shapes [%]
+********* TODO 5th on top [16%]
+********** DONE C shape [%]
+*********** DONE e.g. =\chordmode { c,:3-.8.12^1 }= i.e. =\notemode { <es c' g'> }=
+********** TODO A shape [%]
+********** TODO G shape [%]
+********** TODO E shape [%]
+********** TODO D shape [%]
+********** TODO Alt. shapes [%]
+******** TODO Four notes [0%]
+********* TODO root on top [16%]
+********** DONE C shape [not possible]
+********** TODO A shape [%]
+********** TODO G shape [%]
+********** TODO E shape [%]
+********** TODO D shape [%]
+********** TODO Alt. shapes [%]
+********* TODO 3rd on top [16%]
+********** DONE C shape [not possible]
+********** TODO A shape [%]
+********** TODO G shape [%]
+********** TODO E shape [%]
+********** TODO D shape [%]
+********** TODO Alt. shapes [%]
+********* TODO 5th on top [16%]
+********** DONE C shape [%]
+*********** DONE e.g. =\chordmode { c,:3-.5.8.12^1 }= i.e. =\notemode { <es g c' g'> }=
+********** TODO A shape [%]
+********** TODO G shape [%]
+********** TODO E shape [%]
+********** TODO D shape [%]
+********** TODO Alt. shapes [%]
+******** TODO Five notes [0%]
+********* TODO root on top [16%]
+********** DONE C shape [not possible]
+********** TODO A shape [%]
+********** TODO G shape [%]
+********** TODO E shape [%]
+********** TODO D shape [%]
+********** TODO Alt. shapes [%]
+********* TODO 3rd on top [16%]
+********** DONE C shape [not possible]
+********** TODO A shape [%]
+********** TODO G shape [%]
+********** TODO E shape [%]
+********** TODO D shape [%]
+********** TODO Alt. shapes [%]
+********* TODO 5th on top [16%]
+********** DONE C shape [not possible]
+********** TODO A shape [%]
+********** TODO G shape [%]
+********** TODO E shape [%]
+********** TODO D shape [%]
+********** TODO Alt. shapes [%]
+******** TODO Six notes [0%]
+********* TODO root on top [16%]
+********** DONE C shape [not possible]
+********** TODO A shape [%]
+********** TODO G shape [%]
+********** TODO E shape [%]
+********** TODO D shape [%]
+********** TODO Alt. shapes [%]
+********* TODO 3rd on top [16%]
+********** DONE C shape [not possible]
+********** TODO A shape [%]
+********** TODO G shape [%]
+********** TODO E shape [%]
+********** TODO D shape [%]
+********** TODO Alt. shapes [%]
+********* TODO 5th on top [16%]
+********** DONE C shape [not possible]
+********** TODO A shape [%]
+********** TODO G shape [%]
+********** TODO E shape [%]
+********** TODO D shape [%]
+********** TODO Alt. shapes [%]
+******* TODO Second inversion [0%]
+******** TODO Three notes [0%]
+********* TODO 3rd on top [16%]
+********** DONE C shape [%]
+*********** DONE e.g. =\chordmode { c,,:5.8.10-^1.3 }= i.e. =\notemode { <g, c es> }=
+********** TODO A shape [%]
+********** TODO G shape [%]
+********** TODO E shape [%]
+********** TODO D shape [%]
+********** TODO Alt. shapes [%]
+********* TODO root on top [16%]
+********** DONE C shape [%]
+*********** DONE e.g. =\chordmode { c,,:5.10-.15^1.3 }= i.e. =\notemode { <g, es c'> }=
+********** TODO A shape [%]
+********** TODO G shape [%]
+********** TODO E shape [%]
+********** TODO D shape [%]
+********** TODO Alt. shapes [%]
+******** TODO Four notes [0%]
+********* TODO root on top [16%]
+********** DONE C shape [%]
+*********** DONE e.g. =\chordmode { c,,:5.8.10-.15^1.3 }= i.e. =\notemode { <g, c es c'> }=
+********** TODO A shape [%]
+********** TODO G shape [%]
+********** TODO E shape [%]
+********** TODO D shape [%]
+********** TODO Alt. shapes [%]
+********* TODO 3rd on top [16%]
+********** DONE C shape [%]
+*********** DONE e.g. =\chordmode { c,,:5.8.12.17-^1.3 }= i.e. =\notemode { <g, c g es'> }=
+*********** DONE e.g. =\chordmode { c,,:5.8.10-.17-^1.3 }= i.e. =\notemode { <g, c es es'> }=
+********** TODO A shape [%]
+********** TODO G shape [%]
+********** TODO E shape [%]
+********** TODO D shape [%]
+********** TODO Alt. shapes [%]
+********* TODO 5th on top [16%]
+********** DONE C shape [%]
+*********** DONE e.g. =\chordmode { c,:5.8.10-.12^1.3 }= i.e. =\notemode { <g, c es g> }=
+********** TODO A shape [%]
+********** TODO G shape [%]
+********** TODO E shape [%]
+********** TODO D shape [%]
+********** TODO Alt. shapes [%]
+******** TODO Five notes [0%]
+********* TODO root on top [16%]
+********** DONE C shape [%]
+*********** DONE =\chordmode { c,,:5.8.10-.12.15^1.3 }= i.e. =\notemode { <g, c es g c'> }=
+   Hardly possible.
+   Shape shifting not possible.
+********** TODO A shape [%]
+********** TODO G shape [%]
+********** TODO E shape [%]
+********** TODO D shape [%]
+********** TODO Alt. shapes [%]
+********* TODO 3rd on top [16%]
+********** DONE C shape [%]
+*********** DONE =\chordmode { c,,:5.8.10-.12.17-^1.3 }= i.e. =\notemode { <g, c es g es'> }=
+   Shape shifting not possible.
+********** TODO A shape [%]
+********** TODO G shape [%]
+********** TODO E shape [%]
+********** TODO D shape [%]
+********** TODO Alt. shapes [%]
+********* TODO 5th on top [16%]
+********** DONE C shape [%]
+*********** DONE =\chordmode { c,,:5.8.10-.12.19^1.3 }= i.e. =\notemode { <g, c es g g'> }=
+********** TODO A shape [%]
+********** TODO G shape [%]
+********** TODO E shape [%]
+********** TODO D shape [%]
+********** TODO Alt. shapes [%]
+******** TODO Six notes [0%]
+********* TODO root on top [16%]
+********** DONE C shape [not possible]
+********** TODO A shape [%]
+********** TODO G shape [%]
+********** TODO E shape [%]
+********** TODO D shape [%]
+********** TODO Alt. shapes [%]
+********* TODO 3rd on top [16%]
+********** DONE C shape [not possible]
+********** TODO A shape [%]
+********** TODO G shape [%]
+********** TODO E shape [%]
+********** TODO D shape [%]
+********** TODO Alt. shapes [%]
+********* TODO 5th on top [16%]
+********** DONE C shape [not possible]
+********** TODO A shape [%]
+********** TODO G shape [%]
+********** TODO E shape [%]
+********** TODO D shape [%]
+********** TODO Alt. shapes [%]
+****** TODO Diminished triads [0%]
+******* TODO Root position [0%]
+******** TODO Three notes [0%]
+********* TODO 5th on top [16%]
+********** DONE C shape [0%]
+*********** DONE e.g. =\chordmode { c:1.3-.5- }= i.e. =\notemode { <c' es' ges'> }=
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 3rd on top [16%]
+********** DONE C shape [0%]
+*********** DONE e.g. =\chordmode { c:1.5-.10- }= i.e. =\notemode { <c' ges' es''> }=
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+******** TODO Four notes [0%]
+********* TODO 8th on top [16%]
+********** DONE C shape [0%]
+*********** DONE e.g. =\chordmode { c:1.3-.5-.8 }= i.e. =\notemode { <c' es' ges' c''> }=
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 3rd on top [16%]
+********** DONE C shape [0%]
+*********** DONE e.g. =\chordmode { c:1.3-.5-.10- }= i.e. =\notemode { <c' es' ges' es''> }=
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 5th on top [16%]
+********** DONE C shape [0%]
+*********** DONE e.g. =\chordmode { c:1.3-.5-.12- }= i.e. =\notemode { <c' es' ges' ges''> }=
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+******** TODO Five notes [0%]
+********* TODO 8th on top [16%]
+********** DONE C shape [not possible]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 3rd on top [16%]
+********** DONE C shape [not possible]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 5th on top [16%]
+********** DONE C shape [not possible]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+******** TODO Six notes [0%]
+********* TODO 8th on top [16%]
+********** DONE C shape [not possible]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 3rd on top [16%]
+********** DONE C shape [not possible]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 5th on top [16%]
+********** DONE C shape [not possible]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+******* TODO First inversion [0%]
+******** TODO Three notes [0%]
+********* TODO 8th on top [16%]
+********** DONE C shape [0%]
+*********** DONE e.g. =\chordmode { c:3-.5-.8^1 }= i.e. =\notemode { <es' ges' c''> }=
+   d-shape?
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 5th on top [16%]
+********** DONE C shape [0%]
+*********** DONE e.g. =\chordmode { c,:3-.8.12-^1 }= i.e. =\notemode { <es c' ges'> }=
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+******** TODO Four notes [0%]
+********* TODO 8th on top [16%]
+********** DONE C shape [not possible]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 3rd on top [16%]
+********** DONE C shape [0%]
+*********** DONE e.g. =\chordmode { c,:3-.5-.8.10-^1 }= i.e. =\notemode { <es ges c' es'> }=
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 5th on top [16%]
+********** DONE C shape [not possible]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+******** TODO Five notes [0%]
+********* TODO 8th on top [16%]
+********** DONE C shape [not possible]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 3rd on top [16%]
+********** DONE C shape [not possible]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 5th on top [0%]
+********** TODO C shape [not possible]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+******** TODO Six notes [0%]
+********* TODO 8th on top [16%]
+********** DONE C shape [not possible]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 3rd on top [16%]
+********** DONE C shape [not possible]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 5th on top [16%]
+********** DONE C shape [not possible]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+******* TODO Second inversion [0%]
+******** TODO Three notes [0%]
+********* TODO 3rd on top [16%]
+********** DONE C shape [0%]
+*********** DONE e.g. =\chordmode { c,:5-.8.10-^1.3 }= i.e. =\notemode { <ges, c es> }=
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO Root on top [16%]
+********** DONE C shape [0%]
+*********** DONE e.g. =\chordmode { c,:5-.10-.15^1.3 }= i.e. =\notemode { <ges, es c'> }=
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+******** TODO Four notes [0%]
+********* TODO 8th on top [16%]
+********** DONE C shape [0%]
+*********** DONE e.g. =\chordmode { c,:5-.8.10-.15^1.3 }= i.e. =\notemode { <ges, c es c'> }=
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 3rd on top [16%]
+********** DONE C shape [0%]
+*********** DONE e.g. =\chordmode { c,:5-.8.10-.17-^1.3 }= i.e. =\notemode { <ges, c es es'> }=
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 5th on top [16%]
+********** DONE C shape [0%]
+*********** DONE e.g. =\chordmode { c,:5-.8.10-.12-^1.3 }= i.e. =\notemode { <ges, c es ges'> }=
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+******** TODO Five notes [0%]
+********* TODO 8th on top [16%]
+********** DONE C shape [not possible]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 3rd on top [16%]
+********** DONE C shape [0%]
+*********** DONE e.g. =\chordmode { c,:5-.8.10-.12-.17-^1.3 }= i.e. =\notemode { <ges, c es ges' es'> }=
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 5th on top [16%]
+********** DONE C shape [not possible]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+******** TODO Six notes [0%]
+********* TODO 8th on top [16%]
+********** DONE C shape [not possible]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 3rd on top [16%]
+********** DONE C shape [not possible]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 5th on top [16%]
+********** DONE C shape [not possible]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+****** TODO sus2 triads [%]
+****** TODO sus4 triads [%]
+****** TODO Added ninth major triads (no 5th) [%]
+****** TODO Added ninth minor triads (no 5th) [%]
+****** DONE Sixth major triads (no 5th) [100%]
+   Same as first inversion of minor triads.
+****** DONE Sixth minor triads (no 5th) [100%]
+   Same as first inversion of diminished triads.
+****** TODO Major seventh triads (no 5th) [%]
+****** TODO Dominant seventh triads (no 5th) [%]
+****** TODO Minor seventh triads (no 5th) [%]
+****** TODO Major seventh triads (no 5th) [%]
+****** TODO Diminished seventh triads (no 5th) [%]
+***** TODO Tetrads (4 different pitch names) [0%]
+******* TODO Root position [0%]
+******** TODO Four notes [0%]
+********* TODO 7th on top [0%]
+********** TODO C shape [0%]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 3rd on top [0%]
+********** TODO C shape [0%]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 5th on top [0%]
+********** TODO C shape [0%]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+******** TODO Five notes [0%]
+********* TODO 3rd on top [0%]
+********** TODO C shape [0%]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 5th on top [0%]
+********** TODO C shape [0%]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 7th on top [0%]
+********** TODO C shape [0%]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 8th on top [0%]
+********** TODO C shape [0%]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+******** TODO Six notes [0%]
+********* TODO 3rd on top [0%]
+********** TODO C shape [0%]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 5th on top [0%]
+********** TODO C shape [0%]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 7th on top [0%]
+********** TODO C shape [0%]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 8th on top [0%]
+********** TODO C shape [0%]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+******* TODO First inversion [0%]
+******** TODO Three notes [0%]
+********* TODO 5th on top [0%]
+********** TODO C shape [0%]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 3rd on top [0%]
+********** TODO C shape [0%]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+******** TODO Four notes [0%]
+********* TODO 8th on top [0%]
+********** TODO C shape [0%]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 3rd on top [0%]
+********** TODO C shape [0%]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 5th on top [0%]
+********** TODO C shape [0%]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+******** TODO Five notes [0%]
+********* TODO 3rd on top [0%]
+********** TODO C shape [0%]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 5th on top [0%]
+********** TODO C shape [0%]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 8th on top [0%]
+********** TODO C shape [0%]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+******** TODO Six notes [0%]
+********* TODO 8th on top [0%]
+********** TODO C shape [0%]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 3rd on top [0%]
+********** TODO C shape [0%]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 5th on top [0%]
+********** TODO C shape [0%]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+******* TODO Second inversion [0%]
+******** TODO Three notes [0%]
+********* TODO 5th on top [0%]
+********** TODO C shape [0%]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 3rd on top [0%]
+********** TODO C shape [0%]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+******** TODO Four notes [0%]
+********* TODO 8th on top [0%]
+********** TODO C shape [0%]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 3rd on top [0%]
+********** TODO C shape [0%]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 5th on top [0%]
+********** TODO C shape [0%]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+******** TODO Five notes [0%]
+********* TODO 3rd on top [0%]
+********** TODO C shape [0%]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 5th on top [0%]
+********** TODO C shape [0%]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 8th on top [0%]
+********** TODO C shape [0%]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+******** TODO Six notes [0%]
+********* TODO 8th on top [0%]
+********** TODO C shape [0%]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 3rd on top [0%]
+********** TODO C shape [0%]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 5th on top [0%]
+********** TODO C shape [0%]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+******* TODO Third inversion [0%]
+******** TODO Three notes [0%]
+********* TODO 5th on top [0%]
+********** TODO C shape [0%]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 3rd on top [0%]
+********** TODO C shape [0%]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+******** TODO Four notes [0%]
+********* TODO 8th on top [0%]
+********** TODO C shape [0%]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 3rd on top [0%]
+********** TODO C shape [0%]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 5th on top [0%]
+********** TODO C shape [0%]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+******** TODO Five notes [0%]
+********* TODO 3rd on top [0%]
+********** TODO C shape [0%]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 5th on top [0%]
+********** TODO C shape [0%]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 8th on top [0%]
+********** TODO C shape [0%]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+******** TODO Six notes [0%]
+********* TODO 8th on top [0%]
+********** TODO C shape [0%]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 3rd on top [0%]
+********** TODO C shape [0%]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+********* TODO 5th on top [0%]
+********** TODO C shape [0%]
+********** TODO A shape [0%]
+********** TODO G shape [0%]
+********** TODO E shape [0%]
+********** TODO D shape [0%]
+********** TODO Alt. shapes [0%]
+***** TODO Pentads (5 different pitch names) [0%]
+***** TODO Hexads (6 different pitch names) [0%]
+**** TODO List of scale diagrams (in 17 keys) [0%]
+***** TODO Modern “Church Modes” [0%]
+****** TODO Major/Ionian Scale [0%]
+******* TODO Complete Box Pattern [0%]
+******** TODO With Fingering [33%]
+********* DONE C-Shape (1)
+          CLOSED: [2015-12-09 Mi 19:34]
+********* TODO C-Shape (2)
+********* DONE A-Shape (1)
+          CLOSED: [2015-12-09 Mi 19:34]
+********* TODO A-Shape (2)
+********* TODO A-Shape (3)
+********* TODO A-Shape (4)
+********* DONE G-Shape (1)
+          CLOSED: [2015-12-09 Mi 19:34]
+********* TODO G-Shape (2)
+********* TODO G-Shape (3)
+********* DONE E-Shape (1)
+          CLOSED: [2015-12-09 Mi 19:36]
+********* TODO E-Shape (2)
+********* TODO E-Shape (3)
+********* DONE D-Shape (1)
+          CLOSED: [2015-12-09 Mi 19:36]
+********* TODO D-Shape (2)
+********* TODO D-Shape (3)
+******** TODO With Movable-Do Solfège [33%]
+********* DONE C-Shape (1)
+          CLOSED: [2015-12-09 Mi 19:37]
+********* TODO C-Shape (2)
+********* DONE A-Shape (1)
+          CLOSED: [2015-12-09 Mi 19:37]
+
+********* TODO A-Shape (2)
+********* TODO A-Shape (3)
+********* TODO A-Shape (4)
+********* DONE G-Shape (1)
+          CLOSED: [2015-12-09 Mi 19:37]
+
+********* TODO G-Shape (2)
+********* TODO G-Shape (3)
+********* DONE E-Shape (1)
+          CLOSED: [2015-12-09 Mi 19:37]
+
+********* TODO E-Shape (2)
+********* TODO E-Shape (3)
+********* DONE D-Shape (1)
+          CLOSED: [2015-12-09 Mi 19:37]
+
+********* TODO D-Shape (2)
+********* TODO D-Shape (3)
+******** TODO With Pitch Names [%]
+********* TODO C-Shape (1)
+********* TODO C-Shape (2)
+********* TODO A-Shape (1)
+********* TODO A-Shape (2)
+********* TODO A-Shape (3)
+********* TODO A-Shape (4)
+********* TODO G-Shape (1)
+********* TODO G-Shape (2)
+********* TODO G-Shape (3)
+********* TODO E-Shape (1)
+********* TODO E-Shape (2)
+********* TODO E-Shape (3)
+********* TODO D-Shape (1)
+********* TODO D-Shape (2)
+********* TODO D-Shape (3)
+******** TODO With Scale Degrees [%]
+********* TODO C-Shape (1)
+********* TODO C-Shape (2)
+********* TODO A-Shape (1)
+********* TODO A-Shape (2)
+********* TODO A-Shape (3)
+********* TODO A-Shape (4)
+********* TODO G-Shape (1)
+********* TODO G-Shape (2)
+********* TODO G-Shape (3)
+********* TODO E-Shape (1)
+********* TODO E-Shape (2)
+********* TODO E-Shape (3)
+********* TODO D-Shape (1)
+********* TODO D-Shape (2)
+********* TODO D-Shape (3)
+****** TODO Dorian Scale [0%]
+******* TODO Complete Box Pattern [%]
+******** TODO With Fingering [0%]
+********* TODO C-Shape (1)
+********* TODO C-Shape (2)
+********* TODO A-Shape (1)
+********* TODO A-Shape (2)
+********* TODO A-Shape (3)
+********* TODO A-Shape (4)
+********* TODO G-Shape (1)
+********* TODO G-Shape (2)
+********* TODO G-Shape (3)
+********* TODO E-Shape (1)
+********* TODO E-Shape (2)
+********* TODO E-Shape (3)
+********* TODO D-Shape (1)
+********* TODO D-Shape (2)
+********* TODO D-Shape (3)
+******** TODO With Movable-Do Solfège [0%]
+********* TODO C-Shape (1)
+********* TODO C-Shape (2)
+********* TODO A-Shape (1)
+********* TODO A-Shape (2)
+********* TODO A-Shape (3)
+********* TODO A-Shape (4)
+********* TODO G-Shape (1)
+********* TODO G-Shape (2)
+********* TODO G-Shape (3)
+********* TODO E-Shape (1)
+********* TODO E-Shape (2)
+********* TODO E-Shape (3)
+********* TODO D-Shape (1)
+********* TODO D-Shape (2)
+********* TODO D-Shape (3)
+******** TODO With Pitch Names [%]
+********* TODO C-Shape (1)
+********* TODO C-Shape (2)
+********* TODO A-Shape (1)
+********* TODO A-Shape (2)
+********* TODO A-Shape (3)
+********* TODO A-Shape (4)
+********* TODO G-Shape (1)
+********* TODO G-Shape (2)
+********* TODO G-Shape (3)
+********* TODO E-Shape (1)
+********* TODO E-Shape (2)
+********* TODO E-Shape (3)
+********* TODO D-Shape (1)
+********* TODO D-Shape (2)
+********* TODO D-Shape (3)
+******** TODO With Scale Degrees [%]
+********* TODO C-Shape (1)
+********* TODO C-Shape (2)
+********* TODO A-Shape (1)
+********* TODO A-Shape (2)
+********* TODO A-Shape (3)
+********* TODO A-Shape (4)
+********* TODO G-Shape (1)
+********* TODO G-Shape (2)
+********* TODO G-Shape (3)
+********* TODO E-Shape (1)
+********* TODO E-Shape (2)
+********* TODO E-Shape (3)
+********* TODO D-Shape (1)
+********* TODO D-Shape (2)
+********* TODO D-Shape (3)
+****** TODO Phrygian Scale [0%]
+******* TODO Complete Box Pattern [%]
+******** TODO With Fingering [0%]
+********* TODO C-Shape (1)
+********* TODO C-Shape (2)
+********* TODO A-Shape (1)
+********* TODO A-Shape (2)
+********* TODO A-Shape (3)
+********* TODO A-Shape (4)
+********* TODO G-Shape (1)
+********* TODO G-Shape (2)
+********* TODO G-Shape (3)
+********* TODO E-Shape (1)
+********* TODO E-Shape (2)
+********* TODO E-Shape (3)
+********* TODO D-Shape (1)
+********* TODO D-Shape (2)
+********* TODO D-Shape (3)
+******** TODO With Movable-Do Solfège [0%]
+********* TODO C-Shape (1)
+********* TODO C-Shape (2)
+********* TODO A-Shape (1)
+********* TODO A-Shape (2)
+********* TODO A-Shape (3)
+********* TODO A-Shape (4)
+********* TODO G-Shape (1)
+********* TODO G-Shape (2)
+********* TODO G-Shape (3)
+********* TODO E-Shape (1)
+********* TODO E-Shape (2)
+********* TODO E-Shape (3)
+********* TODO D-Shape (1)
+********* TODO D-Shape (2)
+********* TODO D-Shape (3)
+******** TODO With Pitch Names [%]
+********* TODO C-Shape (1)
+********* TODO C-Shape (2)
+********* TODO A-Shape (1)
+********* TODO A-Shape (2)
+********* TODO A-Shape (3)
+********* TODO A-Shape (4)
+********* TODO G-Shape (1)
+********* TODO G-Shape (2)
+********* TODO G-Shape (3)
+********* TODO E-Shape (1)
+********* TODO E-Shape (2)
+********* TODO E-Shape (3)
+********* TODO D-Shape (1)
+********* TODO D-Shape (2)
+********* TODO D-Shape (3)
+******** TODO With Scale Degrees [%]
+********* TODO C-Shape (1)
+********* TODO C-Shape (2)
+********* TODO A-Shape (1)
+********* TODO A-Shape (2)
+********* TODO A-Shape (3)
+********* TODO A-Shape (4)
+********* TODO G-Shape (1)
+********* TODO G-Shape (2)
+********* TODO G-Shape (3)
+********* TODO E-Shape (1)
+********* TODO E-Shape (2)
+********* TODO E-Shape (3)
+********* TODO D-Shape (1)
+********* TODO D-Shape (2)
+********* TODO D-Shape (3)
+****** TODO Lydian Scale [0%]
+******* TODO Complete Box Pattern [%]
+******** TODO With Fingering [0%]
+********* TODO C-Shape (1)
+********* TODO C-Shape (2)
+********* TODO A-Shape (1)
+********* TODO A-Shape (2)
+********* TODO A-Shape (3)
+********* TODO A-Shape (4)
+********* TODO G-Shape (1)
+********* TODO G-Shape (2)
+********* TODO G-Shape (3)
+********* TODO E-Shape (1)
+********* TODO E-Shape (2)
+********* TODO E-Shape (3)
+********* TODO D-Shape (1)
+********* TODO D-Shape (2)
+********* TODO D-Shape (3)
+******** TODO With Movable-Do Solfège [0%]
+********* TODO C-Shape (1)
+********* TODO C-Shape (2)
+********* TODO A-Shape (1)
+********* TODO A-Shape (2)
+********* TODO A-Shape (3)
+********* TODO A-Shape (4)
+********* TODO G-Shape (1)
+********* TODO G-Shape (2)
+********* TODO G-Shape (3)
+********* TODO E-Shape (1)
+********* TODO E-Shape (2)
+********* TODO E-Shape (3)
+********* TODO D-Shape (1)
+********* TODO D-Shape (2)
+********* TODO D-Shape (3)
+******** TODO With Pitch Names [%]
+********* TODO C-Shape (1)
+********* TODO C-Shape (2)
+********* TODO A-Shape (1)
+********* TODO A-Shape (2)
+********* TODO A-Shape (3)
+********* TODO A-Shape (4)
+********* TODO G-Shape (1)
+********* TODO G-Shape (2)
+********* TODO G-Shape (3)
+********* TODO E-Shape (1)
+********* TODO E-Shape (2)
+********* TODO E-Shape (3)
+********* TODO D-Shape (1)
+********* TODO D-Shape (2)
+********* TODO D-Shape (3)
+******** TODO With Scale Degrees [%]
+********* TODO C-Shape (1)
+********* TODO C-Shape (2)
+********* TODO A-Shape (1)
+********* TODO A-Shape (2)
+********* TODO A-Shape (3)
+********* TODO A-Shape (4)
+********* TODO G-Shape (1)
+********* TODO G-Shape (2)
+********* TODO G-Shape (3)
+********* TODO E-Shape (1)
+********* TODO E-Shape (2)
+********* TODO E-Shape (3)
+********* TODO D-Shape (1)
+********* TODO D-Shape (2)
+********* TODO D-Shape (3)
+****** TODO Mixolydian Scale [0%]
+******* TODO Complete Box Pattern [%]
+******** TODO With Fingering [0%]
+********* TODO C-Shape (1)
+********* TODO C-Shape (2)
+********* TODO A-Shape (1)
+********* TODO A-Shape (2)
+********* TODO A-Shape (3)
+********* TODO A-Shape (4)
+********* TODO G-Shape (1)
+********* TODO G-Shape (2)
+********* TODO G-Shape (3)
+********* TODO E-Shape (1)
+********* TODO E-Shape (2)
+********* TODO E-Shape (3)
+********* TODO D-Shape (1)
+********* TODO D-Shape (2)
+********* TODO D-Shape (3)
+******** TODO With Movable-Do Solfège [0%]
+********* TODO C-Shape (1)
+********* TODO C-Shape (2)
+********* TODO A-Shape (1)
+********* TODO A-Shape (2)
+********* TODO A-Shape (3)
+********* TODO A-Shape (4)
+********* TODO G-Shape (1)
+********* TODO G-Shape (2)
+********* TODO G-Shape (3)
+********* TODO E-Shape (1)
+********* TODO E-Shape (2)
+********* TODO E-Shape (3)
+********* TODO D-Shape (1)
+********* TODO D-Shape (2)
+********* TODO D-Shape (3)
+******** TODO With Pitch Names [%]
+********* TODO C-Shape (1)
+********* TODO C-Shape (2)
+********* TODO A-Shape (1)
+********* TODO A-Shape (2)
+********* TODO A-Shape (3)
+********* TODO A-Shape (4)
+********* TODO G-Shape (1)
+********* TODO G-Shape (2)
+********* TODO G-Shape (3)
+********* TODO E-Shape (1)
+********* TODO E-Shape (2)
+********* TODO E-Shape (3)
+********* TODO D-Shape (1)
+********* TODO D-Shape (2)
+********* TODO D-Shape (3)
+******** TODO With Scale Degrees [%]
+********* TODO C-Shape (1)
+********* TODO C-Shape (2)
+********* TODO A-Shape (1)
+********* TODO A-Shape (2)
+********* TODO A-Shape (3)
+********* TODO A-Shape (4)
+********* TODO G-Shape (1)
+********* TODO G-Shape (2)
+********* TODO G-Shape (3)
+********* TODO E-Shape (1)
+********* TODO E-Shape (2)
+********* TODO E-Shape (3)
+********* TODO D-Shape (1)
+********* TODO D-Shape (2)
+********* TODO D-Shape (3)
+****** TODO Minor/Aeolian Scale [0%]
+******* TODO Complete Box Pattern [%]
+******** TODO With Fingering [0%]
+********* TODO C-Shape (1)
+********* TODO C-Shape (2)
+********* TODO A-Shape (1)
+********* TODO A-Shape (2)
+********* TODO A-Shape (3)
+********* TODO A-Shape (4)
+********* TODO G-Shape (1)
+********* TODO G-Shape (2)
+********* TODO G-Shape (3)
+********* TODO E-Shape (1)
+********* TODO E-Shape (2)
+********* TODO E-Shape (3)
+********* TODO D-Shape (1)
+********* TODO D-Shape (2)
+********* TODO D-Shape (3)
+******** TODO With Movable-Do Solfège [0%]
+********* TODO C-Shape (1)
+********* TODO C-Shape (2)
+********* TODO A-Shape (1)
+********* TODO A-Shape (2)
+********* TODO A-Shape (3)
+********* TODO A-Shape (4)
+********* TODO G-Shape (1)
+********* TODO G-Shape (2)
+********* TODO G-Shape (3)
+********* TODO E-Shape (1)
+********* TODO E-Shape (2)
+********* TODO E-Shape (3)
+********* TODO D-Shape (1)
+********* TODO D-Shape (2)
+********* TODO D-Shape (3)
+******** TODO With Pitch Names [%]
+********* TODO C-Shape (1)
+********* TODO C-Shape (2)
+********* TODO A-Shape (1)
+********* TODO A-Shape (2)
+********* TODO A-Shape (3)
+********* TODO A-Shape (4)
+********* TODO G-Shape (1)
+********* TODO G-Shape (2)
+********* TODO G-Shape (3)
+********* TODO E-Shape (1)
+********* TODO E-Shape (2)
+********* TODO E-Shape (3)
+********* TODO D-Shape (1)
+********* TODO D-Shape (2)
+********* TODO D-Shape (3)
+******** TODO With Scale Degrees [%]
+********* TODO C-Shape (1)
+********* TODO C-Shape (2)
+********* TODO A-Shape (1)
+********* TODO A-Shape (2)
+********* TODO A-Shape (3)
+********* TODO A-Shape (4)
+********* TODO G-Shape (1)
+********* TODO G-Shape (2)
+********* TODO G-Shape (3)
+********* TODO E-Shape (1)
+********* TODO E-Shape (2)
+********* TODO E-Shape (3)
+********* TODO D-Shape (1)
+********* TODO D-Shape (2)
+********* TODO D-Shape (3)
+****** TODO Locrian Scale [0%]
+******* TODO Complete Box Pattern [%]
+******** TODO With Fingering [0%]
+********* TODO C-Shape (1)
+********* TODO C-Shape (2)
+********* TODO A-Shape (1)
+********* TODO A-Shape (2)
+********* TODO A-Shape (3)
+********* TODO A-Shape (4)
+********* TODO G-Shape (1)
+********* TODO G-Shape (2)
+********* TODO G-Shape (3)
+********* TODO E-Shape (1)
+********* TODO E-Shape (2)
+********* TODO E-Shape (3)
+********* TODO D-Shape (1)
+********* TODO D-Shape (2)
+********* TODO D-Shape (3)
+******** TODO With Movable-Do Solfège [0%]
+********* TODO C-Shape (1)
+********* TODO C-Shape (2)
+********* TODO A-Shape (1)
+********* TODO A-Shape (2)
+********* TODO A-Shape (3)
+********* TODO A-Shape (4)
+********* TODO G-Shape (1)
+********* TODO G-Shape (2)
+********* TODO G-Shape (3)
+********* TODO E-Shape (1)
+********* TODO E-Shape (2)
+********* TODO E-Shape (3)
+********* TODO D-Shape (1)
+********* TODO D-Shape (2)
+********* TODO D-Shape (3)
+******** TODO With Pitch Names [%]
+********* TODO C-Shape (1)
+********* TODO C-Shape (2)
+********* TODO A-Shape (1)
+********* TODO A-Shape (2)
+********* TODO A-Shape (3)
+********* TODO A-Shape (4)
+********* TODO G-Shape (1)
+********* TODO G-Shape (2)
+********* TODO G-Shape (3)
+********* TODO E-Shape (1)
+********* TODO E-Shape (2)
+********* TODO E-Shape (3)
+********* TODO D-Shape (1)
+********* TODO D-Shape (2)
+********* TODO D-Shape (3)
+******** TODO With Scale Degrees [%]
+********* TODO C-Shape (1)
+********* TODO C-Shape (2)
+********* TODO A-Shape (1)
+********* TODO A-Shape (2)
+********* TODO A-Shape (3)
+********* TODO A-Shape (4)
+********* TODO G-Shape (1)
+********* TODO G-Shape (2)
+********* TODO G-Shape (3)
+********* TODO E-Shape (1)
+********* TODO E-Shape (2)
+********* TODO E-Shape (3)
+********* TODO D-Shape (1)
+********* TODO D-Shape (2)
+********* TODO D-Shape (3)
+***** TODO Harmonic Minor System
+****** TODO HM1 (Harmonic Minor)
+****** TODO HM2 (Locrian 6)
+****** TODO HM3 (Ionian #5)
+****** TODO HM4 (Dorian #11)
+****** TODO HM5 (Harmonic Dominant)
+****** TODO HM6 (Lydian #9)
+****** TODO HM7 (Harmonic Diminished/Locrian b4 bb7)
+***** TODO Melodic Minor System
+****** TODO MM1 (Melodic Minor)
+****** TODO MM2 (Dorian b9)
+****** TODO MM3 (Lydian #5)
+****** TODO MM4 (Mixolydian #11)
+****** TODO MM5 (Mixolydian b13)
+****** TODO MM6 (Locrian 9)
+****** TODO MM7 (Locrian b4)
+***** TODO Harmonic Major System
+****** TODO HMaj1 (Ionian b13)
+****** TODO HMaj2 (Dorian b5)
+****** TODO HMaj3 (Locrian b4 5)
+****** TODO Hmaj4 (Melodic Minor #11)
+****** TODO Hmaj5 (Mixolydian b9)
+****** TODO Hmaj6 (Lydian #9 #5)
+****** TODO Hmaj7 (Locrian bb7)

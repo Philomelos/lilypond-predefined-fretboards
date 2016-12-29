@@ -1,12 +1,14 @@
 * Modern/Western “Church Modes”
-** Lilypond-Version
+** Global definitions
+*** Lilypond-Version
 #+BEGIN_SRC lilypond
-\version "2.19.33"
+\version "2.19.40"
 #+END_SRC
-** Header
+*** Header
 #+BEGIN_SRC lilypond
   \header {
-    title = "Modern “Church Modes”"
+    %title = "Modern “Church Modes”"
+    title = "Tonleitern"
     tagline = \markup {
             \center-column {
               \line {"Music engraving by LilyPond " $(lilypond-version) — \with-url #"http://www.lilypond.org" {www.lilypond.org}}
@@ -16,14 +18,14 @@
   }
 #+END_SRC
 
-** Paper
+*** Paper
 #+BEGIN_SRC lilypond
   \paper {
     print-all-headers = ##t
   }
 #+END_SRC
 
-** Include files
+*** Include files
 #+BEGIN_SRC lilypond
 \include "../c-shape.ly"
 \include "../a-shape.ly"
@@ -36,21 +38,404 @@ scaleDiagramStyleSheet = {
   \include "../../scale-diagram-stylesheet-philomelos.ly"
 }
 #+END_SRC
-
-** Layout
+*** Layout
 #+BEGIN_SRC lilypond
   \layout {
-    indent = 4\cm
+    indent = 2\cm
     \context {
       \Score
       \remove "Bar_number_engraver"
     }
   }
 #+END_SRC
+*** [Lyrics] Stanzas
+**** Shape
+#+BEGIN_SRC lilypond
+setStanzaShape = \lyricmode {
+  \set stanza = #"Shape:"
+}
+#+END_SRC
+**** Type (Leavitt)
+#+BEGIN_SRC lilypond
+setStanzaType = \lyricmode {
+  \set stanza = #"Type (Leavitt):"
+}
+#+END_SRC
 
-** Major/Ionian Scales
+*** [Lyrics] Types (Leavitt)
+**** Type 1
+#+BEGIN_SRC lilypond
+leavittTypeOne = \lyricmode {
+  "1"
+}
+#+END_SRC
+
+**** Type 1A
+#+BEGIN_SRC lilypond
+leavittTypeOneA = \lyricmode {
+  "1A"
+}
+#+END_SRC
+**** Type 1B
+#+BEGIN_SRC lilypond
+leavittTypeOneB = \lyricmode {
+  "1B"
+}
+#+END_SRC
+**** Type 1C
+#+BEGIN_SRC lilypond
+leavittTypeOneC = \lyricmode {
+  "1C"
+}
+#+END_SRC
+**** Type 1D
+#+BEGIN_SRC lilypond
+leavittTypeOneD = \lyricmode {
+  "1D"
+}
+#+END_SRC
+**** Type 2
+#+BEGIN_SRC lilypond
+leavittTypeTwo = \lyricmode {
+  "2"
+}
+#+END_SRC
+**** Type 3
+#+BEGIN_SRC lilypond
+leavittTypeThree = \lyricmode {
+  "3"
+}
+#+END_SRC
+**** Type 4
+#+BEGIN_SRC lilypond
+leavittTypeFour = \lyricmode {
+  "4"
+}
+#+END_SRC
+**** Type 4A
+#+BEGIN_SRC lilypond
+leavittTypeFourA = \lyricmode {
+  "4A"
+}
+#+END_SRC
+**** Type 4B
+#+BEGIN_SRC lilypond
+leavittTypeFourB = \lyricmode {
+  "4B"
+}
+#+END_SRC
+**** Type 4C
+#+BEGIN_SRC lilypond
+leavittTypeFourC = \lyricmode {
+  "4C"
+}
+#+END_SRC
+**** Type 4D
+#+BEGIN_SRC lilypond
+leavittTypeFourD = \lyricmode {
+  "4D"
+}
+#+END_SRC
+
+**** Type 1D/4D
+#+BEGIN_SRC lilypond
+leavittTypeOneDFourD = \lyricmode {
+  "1D/4D"
+}
+#+END_SRC
+
+
+**** Major Seventh Types = \lyricmode {
+#+BEGIN_SRC lilypond
+  majorSeventhLeavittTypes = \lyricmode {
+#+END_SRC
+****** Cmaj7 (1) = Type 3
+#+BEGIN_SRC lilypond
+  \leavittTypeThree
+#+END_SRC
+
+****** Cmaj7 (2) = Type 1D/4D
+#+BEGIN_SRC lilypond
+  \leavittTypeOneDFourD
+#+END_SRC
+
+****** Amaj7 (1) = Type 1
+#+BEGIN_SRC lilypond
+  \leavittTypeOne
+#+END_SRC
+****** Amaj7 (2) = Type 4B
+#+BEGIN_SRC lilypond
+  \leavittTypeFourB
+#+END_SRC
+****** Amaj7 (3) = Type 1B
+#+BEGIN_SRC lilypond
+  \leavittTypeOneB
+#+END_SRC
+****** Gmaj7 (1) = Type 4
+#+BEGIN_SRC lilypond
+  \leavittTypeFour
+#+END_SRC
+****** Emaj7 (1) = Type 2
+#+BEGIN_SRC lilypond
+  \leavittTypeTwo
+#+END_SRC
+****** Dmaj7 (1) = Type 4A
+#+BEGIN_SRC lilypond
+  \leavittTypeFourA
+#+END_SRC
+****** }
+#+BEGIN_SRC lilypond
+}
+#+END_SRC
+
+**** Minor Seventh Types = \lyricmode {
+#+BEGIN_SRC lilypond
+  minorSeventhLeavittTypes = \lyricmode {
+#+END_SRC
+****** Cm7 (1) = Type 1A
+#+BEGIN_SRC lilypond
+  \leavittTypeOneA
+#+END_SRC
+
+****** Am7 (1) = Type 3
+#+BEGIN_SRC lilypond
+  \leavittTypeThree
+#+END_SRC
+****** Gm7 (1) = Type 1
+#+BEGIN_SRC lilypond
+  \leavittTypeOne
+#+END_SRC
+****** Em7 (1) = Type 4
+#+BEGIN_SRC lilypond
+  \leavittTypeFour
+#+END_SRC
+****** Dm7 (1) = Type 2
+#+BEGIN_SRC lilypond
+  \leavittTypeTwo
+#+END_SRC
+****** }
+#+BEGIN_SRC lilypond
+}
+#+END_SRC
+
+*** [Lyrics] Shapes (pls)
+**** Major Sevenths
+***** C-Shape
+****** Pattern 0 (pls)
+#+BEGIN_SRC lilypond
+  CMajorSeventhPatternZero = \lyricmode {
+    "Cmaj7 (0)"
+  }
+#+END_SRC
+
+****** Pattern 1/4 (pls)
+#+BEGIN_SRC lilypond
+  CMajorSeventhPatternOneFour = \lyricmode {
+    "Cmaj7 (1/4)"
+  }
+#+END_SRC
+
+***** A-Shape
+****** Pattern 1a (pls)
+#+BEGIN_SRC lilypond
+  AMajorSeventhPatternOneA = \lyricmode {
+    "Amaj7 (1a)"
+  }
+#+END_SRC
+
+****** Pattern 1b (pls)
+#+BEGIN_SRC lilypond
+  AMajorSeventhPatternOneB = \lyricmode {
+    "Amaj7 (1b)"
+  }
+#+END_SRC
+
+****** Pattern 4 (pls)
+#+BEGIN_SRC lilypond
+  AMajorSeventhPatternFour = \lyricmode {
+    "Amaj7 (4)"
+  }
+#+END_SRC
+
+***** G-Shape
+****** Pattern 1 (pls)
+#+BEGIN_SRC lilypond
+  GMajorSeventhPatternOne = \lyricmode {
+    "Gmaj7 (1)"
+  }
+#+END_SRC
+****** Pattern 4 (pls)
+#+BEGIN_SRC lilypond
+  GMajorSeventhPatternFour = \lyricmode {
+    "Gmaj7 (4)"
+  }
+#+END_SRC
+
+***** E-Shape
+****** Pattern 0 (pls)
+#+BEGIN_SRC lilypond
+  EMajorSeventhPatternZero = \lyricmode {
+    "Emaj7 (0)"
+  }
+#+END_SRC
+****** Pattern 1 (pls)
+#+BEGIN_SRC lilypond
+  EMajorSeventhPatternOne = \lyricmode {
+    "Emaj7 (1)"
+  }
+#+END_SRC
+****** Pattern 4 (pls)
+#+BEGIN_SRC lilypond
+  EMajorSeventhPatternFour = \lyricmode {
+    "Emaj7 (4)"
+  }
+#+END_SRC
+
+***** D-Shape
+****** Pattern 1 (pls)
+#+BEGIN_SRC lilypond
+  DMajorSeventhPatternOne = \lyricmode {
+    "Dmaj7 (1)"
+  }
+#+END_SRC
+****** Pattern 4 (pls)
+#+BEGIN_SRC lilypond
+  DMajorSeventhPatternFour = \lyricmode {
+    "Dmaj7 (1/4)"
+  }
+#+END_SRC
+***** Major Seventh Shapes = \lyricmode {
+#+BEGIN_SRC lilypond
+  majorSeventhShapes = \lyricmode {
+#+END_SRC
+****** Cmaj7 (0)
+#+BEGIN_SRC lilypond
+  \CMajorSeventhPatternZero
+#+END_SRC
+
+****** COMMENT Cmaj7 (1/4)
+#+BEGIN_SRC lilypond
+  \CMajorSeventhPatternOneFour
+#+END_SRC
+
+****** Amaj7 (1a)
+#+BEGIN_SRC lilypond
+  \AMajorSeventhPatternOneA
+#+END_SRC
+****** COMMENT Amaj7 (1b)
+#+BEGIN_SRC lilypond
+  \AMajorSeventhPatternOneB
+#+END_SRC
+****** COMMENT Amaj7 (4)
+#+BEGIN_SRC lilypond
+  \AMajorSeventhPatternFour
+#+END_SRC
+****** COMMENT Gmaj7 (1)
+#+BEGIN_SRC lilypond
+  \GMajorSeventhPatternOne
+#+END_SRC
+****** Gmaj7 (4)
+#+BEGIN_SRC lilypond
+  \GMajorSeventhPatternFour
+#+END_SRC
+****** Emaj7 (0)
+#+BEGIN_SRC lilypond
+  \EMajorSeventhPatternZero
+#+END_SRC
+****** COMMENT Emaj7 (1)
+#+BEGIN_SRC lilypond
+  \EMajorSeventhPatternOne
+#+END_SRC
+****** COMMENT Emaj7 (4)
+#+BEGIN_SRC lilypond
+  \EMajorSeventhPatternFour
+#+END_SRC
+****** COMMENT Dmaj7 (1)
+#+BEGIN_SRC lilypond
+  \DMajorSeventhPatternOne
+#+END_SRC
+****** Dmaj7 (4)
+#+BEGIN_SRC lilypond
+  \DMajorSeventhPatternFour
+#+END_SRC
+****** }
+#+BEGIN_SRC lilypond
+}
+#+END_SRC
+
+**** Minor Sevenths
+***** C-Shape
+****** s1
+#+BEGIN_SRC lilypond
+  CMinorSeventhPatternOne = \lyricmode {
+    "Cm7 (1)"
+  }
+#+END_SRC
+
+***** A-Shape
+****** Pattern 0
+#+BEGIN_SRC lilypond
+  AMinorSeventhPatternOne = \lyricmode {
+    "Am7 (0)"
+  }
+#+END_SRC
+
+***** G-Shape
+****** Pattern 4
+#+BEGIN_SRC lilypond
+  GMinorSeventhPatternOne = \lyricmode {
+    "Gm7 (4)"
+  }
+#+END_SRC
+
+***** E-Shape
+****** Pattern 1
+#+BEGIN_SRC lilypond
+  EMinorSeventhPatternOne = \lyricmode {
+    "Em7 (1)"
+  }
+#+END_SRC
+
+***** D-Shape
+****** Pattern 1
+#+BEGIN_SRC lilypond
+  DMinorSeventhPatternOne = \lyricmode {
+    "Dm7 (1)"
+  }
+#+END_SRC
+***** Minor Seventh Shapes = \lyricmode {
+#+BEGIN_SRC lilypond
+  minorSeventhShapes = \lyricmode {
+#+END_SRC
+****** Cm7 (1)
+#+BEGIN_SRC lilypond
+  \CMinorSeventhPatternOne
+#+END_SRC
+
+****** Am7 (1)
+#+BEGIN_SRC lilypond
+  \AMinorSeventhPatternOne
+#+END_SRC
+****** Gm7 (1)
+#+BEGIN_SRC lilypond
+  \GMinorSeventhPatternOne
+#+END_SRC
+****** Em7 (1)
+#+BEGIN_SRC lilypond
+  \EMinorSeventhPatternOne
+#+END_SRC
+****** Dm7 (1)
+#+BEGIN_SRC lilypond
+  \DMinorSeventhPatternOne
+#+END_SRC
+****** }
+#+BEGIN_SRC lilypond
+}
+#+END_SRC
+
+** Major/Ionian Scale
 *** Complete Box Patterns
-**** With Fingering
+**** COMMENT With Fingering
 ***** Devnull
 #+BEGIN_SRC lilypond
   devNullIonianFingering = {
@@ -59,233 +444,1855 @@ scaleDiagramStyleSheet = {
     }
   }
 #+END_SRC
-***** [Lyrics] Shapes
-#+BEGIN_SRC lilypond
-  ionianShapesFingering = \lyricmode {
-    \repeat unfold 17 {
-      \repeat unfold 2 {
-        "C-Shape (1)"
-        "A-Shape (1)"
-        "G-Shape (1)"
-        "E-Shape (1)"
-        "D-Shape (1)"
-      }
-    }
-  }
-#+END_SRC
-
 ***** Scale Diagrams
-****** [Content] A-Ionian
+****** COMMENT [Content] A-Major/Ionian
+******* C-Shape 1
 #+BEGIN_SRC lilypond
-diagramsAIonianCompleteBoxPatternFingering = \chordmode {
-  \scaleDiagramStyleSheet
+diagramsAIonianCompleteBoxPatternFingeringCShapeZero = \chordmode {
   \cShape
   a,,1*4:3.4.5.6.7+.8.9.19
+}
+#+END_SRC
+
+******* C-Shape 1/4
+#+BEGIN_SRC lilypond
+diagramsAIonianCompleteBoxPatternFingeringCShapeOneFour = \chordmode {
+  \cShape
+  a,,1*4:4.5.6.7+.8.9.10.20
+}
+#+END_SRC
+
+******* A-Shape 1A
+#+BEGIN_SRC lilypond
+diagramsAIonianCompleteBoxPatternFingeringAShapeOneA = \chordmode {
   \aShape
   a,,1*4:4.5.6.7+.8.9.10.20
+}
+#+END_SRC
+
+******* A-Shape 1B
+#+BEGIN_SRC lilypond
+diagramsAIonianCompleteBoxPatternFingeringAShapeOneB = \chordmode {
+  \aShapeAltOne
+  a,,,1*4:5.6.7+.8.9.10.11.21
+}
+#+END_SRC
+
+******* A-Shape 4
+#+BEGIN_SRC lilypond
+diagramsAIonianCompleteBoxPatternFingeringAShapeFour = \chordmode {
+  \aShape
+  a,,,1*4:5.6.7+.8.9.10.11.21
+}
+#+END_SRC
+
+******* G-Shape 1
+#+BEGIN_SRC lilypond
+diagramsAIonianCompleteBoxPatternFingeringGShapeOne = \chordmode {
   \gShape
   a,,,1*4:6.7+.8.9.10.11.12.22
+}
+#+END_SRC
+
+******* E-Shape 1
+#+BEGIN_SRC lilypond
+diagramsAIonianCompleteBoxPatternFingeringEShapeOne = \chordmode {
   \eShape
   a,,,1*4:7+.8.9.10.11.12.13.23
+}
+#+END_SRC
+
+******* D-Shape 1
+#+BEGIN_SRC lilypond
+diagramsAIonianCompleteBoxPatternFingeringDShapeOne = \chordmode {
   \dShape
   a,,1*4:2.3.4.5.6.7+.8.18
 }
 #+END_SRC
 
-****** [Content] Ais/Bes-Ionian
+******* All Shapes A Ionian Complete Box Pattern Fingering
+******** diagramsAIonianCompleteBoxPatternFingeringAllShapes = \lyricmode {
 #+BEGIN_SRC lilypond
-diagramsAisIonianCompleteBoxPatternFingering = \chordmode {
-  \scaleDiagramStyleSheet
+diagramsAIonianCompleteBoxPatternFingeringAllShapes = \lyricmode {
+#+END_SRC
+******** C-Shape 0
+#+BEGIN_SRC lilypond
+\diagramsAIonianCompleteBoxPatternFingeringCShapeZero
+#+END_SRC
+
+******** C-Shape 1/4
+#+BEGIN_SRC lilypond
+\diagramsAIonianCompleteBoxPatternFingeringCShapeOneFour
+#+END_SRC
+******** A-Shape 1A
+#+BEGIN_SRC lilypond
+\diagramsAIonianCompleteBoxPatternFingeringAShapeOneA
+#+END_SRC
+******** A-Shape 1B
+#+BEGIN_SRC lilypond
+\diagramsAIonianCompleteBoxPatternFingeringAShapeOneB
+#+END_SRC
+******** A-Shape 4
+#+BEGIN_SRC lilypond
+\diagramsAIonianCompleteBoxPatternFingeringAShapeFour
+#+END_SRC
+******** G-Shape 1
+#+BEGIN_SRC lilypond
+\diagramsAIonianCompleteBoxPatternFingeringGShapeOne
+#+END_SRC
+******** E-Shape 1
+#+BEGIN_SRC lilypond
+\diagramsAIonianCompleteBoxPatternFingeringEShapeOne
+#+END_SRC
+******** D-Shape 1
+#+BEGIN_SRC lilypond
+\diagramsAIonianCompleteBoxPatternFingeringDShapeOne
+#+END_SRC
+******** }
+#+BEGIN_SRC lilypond
+}
+#+END_SRC
+
+****** COMMENT [Content] Ais-Major/Ionian
+******* C-Shape 1
+#+BEGIN_SRC lilypond
+diagramsAisIonianCompleteBoxPatternFingeringCShapeOne = \chordmode {
   \cShape
   ais,,1*4:3.4.5.6.7+.8.9.19
+}
+#+END_SRC
+
+******* C-Shape 2
+#+BEGIN_SRC lilypond
+diagramsAisIonianCompleteBoxPatternFingeringCShapeTwo = \chordmode {
+  \cShape
+  ais,,1*4:4.5.6.7+.8.9.10.20
+}
+#+END_SRC
+
+******* A-Shape 1
+#+BEGIN_SRC lilypond
+diagramsAisIonianCompleteBoxPatternFingeringAShapeOne = \chordmode {
   \aShape
   ais,,1*4:4.5.6.7+.8.9.10.20
+}
+#+END_SRC
+
+******* A-Shape 2
+#+BEGIN_SRC lilypond
+diagramsAisIonianCompleteBoxPatternFingeringAShapeTwo = \chordmode {
+  \aShape
+  ais,,1*4:5.6.7+.8.9.10.11.21
+}
+#+END_SRC
+
+******* A-Shape 3
+#+BEGIN_SRC lilypond
+diagramsAisIonianCompleteBoxPatternFingeringAShapeThree = \chordmode {
+  \aShapeAltOne
+  ais,,1*4:5.6.7+.8.9.10.11.21
+}
+#+END_SRC
+
+******* G-Shape 1
+#+BEGIN_SRC lilypond
+diagramsAisIonianCompleteBoxPatternFingeringGShapeOne = \chordmode {
   \gShape
   ais,,,1*4:6.7+.8.9.10.11.12.22
+}
+#+END_SRC
+
+******* E-Shape 1
+#+BEGIN_SRC lilypond
+diagramsAisIonianCompleteBoxPatternFingeringEShapeOne = \chordmode {
   \eShape
   ais,,,1*4:7+.8.9.10.11.12.13.23
+}
+#+END_SRC
+
+******* D-Shape 1
+#+BEGIN_SRC lilypond
+diagramsAisIonianCompleteBoxPatternFingeringDShapeOne = \chordmode {
   \dShape
   ais,,1*4:2.3.4.5.6.7+.8.18
 }
 #+END_SRC
-
-****** [Content] B-Ionian
+******* All Shapes Ais Ionian Complete Box Pattern Fingering
+******** diagramsAisIonianCompleteBoxPatternFingeringAllShapes = \lyricmode {
 #+BEGIN_SRC lilypond
-diagramsBIonianCompleteBoxPatternFingering = \chordmode {
-  \scaleDiagramStyleSheet
+diagramsAisIonianCompleteBoxPatternFingeringAllShapes = \lyricmode {
+#+END_SRC
+******** C-Shape 1
+#+BEGIN_SRC lilypond
+\diagramsAisIonianCompleteBoxPatternFingeringCShapeOne
+#+END_SRC
+
+******** C-Shape 2
+#+BEGIN_SRC lilypond
+\diagramsAisIonianCompleteBoxPatternFingeringCShapeTwo
+#+END_SRC
+******** A-Shape 1
+#+BEGIN_SRC lilypond
+\diagramsAisIonianCompleteBoxPatternFingeringAShapeOne
+#+END_SRC
+******** A-Shape 2
+#+BEGIN_SRC lilypond
+\diagramsAisIonianCompleteBoxPatternFingeringAShapeTwo
+#+END_SRC
+******** A-Shape 3
+#+BEGIN_SRC lilypond
+\diagramsAisIonianCompleteBoxPatternFingeringAShapeThree
+#+END_SRC
+******** G-Shape 1
+#+BEGIN_SRC lilypond
+\diagramsAisIonianCompleteBoxPatternFingeringGShapeOne
+#+END_SRC
+******** E-Shape 1
+#+BEGIN_SRC lilypond
+\diagramsAisIonianCompleteBoxPatternFingeringEShapeOne
+#+END_SRC
+******** D-Shape 1
+#+BEGIN_SRC lilypond
+\diagramsAisIonianCompleteBoxPatternFingeringDShapeOne
+#+END_SRC
+******** }
+#+BEGIN_SRC lilypond
+}
+#+END_SRC
+
+****** COMMENT [Content] Bes-Major/Ionian
+******* C-Shape 1
+#+BEGIN_SRC lilypond
+diagramsBesIonianCompleteBoxPatternFingeringCShapeOne = \chordmode {
   \cShape
-  b,,,1*4:3.4.5.6.7+.8.9.19
+  bes,,1*4:3.4.5.6.7+.8.9.19
+}
+#+END_SRC
+
+******* C-Shape 2
+#+BEGIN_SRC lilypond
+diagramsBesIonianCompleteBoxPatternFingeringCShapeTwo = \chordmode {
+  \cShape
+  bes,,1*4:4.5.6.7+.8.9.10.20
+}
+#+END_SRC
+
+******* A-Shape 1
+#+BEGIN_SRC lilypond
+diagramsBesIonianCompleteBoxPatternFingeringAShapeOne = \chordmode {
   \aShape
-  b,,,1*4:4.5.6.7+.8.9.10.20
+  bes,,1*4:4.5.6.7+.8.9.10.20
+}
+#+END_SRC
+
+******* A-Shape 2
+#+BEGIN_SRC lilypond
+diagramsBesIonianCompleteBoxPatternFingeringAShapeTwo = \chordmode {
+  \aShape
+  bes,,1*4:5.6.7+.8.9.10.11.21
+}
+#+END_SRC
+
+******* A-Shape 3
+#+BEGIN_SRC lilypond
+diagramsBesIonianCompleteBoxPatternFingeringAShapeThree = \chordmode {
+  \aShapeAltOne
+  bes,,1*4:5.6.7+.8.9.10.11.21
+}
+#+END_SRC
+
+******* G-Shape 1
+#+BEGIN_SRC lilypond
+diagramsBesIonianCompleteBoxPatternFingeringGShapeOne = \chordmode {
+  \gShape
+  bes,,,1*4:6.7+.8.9.10.11.12.22
+}
+#+END_SRC
+
+******* E-Shape 1
+#+BEGIN_SRC lilypond
+diagramsBesIonianCompleteBoxPatternFingeringEShapeOne = \chordmode {
+  \eShape
+  bes,,,1*4:7+.8.9.10.11.12.13.23
+}
+#+END_SRC
+
+******* D-Shape 1
+#+BEGIN_SRC lilypond
+diagramsBesIonianCompleteBoxPatternFingeringDShapeOne = \chordmode {
+  \dShape
+  bes,,1*4:2.3.4.5.6.7+.8.18
+}
+#+END_SRC
+******* All Shapes Bes Ionian Complete Box Pattern Fingering
+******** diagramsBesIonianCompleteBoxPatternFingeringAllShapes = \lyricmode {
+#+BEGIN_SRC lilypond
+diagramsBesIonianCompleteBoxPatternFingeringAllShapes = \lyricmode {
+#+END_SRC
+******** C-Shape 1
+#+BEGIN_SRC lilypond
+\diagramsBesIonianCompleteBoxPatternFingeringCShapeOne
+#+END_SRC
+
+******** C-Shape 2
+#+BEGIN_SRC lilypond
+\diagramsBesIonianCompleteBoxPatternFingeringCShapeTwo
+#+END_SRC
+******** A-Shape 1
+#+BEGIN_SRC lilypond
+\diagramsBesIonianCompleteBoxPatternFingeringAShapeOne
+#+END_SRC
+******** A-Shape 2
+#+BEGIN_SRC lilypond
+\diagramsBesIonianCompleteBoxPatternFingeringAShapeTwo
+#+END_SRC
+******** A-Shape 3
+#+BEGIN_SRC lilypond
+\diagramsBesIonianCompleteBoxPatternFingeringAShapeThree
+#+END_SRC
+******** G-Shape 1
+#+BEGIN_SRC lilypond
+\diagramsBesIonianCompleteBoxPatternFingeringGShapeOne
+#+END_SRC
+******** E-Shape 1
+#+BEGIN_SRC lilypond
+\diagramsBesIonianCompleteBoxPatternFingeringEShapeOne
+#+END_SRC
+******** D-Shape 1
+#+BEGIN_SRC lilypond
+\diagramsBesIonianCompleteBoxPatternFingeringDShapeOne
+#+END_SRC
+******** }
+#+BEGIN_SRC lilypond
+}
+#+END_SRC
+
+****** COMMENT [Content] B-Major/Ionian
+******* C-Shape 1
+#+BEGIN_SRC lilypond
+diagramsBIonianCompleteBoxPatternFingeringCShapeOne = \chordmode {
+  \cShape
+  b,,1*4:3.4.5.6.7+.8.9.19
+}
+#+END_SRC
+
+******* C-Shape 2
+#+BEGIN_SRC lilypond
+diagramsBIonianCompleteBoxPatternFingeringCShapeTwo = \chordmode {
+  \cShape
+  b,,1*4:4.5.6.7+.8.9.10.20
+}
+#+END_SRC
+
+******* A-Shape 1
+#+BEGIN_SRC lilypond
+diagramsBIonianCompleteBoxPatternFingeringAShapeOne = \chordmode {
+  \aShape
+  b,,1*4:4.5.6.7+.8.9.10.20
+}
+#+END_SRC
+
+******* A-Shape 2
+#+BEGIN_SRC lilypond
+diagramsBIonianCompleteBoxPatternFingeringAShapeTwo = \chordmode {
+  \aShape
+  b,,1*4:5.6.7+.8.9.10.11.21
+}
+#+END_SRC
+
+******* A-Shape 3
+#+BEGIN_SRC lilypond
+diagramsBIonianCompleteBoxPatternFingeringAShapeThree = \chordmode {
+  \aShapeAltOne
+  b,,1*4:5.6.7+.8.9.10.11.21
+}
+#+END_SRC
+
+******* G-Shape 1
+#+BEGIN_SRC lilypond
+diagramsBIonianCompleteBoxPatternFingeringGShapeOne = \chordmode {
   \gShape
   b,,,1*4:6.7+.8.9.10.11.12.22
+}
+#+END_SRC
+
+******* E-Shape 1
+#+BEGIN_SRC lilypond
+diagramsBIonianCompleteBoxPatternFingeringEShapeOne = \chordmode {
   \eShape
   b,,,1*4:7+.8.9.10.11.12.13.23
+}
+#+END_SRC
+
+******* D-Shape 1
+#+BEGIN_SRC lilypond
+diagramsBIonianCompleteBoxPatternFingeringDShapeOne = \chordmode {
   \dShape
   b,,1*4:2.3.4.5.6.7+.8.18
 }
 #+END_SRC
-****** [Content] C-Ionian
+******* All Shapes B Ionian Complete Box Pattern Fingering
+******** diagramsBIonianCompleteBoxPatternFingeringAllShapes = \lyricmode {
 #+BEGIN_SRC lilypond
-diagramsCIonianCompleteBoxPatternFingering = \chordmode {
-  \scaleDiagramStyleSheet
+diagramsBIonianCompleteBoxPatternFingeringAllShapes = \lyricmode {
+#+END_SRC
+******** C-Shape 1
+#+BEGIN_SRC lilypond
+\diagramsBIonianCompleteBoxPatternFingeringCShapeOne
+#+END_SRC
+
+******** C-Shape 2
+#+BEGIN_SRC lilypond
+\diagramsBIonianCompleteBoxPatternFingeringCShapeTwo
+#+END_SRC
+******** A-Shape 1
+#+BEGIN_SRC lilypond
+\diagramsBIonianCompleteBoxPatternFingeringAShapeOne
+#+END_SRC
+******** A-Shape 2
+#+BEGIN_SRC lilypond
+\diagramsBIonianCompleteBoxPatternFingeringAShapeTwo
+#+END_SRC
+******** A-Shape 3
+#+BEGIN_SRC lilypond
+\diagramsBIonianCompleteBoxPatternFingeringAShapeThree
+#+END_SRC
+******** G-Shape 1
+#+BEGIN_SRC lilypond
+\diagramsBIonianCompleteBoxPatternFingeringGShapeOne
+#+END_SRC
+******** E-Shape 1
+#+BEGIN_SRC lilypond
+\diagramsBIonianCompleteBoxPatternFingeringEShapeOne
+#+END_SRC
+******** D-Shape 1
+#+BEGIN_SRC lilypond
+\diagramsBIonianCompleteBoxPatternFingeringDShapeOne
+#+END_SRC
+******** }
+#+BEGIN_SRC lilypond
+}
+#+END_SRC
+
+}
+#+END_SRC
+****** COMMENT [Content] C-Major/Ionian
+******* C-Shape 1
+#+BEGIN_SRC lilypond
+diagramsCIonianCompleteBoxPatternFingeringCShapeOne = \chordmode {
   \cShape
   c,,1*4:3.4.5.6.7+.8.9.19
+}
+#+END_SRC
+
+******* C-Shape 2
+#+BEGIN_SRC lilypond
+diagramsCIonianCompleteBoxPatternFingeringCShapeTwo = \chordmode {
+  \cShape
+  c,,1*4:4.5.6.7+.8.9.10.20
+}
+#+END_SRC
+
+******* A-Shape 1
+#+BEGIN_SRC lilypond
+diagramsCIonianCompleteBoxPatternFingeringAShapeOne = \chordmode {
   \aShape
   c,,1*4:4.5.6.7+.8.9.10.20
+}
+#+END_SRC
+
+******* A-Shape 2
+#+BEGIN_SRC lilypond
+diagramsCIonianCompleteBoxPatternFingeringAShapeTwo = \chordmode {
+  \aShape
+  c,,1*4:5.6.7+.8.9.10.11.21
+}
+#+END_SRC
+
+******* A-Shape 3
+#+BEGIN_SRC lilypond
+diagramsCIonianCompleteBoxPatternFingeringAShapeThree = \chordmode {
+  \aShapeAltOne
+  c,,1*4:5.6.7+.8.9.10.11.21
+}
+#+END_SRC
+
+******* G-Shape 1
+#+BEGIN_SRC lilypond
+diagramsCIonianCompleteBoxPatternFingeringGShapeOne = \chordmode {
   \gShape
   c,,,1*4:6.7+.8.9.10.11.12.22
+}
+#+END_SRC
+
+******* E-Shape 1
+#+BEGIN_SRC lilypond
+diagramsCIonianCompleteBoxPatternFingeringEShapeOne = \chordmode {
   \eShape
   c,,,1*4:7+.8.9.10.11.12.13.23
+}
+#+END_SRC
+
+******* D-Shape 1
+#+BEGIN_SRC lilypond
+diagramsCIonianCompleteBoxPatternFingeringDShapeOne = \chordmode {
   \dShape
   c,1*4:2.3.4.5.6.7+.8.18
 }
 #+END_SRC
-****** [Content] Cis/Des-Ionian
+******* All Shapes C Ionian Complete Box Pattern Fingering
+******** diagramsCIonianCompleteBoxPatternFingeringAllShapes = \lyricmode {
 #+BEGIN_SRC lilypond
-diagramsCisIonianCompleteBoxPatternFingering = \chordmode {
-  \scaleDiagramStyleSheet
+diagramsCIonianCompleteBoxPatternFingeringAllShapes = \lyricmode {
+#+END_SRC
+******** C-Shape 1
+#+BEGIN_SRC lilypond
+\diagramsCIonianCompleteBoxPatternFingeringCShapeOne
+#+END_SRC
+
+******** C-Shape 2
+#+BEGIN_SRC lilypond
+\diagramsCIonianCompleteBoxPatternFingeringCShapeTwo
+#+END_SRC
+******** A-Shape 1
+#+BEGIN_SRC lilypond
+\diagramsCIonianCompleteBoxPatternFingeringAShapeOne
+#+END_SRC
+******** A-Shape 2
+#+BEGIN_SRC lilypond
+\diagramsCIonianCompleteBoxPatternFingeringAShapeTwo
+#+END_SRC
+******** A-Shape 3
+#+BEGIN_SRC lilypond
+\diagramsCIonianCompleteBoxPatternFingeringAShapeThree
+#+END_SRC
+******** G-Shape 1
+#+BEGIN_SRC lilypond
+\diagramsCIonianCompleteBoxPatternFingeringGShapeOne
+#+END_SRC
+******** E-Shape 1
+#+BEGIN_SRC lilypond
+\diagramsCIonianCompleteBoxPatternFingeringEShapeOne
+#+END_SRC
+******** D-Shape 1
+#+BEGIN_SRC lilypond
+\diagramsCIonianCompleteBoxPatternFingeringDShapeOne
+#+END_SRC
+******** }
+#+BEGIN_SRC lilypond
+}
+#+END_SRC
+
+****** COMMENT [Content] Cis-Major/Ionian
+******* C-Shape 1
+#+BEGIN_SRC lilypond
+diagramsCisIonianCompleteBoxPatternFingeringCShapeOne = \chordmode {
   \cShape
   cis,,1*4:3.4.5.6.7+.8.9.19
+}
+#+END_SRC
+
+******* C-Shape 2
+#+BEGIN_SRC lilypond
+diagramsCisIonianCompleteBoxPatternFingeringCShapeTwo = \chordmode {
+  \cShape
+  cis,,1*4:4.5.6.7+.8.9.10.20
+}
+#+END_SRC
+
+******* A-Shape 1
+#+BEGIN_SRC lilypond
+diagramsCisIonianCompleteBoxPatternFingeringAShapeOne = \chordmode {
   \aShape
   cis,,1*4:4.5.6.7+.8.9.10.20
+}
+#+END_SRC
+
+******* A-Shape 2
+#+BEGIN_SRC lilypond
+diagramsCisIonianCompleteBoxPatternFingeringAShapeTwo = \chordmode {
+  \aShape
+  cis,,1*4:5.6.7+.8.9.10.11.21
+}
+#+END_SRC
+
+******* A-Shape 3
+#+BEGIN_SRC lilypond
+diagramsCisIonianCompleteBoxPatternFingeringAShapeThree = \chordmode {
+  \aShapeAltOne
+  cis,,1*4:5.6.7+.8.9.10.11.21
+}
+#+END_SRC
+
+******* G-Shape 1
+#+BEGIN_SRC lilypond
+diagramsCisIonianCompleteBoxPatternFingeringGShapeOne = \chordmode {
   \gShape
   cis,,,1*4:6.7+.8.9.10.11.12.22
+}
+#+END_SRC
+
+******* E-Shape 1
+#+BEGIN_SRC lilypond
+diagramsCisIonianCompleteBoxPatternFingeringEShapeOne = \chordmode {
   \eShape
-  cis,,1*4:7+.8.9.10.11.12.13.23
+  cis,,,1*4:7+.8.9.10.11.12.13.23
+}
+#+END_SRC
+
+******* D-Shape 1
+#+BEGIN_SRC lilypond
+diagramsCisIonianCompleteBoxPatternFingeringDShapeOne = \chordmode {
   \dShape
   cis,1*4:2.3.4.5.6.7+.8.18
 }
 #+END_SRC
-****** [Content] D-Ionian
+******* All Shapes Cis Ionian Complete Box Pattern Fingering
+******** diagramsCisIonianCompleteBoxPatternFingeringAllShapes = \lyricmode {
 #+BEGIN_SRC lilypond
-diagramsDIonianCompleteBoxPatternFingering = \chordmode {
-  \scaleDiagramStyleSheet
+diagramsCisIonianCompleteBoxPatternFingeringAllShapes = \lyricmode {
+#+END_SRC
+******** C-Shape 0
+#+BEGIN_SRC lilypond
+\diagramsCisIonianCompleteBoxPatternFingeringCShapeOne
+#+END_SRC
+******** COMMENT C-Shape 1/4
+#+BEGIN_SRC lilypond
+\diagramsCisIonianCompleteBoxPatternFingeringCShapeTwo
+#+END_SRC
+******** A-Shape 1
+#+BEGIN_SRC lilypond
+\diagramsCisIonianCompleteBoxPatternFingeringAShapeOne
+#+END_SRC
+******** COMMENT A-Shape 4
+#+BEGIN_SRC lilypond
+\diagramsCisIonianCompleteBoxPatternFingeringAShapeTwo
+#+END_SRC
+******** COMMENT A-Shape 1b
+#+BEGIN_SRC lilypond
+\diagramsCisIonianCompleteBoxPatternFingeringAShapeThree
+#+END_SRC
+******** G-Shape 4
+#+BEGIN_SRC lilypond
+\diagramsCisIonianCompleteBoxPatternFingeringGShapeOne
+#+END_SRC
+******** E-Shape 0
+#+BEGIN_SRC lilypond
+\diagramsCisIonianCompleteBoxPatternFingeringEShapeOne
+#+END_SRC
+******** D-Shape 4
+#+BEGIN_SRC lilypond
+\diagramsCisIonianCompleteBoxPatternFingeringDShapeOne
+#+END_SRC
+******** }
+#+BEGIN_SRC lilypond
+}
+#+END_SRC
+
+****** [Content] Des-Major/Ionian
+******* C-Shape 1
+#+BEGIN_SRC lilypond
+diagramsDesIonianCompleteBoxPatternFingeringCShapeOne = \chordmode {
+  \cShape
+  des,,1*4:3.4.5.6.7+.8.9.19
+}
+#+END_SRC
+
+******* COMMENT C-Shape 2
+#+BEGIN_SRC lilypond
+diagramsDesIonianCompleteBoxPatternFingeringCShapeTwo = \chordmode {
+  \cShape
+  des,,1*4:4.5.6.7+.8.9.10.20
+}
+#+END_SRC
+
+******* A-Shape 1a
+#+BEGIN_SRC lilypond
+diagramsDesIonianCompleteBoxPatternFingeringAShapeOne = \chordmode {
+  \aShape
+  des,,1*4:4.5.6.7+.8.9.10.20
+}
+#+END_SRC
+
+******* COMMENT A-Shape 4
+#+BEGIN_SRC lilypond
+diagramsDesIonianCompleteBoxPatternFingeringAShapeTwo = \chordmode {
+  \aShape
+  des,,1*4:5.6.7+.8.9.10.11.21
+}
+#+END_SRC
+
+******* COMMENT A-Shape 1b
+#+BEGIN_SRC lilypond
+diagramsDesIonianCompleteBoxPatternFingeringAShapeThree = \chordmode {
+  \aShapeAltOne
+  des,,1*4:5.6.7+.8.9.10.11.21
+}
+#+END_SRC
+
+******* G-Shape 4
+#+BEGIN_SRC lilypond
+diagramsDesIonianCompleteBoxPatternFingeringGShapeOne = \chordmode {
+  \gShape
+  des,,,1*4:6.7+.8.9.10.11.12.22
+}
+#+END_SRC
+
+******* COMMENT G-Shape 1
+#+BEGIN_SRC lilypond
+diagramsDesIonianCompleteBoxPatternFingeringGShapeOne = \chordmode {
+  \gShape
+  des,,,1*4:6.7+.8.9.10.11.12.22
+}
+#+END_SRC
+
+******* E-Shape 0
+#+BEGIN_SRC lilypond
+diagramsDesIonianCompleteBoxPatternFingeringEShapeOne = \chordmode {
+  \eShape
+  des,,,1*4:7+.8.9.10.11.12.13.23
+}
+#+END_SRC
+
+******* D-Shape 4
+#+BEGIN_SRC lilypond
+diagramsDesIonianCompleteBoxPatternFingeringDShapeOne = \chordmode {
+  \dShape
+  des,1*4:2.3.4.5.6.7+.8.18
+}
+#+END_SRC
+******* All Shapes Des Ionian Complete Box Pattern Fingering
+******** diagramsDesIonianCompleteBoxPatternFingeringAllShapes = \lyricmode {
+#+BEGIN_SRC lilypond
+diagramsDesIonianCompleteBoxPatternFingeringAllShapes = \lyricmode {
+#+END_SRC
+******** C-Shape 1
+#+BEGIN_SRC lilypond
+\diagramsDesIonianCompleteBoxPatternFingeringCShapeOne
+#+END_SRC
+
+******** COMMENT C-Shape 1/4
+#+BEGIN_SRC lilypond
+\diagramsDesIonianCompleteBoxPatternFingeringCShapeTwo
+#+END_SRC
+******** A-Shape 1a
+#+BEGIN_SRC lilypond
+\diagramsDesIonianCompleteBoxPatternFingeringAShapeOne
+#+END_SRC
+******** COMMENT A-Shape 4
+#+BEGIN_SRC lilypond
+\diagramsDesIonianCompleteBoxPatternFingeringAShapeTwo
+#+END_SRC
+******** COMMENT A-Shape 1b
+#+BEGIN_SRC lilypond
+\diagramsDesIonianCompleteBoxPatternFingeringAShapeThree
+#+END_SRC
+******** G-Shape 4
+#+BEGIN_SRC lilypond
+\diagramsDesIonianCompleteBoxPatternFingeringGShapeOne
+#+END_SRC
+******** E-Shape 0
+#+BEGIN_SRC lilypond
+\diagramsDesIonianCompleteBoxPatternFingeringEShapeOne
+#+END_SRC
+******** D-Shape 4
+#+BEGIN_SRC lilypond
+\diagramsDesIonianCompleteBoxPatternFingeringDShapeOne
+#+END_SRC
+******** }
+#+BEGIN_SRC lilypond
+}
+#+END_SRC
+
+****** COMMENT [Content] D-Major/Ionian
+******* C-Shape 1
+#+BEGIN_SRC lilypond
+diagramsDIonianCompleteBoxPatternFingeringCShapeOne = \chordmode {
   \cShape
   d,,1*4:3.4.5.6.7+.8.9.19
+}
+#+END_SRC
+
+******* C-Shape 2
+#+BEGIN_SRC lilypond
+diagramsDIonianCompleteBoxPatternFingeringCShapeTwo = \chordmode {
+  \cShape
+  d,,1*4:4.5.6.7+.8.9.10.20
+}
+#+END_SRC
+
+******* A-Shape 1
+#+BEGIN_SRC lilypond
+diagramsDIonianCompleteBoxPatternFingeringAShapeOne = \chordmode {
   \aShape
   d,,1*4:4.5.6.7+.8.9.10.20
+}
+#+END_SRC
+
+******* A-Shape 2
+#+BEGIN_SRC lilypond
+diagramsDIonianCompleteBoxPatternFingeringAShapeTwo = \chordmode {
+  \aShape
+  d,,1*4:5.6.7+.8.9.10.11.21
+}
+#+END_SRC
+
+******* A-Shape 3
+#+BEGIN_SRC lilypond
+diagramsDIonianCompleteBoxPatternFingeringAShapeThree = \chordmode {
+  \aShapeAltOne
+  d,,1*4:5.6.7+.8.9.10.11.21
+}
+#+END_SRC
+
+******* G-Shape 1
+#+BEGIN_SRC lilypond
+diagramsDIonianCompleteBoxPatternFingeringGShapeOne = \chordmode {
   \gShape
   d,,,1*4:6.7+.8.9.10.11.12.22
+}
+#+END_SRC
+
+******* E-Shape 1
+#+BEGIN_SRC lilypond
+diagramsDIonianCompleteBoxPatternFingeringEShapeOne = \chordmode {
   \eShape
   d,,1*4:7+.8.9.10.11.12.13.23
+}
+#+END_SRC
+
+******* D-Shape 1
+#+BEGIN_SRC lilypond
+diagramsDIonianCompleteBoxPatternFingeringDShapeOne = \chordmode {
   \dShape
   d,,1*4:2.3.4.5.6.7+.8.18
 }
 #+END_SRC
-
-****** [Content] Dis/Es-Ionian
+******* All Shapes D Ionian Complete Box Pattern Fingering
+******** diagramsDIonianCompleteBoxPatternFingeringAllShapes = \lyricmode {
 #+BEGIN_SRC lilypond
-diagramsDisIonianCompleteBoxPatternFingering = \chordmode {
-  \scaleDiagramStyleSheet
+diagramsDIonianCompleteBoxPatternFingeringAllShapes = \lyricmode {
+#+END_SRC
+******** C-Shape 1
+#+BEGIN_SRC lilypond
+\diagramsDIonianCompleteBoxPatternFingeringCShapeOne
+#+END_SRC
+
+******** C-Shape 2
+#+BEGIN_SRC lilypond
+\diagramsDIonianCompleteBoxPatternFingeringCShapeTwo
+#+END_SRC
+******** A-Shape 1
+#+BEGIN_SRC lilypond
+\diagramsDIonianCompleteBoxPatternFingeringAShapeOne
+#+END_SRC
+******** A-Shape 2
+#+BEGIN_SRC lilypond
+\diagramsDIonianCompleteBoxPatternFingeringAShapeTwo
+#+END_SRC
+******** A-Shape 3
+#+BEGIN_SRC lilypond
+\diagramsDIonianCompleteBoxPatternFingeringAShapeThree
+#+END_SRC
+******** G-Shape 1
+#+BEGIN_SRC lilypond
+\diagramsDIonianCompleteBoxPatternFingeringGShapeOne
+#+END_SRC
+******** E-Shape 1
+#+BEGIN_SRC lilypond
+\diagramsDIonianCompleteBoxPatternFingeringEShapeOne
+#+END_SRC
+******** D-Shape 1
+#+BEGIN_SRC lilypond
+\diagramsDIonianCompleteBoxPatternFingeringDShapeOne
+#+END_SRC
+******** }
+#+BEGIN_SRC lilypond
+}
+#+END_SRC
+
+****** COMMENT [Content] Dis-Major/Ionian
+******* C-Shape 1
+#+BEGIN_SRC lilypond
+diagramsDisIonianCompleteBoxPatternFingeringCShapeOne = \chordmode {
   \cShape
   dis,,1*4:3.4.5.6.7+.8.9.19
+}
+#+END_SRC
+
+******* C-Shape 2
+#+BEGIN_SRC lilypond
+diagramsDisIonianCompleteBoxPatternFingeringCShapeTwo = \chordmode {
+  \cShape
+  dis,,1*4:4.5.6.7+.8.9.10.20
+}
+#+END_SRC
+
+******* A-Shape 1
+#+BEGIN_SRC lilypond
+diagramsDisIonianCompleteBoxPatternFingeringAShapeOne = \chordmode {
   \aShape
   dis,,1*4:4.5.6.7+.8.9.10.20
+}
+#+END_SRC
+
+******* A-Shape 2
+#+BEGIN_SRC lilypond
+diagramsDisIonianCompleteBoxPatternFingeringAShapeTwo = \chordmode {
+  \aShape
+  dis,,1*4:5.6.7+.8.9.10.11.21
+}
+#+END_SRC
+
+******* A-Shape 3
+#+BEGIN_SRC lilypond
+diagramsDisIonianCompleteBoxPatternFingeringAShapeThree = \chordmode {
+  \aShapeAltOne
+  dis,,1*4:5.6.7+.8.9.10.11.21
+}
+#+END_SRC
+
+******* G-Shape 1
+#+BEGIN_SRC lilypond
+diagramsDisIonianCompleteBoxPatternFingeringGShapeOne = \chordmode {
   \gShape
   dis,,,1*4:6.7+.8.9.10.11.12.22
+}
+#+END_SRC
+
+******* E-Shape 1
+#+BEGIN_SRC lilypond
+diagramsDisIonianCompleteBoxPatternFingeringEShapeOne = \chordmode {
   \eShape
   dis,,1*4:7+.8.9.10.11.12.13.23
+}
+#+END_SRC
+
+******* D-Shape 1
+#+BEGIN_SRC lilypond
+diagramsDisIonianCompleteBoxPatternFingeringDShapeOne = \chordmode {
   \dShape
   dis,,1*4:2.3.4.5.6.7+.8.18
 }
 #+END_SRC
-
-****** [Content] E-Ionian
+******* All Shapes Dis Ionian Complete Box Pattern Fingering
+******** diagramsDisIonianCompleteBoxPatternFingeringAllShapes = \lyricmode {
 #+BEGIN_SRC lilypond
-diagramsEIonianCompleteBoxPatternFingering = \chordmode {
-  \scaleDiagramStyleSheet
+diagramsDisIonianCompleteBoxPatternFingeringAllShapes = \lyricmode {
+#+END_SRC
+******** C-Shape 1
+#+BEGIN_SRC lilypond
+\diagramsDisIonianCompleteBoxPatternFingeringCShapeOne
+#+END_SRC
+
+******** C-Shape 2
+#+BEGIN_SRC lilypond
+\diagramsDisIonianCompleteBoxPatternFingeringCShapeTwo
+#+END_SRC
+******** A-Shape 1
+#+BEGIN_SRC lilypond
+\diagramsDisIonianCompleteBoxPatternFingeringAShapeOne
+#+END_SRC
+******** A-Shape 2
+#+BEGIN_SRC lilypond
+\diagramsDisIonianCompleteBoxPatternFingeringAShapeTwo
+#+END_SRC
+******** A-Shape 3
+#+BEGIN_SRC lilypond
+\diagramsDisIonianCompleteBoxPatternFingeringAShapeThree
+#+END_SRC
+******** G-Shape 1
+#+BEGIN_SRC lilypond
+\diagramsDisIonianCompleteBoxPatternFingeringGShapeOne
+#+END_SRC
+******** E-Shape 1
+#+BEGIN_SRC lilypond
+\diagramsDisIonianCompleteBoxPatternFingeringEShapeOne
+#+END_SRC
+******** D-Shape 1
+#+BEGIN_SRC lilypond
+\diagramsDisIonianCompleteBoxPatternFingeringDShapeOne
+#+END_SRC
+******** }
+#+BEGIN_SRC lilypond
+}
+#+END_SRC
+
+****** COMMENT [Content] Es-Major/Ionian
+******* C-Shape 1
+#+BEGIN_SRC lilypond
+diagramsEsIonianCompleteBoxPatternFingeringCShapeOne = \chordmode {
+  \cShape
+  es,,1*4:3.4.5.6.7+.8.9.19
+}
+#+END_SRC
+
+******* C-Shape 2
+#+BEGIN_SRC lilypond
+diagramsEsIonianCompleteBoxPatternFingeringCShapeTwo = \chordmode {
+  \cShape
+  es,,1*4:4.5.6.7+.8.9.10.20
+}
+#+END_SRC
+
+******* A-Shape 1
+#+BEGIN_SRC lilypond
+diagramsEsIonianCompleteBoxPatternFingeringAShapeOne = \chordmode {
+  \aShape
+  es,,1*4:4.5.6.7+.8.9.10.20
+}
+#+END_SRC
+
+******* A-Shape 2
+#+BEGIN_SRC lilypond
+diagramsEsIonianCompleteBoxPatternFingeringAShapeTwo = \chordmode {
+  \aShape
+  es,,1*4:5.6.7+.8.9.10.11.21
+}
+#+END_SRC
+
+******* A-Shape 3
+#+BEGIN_SRC lilypond
+diagramsEsIonianCompleteBoxPatternFingeringAShapeThree = \chordmode {
+  \aShapeAltOne
+  es,,1*4:5.6.7+.8.9.10.11.21
+}
+#+END_SRC
+
+******* G-Shape 1
+#+BEGIN_SRC lilypond
+diagramsEsIonianCompleteBoxPatternFingeringGShapeOne = \chordmode {
+  \gShape
+  es,,,1*4:6.7+.8.9.10.11.12.22
+}
+#+END_SRC
+
+******* E-Shape 1
+#+BEGIN_SRC lilypond
+diagramsEsIonianCompleteBoxPatternFingeringEShapeOne = \chordmode {
+  \eShape
+  es,,1*4:7+.8.9.10.11.12.13.23
+}
+#+END_SRC
+
+******* D-Shape 1
+#+BEGIN_SRC lilypond
+diagramsEsIonianCompleteBoxPatternFingeringDShapeOne = \chordmode {
+  \dShape
+  es,,1*4:2.3.4.5.6.7+.8.18
+}
+#+END_SRC
+******* All Shapes Es Ionian Complete Box Pattern Fingering
+******** diagramsEsIonianCompleteBoxPatternFingeringAllShapes = \lyricmode {
+#+BEGIN_SRC lilypond
+diagramsEsIonianCompleteBoxPatternFingeringAllShapes = \lyricmode {
+#+END_SRC
+******** C-Shape 1
+#+BEGIN_SRC lilypond
+\diagramsEsIonianCompleteBoxPatternFingeringCShapeOne
+#+END_SRC
+
+******** C-Shape 2
+#+BEGIN_SRC lilypond
+\diagramsEsIonianCompleteBoxPatternFingeringCShapeTwo
+#+END_SRC
+******** A-Shape 1
+#+BEGIN_SRC lilypond
+\diagramsEsIonianCompleteBoxPatternFingeringAShapeOne
+#+END_SRC
+******** A-Shape 2
+#+BEGIN_SRC lilypond
+\diagramsEsIonianCompleteBoxPatternFingeringAShapeTwo
+#+END_SRC
+******** A-Shape 3
+#+BEGIN_SRC lilypond
+\diagramsEsIonianCompleteBoxPatternFingeringAShapeThree
+#+END_SRC
+******** G-Shape 1
+#+BEGIN_SRC lilypond
+\diagramsEsIonianCompleteBoxPatternFingeringGShapeOne
+#+END_SRC
+******** E-Shape 1
+#+BEGIN_SRC lilypond
+\diagramsEsIonianCompleteBoxPatternFingeringEShapeOne
+#+END_SRC
+******** D-Shape 1
+#+BEGIN_SRC lilypond
+\diagramsEsIonianCompleteBoxPatternFingeringDShapeOne
+#+END_SRC
+******** }
+#+BEGIN_SRC lilypond
+}
+#+END_SRC
+
+****** COMMENT [Content] E-Major/Ionian
+******* C-Shape 1
+#+BEGIN_SRC lilypond
+diagramsEIonianCompleteBoxPatternFingeringCShapeOne = \chordmode {
   \cShape
   e,,1*4:3.4.5.6.7+.8.9.19
+}
+#+END_SRC
+
+******* C-Shape 2
+#+BEGIN_SRC lilypond
+diagramsEIonianCompleteBoxPatternFingeringCShapeTwo = \chordmode {
+  \cShape
+  e,,1*4:4.5.6.7+.8.9.10.20
+}
+#+END_SRC
+
+******* A-Shape 1
+#+BEGIN_SRC lilypond
+diagramsEIonianCompleteBoxPatternFingeringAShapeOne = \chordmode {
   \aShape
   e,,1*4:4.5.6.7+.8.9.10.20
+}
+#+END_SRC
+
+******* A-Shape 2
+#+BEGIN_SRC lilypond
+diagramsEIonianCompleteBoxPatternFingeringAShapeTwo = \chordmode {
+  \aShape
+  e,,1*4:5.6.7+.8.9.10.11.21
+}
+#+END_SRC
+
+******* A-Shape 3
+#+BEGIN_SRC lilypond
+diagramsEIonianCompleteBoxPatternFingeringAShapeThree = \chordmode {
+  \aShapeAltOne
+  e,,1*4:5.6.7+.8.9.10.11.21
+}
+#+END_SRC
+
+******* G-Shape 1
+#+BEGIN_SRC lilypond
+diagramsEIonianCompleteBoxPatternFingeringGShapeOne = \chordmode {
   \gShape
   e,,,1*4:6.7+.8.9.10.11.12.22
+}
+#+END_SRC
+
+******* E-Shape 1
+#+BEGIN_SRC lilypond
+diagramsEIonianCompleteBoxPatternFingeringEShapeOne = \chordmode {
   \eShape
   e,,1*4:7+.8.9.10.11.12.13.23
+}
+#+END_SRC
+
+******* D-Shape 1
+#+BEGIN_SRC lilypond
+diagramsEIonianCompleteBoxPatternFingeringDShapeOne = \chordmode {
   \dShape
   e,,1*4:2.3.4.5.6.7+.8.18
 }
 #+END_SRC
-
-****** [Content] F-Ionian
+******* All Shapes E Ionian Complete Box Pattern Fingering
+******** diagramsEIonianCompleteBoxPatternFingeringAllShapes = \lyricmode {
 #+BEGIN_SRC lilypond
-diagramsFIonianCompleteBoxPatternFingering = \chordmode {
-  \scaleDiagramStyleSheet
+diagramsEIonianCompleteBoxPatternFingeringAllShapes = \lyricmode {
+#+END_SRC
+******** C-Shape 1
+#+BEGIN_SRC lilypond
+\diagramsEIonianCompleteBoxPatternFingeringCShapeOne
+#+END_SRC
+
+******** C-Shape 2
+#+BEGIN_SRC lilypond
+\diagramsEIonianCompleteBoxPatternFingeringCShapeTwo
+#+END_SRC
+******** A-Shape 1
+#+BEGIN_SRC lilypond
+\diagramsEIonianCompleteBoxPatternFingeringAShapeOne
+#+END_SRC
+******** A-Shape 2
+#+BEGIN_SRC lilypond
+\diagramsEIonianCompleteBoxPatternFingeringAShapeTwo
+#+END_SRC
+******** A-Shape 3
+#+BEGIN_SRC lilypond
+\diagramsEIonianCompleteBoxPatternFingeringAShapeThree
+#+END_SRC
+******** G-Shape 1
+#+BEGIN_SRC lilypond
+\diagramsEIonianCompleteBoxPatternFingeringGShapeOne
+#+END_SRC
+******** E-Shape 1
+#+BEGIN_SRC lilypond
+\diagramsEIonianCompleteBoxPatternFingeringEShapeOne
+#+END_SRC
+******** D-Shape 1
+#+BEGIN_SRC lilypond
+\diagramsEIonianCompleteBoxPatternFingeringDShapeOne
+#+END_SRC
+******** }
+#+BEGIN_SRC lilypond
+}
+#+END_SRC
+
+****** COMMENT [Content] F-Major/Ionian
+******* C-Shape 1
+#+BEGIN_SRC lilypond
+diagramsFIonianCompleteBoxPatternFingeringCShapeOne = \chordmode {
   \cShape
   f,,1*4:3.4.5.6.7+.8.9.19
+}
+#+END_SRC
+
+******* C-Shape 2
+#+BEGIN_SRC lilypond
+diagramsFIonianCompleteBoxPatternFingeringCShapeTwo = \chordmode {
+  \cShape
+  f,,1*4:4.5.6.7+.8.9.10.20
+}
+#+END_SRC
+
+******* A-Shape 1
+#+BEGIN_SRC lilypond
+diagramsFIonianCompleteBoxPatternFingeringAShapeOne = \chordmode {
   \aShape
   f,,1*4:4.5.6.7+.8.9.10.20
+}
+#+END_SRC
+
+******* A-Shape 2
+#+BEGIN_SRC lilypond
+diagramsFIonianCompleteBoxPatternFingeringAShapeTwo = \chordmode {
+  \aShape
+  f,,1*4:5.6.7+.8.9.10.11.21
+}
+#+END_SRC
+
+******* A-Shape 3
+#+BEGIN_SRC lilypond
+diagramsFIonianCompleteBoxPatternFingeringAShapeThree = \chordmode {
+  \aShapeAltOne
+  f,,1*4:5.6.7+.8.9.10.11.21
+}
+#+END_SRC
+
+******* G-Shape 1
+#+BEGIN_SRC lilypond
+diagramsFIonianCompleteBoxPatternFingeringGShapeOne = \chordmode {
   \gShape
   f,,,1*4:6.7+.8.9.10.11.12.22
+}
+#+END_SRC
+
+******* E-Shape 1
+#+BEGIN_SRC lilypond
+diagramsFIonianCompleteBoxPatternFingeringEShapeOne = \chordmode {
   \eShape
   f,,,1*4:7+.8.9.10.11.12.13.23
+}
+#+END_SRC
+
+******* D-Shape 1
+#+BEGIN_SRC lilypond
+diagramsFIonianCompleteBoxPatternFingeringDShapeOne = \chordmode {
   \dShape
   f,,1*4:2.3.4.5.6.7+.8.18
 }
 #+END_SRC
-
-****** [Content] Fis/Ges-Ionian
+******* All Shapes F Ionian Complete Box Pattern Fingering
+******** diagramsFIonianCompleteBoxPatternFingeringAllShapes = \lyricmode {
 #+BEGIN_SRC lilypond
-diagramsFisIonianCompleteBoxPatternFingering = \chordmode {
-  \scaleDiagramStyleSheet
+diagramsFIonianCompleteBoxPatternFingeringAllShapes = \lyricmode {
+#+END_SRC
+******** C-Shape 1
+#+BEGIN_SRC lilypond
+\diagramsFIonianCompleteBoxPatternFingeringCShapeOne
+#+END_SRC
+
+******** C-Shape 2
+#+BEGIN_SRC lilypond
+\diagramsFIonianCompleteBoxPatternFingeringCShapeTwo
+#+END_SRC
+******** A-Shape 1
+#+BEGIN_SRC lilypond
+\diagramsFIonianCompleteBoxPatternFingeringAShapeOne
+#+END_SRC
+******** A-Shape 2
+#+BEGIN_SRC lilypond
+\diagramsFIonianCompleteBoxPatternFingeringAShapeTwo
+#+END_SRC
+******** A-Shape 3
+#+BEGIN_SRC lilypond
+\diagramsFIonianCompleteBoxPatternFingeringAShapeThree
+#+END_SRC
+******** G-Shape 1
+#+BEGIN_SRC lilypond
+\diagramsFIonianCompleteBoxPatternFingeringGShapeOne
+#+END_SRC
+******** E-Shape 1
+#+BEGIN_SRC lilypond
+\diagramsFIonianCompleteBoxPatternFingeringEShapeOne
+#+END_SRC
+******** D-Shape 1
+#+BEGIN_SRC lilypond
+\diagramsFIonianCompleteBoxPatternFingeringDShapeOne
+#+END_SRC
+******** }
+#+BEGIN_SRC lilypond
+}
+#+END_SRC
+
+****** COMMENT [Content] Fis-Major/Ionian
+******* C-Shape 1
+#+BEGIN_SRC lilypond
+diagramsFisIonianCompleteBoxPatternFingeringCShapeOne = \chordmode {
   \cShape
   fis,,1*4:3.4.5.6.7+.8.9.19
+}
+#+END_SRC
+
+******* C-Shape 2
+#+BEGIN_SRC lilypond
+diagramsFisIonianCompleteBoxPatternFingeringCShapeTwo = \chordmode {
+  \cShape
+  fis,,1*4:4.5.6.7+.8.9.10.20
+}
+#+END_SRC
+
+******* A-Shape 1
+#+BEGIN_SRC lilypond
+diagramsFisIonianCompleteBoxPatternFingeringAShapeOne = \chordmode {
   \aShape
   fis,,1*4:4.5.6.7+.8.9.10.20
+}
+#+END_SRC
+
+******* A-Shape 2
+#+BEGIN_SRC lilypond
+diagramsFisIonianCompleteBoxPatternFingeringAShapeTwo = \chordmode {
+  \aShape
+  fis,,1*4:5.6.7+.8.9.10.11.21
+}
+#+END_SRC
+
+******* A-Shape 3
+#+BEGIN_SRC lilypond
+diagramsFisIonianCompleteBoxPatternFingeringAShapeThree = \chordmode {
+  \aShapeAltOne
+  fis,,1*4:5.6.7+.8.9.10.11.21
+}
+#+END_SRC
+
+******* G-Shape 1
+#+BEGIN_SRC lilypond
+diagramsFisIonianCompleteBoxPatternFingeringGShapeOne = \chordmode {
   \gShape
   fis,,,1*4:6.7+.8.9.10.11.12.22
+}
+#+END_SRC
+
+******* E-Shape 1
+#+BEGIN_SRC lilypond
+diagramsFisIonianCompleteBoxPatternFingeringEShapeOne = \chordmode {
   \eShape
   fis,,,1*4:7+.8.9.10.11.12.13.23
+}
+#+END_SRC
+
+******* D-Shape 1
+#+BEGIN_SRC lilypond
+diagramsFisIonianCompleteBoxPatternFingeringDShapeOne = \chordmode {
   \dShape
   fis,,1*4:2.3.4.5.6.7+.8.18
 }
 #+END_SRC
-****** [Content] G-Ionian
+******* All Shapes Fis Ionian Complete Box Pattern Fingering
+******** diagramsFisIonianCompleteBoxPatternFingeringAllShapes = \lyricmode {
 #+BEGIN_SRC lilypond
-diagramsGIonianCompleteBoxPatternFingering = \chordmode {
-  \scaleDiagramStyleSheet
+diagramsFisIonianCompleteBoxPatternFingeringAllShapes = \lyricmode {
+#+END_SRC
+******** C-Shape 1
+#+BEGIN_SRC lilypond
+\diagramsFisIonianCompleteBoxPatternFingeringCShapeOne
+#+END_SRC
+
+******** C-Shape 2
+#+BEGIN_SRC lilypond
+\diagramsFisIonianCompleteBoxPatternFingeringCShapeTwo
+#+END_SRC
+******** A-Shape 1
+#+BEGIN_SRC lilypond
+\diagramsFisIonianCompleteBoxPatternFingeringAShapeOne
+#+END_SRC
+******** A-Shape 2
+#+BEGIN_SRC lilypond
+\diagramsFisIonianCompleteBoxPatternFingeringAShapeTwo
+#+END_SRC
+******** A-Shape 3
+#+BEGIN_SRC lilypond
+\diagramsFisIonianCompleteBoxPatternFingeringAShapeThree
+#+END_SRC
+******** G-Shape 1
+#+BEGIN_SRC lilypond
+  \diagramsFisIonianCompleteBoxPatternFingeringGShapeOne
+#+END_SRC
+******** E-Shape 1
+#+BEGIN_SRC lilypond
+\diagramsFisIonianCompleteBoxPatternFingeringEShapeOne
+#+END_SRC
+******** D-Shape 1
+#+BEGIN_SRC lilypond
+\diagramsFisIonianCompleteBoxPatternFingeringDShapeOne
+#+END_SRC
+******** }
+#+BEGIN_SRC lilypond
+}
+#+END_SRC
+
+****** COMMENT [Content] Ges-Major/Ionian
+******* C-Shape 1
+#+BEGIN_SRC lilypond
+diagramsGesIonianCompleteBoxPatternFingeringCShapeOne = \chordmode {
+  \cShape
+  ges,,1*4:3.4.5.6.7+.8.9.19
+}
+#+END_SRC
+
+******* C-Shape 2
+#+BEGIN_SRC lilypond
+diagramsGesIonianCompleteBoxPatternFingeringCShapeTwo = \chordmode {
+  \cShape
+  ges,,1*4:4.5.6.7+.8.9.10.20
+}
+#+END_SRC
+
+******* A-Shape 1
+#+BEGIN_SRC lilypond
+diagramsGesIonianCompleteBoxPatternFingeringAShapeOne = \chordmode {
+  \aShape
+  ges,,1*4:4.5.6.7+.8.9.10.20
+}
+#+END_SRC
+
+******* A-Shape 2
+#+BEGIN_SRC lilypond
+diagramsGesIonianCompleteBoxPatternFingeringAShapeTwo = \chordmode {
+  \aShape
+  ges,,1*4:5.6.7+.8.9.10.11.21
+}
+#+END_SRC
+
+******* A-Shape 3
+#+BEGIN_SRC lilypond
+diagramsGesIonianCompleteBoxPatternFingeringAShapeThree = \chordmode {
+  \aShapeAltOne
+  ges,,1*4:5.6.7+.8.9.10.11.21
+}
+#+END_SRC
+
+******* G-Shape 1
+#+BEGIN_SRC lilypond
+diagramsGesIonianCompleteBoxPatternFingeringGShapeOne = \chordmode {
+  \gShape
+  ges,,,1*4:6.7+.8.9.10.11.12.22
+}
+#+END_SRC
+
+******* E-Shape 1
+#+BEGIN_SRC lilypond
+diagramsGesIonianCompleteBoxPatternFingeringEShapeOne = \chordmode {
+  \eShape
+  ges,,,1*4:7+.8.9.10.11.12.13.23
+}
+#+END_SRC
+
+******* D-Shape 1
+#+BEGIN_SRC lilypond
+diagramsGesIonianCompleteBoxPatternFingeringDShapeOne = \chordmode {
+  \dShape
+  ges,,1*4:2.3.4.5.6.7+.8.18
+}
+#+END_SRC
+******* All Shapes Ges Ionian Complete Box Pattern Fingering
+******** diagramsGesIonianCompleteBoxPatternFingeringAllShapes = \lyricmode {
+#+BEGIN_SRC lilypond
+diagramsGesIonianCompleteBoxPatternFingeringAllShapes = \lyricmode {
+#+END_SRC
+******** C-Shape 1
+#+BEGIN_SRC lilypond
+\diagramsGesIonianCompleteBoxPatternFingeringCShapeOne
+#+END_SRC
+
+******** C-Shape 2
+#+BEGIN_SRC lilypond
+\diagramsGesIonianCompleteBoxPatternFingeringCShapeTwo
+#+END_SRC
+******** A-Shape 1
+#+BEGIN_SRC lilypond
+\diagramsGesIonianCompleteBoxPatternFingeringAShapeOne
+#+END_SRC
+******** A-Shape 2
+#+BEGIN_SRC lilypond
+\diagramsGesIonianCompleteBoxPatternFingeringAShapeTwo
+#+END_SRC
+******** A-Shape 3
+#+BEGIN_SRC lilypond
+\diagramsGesIonianCompleteBoxPatternFingeringAShapeThree
+#+END_SRC
+******** G-Shape 1
+#+BEGIN_SRC lilypond
+  \diagramsGesIonianCompleteBoxPatternFingeringGShapeOne
+#+END_SRC
+******** E-Shape 1
+#+BEGIN_SRC lilypond
+\diagramsGesIonianCompleteBoxPatternFingeringEShapeOne
+#+END_SRC
+******** D-Shape 1
+#+BEGIN_SRC lilypond
+\diagramsGesIonianCompleteBoxPatternFingeringDShapeOne
+#+END_SRC
+******** }
+#+BEGIN_SRC lilypond
+}
+#+END_SRC
+
+****** COMMENT [Content] G-Major/Ionian
+******* C-Shape 1
+#+BEGIN_SRC lilypond
+diagramsGIonianCompleteBoxPatternFingeringCShapeOne = \chordmode {
   \cShape
   g,,1*4:3.4.5.6.7+.8.9.19
+}
+#+END_SRC
+
+******* C-Shape 2
+#+BEGIN_SRC lilypond
+diagramsGIonianCompleteBoxPatternFingeringCShapeTwo = \chordmode {
+  \cShape
+  g,,1*4:4.5.6.7+.8.9.10.20
+}
+#+END_SRC
+
+******* A-Shape 1
+#+BEGIN_SRC lilypond
+diagramsGIonianCompleteBoxPatternFingeringAShapeOne = \chordmode {
   \aShape
   g,,1*4:4.5.6.7+.8.9.10.20
+}
+#+END_SRC
+
+******* A-Shape 2
+#+BEGIN_SRC lilypond
+diagramsGIonianCompleteBoxPatternFingeringAShapeTwo = \chordmode {
+  \aShape
+  g,,1*4:5.6.7+.8.9.10.11.21
+}
+#+END_SRC
+
+******* A-Shape 3
+#+BEGIN_SRC lilypond
+diagramsGIonianCompleteBoxPatternFingeringAShapeThree = \chordmode {
+  \aShapeAltOne
+  g,,1*4:5.6.7+.8.9.10.11.21
+}
+#+END_SRC
+
+******* G-Shape 1
+#+BEGIN_SRC lilypond
+diagramsGIonianCompleteBoxPatternFingeringGShapeOne = \chordmode {
   \gShape
   g,,,1*4:6.7+.8.9.10.11.12.22
+}
+#+END_SRC
+
+******* E-Shape 1
+#+BEGIN_SRC lilypond
+diagramsGIonianCompleteBoxPatternFingeringEShapeOne = \chordmode {
   \eShape
   g,,,1*4:7+.8.9.10.11.12.13.23
+}
+#+END_SRC
+
+******* D-Shape 1
+#+BEGIN_SRC lilypond
+diagramsGIonianCompleteBoxPatternFingeringDShapeOne = \chordmode {
   \dShape
   g,,1*4:2.3.4.5.6.7+.8.18
 }
 #+END_SRC
-
-****** [Content] Gis/As-Major/Ionian
+******* All Shapes G Ionian Complete Box Pattern Fingering
+******** diagramsGIonianCompleteBoxPatternFingeringAllShapes = \lyricmode {
 #+BEGIN_SRC lilypond
-diagramsGisIonianCompleteBoxPatternFingering = \chordmode {
-  \scaleDiagramStyleSheet
+diagramsGIonianCompleteBoxPatternFingeringAllShapes = \lyricmode {
+#+END_SRC
+******** C-Shape 1
+#+BEGIN_SRC lilypond
+\diagramsGIonianCompleteBoxPatternFingeringCShapeOne
+#+END_SRC
+
+******** C-Shape 2
+#+BEGIN_SRC lilypond
+\diagramsGIonianCompleteBoxPatternFingeringCShapeTwo
+#+END_SRC
+******** A-Shape 1
+#+BEGIN_SRC lilypond
+\diagramsGIonianCompleteBoxPatternFingeringAShapeOne
+#+END_SRC
+******** A-Shape 2
+#+BEGIN_SRC lilypond
+\diagramsGIonianCompleteBoxPatternFingeringAShapeTwo
+#+END_SRC
+******** A-Shape 3
+#+BEGIN_SRC lilypond
+\diagramsGIonianCompleteBoxPatternFingeringAShapeThree
+#+END_SRC
+******** G-Shape 1
+#+BEGIN_SRC lilypond
+  \diagramsGIonianCompleteBoxPatternFingeringGShapeOne
+#+END_SRC
+******** E-Shape 1
+#+BEGIN_SRC lilypond
+\diagramsGIonianCompleteBoxPatternFingeringEShapeOne
+#+END_SRC
+******** D-Shape 1
+#+BEGIN_SRC lilypond
+\diagramsGIonianCompleteBoxPatternFingeringDShapeOne
+#+END_SRC
+******** }
+#+BEGIN_SRC lilypond
+}
+#+END_SRC
+
+****** COMMENT [Content] Gis-Major/Ionian
+******* C-Shape 1
+#+BEGIN_SRC lilypond
+diagramsGisIonianCompleteBoxPatternFingeringCShapeOne = \chordmode {
   \cShape
   gis,,1*4:3.4.5.6.7+.8.9.19
+}
+#+END_SRC
+
+******* C-Shape 2
+#+BEGIN_SRC lilypond
+diagramsGisIonianCompleteBoxPatternFingeringCShapeTwo = \chordmode {
+  \cShape
+  gis,,1*4:4.5.6.7+.8.9.10.20
+}
+#+END_SRC
+
+******* A-Shape 1
+#+BEGIN_SRC lilypond
+diagramsGisIonianCompleteBoxPatternFingeringAShapeOne = \chordmode {
   \aShape
   gis,,1*4:4.5.6.7+.8.9.10.20
+}
+#+END_SRC
+
+******* A-Shape 2
+#+BEGIN_SRC lilypond
+diagramsGisIonianCompleteBoxPatternFingeringAShapeTwo = \chordmode {
+  \aShape
+  gis,,1*4:5.6.7+.8.9.10.11.21
+}
+#+END_SRC
+
+******* A-Shape 3
+#+BEGIN_SRC lilypond
+diagramsGisIonianCompleteBoxPatternFingeringAShapeThree = \chordmode {
+  \aShapeAltOne
+  gis,,1*4:5.6.7+.8.9.10.11.21
+}
+#+END_SRC
+
+******* G-Shape 1
+#+BEGIN_SRC lilypond
+diagramsGisIonianCompleteBoxPatternFingeringGShapeOne = \chordmode {
   \gShape
   gis,,,1*4:6.7+.8.9.10.11.12.22
+}
+#+END_SRC
+
+******* E-Shape 1
+#+BEGIN_SRC lilypond
+diagramsGisIonianCompleteBoxPatternFingeringEShapeOne = \chordmode {
   \eShape
   gis,,,1*4:7+.8.9.10.11.12.13.23
+}
+#+END_SRC
+
+******* D-Shape 1
+#+BEGIN_SRC lilypond
+diagramsGisIonianCompleteBoxPatternFingeringDShapeOne = \chordmode {
   \dShape
   gis,,1*4:2.3.4.5.6.7+.8.18
 }
 #+END_SRC
+******* All Shapes Gis Ionian Complete Box Pattern Fingering
+******** diagramsGisIonianCompleteBoxPatternFingeringAllShapes = \lyricmode {
+#+BEGIN_SRC lilypond
+diagramsGisIonianCompleteBoxPatternFingeringAllShapes = \lyricmode {
+#+END_SRC
+******** C-Shape 1
+#+BEGIN_SRC lilypond
+\diagramsGisIonianCompleteBoxPatternFingeringCShapeOne
+#+END_SRC
+
+******** C-Shape 2
+#+BEGIN_SRC lilypond
+\diagramsGisIonianCompleteBoxPatternFingeringCShapeTwo
+#+END_SRC
+******** A-Shape 1
+#+BEGIN_SRC lilypond
+\diagramsGisIonianCompleteBoxPatternFingeringAShapeOne
+#+END_SRC
+******** A-Shape 2
+#+BEGIN_SRC lilypond
+\diagramsGisIonianCompleteBoxPatternFingeringAShapeTwo
+#+END_SRC
+******** A-Shape 3
+#+BEGIN_SRC lilypond
+\diagramsGisIonianCompleteBoxPatternFingeringAShapeThree
+#+END_SRC
+******** G-Shape 1
+#+BEGIN_SRC lilypond
+  \diagramsGisIonianCompleteBoxPatternFingeringGShapeOne
+#+END_SRC
+******** E-Shape 1
+#+BEGIN_SRC lilypond
+\diagramsGisIonianCompleteBoxPatternFingeringEShapeOne
+#+END_SRC
+******** D-Shape 1
+#+BEGIN_SRC lilypond
+\diagramsGisIonianCompleteBoxPatternFingeringDShapeOne
+#+END_SRC
+******** }
+#+BEGIN_SRC lilypond
+}
+#+END_SRC
+
+****** COMMENT [Content] As-Major/Ionian
+******* C-Shape 1
+#+BEGIN_SRC lilypond
+diagramsAsIonianCompleteBoxPatternFingeringCShapeOne = \chordmode {
+  \cShape
+  as,,1*4:3.4.5.6.7+.8.9.19
+}
+#+END_SRC
+
+******* C-Shape 2
+#+BEGIN_SRC lilypond
+diagramsAsIonianCompleteBoxPatternFingeringCShapeTwo = \chordmode {
+  \cShape
+  as,,1*4:4.5.6.7+.8.9.10.20
+}
+#+END_SRC
+
+******* A-Shape 1
+#+BEGIN_SRC lilypond
+diagramsAsIonianCompleteBoxPatternFingeringAShapeOne = \chordmode {
+  \aShape
+  as,,1*4:4.5.6.7+.8.9.10.20
+}
+#+END_SRC
+
+******* A-Shape 2
+#+BEGIN_SRC lilypond
+diagramsAsIonianCompleteBoxPatternFingeringAShapeTwo = \chordmode {
+  \aShape
+  as,,1*4:5.6.7+.8.9.10.11.21
+}
+#+END_SRC
+
+******* A-Shape 3
+#+BEGIN_SRC lilypond
+diagramsAsIonianCompleteBoxPatternFingeringAShapeThree = \chordmode {
+  \aShapeAltOne
+  as,,1*4:5.6.7+.8.9.10.11.21
+}
+#+END_SRC
+
+******* G-Shape 1
+#+BEGIN_SRC lilypond
+diagramsAsIonianCompleteBoxPatternFingeringGShapeOne = \chordmode {
+  \gShape
+  as,,,1*4:6.7+.8.9.10.11.12.22
+}
+#+END_SRC
+
+******* E-Shape 1
+#+BEGIN_SRC lilypond
+diagramsAsIonianCompleteBoxPatternFingeringEShapeOne = \chordmode {
+  \eShape
+  as,,,1*4:7+.8.9.10.11.12.13.23
+}
+#+END_SRC
+
+******* D-Shape 1
+#+BEGIN_SRC lilypond
+diagramsAsIonianCompleteBoxPatternFingeringDShapeOne = \chordmode {
+  \dShape
+  as,,1*4:2.3.4.5.6.7+.8.18
+}
+#+END_SRC
+******* All Shapes As Ionian Complete Box Pattern Fingering
+******** diagramsAsIonianCompleteBoxPatternFingeringAllShapes = \lyricmode {
+#+BEGIN_SRC lilypond
+diagramsAsIonianCompleteBoxPatternFingeringAllShapes = \lyricmode {
+#+END_SRC
+******** C-Shape 1
+#+BEGIN_SRC lilypond
+\diagramsAsIonianCompleteBoxPatternFingeringCShapeOne
+#+END_SRC
+
+******** C-Shape 2
+#+BEGIN_SRC lilypond
+\diagramsAsIonianCompleteBoxPatternFingeringCShapeTwo
+#+END_SRC
+******** A-Shape 1
+#+BEGIN_SRC lilypond
+\diagramsAsIonianCompleteBoxPatternFingeringAShapeOne
+#+END_SRC
+******** A-Shape 2
+#+BEGIN_SRC lilypond
+\diagramsAsIonianCompleteBoxPatternFingeringAShapeTwo
+#+END_SRC
+******** A-Shape 3
+#+BEGIN_SRC lilypond
+\diagramsAsIonianCompleteBoxPatternFingeringAShapeThree
+#+END_SRC
+******** G-Shape 1
+#+BEGIN_SRC lilypond
+  \diagramsAsIonianCompleteBoxPatternFingeringGShapeOne
+#+END_SRC
+******** E-Shape 1
+#+BEGIN_SRC lilypond
+\diagramsAsIonianCompleteBoxPatternFingeringEShapeOne
+#+END_SRC
+******** D-Shape 1
+#+BEGIN_SRC lilypond
+\diagramsAsIonianCompleteBoxPatternFingeringDShapeOne
+#+END_SRC
+******** }
+#+BEGIN_SRC lilypond
+}
+#+END_SRC
 
 ***** Scores
-****** [Score] A-Ionian
+****** COMMENT [Score] A-Major/Ionian
 #+BEGIN_SRC lilypond
   \score {
     <<
       \new FretBoards {
+        \scaleDiagramStyleSheet
         \set FretBoards.instrumentName = "A-Major/Ionian"
-        \diagramsAIonianCompleteBoxPatternFingering
+        \diagramsAIonianCompleteBoxPatternFingeringAllShapes
       }
       \new Devnull = "null" { \devNullIonianFingering }
-      \new Lyrics \lyricsto "null" \ionianShapesFingering
+      \new Lyrics \lyricsto "null" {
+        \setStanzaShape
+        \majorSeventhShapes
+      }
+      % \new Lyrics \lyricsto "null" {
+      %   \setStanzaType
+      %   \majorSeventhLeavittTypes
+      % }
     >>
     \header {
       %title = "Modern “Church Modes”"
@@ -296,16 +2303,24 @@ diagramsGisIonianCompleteBoxPatternFingering = \chordmode {
     }
   }
 #+END_SRC
-****** [Score] Ais/Bes-Major/Ionian
+****** COMMENT [Score] Ais/Bes-Major/Ionian
 #+BEGIN_SRC lilypond
   \score {
     <<
       \new FretBoards {
+        \scaleDiagramStyleSheet
         \set FretBoards.instrumentName = \markup\concat { "A"\teeny \sharp "/B" \teeny \flat "-Major/Ionian" }
-        \diagramsAisIonianCompleteBoxPatternFingering
+        \diagramsAisIonianCompleteBoxPatternFingeringAllShapes
       }
       \new Devnull = "null" { \devNullIonianFingering }
-      \new Lyrics \lyricsto "null" \ionianShapesFingering
+      \new Lyrics \lyricsto "null" {
+        \setStanzaShape
+        \majorSeventhShapes
+      }
+    \new Lyrics \lyricsto "null" {
+        \setStanzaType
+        \majorSeventhLeavittTypes
+      }
     >>
     \header {
       %title = "Modern “Church Modes”"
@@ -316,16 +2331,24 @@ diagramsGisIonianCompleteBoxPatternFingering = \chordmode {
     }
   }
 #+END_SRC
-****** [Score] B-Ionian
+****** COMMENT [Score] B-Major/Ionian
 #+BEGIN_SRC lilypond
   \score {
     <<
       \new FretBoards {
+        \scaleDiagramStyleSheet
         \set FretBoards.instrumentName = "B-Major/Ionian"
-        \diagramsBIonianCompleteBoxPatternFingering
+        \diagramsBIonianCompleteBoxPatternFingeringAllShapes
       }
       \new Devnull = "null" { \devNullIonianFingering }
-      \new Lyrics \lyricsto "null" \ionianShapesFingering
+      \new Lyrics \lyricsto "null" {
+        \setStanzaShape
+        \majorSeventhShapes
+      }
+    \new Lyrics \lyricsto "null" {
+        \setStanzaType
+        \majorSeventhLeavittTypes
+      }
     >>
     \header {
       %title = "Modern “Church Modes”"
@@ -336,16 +2359,24 @@ diagramsGisIonianCompleteBoxPatternFingering = \chordmode {
     }
   }
 #+END_SRC
-****** [Score] C-Major/Ionian
+****** COMMENT [Score] C-Major/Ionian
 #+BEGIN_SRC lilypond
   \score {
     <<
       \new FretBoards {
+        \scaleDiagramStyleSheet
         \set FretBoards.instrumentName = "C-Major/Ionian"
-        \diagramsCIonianCompleteBoxPatternFingering
+        \diagramsCIonianCompleteBoxPatternFingeringAllShapes
       }
       \new Devnull = "null" { \devNullIonianFingering }
-      \new Lyrics \lyricsto "null" \ionianShapesFingering
+      \new Lyrics \lyricsto "null" {
+        \setStanzaShape
+        \majorSeventhShapes
+      }
+      \new Lyrics \lyricsto "null" {
+        \setStanzaType
+        \majorSeventhLeavittTypes
+      }
     >>
     \header {
       title = ##f
@@ -360,31 +2391,50 @@ diagramsGisIonianCompleteBoxPatternFingering = \chordmode {
   \score {
     <<
       \new FretBoards {
-        \set FretBoards.instrumentName = \markup\concat { "C"\teeny \sharp "/D" \teeny \flat "-Major/Ionian" }
-        \diagramsCisIonianCompleteBoxPatternFingering
+        \scaleDiagramStyleSheet
+        \set FretBoards.instrumentName = \markup\center-column {
+  \line { \concat { "C"\teeny \sharp "/D" \teeny \flat } }
+  \line { "Major/Ionian" }
+  }
+        \diagramsDesIonianCompleteBoxPatternFingeringAllShapes
       }
       \new Devnull = "null" { \devNullIonianFingering }
-      \new Lyrics \lyricsto "null" \ionianShapesFingering
+      \new Lyrics \lyricsto "null" {
+        \setStanzaShape
+        \majorSeventhShapes
+      }
+    % \new Lyrics \lyricsto "null" {
+    %     \setStanzaType
+    %     \majorSeventhLeavittTypes
+    %   }
     >>
     \header {
       %title = "Modern “Church Modes”"
       title = ##f
-      % subtitle = "Major/Ionian Scales"
-      % subsubtitle = "Complete Box Pattern — With Fingering"
+      subtitle = "Major/Ionian Scales"
+      subsubtitle = "Complete Box Pattern — With Fingering"
       % piece = " "
     }
   }
 #+END_SRC
-****** [Score] D-Major/Ionian
+****** COMMENT [Score] D-Major/Ionian
 #+BEGIN_SRC lilypond
   \score {
     <<
       \new FretBoards {
+        \scaleDiagramStyleSheet
         \set FretBoards.instrumentName = "D-Major/Ionian"
-        \diagramsDIonianCompleteBoxPatternFingering
+        \diagramsDIonianCompleteBoxPatternFingeringAllShapes
       }
       \new Devnull = "null" { \devNullIonianFingering }
-      \new Lyrics \lyricsto "null" \ionianShapesFingering
+      \new Lyrics \lyricsto "null" {
+        \setStanzaShape
+        \majorSeventhShapes
+      }
+    \new Lyrics \lyricsto "null" {
+        \setStanzaType
+        \majorSeventhLeavittTypes
+      }
     >>
     \header {
       % title = "Modern “Church Modes”"
@@ -395,16 +2445,24 @@ diagramsGisIonianCompleteBoxPatternFingering = \chordmode {
     }
   }
 #+END_SRC
-****** [Score] Dis/Es-Major/Ionian
+****** COMMENT [Score] Dis/Es-Major/Ionian
 #+BEGIN_SRC lilypond
   \score {
     <<
       \new FretBoards {
+        \scaleDiagramStyleSheet
         \set FretBoards.instrumentName = \markup\concat { "D"\teeny \sharp "/E" \teeny \flat "-Major/Ionian" }
-        \diagramsDisIonianCompleteBoxPatternFingering
+        \diagramsDisIonianCompleteBoxPatternFingeringAllShapes
       }
       \new Devnull = "null" { \devNullIonianFingering }
-      \new Lyrics \lyricsto "null" \ionianShapesFingering
+      \new Lyrics \lyricsto "null" {
+        \setStanzaShape
+        \majorSeventhShapes
+      }
+    \new Lyrics \lyricsto "null" {
+        \setStanzaType
+        \majorSeventhLeavittTypes
+      }
     >>
     \header {
       %title = "Modern “Church Modes”"
@@ -415,16 +2473,24 @@ diagramsGisIonianCompleteBoxPatternFingering = \chordmode {
     }
   }
 #+END_SRC
-****** [Score] E-Major/Ionian
+****** COMMENT [Score] E-Major/Ionian
 #+BEGIN_SRC lilypond
   \score {
     <<
       \new FretBoards {
+        \scaleDiagramStyleSheet
         \set FretBoards.instrumentName = "E-Major/Ionian"
-        \diagramsEIonianCompleteBoxPatternFingering
+        \diagramsEIonianCompleteBoxPatternFingeringAllShapes
       }
       \new Devnull = "null" { \devNullIonianFingering }
-      \new Lyrics \lyricsto "null" \ionianShapesFingering
+      \new Lyrics \lyricsto "null" {
+        \setStanzaShape
+        \majorSeventhShapes
+      }
+    \new Lyrics \lyricsto "null" {
+        \setStanzaType
+        \majorSeventhLeavittTypes
+      }
     >>
     \header {
       %title = "Modern “Church Modes”"
@@ -435,16 +2501,24 @@ diagramsGisIonianCompleteBoxPatternFingering = \chordmode {
     }
   }
 #+END_SRC
-****** [Score] F-Major/Ionian
+****** COMMENT [Score] F-Major/Ionian
 #+BEGIN_SRC lilypond
   \score {
     <<
       \new FretBoards {
+        \scaleDiagramStyleSheet
         \set FretBoards.instrumentName = "F-Major/Ionian"
-        \diagramsFIonianCompleteBoxPatternFingering
+        \diagramsFIonianCompleteBoxPatternFingeringAllShapes
       }
       \new Devnull = "null" { \devNullIonianFingering }
-      \new Lyrics \lyricsto "null" \ionianShapesFingering
+      \new Lyrics \lyricsto "null" {
+        \setStanzaShape
+        \majorSeventhShapes
+      }
+    \new Lyrics \lyricsto "null" {
+        \setStanzaType
+        \majorSeventhLeavittTypes
+      }
     >>
     \header {
       %title = "Modern “Church Modes”"
@@ -455,16 +2529,24 @@ diagramsGisIonianCompleteBoxPatternFingering = \chordmode {
     }
   }
 #+END_SRC
-****** [Score] Fis/Ges-Major/Ionian
+****** COMMENT [Score] Fis/Ges-Major/Ionian
 #+BEGIN_SRC lilypond
   \score {
     <<
       \new FretBoards {
+        \scaleDiagramStyleSheet
         \set FretBoards.instrumentName = \markup\concat { "F"\teeny \sharp "/G" \teeny \flat "-Major/Ionian" }
-        \diagramsFisIonianCompleteBoxPatternFingering
+        \diagramsFisIonianCompleteBoxPatternFingeringAllShapes
       }
       \new Devnull = "null" { \devNullIonianFingering }
-      \new Lyrics \lyricsto "null" \ionianShapesFingering
+      \new Lyrics \lyricsto "null" {
+        \setStanzaShape
+        \majorSeventhShapes
+      }
+    \new Lyrics \lyricsto "null" {
+        \setStanzaType
+        \majorSeventhLeavittTypes
+      }
     >>
     \header {
       %title = "Modern “Church Modes”"
@@ -475,16 +2557,24 @@ diagramsGisIonianCompleteBoxPatternFingering = \chordmode {
     }
   }
 #+END_SRC
-****** [Score] G-Major/Ionian
+****** COMMENT [Score] G-Major/Ionian
 #+BEGIN_SRC lilypond
   \score {
     <<
       \new FretBoards {
+        \scaleDiagramStyleSheet
         \set FretBoards.instrumentName = "G-Major/Ionian"
-        \diagramsGIonianCompleteBoxPatternFingering
+        \diagramsGIonianCompleteBoxPatternFingeringAllShapes
       }
       \new Devnull = "null" { \devNullIonianFingering }
-      \new Lyrics \lyricsto "null" \ionianShapesFingering
+      \new Lyrics \lyricsto "null" {
+        \setStanzaShape
+        \majorSeventhShapes
+      }
+    \new Lyrics \lyricsto "null" {
+        \setStanzaType
+        \majorSeventhLeavittTypes
+      }
     >>
     \header {
       %title = "Modern “Church Modes”"
@@ -495,16 +2585,24 @@ diagramsGisIonianCompleteBoxPatternFingering = \chordmode {
     }
   }
 #+END_SRC
-****** [Score] Gis/As-Major/Ionian
+****** COMMENT [Score] Gis/As-Major/Ionian
 #+BEGIN_SRC lilypond
   \score {
     <<
       \new FretBoards {
+        \scaleDiagramStyleSheet
         \set FretBoards.instrumentName = \markup\concat { "G"\teeny \sharp "/A" \teeny \flat "-Major/Ionian" }
-        \diagramsGisIonianCompleteBoxPatternFingering
+        \diagramsGisIonianCompleteBoxPatternFingeringAllShapes
       }
       \new Devnull = "null" { \devNullIonianFingering }
-      \new Lyrics \lyricsto "null" \ionianShapesFingering
+      \new Lyrics \lyricsto "null" {
+        \setStanzaShape
+        \majorSeventhShapes
+      }
+      \new Lyrics \lyricsto "null" {
+        \setStanzaType
+        \majorSeventhLeavittTypes
+      }
     >>
     \header {
       %title = "Modern “Church Modes”"
@@ -524,23 +2622,9 @@ diagramsGisIonianCompleteBoxPatternFingering = \chordmode {
     }
   }
 #+END_SRC
-***** [Lyrics] Shapes
-#+BEGIN_SRC lilypond
-  ionianShapesMovableDo = \lyricmode {
-    \repeat unfold 17 {
-      \repeat unfold 2 {
-        "C-Shape (1)"
-        "A-Shape (1)"
-        "G-Shape (1)"
-        "E-Shape (1)"
-        "D-Shape (1)"
-      }
-    }
-  }
-#+END_SRC
 
 ***** Scale Diagrams
-****** [Content] A-Ionian
+****** COMMENT [Content] A-Major/Ionian
 #+BEGIN_SRC lilypond
 diagramsAIonianCompleteBoxPatternMovableDo = \chordmode {
   \scaleDiagramStyleSheet
@@ -557,7 +2641,7 @@ diagramsAIonianCompleteBoxPatternMovableDo = \chordmode {
 }
 #+END_SRC
 
-****** [Content] Ais/Bes-Ionian
+****** COMMENT [Content] Ais/Bes-Major/Ionian
 #+BEGIN_SRC lilypond
 diagramsAisIonianCompleteBoxPatternMovableDo = \chordmode {
   \scaleDiagramStyleSheet
@@ -574,7 +2658,7 @@ diagramsAisIonianCompleteBoxPatternMovableDo = \chordmode {
 }
 #+END_SRC
 
-****** [Content] B-Ionian
+****** COMMENT [Content] B-Major/Ionian
 #+BEGIN_SRC lilypond
 diagramsBIonianCompleteBoxPatternMovableDo = \chordmode {
   \scaleDiagramStyleSheet
@@ -590,7 +2674,7 @@ diagramsBIonianCompleteBoxPatternMovableDo = \chordmode {
   b,,1*4:2.3.4.5.6.7+.8.18
 }
 #+END_SRC
-****** [Content] C-Ionian
+****** COMMENT [Content] C-Major/Ionian
 #+BEGIN_SRC lilypond
 diagramsCIonianCompleteBoxPatternMovableDo = \chordmode {
   \scaleDiagramStyleSheet
@@ -606,7 +2690,7 @@ diagramsCIonianCompleteBoxPatternMovableDo = \chordmode {
   c,1*4:2.3.4.5.6.7+.8.18
 }
 #+END_SRC
-****** [Content] Cis/Des-Ionian
+****** COMMENT [Content] Cis/Des-Major/Ionian
 #+BEGIN_SRC lilypond
 diagramsCisIonianCompleteBoxPatternMovableDo = \chordmode {
   \scaleDiagramStyleSheet
@@ -622,7 +2706,120 @@ diagramsCisIonianCompleteBoxPatternMovableDo = \chordmode {
   cis,1*4:2.3.4.5.6.7+.8.18
 }
 #+END_SRC
-****** [Content] D-Ionian
+****** [Content] D-Major/Ionian
+******* C-Shape 0
+#+BEGIN_SRC lilypond
+diagramsDIonianCompleteBoxPatternMovableDoCShapeZero = \chordmode {
+  \cShapeMovableDo
+  d,,1*4:3.4.5.6.7+.8.9.19
+}
+#+END_SRC
+
+******* COMMENT C-Shape 1/4
+#+BEGIN_SRC lilypond
+diagramsDesIonianCompleteBoxPatternMovableDoCShapeOneFour = \chordmode {
+  \cShapeMovableDo
+  des,,1*4:4.5.6.7+.8.9.10.20
+}
+#+END_SRC
+
+******* A-Shape 1a
+#+BEGIN_SRC lilypond
+diagramsDIonianCompleteBoxPatternMovableDoAShapeOneA = \chordmode {
+  \aShapeMovableDo
+  d,,1*4:4.5.6.7+.8.9.10.20
+}
+#+END_SRC
+
+******* COMMENT A-Shape 4
+#+BEGIN_SRC lilypond
+  diagramsDesIonianCompleteBoxPatternMovableDoAShapeFour = \chordmode {
+    \aShapeMovableDo
+    des,,1*4:5.6.7+.8.9.10.11.21
+  }
+#+END_SRC
+
+******* COMMENT A-Shape 1b
+#+BEGIN_SRC lilypond
+diagramsDesIonianCompleteBoxPatternMovableDoAShapeOneB = \chordmode {
+  \aShapeAltOne
+  des,,1*4:5.6.7+.8.9.10.11.21
+}
+#+END_SRC
+
+******* G-Shape 4
+#+BEGIN_SRC lilypond
+diagramsDIonianCompleteBoxPatternMovableDoGShapeFour = \chordmode {
+  \gShapeMovableDo
+  d,,,1*4:6.7+.8.9.10.11.12.22
+}
+#+END_SRC
+
+******* COMMENT G-Shape 1
+#+BEGIN_SRC lilypond
+diagramsDesIonianCompleteBoxPatternMovableDoGShapeOne = \chordmode {
+  \gShapeMovableDo
+  des,,,1*4:6.7+.8.9.10.11.12.22
+}
+#+END_SRC
+
+******* E-Shape 0
+#+BEGIN_SRC lilypond
+diagramsDIonianCompleteBoxPatternMovableDoEShapeZero = \chordmode {
+  \eShapeMovableDo
+  d,,,1*4:7+.8.9.10.11.12.13.23
+}
+#+END_SRC
+******* D-Shape 4
+#+BEGIN_SRC lilypond
+diagramsDIonianCompleteBoxPatternMovableDoDShapeFour = \chordmode {
+  \dShapeMovableDo
+  d,1*4:2.3.4.5.6.7+.8.18
+}
+#+END_SRC
+******* All Shapes D Ionian Complete Box Pattern Movable Do
+******** diagramsDIonianCompleteBoxPatternMovableDoAllShapes = \lyricmode {
+#+BEGIN_SRC lilypond
+diagramsDIonianCompleteBoxPatternMovableDoAllShapes = \lyricmode {
+#+END_SRC
+******** C-Shape 0
+#+BEGIN_SRC lilypond
+\diagramsDIonianCompleteBoxPatternMovableDoCShapeZero
+#+END_SRC
+******** COMMENT C-Shape 1/4
+#+BEGIN_SRC lilypond
+\diagramsDesIonianCompleteBoxPatternMovableDoCShapeOneFour
+#+END_SRC
+******** A-Shape 1a
+#+BEGIN_SRC lilypond
+\diagramsDIonianCompleteBoxPatternMovableDoAShapeOneA
+#+END_SRC
+******** COMMENT A-Shape 4
+#+BEGIN_SRC lilypond
+\diagramsDesIonianCompleteBoxPatternMovableDoAShapeFour
+#+END_SRC
+******** COMMENT A-Shape 1b
+#+BEGIN_SRC lilypond
+\diagramsDesIonianCompleteBoxPatternMovableDoAShapeOneB
+#+END_SRC
+******** G-Shape 4
+#+BEGIN_SRC lilypond
+\diagramsDIonianCompleteBoxPatternMovableDoGShapeFour
+#+END_SRC
+******** E-Shape 0
+#+BEGIN_SRC lilypond
+\diagramsDIonianCompleteBoxPatternMovableDoEShapeZero
+#+END_SRC
+******** D-Shape 4
+#+BEGIN_SRC lilypond
+\diagramsDIonianCompleteBoxPatternMovableDoDShapeFour
+#+END_SRC
+******** }
+#+BEGIN_SRC lilypond
+}
+#+END_SRC
+
+****** COMMENT [Content] D-Major/Ionian
 #+BEGIN_SRC lilypond
 diagramsDIonianCompleteBoxPatternMovableDo = \chordmode {
   \scaleDiagramStyleSheet
@@ -639,7 +2836,7 @@ diagramsDIonianCompleteBoxPatternMovableDo = \chordmode {
 }
 #+END_SRC
 
-****** [Content] Dis/Es-Ionian
+****** COMMENT [Content] Dis/Es-Major/Ionian
 #+BEGIN_SRC lilypond
 diagramsDisIonianCompleteBoxPatternMovableDo = \chordmode {
   \scaleDiagramStyleSheet
@@ -656,7 +2853,7 @@ diagramsDisIonianCompleteBoxPatternMovableDo = \chordmode {
 }
 #+END_SRC
 
-****** [Content] E-Ionian
+****** COMMENT [Content] E-Major/Ionian
 #+BEGIN_SRC lilypond
 diagramsEIonianCompleteBoxPatternMovableDo = \chordmode {
   \scaleDiagramStyleSheet
@@ -673,7 +2870,7 @@ diagramsEIonianCompleteBoxPatternMovableDo = \chordmode {
 }
 #+END_SRC
 
-****** [Content] F-Ionian
+****** COMMENT [Content] F-Major/Ionian
 #+BEGIN_SRC lilypond
 diagramsFIonianCompleteBoxPatternMovableDo = \chordmode {
   \scaleDiagramStyleSheet
@@ -690,7 +2887,7 @@ diagramsFIonianCompleteBoxPatternMovableDo = \chordmode {
 }
 #+END_SRC
 
-****** [Content] Fis/Ges-Ionian
+****** COMMENT [Content] Fis/Ges-Major/Ionian
 #+BEGIN_SRC lilypond
 diagramsFisIonianCompleteBoxPatternMovableDo = \chordmode {
   \scaleDiagramStyleSheet
@@ -707,7 +2904,7 @@ diagramsFisIonianCompleteBoxPatternMovableDo = \chordmode {
 }
 #+END_SRC
 
-****** [Content] G-Ionian
+****** COMMENT [Content] G-Major/Ionian
 #+BEGIN_SRC lilypond
 diagramsGIonianCompleteBoxPatternMovableDo = \chordmode {
   \scaleDiagramStyleSheet
@@ -724,7 +2921,7 @@ diagramsGIonianCompleteBoxPatternMovableDo = \chordmode {
 }
 #+END_SRC
 
-****** [Content] Gis/As-Major/Ionian
+****** COMMENT [Content] Gis/As-Major/Ionian
 #+BEGIN_SRC lilypond
 diagramsGisIonianCompleteBoxPatternMovableDo = \chordmode {
   \scaleDiagramStyleSheet
@@ -745,8 +2942,7 @@ diagramsGisIonianCompleteBoxPatternMovableDo = \chordmode {
 #+BEGIN_SRC lilypond
 \bookpart {
 #+END_SRC
-
-****** [Score] A-Ionian
+****** COMMENT [Score] A-Major/Ionian
 #+BEGIN_SRC lilypond
   \score {
     <<
@@ -755,7 +2951,14 @@ diagramsGisIonianCompleteBoxPatternMovableDo = \chordmode {
         \diagramsAIonianCompleteBoxPatternMovableDo
       }
       \new Devnull = "null" { \devNullIonianMovableDo }
-      \new Lyrics \lyricsto "null" \ionianShapesMovableDo
+      \new Lyrics \lyricsto "null" {
+        \setStanzaShape
+        \majorSeventhShapes
+      }
+      \new Lyrics \lyricsto "null" {
+        \setStanzaType
+        \majorSeventhLeavittTypes
+      }
     >>
     \header {
       %title = "Modern “Church Modes”"
@@ -766,7 +2969,7 @@ diagramsGisIonianCompleteBoxPatternMovableDo = \chordmode {
     }
   }
 #+END_SRC
-****** [Score] Ais/Bes-Major/Ionian
+****** COMMENT [Score] Ais/Bes-Major/Ionian
 #+BEGIN_SRC lilypond
   \score {
     <<
@@ -775,7 +2978,14 @@ diagramsGisIonianCompleteBoxPatternMovableDo = \chordmode {
         \diagramsAisIonianCompleteBoxPatternMovableDo
       }
       \new Devnull = "null" { \devNullIonianMovableDo }
-      \new Lyrics \lyricsto "null" \ionianShapesMovableDo
+      \new Lyrics \lyricsto "null" {
+        \setStanzaShape
+        \majorSeventhShapes
+      }
+      \new Lyrics \lyricsto "null" {
+        \setStanzaType
+        \majorSeventhLeavittTypes
+      }
     >>
     \header {
       %title = "Modern “Church Modes”"
@@ -786,7 +2996,7 @@ diagramsGisIonianCompleteBoxPatternMovableDo = \chordmode {
     }
   }
 #+END_SRC
-****** [Score] B-Ionian
+****** COMMENT [Score] B-Major/Ionian
 #+BEGIN_SRC lilypond
   \score {
     <<
@@ -795,7 +3005,14 @@ diagramsGisIonianCompleteBoxPatternMovableDo = \chordmode {
         \diagramsBIonianCompleteBoxPatternMovableDo
       }
       \new Devnull = "null" { \devNullIonianMovableDo }
-      \new Lyrics \lyricsto "null" \ionianShapesMovableDo
+      \new Lyrics \lyricsto "null" {
+        \setStanzaShape
+        \majorSeventhShapes
+      }
+      \new Lyrics \lyricsto "null" {
+        \setStanzaType
+        \majorSeventhLeavittTypes
+      }
     >>
     \header {
       %title = "Modern “Church Modes”"
@@ -806,7 +3023,7 @@ diagramsGisIonianCompleteBoxPatternMovableDo = \chordmode {
     }
   }
 #+END_SRC
-****** [Score] C-Major/Ionian
+****** COMMENT [Score] C-Major/Ionian
 #+BEGIN_SRC lilypond
   \score {
     <<
@@ -815,7 +3032,14 @@ diagramsGisIonianCompleteBoxPatternMovableDo = \chordmode {
         \diagramsCIonianCompleteBoxPatternMovableDo
       }
       \new Devnull = "null" { \devNullIonianMovableDo }
-      \new Lyrics \lyricsto "null" \ionianShapesMovableDo
+      \new Lyrics \lyricsto "null" {
+        \setStanzaShape
+        \majorSeventhShapes
+      }
+      \new Lyrics \lyricsto "null" {
+        \setStanzaType
+        \majorSeventhLeavittTypes
+      }
     >>
     \header {
       title = ##f
@@ -825,27 +3049,35 @@ diagramsGisIonianCompleteBoxPatternMovableDo = \chordmode {
     }
   }
 #+END_SRC
-****** [Score] Cis/Des-Major/Ionian
+****** COMMENT [Score] Des-Major/Ionian
 #+BEGIN_SRC lilypond
   \score {
     <<
       \new FretBoards {
-        \set FretBoards.instrumentName = \markup\concat { "C"\teeny \sharp "/D" \teeny \flat "-Major/Ionian" }
-        \diagramsCisIonianCompleteBoxPatternMovableDo
+        \scaleDiagramStyleSheet
+        \set FretBoards.instrumentName = \markup\center-column { \line { \concat { "C"\teeny \sharp "/D" \teeny \flat } } \line { "Major/Ionian" } }
+        \diagramsDesIonianCompleteBoxPatternMovableDoAllShapes
       }
       \new Devnull = "null" { \devNullIonianMovableDo }
-      \new Lyrics \lyricsto "null" \ionianShapesMovableDo
+      \new Lyrics \lyricsto "null" {
+        \setStanzaShape
+        \majorSeventhShapes
+      }
+      % \new Lyrics \lyricsto "null" {
+      %   \setStanzaType
+      %   \majorSeventhLeavittTypes
+      % }
     >>
     \header {
       %title = "Modern “Church Modes”"
       title = ##f
-      % subtitle = "Major/Ionian Scales"
-      % subsubtitle = "Complete Box Pattern — With Movable Do"
+      subtitle = "Major/Ionian Scales"
+      subsubtitle = "Complete Box Pattern — With Movable Do"
       % piece = " "
     }
   }
 #+END_SRC
-****** [Score] D-Major/Ionian
+****** COMMENT [Score] D-Major/Ionian
 #+BEGIN_SRC lilypond
   \score {
     <<
@@ -854,7 +3086,14 @@ diagramsGisIonianCompleteBoxPatternMovableDo = \chordmode {
         \diagramsDIonianCompleteBoxPatternMovableDo
       }
       \new Devnull = "null" { \devNullIonianMovableDo }
-      \new Lyrics \lyricsto "null" \ionianShapesMovableDo
+      \new Lyrics \lyricsto "null" {
+        \setStanzaShape
+        \majorSeventhShapes
+      }
+      \new Lyrics \lyricsto "null" {
+        \setStanzaType
+        \majorSeventhLeavittTypes
+      }
     >>
     \header {
       % title = "Modern “Church Modes”"
@@ -865,7 +3104,7 @@ diagramsGisIonianCompleteBoxPatternMovableDo = \chordmode {
     }
   }
 #+END_SRC
-****** [Score] Dis/Es-Major/Ionian
+****** COMMENT [Score] Dis/Es-Major/Ionian
 #+BEGIN_SRC lilypond
   \score {
     <<
@@ -874,7 +3113,14 @@ diagramsGisIonianCompleteBoxPatternMovableDo = \chordmode {
         \diagramsDisIonianCompleteBoxPatternMovableDo
       }
       \new Devnull = "null" { \devNullIonianMovableDo }
-      \new Lyrics \lyricsto "null" \ionianShapesMovableDo
+      \new Lyrics \lyricsto "null" {
+        \setStanzaShape
+        \majorSeventhShapes
+      }
+      \new Lyrics \lyricsto "null" {
+        \setStanzaType
+        \majorSeventhLeavittTypes
+      }
     >>
     \header {
       %title = "Modern “Church Modes”"
@@ -885,7 +3131,7 @@ diagramsGisIonianCompleteBoxPatternMovableDo = \chordmode {
     }
   }
 #+END_SRC
-****** [Score] E-Major/Ionian
+****** COMMENT [Score] E-Major/Ionian
 #+BEGIN_SRC lilypond
   \score {
     <<
@@ -894,7 +3140,14 @@ diagramsGisIonianCompleteBoxPatternMovableDo = \chordmode {
         \diagramsEIonianCompleteBoxPatternMovableDo
       }
       \new Devnull = "null" { \devNullIonianMovableDo }
-      \new Lyrics \lyricsto "null" \ionianShapesMovableDo
+      \new Lyrics \lyricsto "null" {
+        \setStanzaShape
+        \majorSeventhShapes
+      }
+      \new Lyrics \lyricsto "null" {
+        \setStanzaType
+        \majorSeventhLeavittTypes
+      }
     >>
     \header {
       %title = "Modern “Church Modes”"
@@ -905,7 +3158,7 @@ diagramsGisIonianCompleteBoxPatternMovableDo = \chordmode {
     }
   }
 #+END_SRC
-****** [Score] F-Major/Ionian
+****** COMMENT [Score] F-Major/Ionian
 #+BEGIN_SRC lilypond
   \score {
     <<
@@ -914,7 +3167,14 @@ diagramsGisIonianCompleteBoxPatternMovableDo = \chordmode {
         \diagramsFIonianCompleteBoxPatternMovableDo
       }
       \new Devnull = "null" { \devNullIonianMovableDo }
-      \new Lyrics \lyricsto "null" \ionianShapesMovableDo
+      \new Lyrics \lyricsto "null" {
+        \setStanzaShape
+        \majorSeventhShapes
+      }
+      \new Lyrics \lyricsto "null" {
+        \setStanzaType
+        \majorSeventhLeavittTypes
+      }
     >>
     \header {
       %title = "Modern “Church Modes”"
@@ -925,7 +3185,7 @@ diagramsGisIonianCompleteBoxPatternMovableDo = \chordmode {
     }
   }
 #+END_SRC
-****** [Score] Fis/Ges-Major/Ionian
+****** COMMENT [Score] Fis/Ges-Major/Ionian
 #+BEGIN_SRC lilypond
   \score {
     <<
@@ -934,7 +3194,14 @@ diagramsGisIonianCompleteBoxPatternMovableDo = \chordmode {
         \diagramsFisIonianCompleteBoxPatternMovableDo
       }
       \new Devnull = "null" { \devNullIonianMovableDo }
-      \new Lyrics \lyricsto "null" \ionianShapesMovableDo
+      \new Lyrics \lyricsto "null" {
+        \setStanzaShape
+        \majorSeventhShapes
+      }
+      \new Lyrics \lyricsto "null" {
+        \setStanzaType
+        \majorSeventhLeavittTypes
+      }
     >>
     \header {
       %title = "Modern “Church Modes”"
@@ -945,7 +3212,7 @@ diagramsGisIonianCompleteBoxPatternMovableDo = \chordmode {
     }
   }
 #+END_SRC
-****** [Score] G-Major/Ionian
+****** COMMENT [Score] G-Major/Ionian
 #+BEGIN_SRC lilypond
   \score {
     <<
@@ -954,7 +3221,14 @@ diagramsGisIonianCompleteBoxPatternMovableDo = \chordmode {
         \diagramsGIonianCompleteBoxPatternMovableDo
       }
       \new Devnull = "null" { \devNullIonianMovableDo }
-      \new Lyrics \lyricsto "null" \ionianShapesMovableDo
+      \new Lyrics \lyricsto "null" {
+        \setStanzaShape
+        \majorSeventhShapes
+      }
+      \new Lyrics \lyricsto "null" {
+        \setStanzaType
+        \majorSeventhLeavittTypes
+      }
     >>
     \header {
       %title = "Modern “Church Modes”"
@@ -965,7 +3239,7 @@ diagramsGisIonianCompleteBoxPatternMovableDo = \chordmode {
     }
   }
 #+END_SRC
-****** [Score] Gis/As-Major/Ionian
+****** COMMENT [Score] Gis/As-Major/Ionian
 #+BEGIN_SRC lilypond
   \score {
     <<
@@ -974,7 +3248,14 @@ diagramsGisIonianCompleteBoxPatternMovableDo = \chordmode {
         \diagramsGisIonianCompleteBoxPatternMovableDo
       }
       \new Devnull = "null" { \devNullIonianMovableDo }
-      \new Lyrics \lyricsto "null" \ionianShapesMovableDo
+      \new Lyrics \lyricsto "null" {
+        \setStanzaShape
+        \majorSeventhShapes
+      }
+      \new Lyrics \lyricsto "null" {
+        \setStanzaType
+        \majorSeventhLeavittTypes
+      }
     >>
     \header {
       %title = "Modern “Church Modes”"
@@ -985,6 +3266,1263 @@ diagramsGisIonianCompleteBoxPatternMovableDo = \chordmode {
     }
   }
 #+END_SRC
+****** }
 #+BEGIN_SRC lilypond
 } % end bookpart
+#+END_SRC
+** Natural Minor/Aeolian Scale
+*** Complete Box Patterns
+**** COMMENT With Fingering
+***** Devnull
+#+BEGIN_SRC lilypond
+  devNullAeolianFingering = {
+    \repeat unfold 5 {
+      c1*4
+    }
+  }
+#+END_SRC
+***** Scale Diagrams
+****** [Content] A-Nat. Minor/Aeolian
+#+BEGIN_SRC lilypond
+  diagramsAAeolianCompleteBoxPatternFingering = \chordmode {
+    \scaleDiagramStyleSheet
+    \cShape
+    a,,1*4:3-.4.5.6-.7.8.9.19
+    % \aShape
+    % a,,1*4:4.5.6-.7.8.9.10-.20
+    % \gShape
+    % a,,,1*4:6-.7.8.9.10-.11.12.22
+    % \eShape
+    % a,,,1*4:7+.8.9.10.11.12.13.23
+    % \dShape
+    % a,,1*4:2.3.4.5.6.7+.8.18
+  }
+#+END_SRC
+
+****** [Content] Ais/Bes-Nat. Minor/Aeolian
+#+BEGIN_SRC lilypond
+  diagramsAisAeolianCompleteBoxPatternFingering = \chordmode {
+    \scaleDiagramStyleSheet
+    \cShape
+    ais,,1*4:3-.4.5.6-.7.8.9.19
+    % \aShape
+    % ais,,1*4:4.5.6.7+.8.9.10.20
+    % \gShape
+    % ais,,,1*4:6.7+.8.9.10.11.12.22
+    % \eShape
+    % ais,,,1*4:7+.8.9.10.11.12.13.23
+    % \dShape
+    % ais,,1*4:2.3.4.5.6.7+.8.18
+  }
+#+END_SRC
+
+****** [Content] B-Nat. Minor/Aeolian
+#+BEGIN_SRC lilypond
+  diagramsBAeolianCompleteBoxPatternFingering = \chordmode {
+    \scaleDiagramStyleSheet
+    \cShape
+    b,,,1*4:3-.4.5.6-.7.8.9.19
+    % \aShape
+    % b,,,1*4:4.5.6.7+.8.9.10.20
+    % \gShape
+    % b,,,1*4:6.7+.8.9.10.11.12.22
+    % \eShape
+    % b,,,1*4:7+.8.9.10.11.12.13.23
+    % \dShape
+    % b,,1*4:2.3.4.5.6.7+.8.18
+  }
+#+END_SRC
+****** [Content] C-Nat. Minor/Aeolian
+#+BEGIN_SRC lilypond
+  diagramsCAeolianCompleteBoxPatternFingering = \chordmode {
+    \scaleDiagramStyleSheet
+    \cShape
+    c,,1*4:3-.4.5.6-.7.8.9.19
+    % \aShape
+    % c,,1*4:4.5.6.7+.8.9.10.20
+    % \gShape
+    % c,,,1*4:6.7+.8.9.10.11.12.22
+    % \eShape
+    % c,,,1*4:7+.8.9.10.11.12.13.23
+    % \dShape
+    % c,1*4:2.3.4.5.6.7+.8.18
+  }
+#+END_SRC
+****** [Content] Cis/Des-Nat. Minor/Aeolian
+#+BEGIN_SRC lilypond
+  diagramsCisAeolianCompleteBoxPatternFingering = \chordmode {
+    \scaleDiagramStyleSheet
+    \cShape
+    cis,,1*4:3-.4.5.6-.7.8.9.19
+    % \aShape
+    % cis,,1*4:4.5.6.7+.8.9.10.20
+    % \gShape
+    % cis,,,1*4:6.7+.8.9.10.11.12.22
+    % \eShape
+    % cis,,1*4:7+.8.9.10.11.12.13.23
+    % \dShape
+    % cis,1*4:2.3.4.5.6.7+.8.18
+  }
+#+END_SRC
+****** [Content] D-Nat. Minor/Aeolian
+#+BEGIN_SRC lilypond
+  diagramsDAeolianCompleteBoxPatternFingering = \chordmode {
+    \scaleDiagramStyleSheet
+    \cShape
+    d,,1*4:3-.4.5.6-.7.8.9.19
+    % \aShape
+    % d,,1*4:4.5.6.7+.8.9.10.20
+    % \gShape
+    % d,,,1*4:6.7+.8.9.10.11.12.22
+    % \eShape
+    % d,,1*4:7+.8.9.10.11.12.13.23
+    % \dShape
+    % d,,1*4:2.3.4.5.6.7+.8.18
+  }
+#+END_SRC
+
+****** [Content] Dis/Es-Nat. Minor/Aeolian
+#+BEGIN_SRC lilypond
+  diagramsDisAeolianCompleteBoxPatternFingering = \chordmode {
+    \scaleDiagramStyleSheet
+    \cShape
+    dis,,1*4:3-.4.5.6-.7.8.9.19
+    % \aShape
+    % dis,,1*4:4.5.6.7+.8.9.10.20
+    % \gShape
+    % dis,,,1*4:6.7+.8.9.10.11.12.22
+    % \eShape
+    % dis,,1*4:7+.8.9.10.11.12.13.23
+    % \dShape
+    % dis,,1*4:2.3.4.5.6.7+.8.18
+  }
+#+END_SRC
+
+****** [Content] E-Nat. Minor/Aeolian
+#+BEGIN_SRC lilypond
+  diagramsEAeolianCompleteBoxPatternFingering = \chordmode {
+    \scaleDiagramStyleSheet
+    \cShape
+    e,,1*4:3-.4.5.6-.7.8.9.19
+    % \aShape
+    % e,,1*4:4.5.6.7+.8.9.10.20
+    % \gShape
+    % e,,,1*4:6.7+.8.9.10.11.12.22
+    % \eShape
+    % e,,1*4:7+.8.9.10.11.12.13.23
+    % \dShape
+    % e,,1*4:2.3.4.5.6.7+.8.18
+  }
+#+END_SRC
+
+****** [Content] F-Nat. Minor/Aeolian
+#+BEGIN_SRC lilypond
+  diagramsFAeolianCompleteBoxPatternFingering = \chordmode {
+    \scaleDiagramStyleSheet
+    \cShape
+    f,,1*4:3-.4.5.6-.7.8.9.19
+    % \aShape
+    % f,,1*4:4.5.6.7+.8.9.10.20
+    % \gShape
+    % f,,,1*4:6.7+.8.9.10.11.12.22
+    % \eShape
+    % f,,,1*4:7+.8.9.10.11.12.13.23
+    % \dShape
+    % f,,1*4:2.3.4.5.6.7+.8.18
+  }
+#+END_SRC
+
+****** [Content] Fis/Ges-Nat. Minor/Aeolian
+#+BEGIN_SRC lilypond
+  diagramsFisAeolianCompleteBoxPatternFingering = \chordmode {
+    \scaleDiagramStyleSheet
+    \cShape
+    fis,,1*4:3-.4.5.6-.7.8.9.19
+    % \aShape
+    % fis,,1*4:4.5.6.7+.8.9.10.20
+    % \gShape
+    % fis,,,1*4:6.7+.8.9.10.11.12.22
+    % \eShape
+    % fis,,,1*4:7+.8.9.10.11.12.13.23
+    % \dShape
+    % fis,,1*4:2.3.4.5.6.7+.8.18
+  }
+#+END_SRC
+****** [Content] G-Nat. Minor/Aeolian
+#+BEGIN_SRC lilypond
+  diagramsGAeolianCompleteBoxPatternFingering = \chordmode {
+    \scaleDiagramStyleSheet
+    \cShape
+    g,,1*4:3-.4.5.6-.7.8.9.19
+    % \aShape
+    % g,,1*4:4.5.6.7+.8.9.10.20
+    % \gShape
+    % g,,,1*4:6.7+.8.9.10.11.12.22
+    % \eShape
+    % g,,,1*4:7+.8.9.10.11.12.13.23
+    % \dShape
+    % g,,1*4:2.3.4.5.6.7+.8.18
+  }
+#+END_SRC
+
+****** [Content] Gis/As-Nat. Minor/Aeolian
+#+BEGIN_SRC lilypond
+  diagramsGisAeolianCompleteBoxPatternFingering = \chordmode {
+    \scaleDiagramStyleSheet
+    \cShape
+    gis,,1*4:3-.4.5.6-.7.8.9.19
+    % \aShape
+    % gis,,1*4:4.5.6.7+.8.9.10.20
+    % \gShape
+    % gis,,,1*4:6.7+.8.9.10.11.12.22
+    % \eShape
+    % gis,,,1*4:7+.8.9.10.11.12.13.23
+    % \dShape
+    % gis,,1*4:2.3.4.5.6.7+.8.18
+  }
+#+END_SRC
+
+***** Scores
+****** [Score] A-Nat. Minor/Aeolian
+#+BEGIN_SRC lilypond
+  \score {
+    <<
+      \new FretBoards {
+        \set FretBoards.instrumentName = "A-Nat. Minor/Aeolian"
+        \diagramsAAeolianCompleteBoxPatternFingering
+      }
+      \new Devnull = "null" { \devNullAeolianFingering }
+      \new Lyrics \lyricsto "null" {
+        \setStanzaShape
+        \minorSeventhShapes
+      }
+      \new Lyrics \lyricsto "null" {
+        \setStanzaType
+        \minorSeventhLeavittTypes
+      }
+    >>
+    \header {
+      %title = "Modern “Church Modes”"
+      title = ##f
+      subtitle = "Nat. Minor/Aeolian Scales"
+      subsubtitle = "Complete Box Pattern — With Fingering"
+      piece = " "
+    }
+  }
+#+END_SRC
+****** [Score] Ais/Bes-Nat. Minor/Aeolian
+#+BEGIN_SRC lilypond
+  \score {
+    <<
+      \new FretBoards {
+        \set FretBoards.instrumentName = \markup\concat { "A"\teeny \sharp "/B" \teeny \flat "-Nat. Minor/Aeolian" }
+        \diagramsAisAeolianCompleteBoxPatternFingering
+      }
+      \new Devnull = "null" { \devNullAeolianFingering }
+      \new Lyrics \lyricsto "null" {
+        \setStanzaShape
+        \minorSeventhShapes
+      }
+      \new Lyrics \lyricsto "null" {
+        \setStanzaType
+        \minorSeventhLeavittTypes
+      }
+    >>
+    \header {
+      %title = "Modern “Church Modes”"
+      title = ##f
+      % subtitle = "Nat. Minor/Aeolian Scales"
+      % subsubtitle = "Complete Box Pattern — With Fingering"
+      % piece = " "
+    }
+  }
+#+END_SRC
+****** [Score] B-Nat. Minor/Aeolian
+#+BEGIN_SRC lilypond
+  \score {
+    <<
+      \new FretBoards {
+        \set FretBoards.instrumentName = "B-Nat. Minor/Aeolian"
+        \diagramsBAeolianCompleteBoxPatternFingering
+      }
+      \new Devnull = "null" { \devNullAeolianFingering }
+      \new Lyrics \lyricsto "null" {
+        \setStanzaShape
+        \minorSeventhShapes
+      }
+      \new Lyrics \lyricsto "null" {
+        \setStanzaType
+        \minorSeventhLeavittTypes
+      }
+    >>
+    \header {
+      %title = "Modern “Church Modes”"
+      title = ##f
+      % subtitle = "Nat. Minor/Aeolian Scales"
+      % subsubtitle = "Complete Box Pattern — With Fingering"
+      % piece = " "
+    }
+  }
+#+END_SRC
+****** [Score] C-Nat. Minor/Aeolian
+#+BEGIN_SRC lilypond
+  \score {
+    <<
+      \new FretBoards {
+        \set FretBoards.instrumentName = "C-Nat. Minor/Aeolian"
+        \diagramsCAeolianCompleteBoxPatternFingering
+      }
+      \new Devnull = "null" { \devNullAeolianFingering }
+      \new Lyrics \lyricsto "null" {
+        \setStanzaShape
+        \minorSeventhShapes
+      }
+      \new Lyrics \lyricsto "null" {
+        \setStanzaType
+        \minorSeventhLeavittTypes
+      }
+    >>
+    \header {
+      title = ##f
+      % subtitle = "Nat. Minor/Aeolian Scales"
+      % subsubtitle = "Complete Box Pattern — With Fingering"
+      % piece = " "
+    }
+  }
+#+END_SRC
+****** [Score] Cis/Des-Nat. Minor/Aeolian
+#+BEGIN_SRC lilypond
+  \score {
+    <<
+      \new FretBoards {
+        \set FretBoards.instrumentName = \markup\concat { "C"\teeny \sharp "/D" \teeny \flat "-Nat. Minor/Aeolian" }
+        \diagramsCisAeolianCompleteBoxPatternFingering
+      }
+      \new Devnull = "null" { \devNullAeolianFingering }
+      \new Lyrics \lyricsto "null" {
+        \setStanzaShape
+        \minorSeventhShapes
+      }
+      \new Lyrics \lyricsto "null" {
+        \setStanzaType
+        \minorSeventhLeavittTypes
+      }
+    >>
+    \header {
+      %title = "Modern “Church Modes”"
+      title = ##f
+      % subtitle = "Nat. Minor/Aeolian Scales"
+      % subsubtitle = "Complete Box Pattern — With Fingering"
+      % piece = " "
+    }
+  }
+#+END_SRC
+****** [Score] D-Nat. Minor/Aeolian
+#+BEGIN_SRC lilypond
+  \score {
+    <<
+      \new FretBoards {
+        \set FretBoards.instrumentName = "D-Nat. Minor/Aeolian"
+        \diagramsDAeolianCompleteBoxPatternFingering
+      }
+      \new Devnull = "null" { \devNullAeolianFingering }
+      \new Lyrics \lyricsto "null" {
+        \setStanzaShape
+        \minorSeventhShapes
+      }
+      \new Lyrics \lyricsto "null" {
+        \setStanzaType
+        \minorSeventhLeavittTypes
+      }
+    >>
+    \header {
+      % title = "Modern “Church Modes”"
+      title = ##f
+      % subtitle = "Nat. Minor/Aeolian Scales"
+      % subsubtitle = "Complete Box Pattern — With Fingering"
+      % piece = " "
+    }
+  }
+#+END_SRC
+****** [Score] Dis/Es-Nat. Minor/Aeolian
+#+BEGIN_SRC lilypond
+  \score {
+    <<
+      \new FretBoards {
+        \set FretBoards.instrumentName = \markup\concat { "D"\teeny \sharp "/E" \teeny \flat "-Nat. Minor/Aeolian" }
+        \diagramsDisAeolianCompleteBoxPatternFingering
+      }
+      \new Devnull = "null" { \devNullAeolianFingering }
+      \new Lyrics \lyricsto "null" {
+        \setStanzaShape
+        \minorSeventhShapes
+      }
+      \new Lyrics \lyricsto "null" {
+        \setStanzaType
+        \minorSeventhLeavittTypes
+      }
+    >>
+    \header {
+      %title = "Modern “Church Modes”"
+      title = ##f
+      % subtitle = "Nat. Minor/Aeolian Scales"
+      % subsubtitle = "Complete Box Pattern — With Fingering"
+      % piece = " "
+    }
+  }
+#+END_SRC
+****** [Score] E-Nat. Minor/Aeolian
+#+BEGIN_SRC lilypond
+  \score {
+    <<
+      \new FretBoards {
+        \set FretBoards.instrumentName = "E-Nat. Minor/Aeolian"
+        \diagramsEAeolianCompleteBoxPatternFingering
+      }
+      \new Devnull = "null" { \devNullAeolianFingering }
+      \new Lyrics \lyricsto "null" {
+        \setStanzaShape
+        \minorSeventhShapes
+      }
+      \new Lyrics \lyricsto "null" {
+        \setStanzaType
+        \minorSeventhLeavittTypes
+      }
+    >>
+    \header {
+      %title = "Modern “Church Modes”"
+      title = ##f
+      % subtitle = "Nat. Minor/Aeolian Scales"
+      % subsubtitle = "Complete Box Pattern — With Fingering"
+      % piece = " "
+    }
+  }
+#+END_SRC
+****** [Score] F-Nat. Minor/Aeolian
+#+BEGIN_SRC lilypond
+  \score {
+    <<
+      \new FretBoards {
+        \set FretBoards.instrumentName = "F-Nat. Minor/Aeolian"
+        \diagramsFAeolianCompleteBoxPatternFingering
+      }
+      \new Devnull = "null" { \devNullAeolianFingering }
+      \new Lyrics \lyricsto "null" {
+        \setStanzaShape
+        \minorSeventhShapes
+      }
+      \new Lyrics \lyricsto "null" {
+        \setStanzaType
+        \minorSeventhLeavittTypes
+      }
+    >>
+    \header {
+      %title = "Modern “Church Modes”"
+      title = ##f
+      % subtitle = "Nat. Minor/Aeolian Scales"
+      % subsubtitle = "Complete Box Pattern — With Fingering"
+      % piece = " "
+    }
+  }
+#+END_SRC
+****** [Score] Fis/Ges-Nat. Minor/Aeolian
+#+BEGIN_SRC lilypond
+  \score {
+    <<
+      \new FretBoards {
+        \set FretBoards.instrumentName = \markup\concat { "F"\teeny \sharp "/G" \teeny \flat "-Nat. Minor/Aeolian" }
+        \diagramsFisAeolianCompleteBoxPatternFingering
+      }
+      \new Devnull = "null" { \devNullAeolianFingering }
+      \new Lyrics \lyricsto "null" {
+        \setStanzaShape
+        \minorSeventhShapes
+      }
+      \new Lyrics \lyricsto "null" {
+        \setStanzaType
+        \minorSeventhLeavittTypes
+      }
+    >>
+    \header {
+      %title = "Modern “Church Modes”"
+      title = ##f
+      % subtitle = "Nat. Minor/Aeolian Scales"
+      % subsubtitle = "Complete Box Pattern — With Fingering"
+      % piece = " "
+    }
+  }
+#+END_SRC
+****** [Score] G-Nat. Minor/Aeolian
+#+BEGIN_SRC lilypond
+  \score {
+    <<
+      \new FretBoards {
+        \set FretBoards.instrumentName = "G-Nat. Minor/Aeolian"
+        \diagramsGAeolianCompleteBoxPatternFingering
+      }
+      \new Devnull = "null" { \devNullAeolianFingering }
+      \new Lyrics \lyricsto "null" {
+        \setStanzaShape
+        \minorSeventhShapes
+      }
+      \new Lyrics \lyricsto "null" {
+        \setStanzaType
+        \minorSeventhLeavittTypes
+      }
+    >>
+    \header {
+      %title = "Modern “Church Modes”"
+      title = ##f
+      % subtitle = "Nat. Minor/Aeolian Scales"
+      % subsubtitle = "Complete Box Pattern — With Fingering"
+      % piece = " "
+    }
+  }
+#+END_SRC
+****** [Score] Gis/As-Nat. Minor/Aeolian
+#+BEGIN_SRC lilypond
+  \score {
+    <<
+      \new FretBoards {
+        \set FretBoards.instrumentName = \markup\concat { "G"\teeny \sharp "/A" \teeny \flat "-Nat. Minor/Aeolian" }
+        \diagramsGisAeolianCompleteBoxPatternFingering
+      }
+      \new Devnull = "null" { \devNullAeolianFingering }
+      \new Lyrics \lyricsto "null" {
+        \setStanzaShape
+        \minorSeventhShapes
+      }
+      \new Lyrics \lyricsto "null" {
+        \setStanzaType
+        \minorSeventhLeavittTypes
+      }
+    >>
+    \header {
+      %title = "Modern “Church Modes”"
+      title = ##f
+      % subtitle = "Nat. Minor/Aeolian Scales"
+      % subsubtitle = "Complete Box Pattern — With Fingering"
+      % piece = " "
+    }
+  }
+#+END_SRC
+**** With Movable Do
+***** Devnull
+#+BEGIN_SRC lilypond
+  devNullAeolianMovableDo = {
+    \repeat unfold 5 {
+      c1*4
+    }
+  }
+#+END_SRC
+***** COMMENT [Lyrics] Shapes
+#+BEGIN_SRC lilypond
+  aeolianShapesMovableDo = \lyricmode {
+    \repeat unfold 17 {
+      \repeat unfold 2 {
+        "Cm-Shape (1)"
+        "Am-Shape (1)"
+        "Gm-Shape (1)"
+        "Em-Shape (1)"
+        "Dm-Shape (1)"
+      }
+    }
+  }
+#+END_SRC
+
+***** Scale Diagrams
+****** COMMENT [Content] A-Minor/Aeolian
+#+BEGIN_SRC lilypond
+diagramsAAeolianCompleteBoxPatternMovableDo = \chordmode {
+  \scaleDiagramStyleSheet
+  \cShapeMovableDo
+  a,,1*4:3.4.5.6.7+.8.9.19
+  \aShapeMovableDo
+  a,,1*4:4.5.6.7+.8.9.10.20
+  \gShapeMovableDo
+  a,,,1*4:6.7+.8.9.10.11.12.22
+  \eShapeMovableDo
+  a,,,1*4:7+.8.9.10.11.12.13.23
+  \dShapeMovableDo
+  a,,1*4:2.3.4.5.6.7+.8.18
+}
+#+END_SRC
+
+****** COMMENT [Content] Ais/Bes-Minor/Aeolian
+#+BEGIN_SRC lilypond
+diagramsAisAeolianCompleteBoxPatternMovableDo = \chordmode {
+  \scaleDiagramStyleSheet
+  \cShapeMovableDo
+  ais,,1*4:3.4.5.6.7+.8.9.19
+  \aShapeMovableDo
+  ais,,1*4:4.5.6.7+.8.9.10.20
+  \gShapeMovableDo
+  ais,,,1*4:6.7+.8.9.10.11.12.22
+  \eShapeMovableDo
+  ais,,,1*4:7+.8.9.10.11.12.13.23
+  \dShapeMovableDo
+  ais,,1*4:2.3.4.5.6.7+.8.18
+}
+#+END_SRC
+
+****** COMMENT [Content] B-Minor/Aeolian
+#+BEGIN_SRC lilypond
+diagramsBAeolianCompleteBoxPatternMovableDo = \chordmode {
+  \scaleDiagramStyleSheet
+  \cShapeMovableDo
+  b,,,1*4:3.4.5.6.7+.8.9.19
+  \aShapeMovableDo
+  b,,,1*4:4.5.6.7+.8.9.10.20
+  \gShapeMovableDo
+  b,,,1*4:6.7+.8.9.10.11.12.22
+  \eShapeMovableDo
+  b,,,1*4:7+.8.9.10.11.12.13.23
+  \dShapeMovableDo
+  b,,1*4:2.3.4.5.6.7+.8.18
+}
+#+END_SRC
+****** COMMENT [Content] C-Minor/Aeolian
+#+BEGIN_SRC lilypond
+diagramsCAeolianCompleteBoxPatternMovableDo = \chordmode {
+  \scaleDiagramStyleSheet
+  \cShapeMovableDo
+  c,,1*4:3.4.5.6.7+.8.9.19
+  \aShapeMovableDo
+  c,,1*4:4.5.6.7+.8.9.10.20
+  \gShapeMovableDo
+  c,,,1*4:6.7+.8.9.10.11.12.22
+  \eShapeMovableDo
+  c,,,1*4:7+.8.9.10.11.12.13.23
+  \dShapeMovableDo
+  c,1*4:2.3.4.5.6.7+.8.18
+}
+#+END_SRC
+****** COMMENT [Content] Cis/Des-Minor/Aeolian
+#+BEGIN_SRC lilypond
+diagramsCisAeolianCompleteBoxPatternMovableDo = \chordmode {
+  \scaleDiagramStyleSheet
+  \cShapeMovableDo
+  cis,,1*4:3.4.5.6.7+.8.9.19
+  \aShapeMovableDo
+  cis,,1*4:4.5.6.7+.8.9.10.20
+  \gShapeMovableDo
+  cis,,,1*4:6.7+.8.9.10.11.12.22
+  \eShapeMovableDo
+  cis,,1*4:7+.8.9.10.11.12.13.23
+  \dShapeMovableDo
+  cis,1*4:2.3.4.5.6.7+.8.18
+}
+#+END_SRC
+****** [Content] D-Minor/Aeolian
+#+BEGIN_SRC lilypond
+  % diagramsDAeolianCompleteBoxPatternMovableDo = \chordmode {
+  %   \scaleDiagramStyleSheet
+  %   \cShapeMovableDo
+  %   d,,1*4:3.4.5.6.7+.8.9.19
+  %   \aShapeMovableDo
+  %   d,,1*4:4.5.6.7+.8.9.10.20
+  %   \gShapeMovableDo
+  %   d,,,1*4:6.7+.8.9.10.11.12.22
+  %   \eShapeMovableDo
+  %   d,,1*4:7+.8.9.10.11.12.13.23
+  %   \dShapeMovableDo
+  %   d,,1*4:2.3.4.5.6.7+.8.18
+  % }
+#+END_SRC
+******* Cm7-s1-Shape
+#+BEGIN_SRC lilypond
+  diagramsDAeolianCompleteBoxPatternMovableDoCShapeOne = \chordmode {
+    \cShapeMovableDo
+    d,,1*4:3-.4.5.6-.7.8.9.19
+  }
+#+END_SRC
+
+******* Am7-s0-Shape
+#+BEGIN_SRC lilypond
+diagramsDAeolianCompleteBoxPatternMovableDoAShapeZero = \chordmode {
+  \aShapeMovableDo
+  d,,1*4:5.6-.7.8.9.10-.11.19
+}
+#+END_SRC
+
+******* COMMENT A-Shape 4
+#+BEGIN_SRC lilypond
+  diagramsDesIonianCompleteBoxPatternMovableDoAShapeFour = \chordmode {
+    \aShapeMovableDo
+    des,,1*4:5.6.7+.8.9.10.11.21
+  }
+#+END_SRC
+
+******* COMMENT A-Shape 1b
+#+BEGIN_SRC lilypond
+diagramsDesIonianCompleteBoxPatternMovableDoAShapeOneB = \chordmode {
+  \aShapeAltOne
+  des,,1*4:5.6.7+.8.9.10.11.21
+}
+#+END_SRC
+
+******* Gm7-s1-Shape
+#+BEGIN_SRC lilypond
+diagramsDAeolianCompleteBoxPatternMovableDoGShapeOne = \chordmode {
+  \gShapeMovableDo
+  d,1*4:6-.7.8.9.10-.11.12.20
+}
+#+END_SRC
+
+******* COMMENT G-Shape 1
+#+BEGIN_SRC lilypond
+diagramsDesIonianCompleteBoxPatternMovableDoGShapeOne = \chordmode {
+  \gShapeMovableDo
+  des,,,1*4:6.7+.8.9.10.11.12.22
+}
+#+END_SRC
+
+******* Em7-s0-Shape
+#+BEGIN_SRC lilypond
+diagramsDAeolianCompleteBoxPatternMovableDoEShapeZero = \chordmode {
+  \eShapeMovableDo
+  d,1*4:1.2.3-.4.5.6-.7.17-
+}
+#+END_SRC
+******* Dm7-s0-Shape
+#+BEGIN_SRC lilypond
+diagramsDAeolianCompleteBoxPatternMovableDoDShapeZero = \chordmode {
+  \dShapeMovableDo
+  d,1*4:2.3-.4.5.6-.7.8.18
+}
+#+END_SRC
+******* All Shapes D Aeolian Complete Box Pattern Movable Do
+******** diagramsDAeolianCompleteBoxPatternMovableDoAllShapes = \lyricmode {
+#+BEGIN_SRC lilypond
+diagramsDAeolianCompleteBoxPatternMovableDoAllShapes = \lyricmode {
+#+END_SRC
+******** Cm7-s1-Shape
+#+BEGIN_SRC lilypond
+\diagramsDAeolianCompleteBoxPatternMovableDoCShapeOne
+#+END_SRC
+******** COMMENT C-Shape 1/4
+#+BEGIN_SRC lilypond
+\diagramsDesIonianCompleteBoxPatternMovableDoCShapeOneFour
+#+END_SRC
+******** Am7-s0-Shape
+#+BEGIN_SRC lilypond
+\diagramsDAeolianCompleteBoxPatternMovableDoAShapeZero
+#+END_SRC
+******** COMMENT A-Shape 4
+#+BEGIN_SRC lilypond
+\diagramsDesIonianCompleteBoxPatternMovableDoAShapeFour
+#+END_SRC
+******** COMMENT A-Shape 1b
+#+BEGIN_SRC lilypond
+\diagramsDesIonianCompleteBoxPatternMovableDoAShapeOneB
+#+END_SRC
+******** Gm7-s1-Shape
+#+BEGIN_SRC lilypond
+\diagramsDAeolianCompleteBoxPatternMovableDoGShapeOne
+#+END_SRC
+******** Em7-s0-Shape
+#+BEGIN_SRC lilypond
+\diagramsDAeolianCompleteBoxPatternMovableDoEShapeZero
+#+END_SRC
+******** Dm7-s0-Shape
+#+BEGIN_SRC lilypond
+\diagramsDAeolianCompleteBoxPatternMovableDoDShapeZero
+#+END_SRC
+******** }
+#+BEGIN_SRC lilypond
+}
+#+END_SRC
+
+****** COMMENT [Content] Dis/Es-Minor/Aeolian
+#+BEGIN_SRC lilypond
+diagramsDisAeolianCompleteBoxPatternMovableDo = \chordmode {
+  \scaleDiagramStyleSheet
+  \cShapeMovableDo
+  dis,,1*4:3.4.5.6.7+.8.9.19
+  \aShapeMovableDo
+  dis,,1*4:4.5.6.7+.8.9.10.20
+  \gShapeMovableDo
+  dis,,1*4:6.7+.8.9.10.11.12.22
+  \eShapeMovableDo
+  dis,,1*4:7+.8.9.10.11.12.13.23
+  \dShapeMovableDo
+  dis,,1*4:2.3.4.5.6.7+.8.18
+}
+#+END_SRC
+
+****** COMMENT [Content] E-Minor/Aeolian
+#+BEGIN_SRC lilypond
+diagramsEAeolianCompleteBoxPatternMovableDo = \chordmode {
+  \scaleDiagramStyleSheet
+  \cShapeMovableDo
+  e,,1*4:3.4.5.6.7+.8.9.19
+  \aShapeMovableDo
+  e,,1*4:4.5.6.7+.8.9.10.20
+  \gShapeMovableDo
+  e,,1*4:6.7+.8.9.10.11.12.22
+  \eShapeMovableDo
+  e,,1*4:7+.8.9.10.11.12.13.23
+  \dShapeMovableDo
+  e,,1*4:2.3.4.5.6.7+.8.18
+}
+#+END_SRC
+
+****** COMMENT [Content] F-Minor/Aeolian
+#+BEGIN_SRC lilypond
+diagramsFAeolianCompleteBoxPatternMovableDo = \chordmode {
+  \scaleDiagramStyleSheet
+  \cShapeMovableDo
+  f,,1*4:3.4.5.6.7+.8.9.19
+  \aShapeMovableDo
+  f,,1*4:4.5.6.7+.8.9.10.20
+  \gShapeMovableDo
+  f,,1*4:6.7+.8.9.10.11.12.22
+  \eShapeMovableDo
+  f,,,1*4:7+.8.9.10.11.12.13.23
+  \dShapeMovableDo
+  f,,1*4:2.3.4.5.6.7+.8.18
+}
+#+END_SRC
+
+****** COMMENT [Content] Fis/Ges-Minor/Aeolian
+#+BEGIN_SRC lilypond
+diagramsFisAeolianCompleteBoxPatternMovableDo = \chordmode {
+  \scaleDiagramStyleSheet
+  \cShapeMovableDo
+  fis,,1*4:3.4.5.6.7+.8.9.19
+  \aShapeMovableDo
+  fis,,1*4:4.5.6.7+.8.9.10.20
+  \gShapeMovableDo
+  fis,,1*4:6.7+.8.9.10.11.12.22
+  \eShapeMovableDo
+  fis,,,1*4:7+.8.9.10.11.12.13.23
+  \dShapeMovableDo
+  fis,,1*4:2.3.4.5.6.7+.8.18
+}
+#+END_SRC
+
+****** COMMENT [Content] G-Minor/Aeolian
+#+BEGIN_SRC lilypond
+diagramsGAeolianCompleteBoxPatternMovableDo = \chordmode {
+  \scaleDiagramStyleSheet
+  \cShapeMovableDo
+  g,,1*4:3.4.5.6.7+.8.9.19
+  \aShapeMovableDo
+  g,,1*4:4.5.6.7+.8.9.10.20
+  \gShapeMovableDo
+  g,,,1*4:6.7+.8.9.10.11.12.22
+  \eShapeMovableDo
+  g,,,1*4:7+.8.9.10.11.12.13.23
+  \dShapeMovableDo
+  g,,1*4:2.3.4.5.6.7+.8.18
+}
+#+END_SRC
+
+****** COMMENT [Content] Gis/As-Minor/Aeolian
+#+BEGIN_SRC lilypond
+diagramsGisAeolianCompleteBoxPatternMovableDo = \chordmode {
+  \scaleDiagramStyleSheet
+  \cShapeMovableDo
+  gis,,1*4:3.4.5.6.7+.8.9.19
+  \aShapeMovableDo
+  gis,,1*4:4.5.6.7+.8.9.10.20
+  \gShapeMovableDo
+  gis,,,1*4:6.7+.8.9.10.11.12.22
+  \eShapeMovableDo
+  gis,,,1*4:7+.8.9.10.11.12.13.23
+  \dShapeMovableDo
+  gis,,1*4:2.3.4.5.6.7+.8.18
+}
+#+END_SRC
+
+***** Scores
+#+BEGIN_SRC lilypond
+\bookpart {
+#+END_SRC
+****** COMMENT [Score] A-Nat. Minor/Aeolian
+#+BEGIN_SRC lilypond
+  \score {
+    <<
+      \new FretBoards {
+        \set FretBoards.instrumentName = "A-Nat. Minor/Aeolian"
+        \diagramsAAeolianCompleteBoxPatternMovableDo
+      }
+      \new Devnull = "null" { \devNullAeolianMovableDo }
+      \new Lyrics \lyricsto "null" {
+        \setStanzaShape
+        \minorSeventhShapes
+      }
+      \new Lyrics \lyricsto "null" {
+        \setStanzaType
+        \minorSeventhLeavittTypes
+      }
+    >>
+    \header {
+      %title = "Modern “Church Modes”"
+      title = ##f
+      subtitle = "Nat. Minor/Aeolian Scales"
+      subsubtitle = "Complete Box Pattern — With Movable Do"
+      piece = " "
+    }
+  }
+#+END_SRC
+****** COMMENT [Score] Ais/Bes-Nat. Minor/Aeolian
+#+BEGIN_SRC lilypond
+  \score {
+    <<
+      \new FretBoards {
+        \set FretBoards.instrumentName = \markup\concat { "A"\teeny \sharp "/B" \teeny \flat "-Nat. Minor/Aeolian" }
+        \diagramsAisAeolianCompleteBoxPatternMovableDo
+      }
+      \new Devnull = "null" { \devNullAeolianMovableDo }
+      \new Lyrics \lyricsto "null" {
+        \setStanzaShape
+        \minorSeventhShapes
+      }
+      \new Lyrics \lyricsto "null" {
+        \setStanzaType
+        \minorSeventhLeavittTypes
+      }
+    >>
+    \header {
+      %title = "Modern “Church Modes”"
+      title = ##f
+      % subtitle = "Nat. Minor/Aeolian Scales"
+      % subsubtitle = "Complete Box Pattern — With Movable Do"
+      % piece = " "
+    }
+  }
+#+END_SRC
+****** COMMENT [Score] B-Nat. Minor/Aeolian
+#+BEGIN_SRC lilypond
+  \score {
+    <<
+      \new FretBoards {
+        \set FretBoards.instrumentName = "B-Nat. Minor/Aeolian"
+        \diagramsBAeolianCompleteBoxPatternMovableDo
+      }
+      \new Devnull = "null" { \devNullAeolianMovableDo }
+      \new Lyrics \lyricsto "null" {
+        \setStanzaShape
+        \minorSeventhShapes
+      }
+      \new Lyrics \lyricsto "null" {
+        \setStanzaType
+        \minorSeventhLeavittTypes
+      }
+    >>
+    \header {
+      %title = "Modern “Church Modes”"
+      title = ##f
+      % subtitle = "Nat. Minor/Aeolian Scales"
+      % subsubtitle = "Complete Box Pattern — With Movable Do"
+      % piece = " "
+    }
+  }
+#+END_SRC
+****** COMMENT [Score] C-Nat. Minor/Aeolian
+#+BEGIN_SRC lilypond
+  \score {
+    <<
+      \new FretBoards {
+        \set FretBoards.instrumentName = "C-Nat. Minor/Aeolian"
+        \diagramsCAeolianCompleteBoxPatternMovableDo
+      }
+      \new Devnull = "null" { \devNullAeolianMovableDo }
+      \new Lyrics \lyricsto "null" {
+        \setStanzaShape
+        \minorSeventhShapes
+      }
+      \new Lyrics \lyricsto "null" {
+        \setStanzaType
+        \minorSeventhLeavittTypes
+      }
+    >>
+    \header {
+      title = ##f
+      % subtitle = "Nat. Minor/Aeolian Scales"
+      % subsubtitle = "Complete Box Pattern — With Movable Do"
+      % piece = " "
+    }
+  }
+#+END_SRC
+****** COMMENT [Score] Cis/Des-Nat. Minor/Aeolian
+#+BEGIN_SRC lilypond
+  \score {
+    <<
+      \new FretBoards {
+        \set FretBoards.instrumentName = \markup\concat { "C"\teeny \sharp "/D" \teeny \flat "-Nat. Minor/Aeolian" }
+        \diagramsCisAeolianCompleteBoxPatternMovableDo
+      }
+      \new Devnull = "null" { \devNullAeolianMovableDo }
+      \new Lyrics \lyricsto "null" {
+        \setStanzaShape
+        \minorSeventhShapes
+      }
+      \new Lyrics \lyricsto "null" {
+        \setStanzaType
+        \minorSeventhLeavittTypes
+      }
+    >>
+    \header {
+      %title = "Modern “Church Modes”"
+      title = ##f
+      % subtitle = "Nat. Minor/Aeolian Scales"
+      % subsubtitle = "Complete Box Pattern — With Movable Do"
+      % piece = " "
+    }
+  }
+#+END_SRC
+****** COMMENT [Score] D-Nat. Minor/Aeolian
+#+BEGIN_SRC lilypond
+  \score {
+    <<
+      \new FretBoards {
+        \scaleDiagramStyleSheet
+        \set FretBoards.instrumentName = \markup\center-column { \line { "D-Nat. Minor" } \line { "Aeolian" } }
+        \diagramsDAeolianCompleteBoxPatternMovableDoAllShapes
+      }
+      \new Devnull = "null" { \devNullAeolianMovableDo }
+      \new Lyrics \lyricsto "null" {
+        \setStanzaShape
+        \minorSeventhShapes
+      }
+      % \new Lyrics \lyricsto "null" {
+      %   \setStanzaType
+      %   \minorSeventhLeavittTypes
+      % }
+    >>
+    \header {
+      % title = "Modern “Church Modes”"
+      title = ##f
+      subtitle = "Nat. Minor/Aeolian Scales"
+      subsubtitle = "Complete Box Pattern — With Movable Do"
+      % piece = " "
+    }
+  }
+#+END_SRC
+****** COMMENT [Score] Dis/Es-Nat. Minor/Aeolian
+#+BEGIN_SRC lilypond
+  \score {
+    <<
+      \new FretBoards {
+        \set FretBoards.instrumentName = \markup\concat { "D"\teeny \sharp "/E" \teeny \flat "-Nat. Minor/Aeolian" }
+        \diagramsDisAeolianCompleteBoxPatternMovableDo
+      }
+      \new Devnull = "null" { \devNullAeolianMovableDo }
+      \new Lyrics \lyricsto "null" {
+        \setStanzaShape
+        \minorSeventhShapes
+      }
+      \new Lyrics \lyricsto "null" {
+        \setStanzaType
+        \minorSeventhLeavittTypes
+      }
+    >>
+    \header {
+      %title = "Modern “Church Modes”"
+      title = ##f
+      % subtitle = "Nat. Minor/Aeolian Scales"
+      % subsubtitle = "Complete Box Pattern — With Movable Do"
+      % piece = " "
+    }
+  }
+#+END_SRC
+****** COMMENT [Score] E-Nat. Minor/Aeolian
+#+BEGIN_SRC lilypond
+  \score {
+    <<
+      \new FretBoards {
+        \set FretBoards.instrumentName = "E-Nat. Minor/Aeolian"
+        \diagramsEAeolianCompleteBoxPatternMovableDo
+      }
+      \new Devnull = "null" { \devNullAeolianMovableDo }
+      \new Lyrics \lyricsto "null" {
+        \setStanzaShape
+        \minorSeventhShapes
+      }
+      \new Lyrics \lyricsto "null" {
+        \setStanzaType
+        \minorSeventhLeavittTypes
+      }
+    >>
+    \header {
+      %title = "Modern “Church Modes”"
+      title = ##f
+      % subtitle = "Nat. Minor/Aeolian Scales"
+      % subsubtitle = "Complete Box Pattern — With Movable Do"
+      % piece = " "
+    }
+  }
+#+END_SRC
+****** COMMENT [Score] F-Nat. Minor/Aeolian
+#+BEGIN_SRC lilypond
+  \score {
+    <<
+      \new FretBoards {
+        \set FretBoards.instrumentName = "F-Nat. Minor/Aeolian"
+        \diagramsFAeolianCompleteBoxPatternMovableDo
+      }
+      \new Devnull = "null" { \devNullAeolianMovableDo }
+      \new Lyrics \lyricsto "null" {
+        \setStanzaShape
+        \minorSeventhShapes
+      }
+      \new Lyrics \lyricsto "null" {
+        \setStanzaType
+        \minorSeventhLeavittTypes
+      }
+    >>
+    \header {
+      %title = "Modern “Church Modes”"
+      title = ##f
+      % subtitle = "Nat. Minor/Aeolian Scales"
+      % subsubtitle = "Complete Box Pattern — With Movable Do"
+      % piece = " "
+    }
+  }
+#+END_SRC
+****** COMMENT [Score] Fis/Ges-Nat. Minor/Aeolian
+#+BEGIN_SRC lilypond
+  \score {
+    <<
+      \new FretBoards {
+        \set FretBoards.instrumentName = \markup\concat { "F"\teeny \sharp "/G" \teeny \flat "-Nat. Minor/Aeolian" }
+        \diagramsFisAeolianCompleteBoxPatternMovableDo
+      }
+      \new Devnull = "null" { \devNullAeolianMovableDo }
+      \new Lyrics \lyricsto "null" {
+        \setStanzaShape
+        \minorSeventhShapes
+      }
+      \new Lyrics \lyricsto "null" {
+        \setStanzaType
+        \minorSeventhLeavittTypes
+      }
+    >>
+    \header {
+      %title = "Modern “Church Modes”"
+      title = ##f
+      % subtitle = "Nat. Minor/Aeolian Scales"
+      % subsubtitle = "Complete Box Pattern — With Movable Do"
+      % piece = " "
+    }
+  }
+#+END_SRC
+****** COMMENT [Score] G-Nat. Minor/Aeolian
+#+BEGIN_SRC lilypond
+  \score {
+    <<
+      \new FretBoards {
+        \set FretBoards.instrumentName = "G-Nat. Minor/Aeolian"
+        \diagramsGAeolianCompleteBoxPatternMovableDo
+      }
+      \new Devnull = "null" { \devNullAeolianMovableDo }
+      \new Lyrics \lyricsto "null" {
+        \setStanzaShape
+        \minorSeventhShapes
+      }
+      \new Lyrics \lyricsto "null" {
+        \setStanzaType
+        \minorSeventhLeavittTypes
+      }
+    >>
+    \header {
+      %title = "Modern “Church Modes”"
+      title = ##f
+      % subtitle = "Nat. Minor/Aeolian Scales"
+      % subsubtitle = "Complete Box Pattern — With Movable Do"
+      % piece = " "
+    }
+  }
+#+END_SRC
+****** COMMENT [Score] Gis/As-Nat. Minor/Aeolian
+#+BEGIN_SRC lilypond
+  \score {
+    <<
+      \new FretBoards {
+        \set FretBoards.instrumentName = \markup\concat { "G"\teeny \sharp "/A" \teeny \flat "-Nat. Minor/Aeolian" }
+        \diagramsGisAeolianCompleteBoxPatternMovableDo
+      }
+      \new Devnull = "null" { \devNullAeolianMovableDo }
+      \new Lyrics \lyricsto "null" {
+        \setStanzaShape
+        \minorSeventhShapes
+      }
+      \new Lyrics \lyricsto "null" {
+        \setStanzaType
+        \minorSeventhLeavittTypes
+      }
+    >>
+    \header {
+      %title = "Modern “Church Modes”"
+      title = ##f
+      % subtitle = "Nat. Minor/Aeolian Scales"
+      % subsubtitle = "Complete Box Pattern — With Movable Do"
+      % piece = " "
+    }
+  }
+#+END_SRC
+****** }
+#+BEGIN_SRC lilypond
+} % end bookpart
+#+END_SRC
+
+** SCORES
+*** D-Major/Ionian
+#+BEGIN_SRC lilypond
+  \score {
+    <<
+      \new FretBoards {
+        \scaleDiagramStyleSheet
+        \set FretBoards.instrumentName = \markup\center-column { \line { "D" } \line { "Major/Ionian" } }
+        \diagramsDIonianCompleteBoxPatternMovableDoAllShapes
+      }
+      \new Devnull = "null" { \devNullIonianMovableDo }
+      \new Lyrics \lyricsto "null" {
+        \setStanzaShape
+        \majorSeventhShapes
+      }
+      % \new Lyrics \lyricsto "null" {
+      %   \setStanzaType
+      %   \majorSeventhLeavittTypes
+      % }
+    >>
+    \header {
+      %title = "Modern “Church Modes”"
+      title = ##f
+      subtitle = "Major/Ionian Scale"
+      subsubtitle = "Complete Box Patterns — With Movable Do"
+      % piece = " "
+    }
+  }
+#+END_SRC
+
+*** D-Nat. Minor/Aeolian
+#+BEGIN_SRC lilypond
+  \score {
+    <<
+      \new FretBoards {
+        \scaleDiagramStyleSheet
+        \set FretBoards.instrumentName = \markup\center-column { \line { "D-Nat. Minor" } \line { "Aeolian" } }
+        \diagramsDAeolianCompleteBoxPatternMovableDoAllShapes
+      }
+      \new Devnull = "null" { \devNullAeolianMovableDo }
+      \new Lyrics \lyricsto "null" {
+        \setStanzaShape
+        \minorSeventhShapes
+      }
+      % \new Lyrics \lyricsto "null" {
+      %   \setStanzaType
+      %   \minorSeventhLeavittTypes
+      % }
+    >>
+    \header {
+      % title = "Modern “Church Modes”"
+      title = ##f
+      subtitle = "Nat. Minor/Aeolian Scale"
+      subsubtitle = "Complete Box Patterns — With Movable Do"
+      % piece = " "
+    }
+  }
 #+END_SRC

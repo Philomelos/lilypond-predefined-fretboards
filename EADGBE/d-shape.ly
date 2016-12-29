@@ -9440,3 +9440,178 @@ dShapeMovableSo = {
                         #(offset-fret 5 (
                           chord-shape 'es,,:2.3.4.5.6.7+.8.18_movable-do
                           guitar-tuning))
+
+% * modern "church modes"
+% ** nat. minor/aeolian
+% *** dm7-s0 (leavitt type ??)
+% **** with movable do
+% **** complete box pattern (17 pitches)
+% **** add dm7-s0 aeolian definitions (17 pitches)
+\addChordShape #'es,,:2.3-.4.5.6-.7.8.18_movable-do
+               #guitar-tuning
+               #'((place-fret 1 4 "Re''")
+                  (place-fret 1 2 "Do''")
+                  (place-fret 1 1 "Ti")
+                  (place-fret 2 4 "La" red)
+                  (place-fret 2 2 "So")
+                  (place-fret 3 4 "Fa")
+                  (place-fret 3 3 "Mi")
+                  (place-fret 3 1 "Re")
+                  (place-fret 4 4 "Do'")
+                  (place-fret 4 3 "Ti")
+                  (place-fret 4 1 "La" red)
+                  (place-fret 5 4 "So")
+                  (place-fret 5 2 "Fa")
+                  (place-fret 5 1 "Mi")
+                  (place-fret 6 4 "Re")
+                  (place-fret 6 2 "Do")
+                  (place-fret 6 1 "Ti,"))
+
+% **** store predefined d-shape aeolian mode (17 pitches)
+% ***** a aeolian mode, dm7-s0, complete box pattern (17 pitches)
+\storePredefinedDiagram #d-shape-with-movable-do
+                        \chordmode { a,:2.3-.4.5.6-.7.8.18 }
+                        #guitar-tuning
+                        #(offset-fret 6 (
+                          chord-shape 'es,,:2.3-.4.5.6-.7.8.18_movable-do
+                          guitar-tuning))
+
+% ***** ais aeolian mode, dm7-s0, complete box pattern (17 pitches)
+\storePredefinedDiagram #d-shape-with-movable-do
+                        \chordmode { ais,:2.3-.4.5.6-.7.8.18 }
+                        #guitar-tuning
+                        #(offset-fret 7 (
+                          chord-shape 'es,,:2.3-.4.5.6-.7.8.18_movable-do
+                          guitar-tuning))
+
+% ***** bes aeolian mode, dm7-s0, complete box pattern (17 pitches)
+\storePredefinedDiagram #d-shape-with-movable-do
+                        \chordmode { bes,:2.3-.4.5.6-.7.8.18 }
+                        #guitar-tuning
+                        #(offset-fret 7 (
+                          chord-shape 'es,,:2.3-.4.5.6-.7.8.18_movable-do
+                          guitar-tuning))
+
+% ***** b aeolian mode, dm7-s0, complete box pattern (17 pitches)
+\storePredefinedDiagram #d-shape-with-movable-do
+                 \chordmode { b,:2.3-.4.5.6-.7.8.18 }
+                  #guitar-tuning
+                  #(offset-fret 8 (
+                          chord-shape 'es,,:2.3-.4.5.6-.7.8.18_movable-do
+                          guitar-tuning))
+
+% ***** c aeolian mode, dm7-s0, complete box pattern (17 pitches)
+\storePredefinedDiagram #d-shape-with-movable-do
+                        \chordmode { c:2.3-.4.5.6-.7.8.18 }
+                        #guitar-tuning
+                        #(offset-fret 9 (
+                          chord-shape 'es,,:2.3-.4.5.6-.7.8.18_movable-do
+                          guitar-tuning))
+
+% ***** cis aeolian mode, dm7-s0, complete box pattern (17 pitches)
+\storePredefinedDiagram #d-shape-with-movable-do
+                        \chordmode { cis:2.3-.4.5.6-.7.8.18 }
+                        #guitar-tuning
+                        #(offset-fret 10 (
+                          chord-shape 'es,,:2.3-.4.5.6-.7.8.18_movable-do
+                          guitar-tuning))
+
+% ***** des aeolian mode, dm7-s0, complete box pattern (17 pitches)
+\storePredefinedDiagram #d-shape-with-movable-do
+                        \chordmode { des:2.3-.4.5.6-.7.8.18 }
+                        #guitar-tuning
+                        #(offset-fret 10 (
+                          chord-shape 'es,,:2.3-.4.5.6-.7.8.18_movable-do
+                          guitar-tuning))
+
+% ***** d aeolian mode, dm7-s0, complete box pattern (17 pitches)
+\storePredefinedDiagram #d-shape-with-movable-do
+                        \chordmode { d,:2.3-.4.5.6-.7.8.18 }
+                        #guitar-tuning
+                        #'((place-fret 1 3 "Re'")
+                           (place-fret 1 1 "Do'")
+                           (place-fret 1 0 "Ti")
+                           (place-fret 2 3 "La" red)
+                           (place-fret 2 1 "So")
+                           (place-fret 3 3 "Fa")
+                           (place-fret 3 2 "Mi")
+                           (place-fret 3 0 "Re")
+                           (place-fret 4 3 "Do'")
+                           (place-fret 4 2 "Ti")
+                           (place-fret 4 0 "La" red)
+                           (place-fret 5 3 "So")
+                           (place-fret 5 1 "Fa")
+                           (place-fret 5 0 "Mi")
+                           (place-fret 6 3 "Re")
+                           (place-fret 6 1 "Do")
+                           (place-fret 6 0 "Ti,"))
+
+% ***** dis aeolian mode, dm7-s0, complete box pattern (17 pitches)
+\storePredefinedDiagram #d-shape-with-movable-do
+                        \chordmode { dis,:2.3-.4.5.6-.7.8.18 }
+                        #guitar-tuning
+                        #(chord-shape 'es,,:2.3-.4.5.6-.7.8.18_movable-do
+                          guitar-tuning)
+
+% ***** es aeolian mode, dm7-s0, complete box pattern (17 pitches)
+\storePredefinedDiagram #d-shape-with-movable-do
+                        \chordmode { es,:2.3-.4.5.6-.7.8.18 }
+                        #guitar-tuning
+                        #(chord-shape 'es,,:2.3-.4.5.6-.7.8.18_movable-do
+                          guitar-tuning)
+
+% ***** e aeolian mode, dm7-s0, complete box pattern (17 pitches)
+\storePredefinedDiagram #d-shape-with-movable-do
+                        \chordmode { e,:2.3-.4.5.6-.7.8.18 }
+                        #guitar-tuning
+                        #(offset-fret 1 (
+                          chord-shape 'es,,:2.3-.4.5.6-.7.8.18_movable-do
+                          guitar-tuning))
+
+% ***** f aeolian mode, dm7-s0, complete box pattern (17 pitches)
+\storePredefinedDiagram #d-shape-with-movable-do
+                        \chordmode { f,:2.3-.4.5.6-.7.8.18 }
+                        #guitar-tuning
+                        #(offset-fret 2 (
+                          chord-shape 'es,,:2.3-.4.5.6-.7.8.18_movable-do
+                          guitar-tuning))
+
+% ***** fis aeolian mode, dm7-s0, complete box pattern (17 pitches)
+\storePredefinedDiagram #d-shape-with-movable-do
+                        \chordmode { fis,:2.3-.4.5.6-.7.8.18 }
+                        #guitar-tuning
+                        #(offset-fret 3 (
+                          chord-shape 'es,,:2.3-.4.5.6-.7.8.18_movable-do
+                          guitar-tuning))
+
+% ***** ges aeolian mode, dm7-s0, complete box pattern (17 pitches)
+\storePredefinedDiagram #d-shape-with-movable-do
+                        \chordmode { ges,:2.3-.4.5.6-.7.8.18 }
+                        #guitar-tuning
+                        #(offset-fret 3 (
+                          chord-shape 'es,,:2.3-.4.5.6-.7.8.18_movable-do
+                          guitar-tuning))
+
+% ***** g aeolian mode, dm7-s0, complete box pattern (17 pitches)
+\storePredefinedDiagram #d-shape-with-movable-do
+                        \chordmode { g,:2.3-.4.5.6-.7.8.18 }
+                        #guitar-tuning
+                        #(offset-fret 4 (
+                          chord-shape 'es,,:2.3-.4.5.6-.7.8.18_movable-do
+                          guitar-tuning))
+
+% ***** gis aeolian mode, dm7-s0, complete box pattern (17 pitches)
+\storePredefinedDiagram #d-shape-with-movable-do
+                        \chordmode { gis,:2.3-.4.5.6-.7.8.18 }
+                        #guitar-tuning
+                        #(offset-fret 5 (
+                          chord-shape 'es,,:2.3-.4.5.6-.7.8.18_movable-do
+                          guitar-tuning))
+
+% ***** as aeolian mode, dm7-s0, complete box pattern (17 pitches)
+\storePredefinedDiagram #d-shape-with-movable-do
+                        \chordmode { as,:2.3-.4.5.6-.7.8.18 }
+                        #guitar-tuning
+                        #(offset-fret 5 (
+                          chord-shape 'es,,:2.3-.4.5.6-.7.8.18_movable-do
+                          guitar-tuning))

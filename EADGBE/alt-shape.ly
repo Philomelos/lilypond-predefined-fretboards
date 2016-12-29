@@ -17,10 +17,10 @@
 
 \version "2.19.15"
 
-#(define alt-shape-fretboard-table (make-fretboard-table))
+#(define alt-shape-with-fingering (make-fretboard-table))
 
 altShape = {
-  \set predefinedDiagramTable = #alt-shape-fretboard-table
+  \set predefinedDiagramTable = #alt-shape-with-fingering
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -46,7 +46,7 @@ altShape = {
 %                #"x;x;x;x;o;7-1;"
 
 % b octave; root bass; 2 notes; oct. on top
-\storePredefinedDiagram #alt-shape-fretboard-table
+\storePredefinedDiagram #alt-shape-with-fingering
                         \chordmode { b:1.8 }
                         #guitar-tuning
                         #"x;x;x;x;o;7-1;"
@@ -60,7 +60,7 @@ altShape = {
                #guitar-tuning
                #"1-1;3-3;3-4;x;x;x;"
 % e power chords (E-shape), root pos. 3 notes, (oct. on top)
-\storePredefinedDiagram #alt-shape-fretboard-table
+\storePredefinedDiagram #alt-shape-with-fingering
                         \chordmode { e,:1.5.8 }
                         #guitar-tuning
                         #(offset-fret 11 (
@@ -83,7 +83,7 @@ altShape = {
 
 %% store predefined c-shape alt major triad diagrams (root pos., 3 notes, 5th sop.)
 % c major triads; root bass; 3 notes; fifth soprano
-\storePredefinedDiagram #alt-shape-fretboard-table
+\storePredefinedDiagram #alt-shape-with-fingering
                         \chordmode { c }
                         #guitar-tuning
                         #(offset-fret 11 (
@@ -107,7 +107,7 @@ altShape = {
 
 %% store predefined c-shape alt minor triad diagrams (root pos., 3 notes, 5th sop.)
 % c minor triads; root bass; 3 notes; fifth soprano
-\storePredefinedDiagram #alt-shape-fretboard-table
+\storePredefinedDiagram #alt-shape-with-fingering
                         \chordmode { c:m }
                         #guitar-tuning
                         #(offset-fret 11 (
@@ -125,136 +125,134 @@ altShape = {
 
 %% store predefined e-shape minor triad diagrams (root pos., 3 notes, 3rd sop.)
 % c minor triads; root bass; 3 notes; third soprano
-\storePredefinedDiagram #alt-shape-fretboard-table
+\storePredefinedDiagram #alt-shape-with-fingering
                         \chordmode { c:1.5.10- }
                         #guitar-tuning
                         #(offset-fret 7 (
-                          chord-shape 'f:1.5.10- 
+                          chord-shape 'f:1.5.10-
                           guitar-tuning))
 
 % cis minor triads; root bass; 3 notes; third soprano
-\storePredefinedDiagram #alt-shape-fretboard-table
+\storePredefinedDiagram #alt-shape-with-fingering
                         \chordmode { cis':1.5.10- }
                         #guitar-tuning
                         #(offset-fret 8 (
-                          chord-shape 'f:1.5.10- 
+                          chord-shape 'f:1.5.10-
                           guitar-tuning))
 
 % des minor triads; root bass; 3 notes; third soprano
-\storePredefinedDiagram #alt-shape-fretboard-table
+\storePredefinedDiagram #alt-shape-with-fingering
                         \chordmode { des':1.5.10- }
                         #guitar-tuning
                         #(offset-fret 8 (
-                          chord-shape 'f:1.5.10- 
+                          chord-shape 'f:1.5.10-
                           guitar-tuning))
 
 % d minor triads; root bass; 3 notes; third soprano
-\storePredefinedDiagram #alt-shape-fretboard-table
+\storePredefinedDiagram #alt-shape-with-fingering
                         \chordmode { d':1.5.10- }
                         #guitar-tuning
                         #(offset-fret 9 (
-                          chord-shape 'f:1.5.10- 
+                          chord-shape 'f:1.5.10-
                           guitar-tuning))
 
 % dis minor triads; root bass; 3 notes; third soprano
-\storePredefinedDiagram #alt-shape-fretboard-table
+\storePredefinedDiagram #alt-shape-with-fingering
                         \chordmode { dis':1.5.10- }
                         #guitar-tuning
                         #(offset-fret 10 (
-                          chord-shape 'f:1.5.10- 
+                          chord-shape 'f:1.5.10-
                           guitar-tuning))
 
 % es minor triads; root bass; 3 notes; third soprano
-\storePredefinedDiagram #alt-shape-fretboard-table
+\storePredefinedDiagram #alt-shape-with-fingering
                         \chordmode { es':1.5.10- }
                         #guitar-tuning
                         #(offset-fret 10 (
-                          chord-shape 'f:1.5.10- 
+                          chord-shape 'f:1.5.10-
                           guitar-tuning))
 
 % e minor triads; root bass; 3 notes; third soprano
-\storePredefinedDiagram #alt-shape-fretboard-table
+\storePredefinedDiagram #alt-shape-with-fingering
                         \chordmode { e:1.5.10- }
                         #guitar-tuning
                         #"x;x;2-2;x;o;3-4;"
 
 % f minor triads; root bass; 3 notes; third soprano
-\storePredefinedDiagram #alt-shape-fretboard-table
+\storePredefinedDiagram #alt-shape-with-fingering
                         \chordmode { f:1.5.10- }
                         #guitar-tuning
-                        #(chord-shape 'f:1.5.10- 
+                        #(chord-shape 'f:1.5.10-
                           guitar-tuning)
 
 % fis minor triads; root bass; 3 notes; third soprano
-\storePredefinedDiagram #alt-shape-fretboard-table
+\storePredefinedDiagram #alt-shape-with-fingering
                         \chordmode { fis:1.5.10- }
                         #guitar-tuning
                         #(offset-fret 1 (
-                          chord-shape 'f:1.5.10- 
+                          chord-shape 'f:1.5.10-
                           guitar-tuning))
 
 % ges minor triads; root bass; 3 notes; third soprano
-\storePredefinedDiagram #alt-shape-fretboard-table
+\storePredefinedDiagram #alt-shape-with-fingering
                         \chordmode { ges:1.5.10- }
                         #guitar-tuning
                         #(offset-fret 1 (
-                          chord-shape 'f:1.5.10- 
+                          chord-shape 'f:1.5.10-
                           guitar-tuning))
 
 % g minor triads; root bass; 3 notes; third soprano
-\storePredefinedDiagram #alt-shape-fretboard-table
+\storePredefinedDiagram #alt-shape-with-fingering
                         \chordmode { g:1.5.10- }
                         #guitar-tuning
                         #(offset-fret 2 (
-                          chord-shape 'f:1.5.10- 
+                          chord-shape 'f:1.5.10-
                           guitar-tuning))
 
 % gis minor triads; root bass; 3 notes; third soprano
-\storePredefinedDiagram #alt-shape-fretboard-table
+\storePredefinedDiagram #alt-shape-with-fingering
                         \chordmode { gis:1.5.10- }
                         #guitar-tuning
                         #(offset-fret 3 (
-                          chord-shape 'f:1.5.10- 
+                          chord-shape 'f:1.5.10-
                           guitar-tuning))
 
 % as minor triads; root bass; 3 notes; third soprano
-\storePredefinedDiagram #alt-shape-fretboard-table
+\storePredefinedDiagram #alt-shape-with-fingering
                         \chordmode { as:1.5.10- }
                         #guitar-tuning
                         #(offset-fret 3 (
-                          chord-shape 'f:1.5.10- 
+                          chord-shape 'f:1.5.10-
                           guitar-tuning))
 
 % a minor triads; root bass; 3 notes; third soprano
-\storePredefinedDiagram #alt-shape-fretboard-table
+\storePredefinedDiagram #alt-shape-with-fingering
                         \chordmode { a:1.5.10- }
                         #guitar-tuning
                         #(offset-fret 4 (
-                          chord-shape 'f:1.5.10- 
+                          chord-shape 'f:1.5.10-
                           guitar-tuning))
 
 % ais minor triads; root bass; 3 notes; third soprano
-\storePredefinedDiagram #alt-shape-fretboard-table
+\storePredefinedDiagram #alt-shape-with-fingering
                         \chordmode { ais:1.5.10- }
                         #guitar-tuning
                         #(offset-fret 5 (
-                          chord-shape 'f:1.5.10- 
+                          chord-shape 'f:1.5.10-
                           guitar-tuning))
 
 % bes minor triads; root bass; 3 notes; third soprano
-\storePredefinedDiagram #alt-shape-fretboard-table
+\storePredefinedDiagram #alt-shape-with-fingering
                         \chordmode { bes:1.5.10- }
                         #guitar-tuning
                         #(offset-fret 5 (
-                          chord-shape 'f:1.5.10- 
+                          chord-shape 'f:1.5.10-
                           guitar-tuning))
 
 % b minor triads; root bass; 3 notes; third soprano
-\storePredefinedDiagram #alt-shape-fretboard-table
+\storePredefinedDiagram #alt-shape-with-fingering
                         \chordmode { b:1.5.10- }
                         #guitar-tuning
                         #(offset-fret 6 (
-                          chord-shape 'f:1.5.10- 
+                          chord-shape 'f:1.5.10-
                           guitar-tuning))
-
-

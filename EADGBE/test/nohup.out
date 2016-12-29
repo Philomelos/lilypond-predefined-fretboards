@@ -1,0 +1,58 @@
+
+(evince:17848): Gdk-WARNING **: evince: Fatal IO error 0 (Success) on X server :0.
+
+
+(evince:19114): Gdk-WARNING **: evince: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+
+(evince:5791): Gdk-WARNING **: evince: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.0.
+
+
+(evince:3482): Gdk-WARNING **: evince: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+
+(evince:4697): Gdk-WARNING **: evince: Fatal IO error 104 (Connection reset by peer) on X server :0.
+
+
+(evince:5850): Gtk-WARNING **: Ignoring visual set on widget `gtk-tooltip' that is not on the correct screen.
+g_dbus_connection_real_closed: Remote peer vanished with error: Error receiving message: Connection reset by peer (g-io-error-quark, 0). Exiting.
+
+(evince:16213): Gdk-WARNING **: evince: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+
+(evince:3275): Gdk-WARNING **: evince: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+g_dbus_connection_real_closed: Remote peer vanished with error: Error receiving message: Connection reset by peer (g-io-error-quark, 0). Exiting.
+g_dbus_connection_real_closed: Remote peer vanished with error: Error receiving message: Connection reset by peer (g-io-error-quark, 0). Exiting.
+
+(evince:11781): Gdk-WARNING **: evince: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+
+(evince:2996): Gdk-WARNING **: evince: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+g_dbus_connection_real_closed: Remote peer vanished with error: Underlying GIOStream returned 0 bytes on an async read (g-io-error-quark, 0). Exiting.
+g_dbus_connection_real_closed: Remote peer vanished with error: Underlying GIOStream returned 0 bytes on an async read (g-io-error-quark, 0). Exiting.
+
+(evince:7184): Gdk-WARNING **: evince: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+
+(evince:3411): Gdk-WARNING **: evince: Fatal IO error 104 (Connection reset by peer) on X server :0.
+
+
+(evince:2439): Gdk-WARNING **: evince: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+g_dbus_connection_real_closed: Remote peer vanished with error: Error receiving message: Connection reset by peer (g-io-error-quark, 0). Exiting.
+
+(evince:11332): EvinceView-CRITICAL **: ev_page_cache_get_annot_mapping: assertion 'page >= 0 && page < cache->n_pages' failed
+
+(evince:11332): EvinceView-CRITICAL **: ev_page_cache_get_annot_mapping: assertion 'page >= 0 && page < cache->n_pages' failed
+
+(evince:11332): EvinceView-CRITICAL **: ev_page_cache_get_annot_mapping: assertion 'page >= 0 && page < cache->n_pages' failed
+
+(evince:11332): Gdk-WARNING **: evince: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+
+(evince:3084): EvinceView-CRITICAL **: ev_page_cache_get_annot_mapping: assertion 'page >= 0 && page < cache->n_pages' failed
+
+(evince:3084): Gdk-WARNING **: evince: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
